@@ -1,7 +1,7 @@
 ---
 description: >-
-  This document defines the different destination types where the importer can
-  push the data uploaded by the users. The following is the list of supported
+  This document defines the different destinations where the importer can push
+  the data uploaded by the users. The following is the list of supported
   destinations.
 ---
 
