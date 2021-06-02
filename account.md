@@ -12,7 +12,7 @@ If you have any questions regarding order processing you can reach out to us or 
 
 ## Will my subscription automatically renew?
 
-Yes, any subscription plan renews automatically. If you don’t want to be billed, cancel your subscription before the end of Expiration Date
+Yes, any subscription plan renews automatically. If you don’t want to be billed, cancel your subscription before the end of the expiration date.
 
 ## What will happen if I upgrade or downgrade to a different plan?
 
