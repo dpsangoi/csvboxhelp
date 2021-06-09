@@ -4,6 +4,12 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 09 June 2021
+
+### Added
+
+* Multiple custom user attributes to reference the users and identify them in your platform. More info here - [https://help.csvbox.io/getting-started\#referencing-the-user](https://help.csvbox.io/getting-started#referencing-the-user)
+
 ## 28 May 2021
 
 ### Added
