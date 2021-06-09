@@ -36,7 +36,7 @@ Users will be able to match the headers of their file columns with the sheet col
 
 It's easy to get started using csvbox.io importer. In this guide, we will use the bare minimum to get up and running with accepting files from your users.
 
-### Add a sheet
+### 1. Add a sheet
 
 Sheets define the format of the data that you want to accept from the users.
 
@@ -48,7 +48,7 @@ When users attempt to upload a file, the importer will validate the data for eve
 
 Under the 'Settings' tab, configure the destination where you want the data to be pushed. The destination could be an API endpoint, Amazon S3 bucket, MYSQL database, or any of the other options mentioned [here](https://help.csvbox.io/destinations). 
 
-### Install Code
+### 2. Install Code
 
 Go to the 'Settings' tab of the sheet and copy the integration code. The code will look something like this:
 
@@ -77,22 +77,34 @@ Go to the 'Settings' tab of the sheet and copy the integration code. The code wi
 Place the code in your application at the location you want to display the import button.
 
 {% hint style="info" %}
-You can change the classes of the &lt;button&gt; element as per your styling requirements. You also change the default button text **Import** as per your need.
+You can change the classes of the `<button>` element as per your styling requirements. You also change the default button text **Import** as per your need.
 {% endhint %}
 
-{% hint style="info" %}
-With the **setUser\(\)** method you can reference the user by providing the value to the **user\_id** option. The **user\_id** value that you provide here will be available in the data that you receive in your app. This helps you identify and match imports to their respective users from within your system.
-{% endhint %}
+#### Referencing the user
 
-{% hint style="info" %}
-The **callback** function returns the status of the import once it is complete. You can write custom code to handle the conditions as per your workflow.
-{% endhint %}
+You can configure the **`setUser`** method to identify and match the users with their respective imports. When calling the **`setUser`**method, pass custom user attributes that help you identify the users in your patform. The custom user attributes will be pushed to your destination along with the uploaded data.
 
-### Receiving Data
+**user\_id** is the only custom attribute that is mandatory. Apart from **user\_id,** you can add up to 4 custom attributes in the `<key>: <value>` format. Example:
+
+```javascript
+  importer.setUser({
+        user_id: "1a2b3c4d5e6f",
+        team_id: "sales2",
+        isAuthenticated: "true",
+        permissionLevel: "admin",
+        email: "abc@example.com"
+    })
+```
+
+#### Callback function
+
+Once the import is complete the **`callback`**function returns the status of the import. You can write custom code to handle the success or fail conditions as per your workflow.
+
+### 3. Receive Data
 
 Once the code is installed the users will be able to submit their files via the csvbox importer. The raw files uploaded by the users will be available on your dashboard's 'Import' page. The data will also be pushed to your app as per the destination type configuration of your sheet.
 
-#### Sample JSON response for destination type Webhook: <a id="sample-response"></a>
+#### Sample JSON response for destination Webhook: <a id="sample-response"></a>
 
 ```javascript
 [

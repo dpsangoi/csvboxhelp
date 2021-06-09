@@ -36,7 +36,8 @@ The data will be pushed to a webhook endpoint as configured in the sheet setting
           "Image URL": "https://cdn.shopify.com/s/files/1/1491/9536/products/31jJOj1DS5L_070b4893-b7af-482f-8a15-d40f5e06760d.jpg?v=1521803806"
     },
     "custom_fields": {
-      "user_id": "1002"
+      "user_id": "1a2b3c4d5e6f",
+      "team_id": "sales2"
     }
   },
   {
@@ -52,7 +53,8 @@ The data will be pushed to a webhook endpoint as configured in the sheet setting
           "Image URL": "https://cdn.shopify.com/s/files/1/1491/9536/products/71pRC5VjF-L_8f840eb9-6a47-407f-999c-490f7814159d.jpg?v=1521803806"
         },
     "custom_fields": {
-      "user_id": "1002"
+      "user_id": "1a2b3c4d5e6f"
+      "team_id": "sales2"
     }
   },
 ]
@@ -64,10 +66,10 @@ The data will come in as HTTP POST requests. Each request will have an array of 
 
 ## Amazon S3
 
-The files uploaded by the users can be pushed to the AWS S3 Bucket of your choice. You simply need to select the destination type as 'Amazon S3' and provide the AWS credentials, bucket/folder, and access policy for receiving the files. 
+The files uploaded by the users can be pushed to the AWS S3 Bucket of your choice. You simply need to select the destination type as 'Amazon S3' and provide the AWS credentials, bucket/folder name, and access policy for storing the files.
 
 {% hint style="info" %}
-The files in S3 will be stored with the filename **{{import\_id}}\_{{userId}}.csv** where userId is the optional attribute that you configure in the **CSVBoxImporter\(\)** function of the installation code.
+The data will be stored as S3 objects with the name **{{import\_id}}\_{{user\_id}}.csv** where **user\_id** is the custom user attribute that you reference via the **`setUser`**method while installing the importer code. The other 4 custom user attributes will be saved as the [user-defined metadata](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingMetadata.html) of the S3 object.
 {% endhint %}
 
 ## MySQL Database
