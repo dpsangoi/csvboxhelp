@@ -84,7 +84,7 @@ You can change the classes of the `<button>` element as per your styling require
 
 You can configure the **`setUser`** method to identify and match the users with their respective imports. When calling the **`setUser`**method, pass custom user attributes that help you identify the users in your patform. The custom user attributes will be pushed to your destination along with the uploaded data.
 
-**user\_id** is the only custom attribute that is mandatory. Apart from **user\_id,** you can add up to 4 custom attributes in the `<key>: <value>` format. Example:
+**user\_id** is the only custom attribute that is mandatory. Apart from **user\_id,** you can add up to 4 custom attributes in the `<key>: <value>`format. Example:
 
 ```javascript
   importer.setUser({
