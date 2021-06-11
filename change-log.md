@@ -4,6 +4,14 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 11 June 2021
+
+### Added
+
+* New column type 'List'. You can now specify a list of allowed values for a column. The importer will validate the column data with the list of values configured.
+* Min, Max values validation for Number type columns.
+* Min, Max character length validation option for Text type columns.
+
 ## 09 June 2021
 
 ### Added
