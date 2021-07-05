@@ -4,6 +4,13 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 30 June 2021
+
+### Changed
+
+* Fixed UI bugs.
+* Optimized importer for faster speed.
+
 ## 11 June 2021
 
 ### Added
