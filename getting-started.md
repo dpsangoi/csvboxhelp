@@ -56,9 +56,10 @@ Go to the 'Code' tab of the sheet and copy the integration code. The code will l
 <button class="btn btn-primary" onclick="importer.openModal();">Import</button>
 <script type="text/javascript" src="http://js.csvbox.io/embed/script"></script>
 <script type="text/javascript">
-    function callback(result) {
+    function callback(result, data) {
         if(result){
             console.log("success");
+            console.log(data.row_success + " rows uploaded");
             //custom code
         }else{
             console.log("fail");
@@ -84,7 +85,7 @@ You can change the classes of the `<button>` element as per your styling require
 
 You can configure the **`setUser`** method to identify and match the users with their respective imports. When calling the **`setUser`**method, pass custom user attributes that help you identify the users in your platform. The custom user attributes will be pushed to your destination along with the uploaded data.
 
-**user\_id** is the only custom attribute that is mandatory. Apart from **user\_id,** you can add up to 4 custom attributes in the `<key>: <value>`format. Example:
+**user\_id** is the only custom attribute that is mandatory. Apart from **user\_id,** you can add up to 4 custom attributes in the **`<key>: <value>`**format. Example:
 
 ```javascript
   importer.setUser({
@@ -98,7 +99,31 @@ You can configure the **`setUser`** method to identify and match the users with 
 
 #### Callback function
 
-Once the import is complete the **`callback`**function returns the status of the import. You can write custom code to handle the success or fail conditions as per your workflow.
+Once the import is complete the **`callback`**function returns the status of the import. It returns two variables: **`result`** and **`data`**. 
+
+1. **`result`** - It is of type boolean with value **true** if import is successful and **false** if import fails.
+2. **`data`** - It returns JSON data as described below:
+
+```javascript
+  {
+    "import_id": 79418895,
+    "sheet_id": 575,
+    "sheet_name": "Products Import",
+    "destination_type": "webhook"
+    "row_count": 100,
+    "row_success": 98,
+    "row_fail": 2,
+    "import_status": "Partial",
+    "import_starttime": 87987897897,
+    "import_endtime": 90890890809,
+    "raw_file": "https://file-download-link",
+    "custom_fields": {
+      "user_id": "Z1001"
+    }
+  }
+```
+
+You can write custom code to handle the success or failure conditions on the client side.
 
 ### 3. Receive Data
 
