@@ -4,6 +4,12 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 07 July 2021
+
+### Added
+
+* A new **`Data`** variable in the **`callback`** function of the integration code. This variable returns the import result details on client side. More information [here](https://help.csvbox.io/getting-started#callback-function). This change is backward compatible with the old integration code.
+
 ## 30 June 2021
 
 ### Changed
