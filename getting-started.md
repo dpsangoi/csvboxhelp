@@ -1,7 +1,7 @@
 ---
 description: >-
-  This page will guide you through the basic steps to install csvbox.io into
-  your app and start accepting data from your users.
+  This page will guide you through the basic steps to install the csvbox.io CSV
+  importer widget into your app and start accepting data from your users.
 ---
 
 # Getting Started
