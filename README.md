@@ -1,8 +1,8 @@
 ---
-description: Welcome to csvbox.io help center
+description: Welcome to csvbox.io documentation and help site
 ---
 
-# Home
+# Help Center
 
 {% page-ref page="getting-started.md" %}
 

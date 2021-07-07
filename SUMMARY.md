@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Home](README.md)
+* [Help Center](README.md)
 * [Getting Started](getting-started.md)
 * [Data Destinations](destinations.md)
 * [Account](account.md)
