@@ -134,7 +134,7 @@ You can configure **custom user attributes** in the installation code to identif
 {% tab title="Javascript" %}
 Pass custom user attributes as input parameters to the **`setUser`**method. The custom user attributes will be pushed to your destination along with the uploaded data.
 
-**user\_id** is the only custom attribute that is mandatory. Apart from **user\_id,** you can add up to 4 custom attributes in the **`<key>: <value>`**format. Example:
+**user\_id** is the only custom attribute that is mandatory. Apart from **user\_id,** you can add up to 4 custom attributes in the**`<key>: <value>`**format. Example:
 
 ```javascript
  importer.setUser({
