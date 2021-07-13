@@ -50,10 +50,12 @@ Under the 'Settings' tab, configure the destination where you want the data to b
 
 ### 2. Install Code
 
-Go to the 'Code' tab of the sheet and copy the integration code. The code will look something like this:
+Go to the 'Code' tab of the sheet and find the integration code. Place the code in your application at the location you want to display the import button.
 
 {% tabs %}
 {% tab title="Javascript" %}
+Sample code with basic usage:
+
 ```javascript
 <button class="btn btn-primary" onclick="importer.openModal();">Import</button>
 <script type="text/javascript" src="http://js.csvbox.io/embed/script"></script>
@@ -76,27 +78,66 @@ Go to the 'Code' tab of the sheet and copy the integration code. The code will l
     })
 </script>
 ```
+
+{% hint style="info" %}
+Each sheet has a unique Licence Key. Find the Licence Key of the sheet on the 'Code' tab of the sheet page and pass it to the **CSVBoxImporter** function.
+{% endhint %}
 {% endtab %}
 
 {% tab title="React" %}
-Coming soon
+Install using npm:
+
+```javascript
+npm install @csvbox/react
+```
+
+ This will give you access to the **`CSVBoxButton`** component having the same basic functionality as our Adapter. Import the **`CSVBoxButton`** component to your project.
+
+```javascript
+import { CSVBoxButton } from '@csvbox/react'
+```
+
+Basic usage:
+
+```javascript
+<CSVBoxButton
+  licenseKey="z0ad8U7en2pFU0bT3z8o5UAUOi5BX6"
+  user={{
+    user_id: "default123"
+  }}
+  onImport={(result, data) => {
+    if(result){
+      console.log("success");
+      console.log(data.row_success + " rows uploaded");
+      //custom code
+    }else{
+      console.log("fail");
+      //custom code
+    }
+  }}
+>
+  Import
+</CSVBoxButton>
+```
+
+{% hint style="info" %}
+Each sheet has a unique Licence Key. Find the Licence Key of the sheet on the Code section of the sheet page and attach it to the **licenseKey** property of the **CSVBoxButton** component.
+{% endhint %}
 {% endtab %}
 {% endtabs %}
 
-Place the code in your application at the location you want to display the import button.
-
-{% hint style="info" %}
-You can change the classes of the `<button>` element as per your styling requirements. You also change the default button text **Import** as per your need.
-{% endhint %}
-
 #### Referencing the user
 
-You can configure the **`setUser`** method to identify and match the users with their respective imports. When calling the **`setUser`**method, pass custom user attributes that help you identify the users in your platform. The custom user attributes will be pushed to your destination along with the uploaded data.
+You can configure **custom user attributes** in the installation code to identify the users in your platform and match them with their respective imports. 
+
+{% tabs %}
+{% tab title="Javascript" %}
+Pass custom user attributes as input parameters to the **`setUser`**method. The custom user attributes will be pushed to your destination along with the uploaded data.
 
 **user\_id** is the only custom attribute that is mandatory. Apart from **user\_id,** you can add up to 4 custom attributes in the **`<key>: <value>`**format. Example:
 
 ```javascript
-  importer.setUser({
+ importer.setUser({
         user_id: "1a2b3c4d5e6f",
         team_id: "sales2",
         isAuthenticated: "true",
@@ -104,13 +145,31 @@ You can configure the **`setUser`** method to identify and match the users with 
         email: "abc@example.com"
     })
 ```
+{% endtab %}
+
+{% tab title="React" %}
+Pass custom user attributes as an object to the **`user`**property of the **`CSVBoxButton`** component. The custom user attributes will be pushed to your destination along with the uploaded data.
+
+**user\_id** is the only custom attribute that is mandatory. Apart from **user\_id,** you can add up to 4 custom attributes in the **`<key>: <value>`**format. Example:
+
+```javascript
+  user={{
+    user_id: "1a2b3c4d5e6f",
+        team_id: "sales2",
+        isAuthenticated: "true",
+        permissionLevel: "admin",
+        email: "abc@example.com"
+  }}
+```
+{% endtab %}
+{% endtabs %}
 
 #### Callback function
 
-Once the import is complete the **`callback`**function returns the status of the import. It returns two variables: **`result`** and **`data`**. 
+Once the user uploads a file the importer will return the status of the import along with metadata describing the completed import. Data is returned via two variables: **`result`** and **`data`**. 
 
 1. **`result`** - It is of type boolean with value **true** if import is successful and **false** if import fails.
-2. **`data`** - It returns JSON data as described below:
+2. **`data`** - It returns JSON data as shown below:
 
 ```javascript
   {
@@ -131,7 +190,42 @@ Once the import is complete the **`callback`**function returns the status of the
   }
 ```
 
-You can write custom code to handle the success or failure conditions on the client side.
+You can write custom code to handle the success or failure conditions on client side.
+
+{% tabs %}
+{% tab title="Javascript" %}
+The **`result`** and **`data`**variables will be available in the **`callback`**function that is triggered when the import is completed.
+
+```javascript
+function callback(result, data) {
+        if(result){
+            console.log("success");
+            console.log(data.row_success + " rows uploaded");
+            //custom code
+        }else{
+            console.log("fail");
+            //custom code
+        }
+    }
+```
+{% endtab %}
+
+{% tab title="React" %}
+The **`onImport`** property provides access to the **`result`** and **`data`**variables.
+
+```javascript
+  onImport={(result, data) => {
+    if(result){
+      console.log("success");
+      console.log(data.row_success + " rows uploaded");
+      //custom code
+    }else{
+      console.log("fail");
+      //custom code
+    }
+```
+{% endtab %}
+{% endtabs %}
 
 ### 3. Receive Data
 
