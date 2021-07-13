@@ -4,6 +4,12 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 13 July 2021
+
+### Added
+
+* React Integration
+
 ## 07 July 2021
 
 ### Added
