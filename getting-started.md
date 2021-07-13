@@ -52,6 +52,8 @@ Under the 'Settings' tab, configure the destination where you want the data to b
 
 Go to the 'Code' tab of the sheet and copy the integration code. The code will look something like this:
 
+{% tabs %}
+{% tab title="Javascript" %}
 ```javascript
 <button class="btn btn-primary" onclick="importer.openModal();">Import</button>
 <script type="text/javascript" src="http://js.csvbox.io/embed/script"></script>
@@ -74,6 +76,12 @@ Go to the 'Code' tab of the sheet and copy the integration code. The code will l
     })
 </script>
 ```
+{% endtab %}
+
+{% tab title="React" %}
+Coming soon
+{% endtab %}
+{% endtabs %}
 
 Place the code in your application at the location you want to display the import button.
 
