@@ -4,6 +4,14 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 20 July 2021
+
+### Added
+
+* Angular Integration
+
+
+
 ## 13 July 2021
 
 ### Added
