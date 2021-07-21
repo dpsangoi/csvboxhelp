@@ -124,6 +124,77 @@ Basic usage:
 Each sheet has a unique Licence Key. Find the Licence Key of the sheet on the Code section of the sheet page and attach it to the **licenseKey** property of the **CSVBoxButton** component.
 {% endhint %}
 {% endtab %}
+
+{% tab title="Angular" %}
+Install using npm:
+
+```javascript
+npm install @csvbox/angular
+```
+
+Import: 
+
+Add `CSVBoxAngularModule` to your module imports.
+
+```javascript
+import { CSVBoxAngularModule } from "@csvbox/angular";
+
+@NgModule({
+  ...
+  imports: [
+    ...
+    CSVBoxAngularModule
+  ]
+})
+```
+
+Once you have this setup, in your app component file, you will be able to import and access the`CSVBoxMethods` module for use.
+
+It will bring the `csvbox-button` component into your project. Example:
+
+```
+<csvbox-button [licenseKey]="licenseKey" [onImport]="onData.bind(this)" [user]="user">Import</csvbox-button>
+```
+
+Basic usage:
+
+```javascript
+import { CSVBoxMethods } from "@csvbox/angular"
+
+@Component({
+  selector: 'app-root',
+  template: `
+    <csvbox-button
+      [licenseKey]="licenseKey"
+      [user]="user"
+      [onImport]="onData.bind(this)">
+      Import
+    </csvbox-button>
+  `
+})
+
+export class AppComponent implements CSVBoxMethods {
+
+  title = 'example';
+  licenseKey = 'YOUR_LICENSE_KEY_HERE';
+  user = { user_id: 'default123' };
+
+  onData(result: boolean, data: any) {
+    if(result) {
+      console.log("Sheet uploaded successfully");
+      console.log(data.row_success + " rows uploaded");
+    }else{
+      console.log("There was some problem uploading the sheet");
+    }
+  }
+
+}
+```
+
+{% hint style="info" %}
+Each sheet has a unique Licence Key. Find the Licence Key of the sheet on the Code section of the sheet page and attach it to the **licenseKey** property of the **AppComponent**.
+{% endhint %}
+{% endtab %}
 {% endtabs %}
 
 #### Referencing the user
@@ -154,12 +225,28 @@ Pass custom user attributes as an object to the **`user`**property of the **`CSV
 
 ```javascript
   user={{
-    user_id: "1a2b3c4d5e6f",
-        team_id: "sales2",
-        isAuthenticated: "true",
-        permissionLevel: "admin",
-        email: "abc@example.com"
+              user_id: "1a2b3c4d5e6f",
+              team_id: "sales2",
+              isAuthenticated: "true",
+              permissionLevel: "admin",
+              email: "abc@example.com"
   }}
+```
+{% endtab %}
+
+{% tab title="Angular" %}
+Pass custom user attributes as an object to the **`user`**property of the AppComponent. The custom user attributes will be pushed to your destination along with the uploaded data.
+
+**user\_id** is the only custom attribute that is mandatory. Apart from **user\_id,** you can add up to 4 custom attributes in the **`<key>: <value>`**format. Example:
+
+```javascript
+  user={
+              user_id: "1a2b3c4d5e6f",
+              team_id: "sales2",
+              isAuthenticated: "true",
+              permissionLevel: "admin",
+              email: "abc@example.com"
+ }
 ```
 {% endtab %}
 {% endtabs %}
@@ -190,7 +277,7 @@ Once the user uploads a file the importer will return the status of the import a
   }
 ```
 
-You can write custom code to handle the success or failure conditions on client side.
+You can write custom code to handle the success or failure conditions client side.
 
 {% tabs %}
 {% tab title="Javascript" %}
@@ -223,6 +310,21 @@ The **`onImport`** property provides access to the **`result`** and **`data`**va
       console.log("fail");
       //custom code
     }
+```
+{% endtab %}
+
+{% tab title="Angular" %}
+The **`onImport`** property provides access to the **`result`** and **`data`**variables via the specified callback function.
+
+```javascript
+  onData(result: boolean, data: any) {
+    if(result) {
+      console.log("Sheet uploaded successfully");
+      console.log(data.row_success + " rows uploaded");
+    }else{
+      console.log("There was some problem uploading the sheet");
+    }
+  }
 ```
 {% endtab %}
 {% endtabs %}
