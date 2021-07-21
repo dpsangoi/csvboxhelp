@@ -412,7 +412,7 @@ After you have created a sheet go to the 'Code' tab on the Edit Sheet page. Belo
 https://app.csvbox.io/upload/2gzJa5YO3QPLYK6Bj7Qmq5bpbFqXno?user_id=default123
 ```
 
-Simply share this link with your users to start collecting spreadsheet files.
+Simply share this link with your users to start collecting spreadsheets.
 
 #### Referencing the user in the Import Links
 
