@@ -1,7 +1,8 @@
 # Table of contents
 
 * [Help Center](README.md)
-* [Getting Started](getting-started.md)
+* [Getting Started](getting-started/README.md)
+  * [Sheet Options](getting-started/sheet-options.md)
 * [Data Destinations](destinations.md)
 * [Account](account.md)
 * [Contact Us](https://share.hsforms.com/1ubpg6RBoQgKOISkRMEViwg5auur)
