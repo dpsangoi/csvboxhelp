@@ -10,6 +10,8 @@ description: A record of all notable changes made to the application.
 
 * In addition to the Column Name, you can now add Display Label for any sheet column. Display Labels will replace the Column Names in the header row that the user will see while doing an import.
 
+![Display Label](.gitbook/assets/display-label.jpg)
+
 ### Changed
 
 * Fixed Date validation bug.
