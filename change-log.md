@@ -4,13 +4,21 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 26 July 2021
+
+### Added
+
+* In addition to the Column Name, you can now add Display Label for any sheet column. Display Labels will replace the Column Names in the header row that the user will see while doing an import.
+
+### Changed
+
+* Fixed Date validation bug.
+
 ## 20 July 2021
 
 ### Added
 
 * Angular Integration
-
-
 
 ## 13 July 2021
 
