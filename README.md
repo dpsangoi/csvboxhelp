@@ -1,5 +1,5 @@
 ---
-description: Welcome to csvbox.io documentation and help site.
+description: Welcome to csvbox.io documentation and help site
 ---
 
 # Help Center
