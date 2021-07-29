@@ -11,7 +11,7 @@
 
 ---
 
-* [csvbox.io](https://csvbox.io)
+* [Website](https://csvbox.io)
 * [Login](https://app.csvbox.io/login)
 * [Change Log](change-log.md)
 
