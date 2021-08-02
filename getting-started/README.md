@@ -115,9 +115,9 @@ Basic usage:
       //custom code
     }
   }}
-  render={(importer, launch) => {
-          return <button class="btn btn-primary" onClick={launch}>Upload file</button>;
-        }}
+  render={(launch)=>{
+    return <button onClick={launch}>Upload file</button>;
+  }}
 >
   Import
 </CSVBoxButton>
