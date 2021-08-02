@@ -76,3 +76,12 @@ The data will be stored as S3 objects with the name **{{import\_id}}\_{{user\_id
 
 coming soon
 
+Import CSV files and Excel sheets directly into your MySQL tables. How it works:
+
+1. Connect your MySQL database
+2. Specify Table name where you want the data to be pushed
+3. Map sheet columns to the table column names
+4. You can also map custom attributes to Table columns
+
+
+
