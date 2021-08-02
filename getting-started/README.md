@@ -91,7 +91,7 @@ Install using npm:
 npm install @csvbox/react
 ```
 
- This will give you access to the **`CSVBoxButton`** component having the same basic functionality as our Adapter. Import the **`CSVBoxButton`** component to your project.
+ This will give you access to the **`CSVBoxButton`** component having the basic functionality of our importer. Import the **`CSVBoxButton`** component to your project.
 
 ```javascript
 import { CSVBoxButton } from '@csvbox/react'
@@ -115,6 +115,9 @@ Basic usage:
       //custom code
     }
   }}
+  render={(importer, launch) => {
+          return <button class="btn btn-primary" onClick={launch}>Upload file</button>;
+        }}
 >
   Import
 </CSVBoxButton>
@@ -122,6 +125,10 @@ Basic usage:
 
 {% hint style="info" %}
 Each sheet has a unique Licence Key. Find the Licence Key of the sheet on the Code section of the sheet page and attach it to the **licenseKey** property of the **CSVBoxButton** component.
+{% endhint %}
+
+{% hint style="info" %}
+The optional **render** property allows you to pass in your button to use in place of the standard csvbox element.
 {% endhint %}
 {% endtab %}
 

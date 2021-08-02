@@ -74,14 +74,22 @@ The data will be stored as S3 objects with the name **{{import\_id}}\_{{user\_id
 
 ## MySQL Database
 
+{% hint style="info" %}
 coming soon
+{% endhint %}
 
 Import CSV files and Excel sheets directly into your MySQL tables. How it works:
 
-1. Connect your MySQL database
-2. Specify Table name where you want the data to be pushed
-3. Map sheet columns to the table column names
-4. You can also map custom attributes to Table columns
+* Select the destination type as 'MySQL Database'.
+* Connect your MySQL database by providing the credentials.
+* Specify table name where you want the data to be pushed.
 
+![csv to mysql](.gitbook/assets/mysql.jpg)
 
+* Map sheet columns to the table column.
+* You can also map custom attributes to table columns.
+
+![map sheet to table columns](.gitbook/assets/map-columns.jpg)
+
+The user CSV data will then be directly be appended to the MySQL table.
 
