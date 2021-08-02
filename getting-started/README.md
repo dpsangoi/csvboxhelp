@@ -255,7 +255,7 @@ Pass custom user attributes as an object to the **`user`**property of the AppCom
 
 Once the user uploads a file the importer will return the status of the import along with metadata describing the completed import. Data is returned via two variables: **`result`** and **`data`**. 
 
-1. **`result`** - It is of type boolean with value **true** if import is successful and **false** if import fails.
+1. **`result`** - It is of type boolean with the value **true** if the import is successful and **false** if the import fails.
 2. **`data`** - It returns JSON data as shown below:
 
 ```javascript
