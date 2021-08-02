@@ -80,7 +80,7 @@ Sample code with basic usage:
 ```
 
 {% hint style="info" %}
-Each sheet has a unique Licence Key. Find the Licence Key of the sheet on the 'Code' tab of the sheet page and pass it to the **CSVBoxImporter** function
+Each sheet has a unique Licence Key. Find the Licence Key of the sheet on the 'Code' tab of the sheet page and pass it to the **CSVBoxImporter** function.
 {% endhint %}
 {% endtab %}
 
