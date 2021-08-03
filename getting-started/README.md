@@ -201,6 +201,39 @@ export class AppComponent implements CSVBoxMethods {
 {% hint style="info" %}
 Each sheet has a unique Licence Key. Find the Licence Key of the sheet on the Code section of the sheet page and attach it to the **licenseKey** property of the **AppComponent**.
 {% endhint %}
+
+Styling the button:
+
+In order to style the `<csvbox-button>` from within your parent component, ensure that your parent component has `ViewEncapsulation.None`, pass down a class to `<csvbox-button>`, and now you will be able to style the `button` one-level down.
+
+```javascript
+import { Component, ViewEncapsulation } from '@angular/core';
+```
+
+```javascript
+@Component({
+  selector: 'app-root',
+  template: `
+    <csvbox-button
+      [licenseKey]="licenseKey"
+      [user]="user"
+      [onImport]="onData.bind(this)"
+      class=“csvbox-btn”      
+      >
+      Import
+    </csvbox-button>
+  `,
+  encapsulation: ViewEncapsulation.None,
+  styles: [`
+    .csvbox-btn button {        
+        background: #007bff;
+        border-radius: 3px;        
+      }
+  `],
+export class AppComponent implements CSVBoxMethods { 
+    //...
+}
+```
 {% endtab %}
 {% endtabs %}
 
