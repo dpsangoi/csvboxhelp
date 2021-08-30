@@ -4,6 +4,24 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 30 August 2021
+
+It was been a busy month for the csvbox team as we reworked the entire architecture and introduced some new features.
+
+### Added
+
+* A new Plus plan with an increased limit of 500,000 rows per import
+
+![Plus Plan](.gitbook/assets/plus-plan.jpg)
+
+* **Intelligent Column Mapping** - Based on the historical columns mapped by the users, the importer will now automatically map the columns for new imports so that the users don't have to.
+* **Matching Keywords** - You can provide a set of keywords as alternative matching options to help users match column names automatically. For example, let's say you have a column name 'First Name'. If you think a lot of your users might have sheets with columns as 'F\_Name' or simply 'First', then you can add two matching keywords 'F\_Name' and 'First'. The importer will then automatically match columns to the specified keywords to speed up column mapping.
+* \*\*\*\*[**MySQL Data Destination**](https://help.csvbox.io/destinations#mysql-database) - Push customer CSV data directly to your MySQL Database Tables.
+
+### **Fixed**
+
+* UI bugs
+
 ## 26 July 2021
 
 ### Added
