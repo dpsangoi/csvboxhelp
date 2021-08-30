@@ -74,10 +74,6 @@ The data will be stored as S3 objects with the name **{{import\_id}}\_{{user\_id
 
 ## MySQL Database
 
-{% hint style="info" %}
-coming soon
-{% endhint %}
-
 Import CSV files and Excel sheets directly into your MySQL tables. How it works:
 
 * Select the destination type as 'MySQL Database'.
