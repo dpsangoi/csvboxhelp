@@ -18,10 +18,6 @@ Display Labels will be shown in the header row that the user will see while doin
 
 ## Matching Keywords
 
-{% hint style="warning" %}
-coming soon
-{% endhint %}
-
 `optional`
 
 You can provide a set of keywords as alternative matching options to help users match column names automatically. For example, let's say you have a column name 'First Name'. If you think a lot of your users might have sheets with columns as 'F\_Name' or simply 'First', then you can add two matching keywords 'F\_Name' and 'First'. The importer will then automatically match columns to the specified keywords to speed up column mapping.
