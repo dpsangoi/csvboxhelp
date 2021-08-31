@@ -260,12 +260,12 @@ Basic usage:
 ```javascript
 <template>
   <div id="app">
-    <csvbox-button 
+    <CSVBoxButton 
       :licenseKey="licenseKey"
       :user="user"      
       :onImport="onImport">
       Upload File
-    </csvbox-button>
+    </CSVBoxButton>
   </div>
 </template>
 
