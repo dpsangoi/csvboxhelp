@@ -235,6 +235,78 @@ export class AppComponent implements CSVBoxMethods {
 }
 ```
 {% endtab %}
+
+{% tab title="Vuejs" %}
+{% hint style="warning" %}
+coming soon
+{% endhint %}
+
+Install using npm:
+
+```javascript
+npm install @csvbox/vuejs
+```
+
+ This will give you access to the **`CSVBoxButton`** component. Import the **`CSVBoxButton`** component to your project.
+
+```javascript
+import { CSVBoxButton } from '@csvbox/vuejs'
+```
+
+ Now just import the **`CSVBoxButton`** and include it in your Vue `components`, and you're ready to get started.
+
+Basic usage:
+
+```javascript
+<template>
+  <div id="app">
+    <csvbox-button 
+      :licenseKey="licenseKey"
+      :user="user"      
+      :onImport="onImport">
+      Upload File
+    </csvbox-button>
+  </div>
+</template>
+
+<script>
+import { CSVBoxButton } from '@csvbox/vuejs';
+
+export default {
+  name: 'App',
+  components: {
+    CSVBoxButton,
+  },
+  data: () => ({
+    licenseKey: 'z0ad8U7en2pFU0bT3z8o5UAUOi5BX6',
+    user: {
+      user_id: 'default123',
+    },
+  }),
+  methods: {    
+    onImport: function (result, data) {    
+       if(result){
+          console.log("success");
+          console.log(data.row_success + " rows uploaded");
+          //custom code
+      }else{
+          console.log("fail");
+          //custom code
+      }
+    }
+  },
+}
+</script>
+```
+
+{% hint style="info" %}
+Each sheet has a unique Licence Key. Find the Licence Key of the sheet on the Code section of the sheet page and attach it to the **licenseKey** property of the **CSVBoxButton** component.
+{% endhint %}
+
+{% hint style="info" %}
+The optional **render** property allows you to pass in your button to use in place of the standard csvbox element.
+{% endhint %}
+{% endtab %}
 {% endtabs %}
 
 #### Referencing the user
@@ -287,6 +359,22 @@ Pass custom user attributes as an object to the **`user`**property of the AppCom
               permissionLevel: "admin",
               email: "abc@example.com"
  }
+```
+{% endtab %}
+
+{% tab title="Vuejs" %}
+Pass custom user attributes as an object to the **`user`**property of the **`CSVBoxButton`** component. The custom user attributes will be pushed to your destination along with the uploaded data.
+
+**user\_id** is the only custom attribute that is mandatory. Apart from **user\_id,** you can add up to 4 custom attributes in the **`<key>: <value>`**format. Example:
+
+```javascript
+  user: {
+              user_id: "1a2b3c4d5e6f",
+              team_id: "sales2",
+              isAuthenticated: "true",
+              permissionLevel: "admin",
+              email: "abc@example.com"
+  },
 ```
 {% endtab %}
 {% endtabs %}
@@ -365,6 +453,23 @@ The **`onImport`** property provides access to the **`result`** and **`data`**va
       console.log("There was some problem uploading the sheet");
     }
   }
+```
+{% endtab %}
+
+{% tab title="Vuejs" %}
+The **`onImport`** property provides access to the **`result`** and **`data`**variables.
+
+```javascript
+onImport: function (result, data) {    
+       if(result){
+          console.log("success");
+          console.log(data.row_success + " rows uploaded");
+          //custom code
+      }else{
+          console.log("fail");
+          //custom code
+      }
+}
 ```
 {% endtab %}
 {% endtabs %}
