@@ -237,10 +237,6 @@ export class AppComponent implements CSVBoxMethods {
 {% endtab %}
 
 {% tab title="Vuejs" %}
-{% hint style="warning" %}
-coming soon
-{% endhint %}
-
 Install using npm:
 
 ```javascript
