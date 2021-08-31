@@ -4,6 +4,16 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 31 August 2021
+
+### Added
+
+* 'Remove All' button to delete the invalid rows all at once.
+
+![Remove All button](.gitbook/assets/removeall.jpg)
+
+* Big-endian validation for date type columns.
+
 ## 30 August 2021
 
 It was been a busy month for the csvbox team as we reworked the entire architecture and introduced some new features.
