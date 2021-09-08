@@ -96,7 +96,14 @@ You can add custom user attributes \(such as user\_id, user name, company name, 
 
 The csvbox.io import button should be available on your app. Your users can click the button to upload CSV files. You will get data in your Bubble Database.
 
+The CSVBox Button element exposes two events that indicate the completion of the import process. The two events are:
 
+1. **import\_success** - triggered when the CSV data gets imported successfully into your Bubble database.
+2. **import\_fail** - triggered when the import failed completely or partially failed.
+
+![CSVBox Button Element Events](../.gitbook/assets/bubble-events.png)
+
+You can add relevant actions to process the import result events.
 
 ## Why do I have some of my records fail with 524 errors when posting to Bubble.io Bulk Create API?
 
