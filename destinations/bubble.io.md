@@ -1,22 +1,30 @@
 ---
-description: Import customer CSV data to Bubble.io with csvbox.io importer.
+description: >-
+  Import customer CSV data to your Bubble.io database with the csvbox.io
+  importer.
 ---
 
 # Bubble.io
 
-## 1. Setting up csvbox.io
+## Demo App
 
-Follow the steps below and we will be using the [Bubble.io Bulk Create API](https://bubble.io/reference#API.get_api.bulk_create).
+See how it works [here](https://csvbox-demo.bubbleapps.io/version-test).
+
+## 1. Setting up csvbox.io
 
 Log in to [csvbox.io](https://app.csvbox.io/login).
 
 Add a sheet.
 
+![Add a Sheet](../.gitbook/assets/add-sheet.png)
+
 Add columns to the sheet. The column names should match column/attribute names for your database object in Bubble. Make sure you pay attention to upper and lower case letters on Bubble and match them in csvbox.io.
 
-Under the "Sheets" section, for the "**Send Data To**" setting select the "**API/Webhook**" option. 
+![Add Columns](../.gitbook/assets/add-columns.png)
 
-For the "**API / Webhook URL To Post Data**" input box type/paste a matching URL to these examples:
+Under the "**Sheets**" section, for the "**Send Data To**" setting select the "**API/Webhook**" option. 
+
+For the "**API / Webhook URL To Post Data**", input box type/paste a matching URL using the [Bubble.io Bulk Create API](https://bubble.io/reference#API.get_api.bulk_create). Few examples:
 
 ```text
 // This is the base template Bubble.io gives
@@ -44,7 +52,7 @@ In the "**Rows To Post Per Chunk**" field enter "50" to start. Your Bubble.io pl
 
 Click the "**Save**" button.
 
-On the same page, under "**API / Webhook URL To Post Data**" click the link "Add Custom Headers".
+On the same page, under "**API / Webhook URL To Post Data**" click the link "**Add Custom Headers**".
 
 Add a new request header.
 
@@ -76,7 +84,7 @@ Install the [csvbox.io](https://bubble.io/plugin/csv--excel-importer-%7C-receive
 
 Drag the CSVBox Button element on your web page.
 
-Save the **Sheet License Key** value from the sheet "Code" page \(that we saved above\) into the "**Sheet License Key**" property of the CSVBox element.
+Save the **Sheet License Key** value from the sheet "**Code**" page \(that we saved above\) into the "**Sheet License Key**" property of the CSVBox element.
 
 ![Bubble App CSVBox Button Element](../.gitbook/assets/bubble-app-csvbox-element.png)
 
@@ -92,7 +100,7 @@ The csvbox.io import button should be available on your app. Your users can clic
 
 ## Why do I have some of my records fail with 524 errors when posting to Bubble.io Bulk Create API?
 
-The number of records being POSTed per chunk being imported is too large for you Bubble.io monthly plan.
+The number of records being POSTed per chunk being imported is too large for your Bubble.io monthly plan.
 
 The higher your Bubble.io monthly plan value, the more records you can post in each chunk to the Bulk Create API that Bubble exposes.
 
@@ -100,7 +108,7 @@ Please follow the chunk size guidelines below for how many records you should tr
 
 More details: The Bubble.io Bulk Create API receives a number of records per call. If you POST too many records in each call Bubble will time out and return a 524. They will not say how many records import and how many fail. Often we found Bubble will import some but not all. The safest thing to do is follow the recommendations below.
 
-## What bulk records count chunk size should I choose for my Bubble.io plan?
+## What 'rows to post per chunk' should I choose for my Bubble.io plan?
 
 * Hobby/Free plan: 50
 * Personal plan: 150
@@ -109,11 +117,11 @@ More details: The Bubble.io Bulk Create API receives a number of records per cal
 
 ## Why does my upload fail with unknown column name errors?
 
-Bubble.io databases are very picky. The Column Names you are POSTing from csvbox need to **EXACLY** match what is in your Bubble.io database.
+Bubble.io databases are very picky. The Column Names you are POSTing from the csvbox importer need to **EXACTLY** match what is in your Bubble.io database.
 
 Check the following things:
 
-* Make sure there are no extra columns your csvbox.io sheet that do NOT map to a column/attribute for your Bubble.io database object. Bubble does not like extra columns it's database doesn't know about.
-* The column names **EXACTLY** match the column names in your Bubble.io database object. Verify that capitalization and spaces are exactly the same in the column names in csvbox.io sheet and your Bubble.io database object.
+* Make sure there are no extra columns in your csvbox.io sheet that do NOT map to a column/attribute in your Bubble.io database object. Bubble does not like extra columns that its database doesn't know about.
+* The csvbox.io sheet column names should **EXACTLY** match the column names in your Bubble.io database object. Verify that capitalization and spaces are exactly the same as your Bubble.io database object.
 * In your Bubble.io app settings, click "API" and make sure you have all checkboxes checked for exposing the Data API and also checked for every database object you want to import for.
 
