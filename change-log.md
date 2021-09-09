@@ -10,6 +10,15 @@ description: A record of all notable changes made to the application.
 
 * VueJs integration
 
+### Updated
+
+* Increased the size of the file drop area on the importer
+* Required columns will now have a \* mark on the column mapping page of the importer
+
+### Fixed
+
+* Intermitted failed imports. It was related to the Cloudflare CDN issue.
+
 ## 31 August 2021
 
 ### Added
