@@ -4,6 +4,12 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 09 September 2021
+
+### Added
+
+* VueJs integration
+
 ## 31 August 2021
 
 ### Added
