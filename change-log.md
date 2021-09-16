@@ -4,6 +4,18 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 15 September 2021
+
+### Added
+
+* Multiple Encoding support. The users can now select/change the Character Set when they upload a CSV.
+
+![Select Character Set](.gitbook/assets/encodings.png)
+
+* Display options for adding customizable title, help text and downloadable sample CSV on the importer.
+
+![Display Options](.gitbook/assets/display-options.png)
+
 ## 09 September 2021
 
 ### Added
