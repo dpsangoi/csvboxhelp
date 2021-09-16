@@ -3,7 +3,7 @@
 * [Help Center](README.md)
 * [Getting Started](getting-started/README.md)
   * [Sheet Options](getting-started/sheet-options.md)
-  * [Add Sheets via CSV](getting-started/add-sheets-via-csv.md)
+  * [Add Columns via CSV](getting-started/add-columns-via-csv.md)
 * [Data Destinations](destinations/README.md)
   * [Bubble.io](destinations/bubble.io.md)
 * [Account](account.md)
