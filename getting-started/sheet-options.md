@@ -32,3 +32,9 @@ CSVBox also deploys an intelligent column mapping algorithm. Based on the histor
 
 This option helps you specify the data type of the incoming data and configure relevant validation rules. You can select the column type from the dropdown and set conditions for how the data should be formatted. If the incoming data does not match the column type \(and its validation rules\), then the user will see a relevant error message identifying what the problem is and how to fix it. This ensures that the data is clean and ready to use before it gets pushed to your app.
 
+## Required
+
+`optional`
+
+The Required checkbox indicates whether a column is mandatory. If the Required checkbox is ticked, then the importer will validate the column for missing/empty data. If any cell in the column is found to be empty then the user will be shown a relevant error message.
+
