@@ -13,7 +13,7 @@ The following information needs to be added in the CSV:
 1. [Column Name](https://help.csvbox.io/getting-started/sheet-options#column-name) \(Mandatory\) 
 2. [Display Name](https://help.csvbox.io/getting-started/sheet-options#display-label) \(Optional\) 
 3. [Column Type](https://help.csvbox.io/getting-started/sheet-options#column-type) \(Optional\)  
-4. Is Required \(Optional\) 
+4. [Is Required](https://help.csvbox.io/getting-started/sheet-options#required) \(Optional\) 
 5. [Keywords](https://help.csvbox.io/getting-started/sheet-options#matching-keywords) \(Optional\) 
 
 
