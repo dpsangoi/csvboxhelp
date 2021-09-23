@@ -16,6 +16,18 @@ The Column Name is the field name key that will be pushed to the data destinatio
 
 Display Labels will be shown in the header row that the user will see while doing an import. Each Display Label internally maps to a Column Name. While the Display Label will be seen by the users inside the import widget, the corresponding Column Name will be pushed to the destination as the field name. If Display Label is not specified, then the Column Name will be shown to the users by default. This helps you to display a user-friendly label to the users while pushing a column name that your app understands. For example, 'p\_id' can be the Column Name and 'Product ID' can be the Display Label.
 
+## Info Hint
+
+{% hint style="warning" %}
+Coming soon
+{% endhint %}
+
+`optional`
+
+Info Hints are help tooltips that will get displayed when the users hover the mouse over the Column Name \(or click it\) in the importer. They are useful to convey additional information about the Column.
+
+![Info Hint](../.gitbook/assets/infohints.png)
+
 ## Matching Keywords
 
 `optional`
