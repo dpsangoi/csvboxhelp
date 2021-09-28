@@ -1,5 +1,5 @@
 ---
-description: 'Revision Date: 13 April 2021'
+description: 'Revision Date: 28 September 2021'
 ---
 
 # User Data Policy
@@ -12,7 +12,7 @@ When a user submits a file, csvbox.io parses the file on the client-side and the
 
 We use databases from Amazon Web Services \(AWS\) with encryption enabled by default. The uploaded data is secured at rest and no one else can read it while it resides in our storage. Once the data is fully stored in our database, csvbox.io then pushes it to your app or any other destination as configured by you in the dashboard.
 
-The user data from our storage is later deleted automatically after one month. Meanwhile, you can securely view and download this data anytime via the csvbox.io dashboard. We provide the option to get all the user uploaded data deleted from our database anytime by the click of a button. Furthermore, you can configure csvbox.io to automatically delete all the user data as soon as it is pushed to the desired destination.  
+The user data from our storage is later deleted automatically after one month. Meanwhile, you can securely view and download this data anytime via the csvbox.io dashboard. We provide the option to get all the user uploaded data deleted from our database \(AWS S3\) anytime by the click of a button. Lastly, you can configure the importer to completely bypass storing the data in our database \(AWS S3\).    
 
 The long-lived data about the import and the user files is not deleted. It mainly consists of supplementary log data helpful for troubleshooting and analyzing the import processes. This data does not include any original data from inside the user files.
 
