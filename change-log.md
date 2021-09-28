@@ -4,6 +4,28 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 28 September 2021
+
+### Added
+
+* The display order of the columns in the importer can now be changed by simply drag-dropping in the dashboard.
+
+![Order Columns](.gitbook/assets/column-order.gif)
+
+* Ability to add rows directly in the importer.
+
+![](.gitbook/assets/add-row.jpg)
+
+* Added Column Info Hints. Info Hints are help tooltips that will get displayed when the users hover the mouse over the Column Name \(or click it\) in the importer. They are useful to convey additional information about the Column.
+
+![Info Hints](.gitbook/assets/infohints.png)
+
+### Updated
+
+* The settings now allow skipping of the CSV data to be stored in csvbox s3 storage.
+
+![Skip S3](.gitbook/assets/skip-s3.jpg)
+
 ## 15 September 2021
 
 ### Added
