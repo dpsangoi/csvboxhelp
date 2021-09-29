@@ -6,6 +6,8 @@ description: Bulk add columns to a new sheet by providing the column info in a C
 
 When creating a sheet you have the option to add columns in bulk by uploading a CSV file.
 
+![Add columns in bulk via CSV](../.gitbook/assets/bulk-columns.jpg)
+
 Simply upload a sheet having data on the columns to be added and accordingly the app will create the columns in bulk. 
 
 The following information needs to be added in the CSV:
