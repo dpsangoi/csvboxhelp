@@ -52,6 +52,8 @@ In the "**Rows To Post Per Chunk**" field enter "50" to start. Your Bubble.io pl
 
 Click the "**Save**" button.
 
+#### Add custom headers:
+
 On the same page, under "**API / Webhook URL To Post Data**" click the link "**Add Custom Headers**".
 
 Add a new request header.
