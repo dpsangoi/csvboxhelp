@@ -18,10 +18,6 @@ Display Labels will be shown in the header row that the user will see while doin
 
 ## Info Hint
 
-{% hint style="warning" %}
-Coming soon
-{% endhint %}
-
 `optional`
 
 Info Hints are help tooltips that will get displayed when the users hover the mouse over the Column Name \(or click it\) in the importer. They are useful to convey additional information about the Column.
