@@ -1,6 +1,6 @@
 ---
 description: >-
-  Import customer CSV data to your Bubble.io database with the csvbox.io
+  Import customer CSV data to your Bubble app database with the csvbox.io
   importer.
 ---
 

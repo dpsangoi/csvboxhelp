@@ -4,6 +4,12 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 05 October 2021
+
+### Added
+
+* [Bubble integration](https://help.csvbox.io/destinations/bubble.io)
+
 ## 28 September 2021
 
 ### Added
