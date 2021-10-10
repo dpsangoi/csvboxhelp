@@ -22,21 +22,21 @@ description: A record of all notable changes made to the application.
 
 * The display order of the columns in the importer can now be changed by simply drag-dropping in the dashboard.
 
-![Order Columns](<.gitbook/assets/column order.gif>)
+![Order Columns](.gitbook/assets/column-order.gif)
 
 * Ability to add rows directly in the importer.
 
-![](<.gitbook/assets/Add row.jpg>)
+![](.gitbook/assets/add-row.jpg)
 
 * Added Column Info Hints. Info Hints are help tooltips that will get displayed when the users hover the mouse over the Column Name (or click it) in the importer. They are useful to convey additional information about the Column.
 
-![Info Hints](.gitbook/assets/InfoHints.png)
+![Info Hints](.gitbook/assets/infohints.png)
 
 ### Updated
 
 * The settings now allow skipping of the CSV data to be stored in csvbox s3 storage.
 
-![Skip S3](<.gitbook/assets/skip s3.jpg>)
+![Skip S3](.gitbook/assets/skip-s3.jpg)
 
 ## 15 September 2021
 
@@ -48,7 +48,7 @@ description: A record of all notable changes made to the application.
 
 * Display options for adding customizable title, help text and downloadable sample CSV on the importer.
 
-![Display Options](<.gitbook/assets/Display options.png>)
+![Display Options](.gitbook/assets/display-options.png)
 
 ## 09 September 2021
 
@@ -83,7 +83,7 @@ It was been a busy month for the csvbox team as we reworked the entire architect
 
 * A new Plus plan with an increased limit of 500,000 rows per import
 
-![Plus Plan](<.gitbook/assets/Plus Plan.jpg>)
+![Plus Plan](.gitbook/assets/plus-plan.jpg)
 
 * **Intelligent Column Mapping** - Based on the historical columns mapped by the users, the importer will now automatically map the columns for new imports so that the users don't have to.
 * **Matching Keywords** - You can provide a set of keywords as alternative matching options to help users match column names automatically. For example, let's say you have a column name 'First Name'. If you think a lot of your users might have sheets with columns as 'F_Name' or simply 'First', then you can add two matching keywords 'F_Name' and 'First'. The importer will then automatically match columns to the specified keywords to speed up column mapping.
@@ -99,7 +99,7 @@ It was been a busy month for the csvbox team as we reworked the entire architect
 
 * In addition to the Column Name, you can now add Display Label for any sheet column. Display Labels will replace the Column Names in the header row that the user will see while doing an import.
 
-![Display Label](<.gitbook/assets/display label.jpg>)
+![Display Label](.gitbook/assets/display-label.jpg)
 
 ### Changed
 

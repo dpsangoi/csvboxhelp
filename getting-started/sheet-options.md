@@ -22,7 +22,7 @@ Display Labels will be shown in the header row that the user will see while doin
 
 Info Hints are help tooltips that will get displayed when the users hover the mouse over the Column Name (or click it) in the importer. They are useful to convey additional information about the Column.
 
-![Info Hint](../.gitbook/assets/InfoHints.png)
+![Info Hint](../.gitbook/assets/infohints.png)
 
 ## Matching Keywords
 

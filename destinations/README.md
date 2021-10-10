@@ -85,6 +85,6 @@ Import CSV files and Excel sheets directly into your MySQL tables. How it works:
 * Map sheet columns to the table column.
 * You can also map custom attributes to table columns.
 
-![map sheet to table columns](<../.gitbook/assets/map columns.jpg>)
+![map sheet to table columns](../.gitbook/assets/map-columns.jpg)
 
 The user CSV data will then be directly be appended to the MySQL table.

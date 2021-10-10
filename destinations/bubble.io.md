@@ -20,7 +20,7 @@ You need to be on a [paid Bubble application plan](https://bubble.io/pricing/com
 
 Create or update a data type in your Bubble app where you want to push the CSV data. Ensure that the data type is 'Publicly visible'. Add custom fields to the data type as per your requirements.
 
-![Bubble Data Type](<../.gitbook/assets/Data type.jpg>)
+![Bubble Data Type](../.gitbook/assets/data-type.jpg)
 
 **Important:** Manually add at least one object (row) to the data type.
 
@@ -34,7 +34,7 @@ Create or update a data type in your Bubble app where you want to push the CSV d
 4. Activate API for the data type where you want to push the CSV data
 5. Generate and save the **API Private Key**
 
-![API Settings](<../.gitbook/assets/API settings.jpg>)
+![API Settings](../.gitbook/assets/api-settings.jpg)
 
 ## 2. Setting up csvbox.io
 
@@ -42,15 +42,15 @@ Log in to [csvbox.io](https://app.csvbox.io/login).
 
 Add a sheet.
 
-![Add a Sheet](<../.gitbook/assets/add sheet.png>)
+![Add a Sheet](../.gitbook/assets/add-sheet.png)
 
 Add columns to the sheet. The column names should match column/object names for your data type in Bubble. Make sure you pay attention to upper and lower case letters on Bubble and match them in csvbox.io.
 
-![Add Columns](<../.gitbook/assets/Add columns.png>)
+![Add Columns](../.gitbook/assets/add-columns.png)
 
 Under the "**Settings**" section, for the "**Send Data To**" setting select the "**Bubble.io**" option. 
 
-![Bubble.io Data Destination Settings](<../.gitbook/assets/bubble.io settings.jpg>)
+![Bubble.io Data Destination Settings](../.gitbook/assets/bubble.io-settings.jpg)
 
 Fill in the following fields:
 
@@ -64,13 +64,13 @@ Click the "**Test Connection**" button. It should be successful if all fields ar
 
 Click the "**Map Columns**" button. It will open a modal where you can map the sheet columns to the object fields.
 
-![Map Sheet Columns to Bubble Data Fields](<../.gitbook/assets/Map columns.jpg>)
+![Map Sheet Columns to Bubble Data Fields](<../.gitbook/assets/map-columns (1).jpg>)
 
 Click the "**Save**" button.
 
 Go to the "**Code**" section of the sheet and note down the **Sheet License Key**.
 
-![Sheet License Key](<../.gitbook/assets/sheet license key.png>)
+![Sheet License Key](../.gitbook/assets/sheet-license-key.png)
 
 ## 3. Adding the csvbox to Bubble
 
@@ -80,7 +80,7 @@ Drag the CSVBox Button element on your web page.
 
 Save the **Sheet License Key **value from the sheet "**Code**" page (that we saved above) into the "**Sheet License Key**" property of the CSVBox element.
 
-![Bubble App CSVBox Button Element](<../.gitbook/assets/Bubble App CSVbox element.png>)
+![Bubble App CSVBox Button Element](../.gitbook/assets/bubble-app-csvbox-element.png)
 
 Enter the import button label under the '**button_text**' property. Optionally you can add CSS classes in the "**button_classes**" property to stylize the csvbox.io import button.
 
@@ -95,7 +95,7 @@ The CSVBox Button element exposes two events that indicate the completion of the
 1. **import_success **- triggered when the CSV data gets imported successfully into your Bubble database.
 2. **import_fail **- triggered when the import failed completely or partially failed.
 
-![CSVBox Button Element Events](<../.gitbook/assets/Bubble events.png>)
+![CSVBox Button Element Events](../.gitbook/assets/bubble-events.png)
 
 You can add relevant actions to process the import result events.
 
