@@ -4,9 +4,15 @@ description: Welcome to csvbox.io documentation and help site
 
 # Help Center
 
-{% page-ref page="getting-started/" %}
+{% content-ref url="getting-started/" %}
+[getting-started](getting-started/)
+{% endcontent-ref %}
 
-{% page-ref page="account.md" %}
+{% content-ref url="account.md" %}
+[account.md](account.md)
+{% endcontent-ref %}
 
-
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
 
