@@ -4,6 +4,12 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 14 October 2021
+
+### Updated
+
+* Added Display Labels to [List Column Type](https://help.csvbox.io/validations#list).
+
 ## 11 October 2021
 
 ### Added
