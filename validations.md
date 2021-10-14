@@ -53,3 +53,9 @@ With the **List** data type, you can specify a list of acceptable values. The im
 ![List Data Type](.gitbook/assets/List.jpg)
 
 In this case, the acceptable data in the CSV column will be _Small_, _Medium_, and _Large_. Based on the actual data found in the user CSV, the values _s_, _m_ or _l_ will be pushed to your data destination. This allows you to accept readable values from your users while pushing data to your system that is in a format it understands.
+
+## Other Validation Options
+
+### Column Required
+
+You can check/uncheck the `Required `checkbox on the Column Settings window. The column data must be present, and not empty if the `Required `checkbox is ticked.
