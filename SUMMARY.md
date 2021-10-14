@@ -4,6 +4,7 @@
 * [Getting Started](getting-started/README.md)
   * [Sheet Options](getting-started/sheet-options.md)
   * [Add Columns via CSV](getting-started/add-columns-via-csv.md)
+* [Validations](validations.md)
 * [Data Destinations](destinations/README.md)
   * [Bubble.io](destinations/bubble.io.md)
 * [Account](account.md)
@@ -11,7 +12,7 @@
 
 ## App
 
----
+***
 
 * [Website](https://csvbox.io)
 * [Login](https://app.csvbox.io/login)
@@ -24,4 +25,3 @@
 * [Cookie Policy](legal/cookie-policy.md)
 * [User Data Policy](legal/data-policy.md)
 * [GDPR](legal/gdpr.md)
-
