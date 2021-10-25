@@ -69,7 +69,7 @@ The data will come in as HTTP POST requests. Each request will have an array of 
 The files uploaded by the users can be pushed to the AWS S3 Bucket of your choice. You simply need to select the destination type as 'Amazon S3' and provide the AWS credentials, bucket/folder name, and access policy for storing the files.
 
 {% hint style="info" %}
-The data will be stored as S3 objects with the name **{{import_id}}\_{{user_id}}.csv **where **user_id** is the custom user attribute that you reference via the **`setUser`**method while installing the importer code. The other 4 custom user attributes will be saved as the [user-defined metadata](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingMetadata.html) of the S3 object.
+The data will be stored as S3 objects with the name **{{import\_id}}\_{{user\_id}}.csv **where **user\_id** is the custom user attribute that you reference via the **`setUser`**method while installing the importer code. The other 4 custom user attributes will be saved as the [user-defined metadata](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingMetadata.html) of the S3 object.
 {% endhint %}
 
 ## MySQL Database
@@ -88,3 +88,11 @@ Import CSV files and Excel sheets directly into your MySQL tables. How it works:
 ![map sheet to table columns](../.gitbook/assets/map-columns.jpg)
 
 The user CSV data will then be directly be appended to the MySQL table.
+
+## Google Sheets
+
+(coming soon)
+
+## PostgreSQL
+
+(coming soon)
