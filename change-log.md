@@ -4,6 +4,17 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 28 October 2021
+
+### Added
+
+* PostgreSQL data destination
+
+### Updated
+
+* Fixed dashboard bugs
+* Fixed UI bugs of importer
+
 ## 14 October 2021
 
 ### Updated
@@ -92,7 +103,7 @@ It was been a busy month for the csvbox team as we reworked the entire architect
 ![Plus Plan](.gitbook/assets/plus-plan.jpg)
 
 * **Intelligent Column Mapping** - Based on the historical columns mapped by the users, the importer will now automatically map the columns for new imports so that the users don't have to.
-* **Matching Keywords** - You can provide a set of keywords as alternative matching options to help users match column names automatically. For example, let's say you have a column name 'First Name'. If you think a lot of your users might have sheets with columns as 'F_Name' or simply 'First', then you can add two matching keywords 'F_Name' and 'First'. The importer will then automatically match columns to the specified keywords to speed up column mapping.
+* **Matching Keywords** - You can provide a set of keywords as alternative matching options to help users match column names automatically. For example, let's say you have a column name 'First Name'. If you think a lot of your users might have sheets with columns as 'F\_Name' or simply 'First', then you can add two matching keywords 'F\_Name' and 'First'. The importer will then automatically match columns to the specified keywords to speed up column mapping.
 * ****[**MySQL Data Destination**](https://help.csvbox.io/destinations#mysql-database) - Push customer CSV data directly to your MySQL Database Tables.
 
 ### **Fixed**
@@ -160,7 +171,7 @@ It was been a busy month for the csvbox team as we reworked the entire architect
 
 ### Added
 
-* A new optional method **setUser() **to the sheet integration code. With the **setUser()** method you can reference the user by providing the value to the **user_id** option. This helps you identify and match imports to their respective users from within your system.
+* A new optional method **setUser() **to the sheet integration code. With the **setUser()** method you can reference the user by providing the value to the **user\_id** option. This helps you identify and match imports to their respective users from within your system.
 
 ### Changed
 
@@ -189,7 +200,7 @@ It was been a busy month for the csvbox team as we reworked the entire architect
 
 ### Removed
 
-* csvbox.io branding for paid plans. 
+* csvbox.io branding for paid plans.&#x20;
 
 ## 20 April 2021
 
