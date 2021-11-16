@@ -8,7 +8,7 @@ description: A record of all notable changes made to the application.
 
 ### Added
 
-* PostgreSQL data destination
+* [PostgreSQL data destination](https://help.csvbox.io/destinations#postgresql)
 
 ### Updated
 
