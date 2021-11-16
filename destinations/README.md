@@ -95,4 +95,17 @@ The user CSV data will then be directly be appended to the MySQL table.
 
 ## PostgreSQL
 
-(coming soon)
+Import CSV files and Excel sheets directly into your PostgreSQL tables. How it works:
+
+* Select the destination type as 'PostgreSQL'.
+* Connect your PostgreSQL database by providing the credentials.
+* Specify the table name where you want the data to be pushed.
+
+![PostgreSQL Data Destination Settings](<../.gitbook/assets/PostgreSQL settings.jpg>)
+
+* Map sheet columns to the table column.
+* You can also map custom attributes to table columns.
+
+![map sheet to table columns](../.gitbook/assets/map-columns.jpg)
+
+The user CSV data will then be directly be appended to the PostgreSQL table.
