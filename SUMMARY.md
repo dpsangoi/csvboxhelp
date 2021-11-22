@@ -4,6 +4,7 @@
 * [Getting Started](getting-started/README.md)
   * [Sheet Options](getting-started/sheet-options.md)
   * [Add Columns via CSV](getting-started/add-columns-via-csv.md)
+  * [Dynamic Columns](getting-started/dynamic-columns.md)
 * [Validations](validations.md)
 * [Data Destinations](destinations/README.md)
   * [Bubble.io](destinations/bubble.io.md)
