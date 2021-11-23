@@ -1,5 +1,5 @@
 ---
-description: (Coming Soon) Add new columns to the template at run-time.
+description: (Beta) Add new columns to the template at run-time.
 ---
 
 # Dynamic Columns
