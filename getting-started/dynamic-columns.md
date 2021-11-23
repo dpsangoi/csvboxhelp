@@ -31,50 +31,49 @@ importer.setDynamicColumns([
 {% endtab %}
 
 {% tab title="React" %}
-Pass custom user attributes as an object to the **`user`**property of the **`CSVBoxButton`** component. The custom user attributes will be pushed to your destination along with the uploaded data.
+Pass the dynamic columns as an object to the **`dynamicColumns`**property of the **`CSVBoxButton`** component. The custom user attributes will be pushed to your destination along with the uploaded data.
 
-**user\_id **is the only custom attribute that is mandatory. Apart from **user\_id, **you can add up to 4 custom attributes in the **`<key>: <value>`**format. Example:
+Example:
 
 ```javascript
-  user={{
-              user_id: "1a2b3c4d5e6f",
-              team_id: "sales2",
-              isAuthenticated: "true",
-              permissionLevel: "admin",
-              email: "abc@example.com"
-  }}
+  dynamicColumns={[
+               {
+                 "column_name" : "qualification"        
+               },
+               {
+                  "column_name": "experience"         
+              }
+  ]}
 ```
 {% endtab %}
 
 {% tab title="Angular" %}
-Pass custom user attributes as an object to the **`user`**property of the AppComponent. The custom user attributes will be pushed to your destination along with the uploaded data.
-
-**user\_id **is the only custom attribute that is mandatory. Apart from **user\_id, **you can add up to 4 custom attributes in the **`<key>: <value>`**format. Example:
+Pass the dynamic columns as an object to the**`dynamicColumns`**property of the AppComponent. Example:
 
 ```javascript
-  user={
-              user_id: "1a2b3c4d5e6f",
-              team_id: "sales2",
-              isAuthenticated: "true",
-              permissionLevel: "admin",
-              email: "abc@example.com"
- }
+  dynamicColumns={[
+               {
+                 "column_name" : "qualification"        
+               },
+               {
+                  "column_name": "experience"         
+              }
+  ]}
 ```
 {% endtab %}
 
 {% tab title="Vuejs" %}
-Pass custom user attributes as an object to the **`user`**property of the **`CSVBoxButton`** component. The custom user attributes will be pushed to your destination along with the uploaded data.
-
-**user\_id **is the only custom attribute that is mandatory. Apart from **user\_id, **you can add up to 4 custom attributes in the **`<key>: <value>`**format. Example:
+Pass the dynamic columns as an object to the**`dynamicColumns`**property of the**`CSVBoxButton`** component. Example:
 
 ```javascript
-  user: {
-              user_id: "1a2b3c4d5e6f",
-              team_id: "sales2",
-              isAuthenticated: "true",
-              permissionLevel: "admin",
-              email: "abc@example.com"
-  },
+dynamicColumns: {[
+               {
+                 "column_name" : "qualification"        
+               },
+               {
+                  "column_name": "experience"         
+              }
+  ]}
 ```
 {% endtab %}
 {% endtabs %}
@@ -100,6 +99,55 @@ Here is an example illustrating more configuration options.
           "matching_keywords": "degree, education",
           "type": "text",
           "validators": 
+            {          	
+              "min_length": 2,
+              "max_length": 50
+            },
+          "required": true
+        },
+        {
+          "column_name": "experience",
+          "display_label": "Work Experience",
+          "info_hint": "Years of work experience",
+          "matching_keywords": "",
+          "type": "number",
+          "validators": 
+            {          	
+              "min_value": 0,
+              "max_value": 100
+            },
+          "required": false
+        },
+        {
+          "column_name": "gender",
+          "display_label": "Gender",
+          "info_hint": "",
+          "matching_keywords": "",
+          "type": "list",
+          "validators": 
+            {          	
+              "values": [
+                              {"value": "m", "display_label": "male"},
+                              {"value": "f", "display_label": "female"} 
+                        ],
+              "case_sensitive": false
+            },
+          "required": true
+        }
+])
+```
+{% endtab %}
+
+{% tab title="React" %}
+```javascript
+  dynamicColumns={[
+         {
+          "column_name" : "qualification",
+          "display_label": "Highest Qualification",
+          "info_hint": "What is your highest educational degree",
+          "matching_keywords": "degree, education",
+          "type": "text",
+          "validators": 
           {          	
             "min_length": 2,
             "max_length": 50
@@ -118,56 +166,122 @@ Here is an example illustrating more configuration options.
             "max_value": 100
           },
           "required": false
+    },
+    {
+          "column_name": "gender",
+          "display_label": "Gender",
+          "info_hint": "",
+          "matching_keywords": "",
+          "type": "list",
+          "validators": 
+          {          	
+            "values": [
+                            {"value": "m", "display_label": "male"},
+                            {"value": "f", "display_label": "female"} 
+                      ],
+            "case_sensitive": false
+          },
+          "required": true
     }
-])
-```
-{% endtab %}
-
-{% tab title="React" %}
-Pass custom user attributes as an object to the **`user`**property of the **`CSVBoxButton`** component. The custom user attributes will be pushed to your destination along with the uploaded data.
-
-**user\_id **is the only custom attribute that is mandatory. Apart from **user\_id, **you can add up to 4 custom attributes in the **`<key>: <value>`**format. Example:
-
-```javascript
-  user={{
-              user_id: "1a2b3c4d5e6f",
-              team_id: "sales2",
-              isAuthenticated: "true",
-              permissionLevel: "admin",
-              email: "abc@example.com"
-  }}
+]}
 ```
 {% endtab %}
 
 {% tab title="Angular" %}
-Pass custom user attributes as an object to the **`user`**property of the AppComponent. The custom user attributes will be pushed to your destination along with the uploaded data.
-
-**user\_id **is the only custom attribute that is mandatory. Apart from **user\_id, **you can add up to 4 custom attributes in the **`<key>: <value>`**format. Example:
-
 ```javascript
-  user={
-              user_id: "1a2b3c4d5e6f",
-              team_id: "sales2",
-              isAuthenticated: "true",
-              permissionLevel: "admin",
-              email: "abc@example.com"
- }
+  dynamicColumns={[
+         {
+          "column_name" : "qualification",
+          "display_label": "Highest Qualification",
+          "info_hint": "What is your highest educational degree",
+          "matching_keywords": "degree, education",
+          "type": "text",
+          "validators": 
+          {          	
+            "min_length": 2,
+            "max_length": 50
+          },
+          "required": true
+    },
+ {
+          "column_name": "experience",
+          "display_label": "Work Experience",
+          "info_hint": "Years of work experience",
+          "matching_keywords": "",
+          "type": "number",
+          "validators": 
+          {          	
+            "min_value": 0,
+            "max_value": 100
+          },
+          "required": false
+    },
+    {
+          "column_name": "gender",
+          "display_label": "Gender",
+          "info_hint": "",
+          "matching_keywords": "",
+          "type": "list",
+          "validators": 
+          {          	
+            "values": [
+                            {"value": "m", "display_label": "male"},
+                            {"value": "f", "display_label": "female"} 
+                      ],
+            "case_sensitive": false
+          },
+          "required": true
+    }
+]}
 ```
 {% endtab %}
 
 {% tab title="Vuejs" %}
-Pass custom user attributes as an object to the **`user`**property of the **`CSVBoxButton`** component. The custom user attributes will be pushed to your destination along with the uploaded data.
-
-**user\_id **is the only custom attribute that is mandatory. Apart from **user\_id, **you can add up to 4 custom attributes in the **`<key>: <value>`**format. Example:
-
 ```javascript
-  user: {
-              user_id: "1a2b3c4d5e6f",
-              team_id: "sales2",
-              isAuthenticated: "true",
-              permissionLevel: "admin",
-              email: "abc@example.com"
-  },
+dynamicColumns: {[
+         {
+          "column_name" : "qualification",
+          "display_label": "Highest Qualification",
+          "info_hint": "What is your highest educational degree",
+          "matching_keywords": "degree, education",
+          "type": "text",
+          "validators": 
+          {          	
+            "min_length": 2,
+            "max_length": 50
+          },
+          "required": true
+    },
+ {
+          "column_name": "experience",
+          "display_label": "Work Experience",
+          "info_hint": "Years of work experience",
+          "matching_keywords": "",
+          "type": "number",
+          "validators": 
+          {          	
+            "min_value": 0,
+            "max_value": 100
+          },
+          "required": false
+    },
+    {
+          "column_name": "gender",
+          "display_label": "Gender",
+          "info_hint": "",
+          "matching_keywords": "",
+          "type": "list",
+          "validators": 
+          {          	
+            "values": [
+                            {"value": "m", "display_label": "male"},
+                            {"value": "f", "display_label": "female"} 
+                      ],
+            "case_sensitive": false
+          },
+          "required": true
+    }
+]}
 ```
 {% endtab %}
 {% endtabs %}
