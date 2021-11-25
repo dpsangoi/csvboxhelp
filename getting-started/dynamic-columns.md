@@ -48,7 +48,7 @@ Example:
 {% endtab %}
 
 {% tab title="Angular" %}
-Add `[dynamicColumns]="dynamicColumns"` to the template.
+Add `[dynamicColumns]="dynamicColumns"` to the existing template. Basic installation steps available [here](./#2.-install-code).
 
 ```
 @Component({
@@ -80,7 +80,7 @@ Then pass the dynamic columns as an object to the**`dynamicColumns`**property of
 {% endtab %}
 
 {% tab title="Vuejs" %}
-Add `:dynamicColumns="dynamicColumns"` to the template.
+Add `:dynamicColumns="dynamicColumns"` to the existing template. Basic installation steps available [here](./#2.-install-code).
 
 ```
 <template>
