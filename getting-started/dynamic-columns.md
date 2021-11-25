@@ -48,7 +48,24 @@ Example:
 {% endtab %}
 
 {% tab title="Angular" %}
-Pass the dynamic columns as an object to the**`dynamicColumns`**property of the AppComponent. Example:
+Add `[dynamicColumns]="dynamicColumns"` to the template.
+
+```
+@Component({
+  selector: 'app-root',
+  template: `
+    <csvbox-button
+      [licenseKey]="licenseKey"
+      [user]="user"
+      [dynamicColumns]="dynamicColumns"
+      [onImport]="onData.bind(this)">
+      Import
+    </csvbox-button>
+  `
+})
+```
+
+Then pass the dynamic columns as an object to the**`dynamicColumns`**property of the AppComponent. Example:
 
 ```javascript
   dynamicColumns=[
@@ -63,6 +80,22 @@ Pass the dynamic columns as an object to the**`dynamicColumns`**property of the 
 {% endtab %}
 
 {% tab title="Vuejs" %}
+Add `:dynamicColumns="dynamicColumns"` to the template.
+
+```
+<template>
+  <div id="app">
+    <CSVBoxButton 
+      :licenseKey="licenseKey"
+      :user="user"
+      :dynamicColumns="dynamicColumns"      
+      :onImport="onImport">
+      Upload File
+    </CSVBoxButton>
+  </div>
+</template>
+```
+
 Pass the dynamic columns as an object to the**`dynamicColumns`**property of the**`CSVBoxButton`** component. Example:
 
 ```javascript

@@ -173,8 +173,7 @@ import { CSVBoxMethods } from "@csvbox/angular"
   template: `
     <csvbox-button
       [licenseKey]="licenseKey"
-      [user]="user"
-      [dynamicColumns]="dynamicColumns"
+      [user]="user"      
       [onImport]="onData.bind(this)">
       Import
     </csvbox-button>
@@ -260,8 +259,7 @@ Basic usage:
   <div id="app">
     <CSVBoxButton 
       :licenseKey="licenseKey"
-      :user="user"
-      :dynamicColumns="dynamicColumns"      
+      :user="user"        
       :onImport="onImport">
       Upload File
     </CSVBoxButton>
@@ -433,6 +431,8 @@ The **`onImport `**property provides access to the **`result `**and **`data`**va
       console.log("fail");
       //custom code
     }
+  }
+}
 ```
 {% endtab %}
 
