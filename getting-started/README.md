@@ -160,7 +160,7 @@ Once you have this setup, in your app component file, you will be able to import
 It will bring the `csvbox-button` component into your project. Example:
 
 ```
-<csvbox-button [licenseKey]="licenseKey" [onImport]="onData.bind(this)" [user]="user" [dynamicColumns]="dynamicColumns">Import</csvbox-button>
+<csvbox-button [licenseKey]="licenseKey" [onImport]="onData.bind(this)" [user]="user">Import</csvbox-button>
 ```
 
 Basic usage:
