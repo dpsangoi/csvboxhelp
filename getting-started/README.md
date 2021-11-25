@@ -57,7 +57,7 @@ Go to the 'Code' tab of the sheet and find the integration code. Place the code 
 Sample code with basic usage:
 
 ```javascript
-<button class="btn btn-primary" onclick="importer.openModal();">Import</button>
+<button class="btn btn-primary" data-csvbox disabled onclick="importer.openModal();">Import</button>
 <script type="text/javascript" src="http://js.csvbox.io/embed/script"></script>
 <script type="text/javascript">
     function callback(result, data) {
@@ -116,7 +116,7 @@ Basic usage:
     }
   }}
   render={(launch)=>{
-    return <button onClick={launch}>Upload file</button>;
+    return <button data-csvbox disabled onClick={launch}>Upload file</button>;
   }}
 >
   Import
@@ -160,7 +160,7 @@ Once you have this setup, in your app component file, you will be able to import
 It will bring the `csvbox-button` component into your project. Example:
 
 ```
-<csvbox-button [licenseKey]="licenseKey" [onImport]="onData.bind(this)" [user]="user">Import</csvbox-button>
+<csvbox-button [licenseKey]="licenseKey" [onImport]="onData.bind(this)" [user]="user" [dynamicColumns]="dynamicColumns">Import</csvbox-button>
 ```
 
 Basic usage:
@@ -174,6 +174,7 @@ import { CSVBoxMethods } from "@csvbox/angular"
     <csvbox-button
       [licenseKey]="licenseKey"
       [user]="user"
+      [dynamicColumns]="dynamicColumns"
       [onImport]="onData.bind(this)">
       Import
     </csvbox-button>
@@ -217,6 +218,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
     <csvbox-button
       [licenseKey]="licenseKey"
       [user]="user"
+      [dynamicColumns]="dynamicColumns"
       [onImport]="onData.bind(this)"
       class=“csvbox-btn”      
       >
@@ -258,7 +260,8 @@ Basic usage:
   <div id="app">
     <CSVBoxButton 
       :licenseKey="licenseKey"
-      :user="user"      
+      :user="user"
+      :dynamicColumns="dynamicColumns"      
       :onImport="onImport">
       Upload File
     </CSVBoxButton>
@@ -297,10 +300,6 @@ export default {
 
 {% hint style="info" %}
 Each sheet has a unique Licence Key. Find the Licence Key of the sheet on the Code section of the sheet page and attach it to the **licenseKey** property of the **CSVBoxButton **component.
-{% endhint %}
-
-{% hint style="info" %}
-The optional **render **property allows you to pass in your button to use in place of the standard csvbox element.
 {% endhint %}
 {% endtab %}
 {% endtabs %}

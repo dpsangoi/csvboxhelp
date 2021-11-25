@@ -51,14 +51,14 @@ Example:
 Pass the dynamic columns as an object to the**`dynamicColumns`**property of the AppComponent. Example:
 
 ```javascript
-  dynamicColumns={[
+  dynamicColumns=[
                {
-                 "column_name" : "qualification"        
+                 column_name : "qualification"        
                },
                {
-                  "column_name": "experience"         
+                  column_name: "experience"         
               }
-  ]}
+  ]
 ```
 {% endtab %}
 
@@ -66,14 +66,14 @@ Pass the dynamic columns as an object to the**`dynamicColumns`**property of the 
 Pass the dynamic columns as an object to the**`dynamicColumns`**property of the**`CSVBoxButton`** component. Example:
 
 ```javascript
-dynamicColumns: {[
+  dynamicColumns: [
                {
-                 "column_name" : "qualification"        
+                 column_name : "qualification"        
                },
                {
-                  "column_name": "experience"         
+                  column_name: "experience"         
               }
-  ]}
+  ]
 ```
 {% endtab %}
 {% endtabs %}
@@ -189,99 +189,99 @@ Here is an example illustrating more configuration options.
 
 {% tab title="Angular" %}
 ```javascript
-  dynamicColumns={[
+  dynamicColumns=[
          {
-          "column_name" : "qualification",
-          "display_label": "Highest Qualification",
-          "info_hint": "What is your highest educational degree",
-          "matching_keywords": "degree, education",
-          "type": "text",
-          "validators": 
+          column_name : "qualification",
+          display_label: "Highest Qualification",
+          info_hint: "What is your highest educational degree",
+          matching_keywords: "degree, education",
+          type: "text",
+          validators": 
           {          	
-            "min_length": 2,
-            "max_length": 50
+            min_length: 2,
+            max_length: 50
           },
-          "required": true
+          required: true
     },
  {
-          "column_name": "experience",
-          "display_label": "Work Experience",
-          "info_hint": "Years of work experience",
-          "matching_keywords": "",
-          "type": "number",
-          "validators": 
+          column_name: "experience",
+          display_label: "Work Experience",
+          info_hint: "Years of work experience",
+          matching_keywords: "",
+          type: "number",
+          "validators: 
           {          	
-            "min_value": 0,
-            "max_value": 100
+            min_value: 0,
+            max_value: 100
           },
-          "required": false
+          required: false
     },
     {
-          "column_name": "gender",
-          "display_label": "Gender",
-          "info_hint": "",
-          "matching_keywords": "",
-          "type": "list",
-          "validators": 
+          column_name: "gender",
+          display_label: "Gender",
+          info_hint: "",
+          matching_keywords: "",
+          type: "list",
+          validators: 
           {          	
-            "values": [
-                            {"value": "m", "display_label": "male"},
-                            {"value": "f", "display_label": "female"} 
+            values: [
+                            {value: "m", display_label: "male"},
+                            {value: "f", display_label: "female"} 
                       ],
-            "case_sensitive": false
+            case_sensitive: false
           },
-          "required": true
+          required: true
     }
-]}
+]
 ```
 {% endtab %}
 
 {% tab title="Vuejs" %}
 ```javascript
-dynamicColumns: {[
+  dynamicColumns: [
          {
-          "column_name" : "qualification",
-          "display_label": "Highest Qualification",
-          "info_hint": "What is your highest educational degree",
-          "matching_keywords": "degree, education",
-          "type": "text",
-          "validators": 
+          column_name : "qualification",
+          display_label: "Highest Qualification",
+          info_hint: "What is your highest educational degree",
+          matching_keywords: "degree, education",
+          type: "text",
+          validators": 
           {          	
-            "min_length": 2,
-            "max_length": 50
+            min_length: 2,
+            max_length: 50
           },
-          "required": true
+          required: true
     },
  {
-          "column_name": "experience",
-          "display_label": "Work Experience",
-          "info_hint": "Years of work experience",
-          "matching_keywords": "",
-          "type": "number",
-          "validators": 
+          column_name: "experience",
+          display_label: "Work Experience",
+          info_hint: "Years of work experience",
+          matching_keywords: "",
+          type: "number",
+          "validators: 
           {          	
-            "min_value": 0,
-            "max_value": 100
+            min_value: 0,
+            max_value: 100
           },
-          "required": false
+          required: false
     },
     {
-          "column_name": "gender",
-          "display_label": "Gender",
-          "info_hint": "",
-          "matching_keywords": "",
-          "type": "list",
-          "validators": 
+          column_name: "gender",
+          display_label: "Gender",
+          info_hint: "",
+          matching_keywords: "",
+          type: "list",
+          validators: 
           {          	
-            "values": [
-                            {"value": "m", "display_label": "male"},
-                            {"value": "f", "display_label": "female"} 
+            values: [
+                            {value: "m", display_label: "male"},
+                            {value: "f", display_label: "female"} 
                       ],
-            "case_sensitive": false
+            case_sensitive: false
           },
-          "required": true
+          required: true
     }
-]}
+]
 ```
 {% endtab %}
 {% endtabs %}
