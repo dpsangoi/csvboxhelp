@@ -12,11 +12,11 @@ For such cases, csvbox provides the flexibility to add unique **dynamic columns*
 
 You can configure **dynamic columns** via the installation code.
 
+Here's a basic configuration that adds 2 dynamic columns **qualification **and **experience**.&#x20;
+
 {% tabs %}
 {% tab title="Javascript" %}
 Pass the dynamic columns that you want to add as an array input parameter to the**`setDynamicColumns()`**method while initializing the importer.
-
-Here's a basic configuration that adds 2 dynamic columns **qualification **and **experience**.&#x20;
 
 ```javascript
 importer.setDynamicColumns([
@@ -28,12 +28,12 @@ importer.setDynamicColumns([
           }
 ])
 ```
+
+Basic installation steps are available [here](./#2.-install-code).
 {% endtab %}
 
 {% tab title="React" %}
-Pass the dynamic columns as an object to the **`dynamicColumns`**property of the **`CSVBoxButton`** component. The custom user attributes will be pushed to your destination along with the uploaded data.
-
-Example:
+Pass the dynamic columns as an object to the **`dynamicColumns`**property of the **`CSVBoxButton`** component.&#x20;
 
 ```javascript
   dynamicColumns={[
@@ -45,10 +45,12 @@ Example:
               }
   ]}
 ```
+
+Basic installation steps are available [here](./#2.-install-code).
 {% endtab %}
 
 {% tab title="Angular" %}
-Add `[dynamicColumns]="dynamicColumns"` to the existing template. Basic installation steps available [here](./#2.-install-code).
+Add `[dynamicColumns]="dynamicColumns"` to the existing template.&#x20;
 
 ```
 @Component({
@@ -77,10 +79,12 @@ Then pass the dynamic columns as an object to the**`dynamicColumns`**property of
               }
   ]
 ```
+
+Basic installation steps are available [here](./#2.-install-code).
 {% endtab %}
 
 {% tab title="Vuejs" %}
-Add `:dynamicColumns="dynamicColumns"` to the existing template. Basic installation steps available [here](./#2.-install-code).
+Add `:dynamicColumns="dynamicColumns"` to the existing template.&#x20;
 
 ```
 <template>
@@ -108,6 +112,8 @@ Pass the dynamic columns as an object to the**`dynamicColumns`**property of the*
               }
   ]
 ```
+
+Basic installation steps are available [here](./#2.-install-code).
 {% endtab %}
 {% endtabs %}
 
