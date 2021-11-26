@@ -4,6 +4,22 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 26 November 2021
+
+### Added
+
+* [Airtable data destination](destinations/#airtable)
+
+### Updated
+
+* Made boolean column type case insensitive
+
+## 14 November 2021
+
+### Added
+
+* [Dynamic Columns (Beta)](getting-started/sheet-options.md)
+
 ## 28 October 2021
 
 ### Added
@@ -13,12 +29,7 @@ description: A record of all notable changes made to the application.
 ### Updated
 
 * Fixed dashboard bugs
-* Fixed UI bugs of importer
-
-## 14 October 2021
-
-### Updated
-
+* Fixed UI bugs of the importer
 * Added Display Labels to [List Column Type](https://help.csvbox.io/validations#list).
 
 ## 11 October 2021
