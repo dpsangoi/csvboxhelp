@@ -93,6 +93,10 @@ The user CSV data will then be directly be appended to the MySQL table.
 
 (coming soon)
 
+## Bubble
+
+Import user CSV files and Excel sheets directly into your Bubble app. More information [here](bubble.io.md).
+
 ## PostgreSQL
 
 Import CSV files and Excel sheets directly into your PostgreSQL tables. How it works:
@@ -109,3 +113,22 @@ Import CSV files and Excel sheets directly into your PostgreSQL tables. How it w
 ![map sheet to table columns](../.gitbook/assets/map-columns.jpg)
 
 The user CSV data will then be directly be appended to the PostgreSQL table.
+
+## Airtable
+
+Import CSV files and Excel sheets directly into your [Airtable](https://airtable.com). Here is how it works:
+
+* Select the destination type as 'Airtable'.
+* Connect your Airtable by providing the credentials.
+
+{% hint style="info" %}
+Steps to get the Airtable API Key are mentioned [here](https://support.airtable.com/hc/en-us/articles/219046777-How-do-I-get-my-API-key-).
+
+Steps to get the Base ID are mentioned [here](./#none).
+{% endhint %}
+
+* Specify the table name where you want the data to be pushed.
+* Map sheet columns to the Airtable table column.
+* You can also map custom attributes to table columns.
+
+The user CSV data will then be directly be appended to the Airtable table.
