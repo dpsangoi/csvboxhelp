@@ -15,7 +15,7 @@ At a time only one destination can be selected per sheet.
 
 The user-uploaded data will not be pushed anywhere. The files will be, however, available for download via the csvbox.io admin.
 
-## Webhook
+## API / Webhook
 
 The data will be pushed to a webhook endpoint as configured in the sheet settings. You can choose between JSON, XML, and FORM Data formats for receiving data to your webhook. The data will be pushed in chunks of rows. The number of rows per chunk can be configured in the sheet settings.
 
