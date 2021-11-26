@@ -116,7 +116,7 @@ Basic usage:
     }
   }}
   render={(launch)=>{
-    return <button data-csvbox disabled onClick={launch}>Upload file</button>;
+    return <button data-csvbox onClick={launch}>Upload file</button>;
   }}
 >
   Import
