@@ -22,7 +22,7 @@ Here are a few important terms used throughout the application:
 Users can upload .csv, .xlsx or .xls file formats.
 {% endhint %}
 
-**Sheet or Template: **It refers to the data modal that specifies the structure of the data you want to accept. You can add columns to the sheet and configure validation criteria via your csvbox.io dashboard.&#x20;
+**Sheet or Template:** It refers to the data modal that specifies the structure of the data you want to accept. You can add columns to the sheet and configure validation criteria via your csvbox.io dashboard.&#x20;
 
 {% hint style="info" %}
 Users will be able to match the headers of their file columns with the sheet columns and clean data before uploading.
@@ -58,7 +58,7 @@ Sample code with basic usage:
 
 ```javascript
 <button class="btn btn-primary" data-csvbox disabled onclick="importer.openModal();">Import</button>
-<script type="text/javascript" src="http://js.csvbox.io/embed/script"></script>
+<script type="text/javascript" src="https://js.csvbox.io/script.js"></script>
 <script type="text/javascript">
     function callback(result, data) {
         if(result){
@@ -124,11 +124,11 @@ Basic usage:
 ```
 
 {% hint style="info" %}
-Each sheet has a unique Licence Key. Find the Licence Key of the sheet on the Code section of the sheet page and attach it to the **licenseKey** property of the **CSVBoxButton **component.
+Each sheet has a unique Licence Key. Find the Licence Key of the sheet on the Code section of the sheet page and attach it to the **licenseKey** property of the **CSVBoxButton** component.
 {% endhint %}
 
 {% hint style="info" %}
-The optional **render **property allows you to pass in your button to use in place of the standard csvbox element.
+The optional **render** property allows you to pass in your button to use in place of the standard csvbox element.
 {% endhint %}
 {% endtab %}
 
@@ -297,7 +297,7 @@ export default {
 ```
 
 {% hint style="info" %}
-Each sheet has a unique Licence Key. Find the Licence Key of the sheet on the Code section of the sheet page and attach it to the **licenseKey** property of the **CSVBoxButton **component.
+Each sheet has a unique Licence Key. Find the Licence Key of the sheet on the Code section of the sheet page and attach it to the **licenseKey** property of the **CSVBoxButton** component.
 {% endhint %}
 {% endtab %}
 {% endtabs %}
@@ -310,7 +310,7 @@ You can configure **custom user attributes** in the installation code to identif
 {% tab title="Javascript" %}
 Pass custom user attributes as input parameters to the **`setUser`**method. The custom user attributes will be pushed to your destination along with the uploaded data.
 
-**user\_id **is the only custom attribute that is mandatory. Apart from **user\_id, **you can add up to 4 custom attributes in the**`<key>: <value>`**format. Example:
+**user\_id** is the only custom attribute that is mandatory. Apart from **user\_id,** you can add up to 4 custom attributes in the**`<key>: <value>`**format. Example:
 
 ```javascript
  importer.setUser({
@@ -326,7 +326,7 @@ Pass custom user attributes as input parameters to the **`setUser`**method. The 
 {% tab title="React" %}
 Pass custom user attributes as an object to the **`user`**property of the **`CSVBoxButton`** component. The custom user attributes will be pushed to your destination along with the uploaded data.
 
-**user\_id **is the only custom attribute that is mandatory. Apart from **user\_id, **you can add up to 4 custom attributes in the **`<key>: <value>`**format. Example:
+**user\_id** is the only custom attribute that is mandatory. Apart from **user\_id,** you can add up to 4 custom attributes in the **`<key>: <value>`**format. Example:
 
 ```javascript
   user={{
@@ -342,7 +342,7 @@ Pass custom user attributes as an object to the **`user`**property of the **`CSV
 {% tab title="Angular" %}
 Pass custom user attributes as an object to the **`user`**property of the AppComponent. The custom user attributes will be pushed to your destination along with the uploaded data.
 
-**user\_id **is the only custom attribute that is mandatory. Apart from **user\_id, **you can add up to 4 custom attributes in the **`<key>: <value>`**format. Example:
+**user\_id** is the only custom attribute that is mandatory. Apart from **user\_id,** you can add up to 4 custom attributes in the **`<key>: <value>`**format. Example:
 
 ```javascript
   user={
@@ -358,7 +358,7 @@ Pass custom user attributes as an object to the **`user`**property of the AppCom
 {% tab title="Vuejs" %}
 Pass custom user attributes as an object to the **`user`**property of the **`CSVBoxButton`** component. The custom user attributes will be pushed to your destination along with the uploaded data.
 
-**user\_id **is the only custom attribute that is mandatory. Apart from **user\_id, **you can add up to 4 custom attributes in the **`<key>: <value>`**format. Example:
+**user\_id** is the only custom attribute that is mandatory. Apart from **user\_id,** you can add up to 4 custom attributes in the **`<key>: <value>`**format. Example:
 
 ```javascript
   user: {
@@ -374,10 +374,10 @@ Pass custom user attributes as an object to the **`user`**property of the **`CSV
 
 #### Callback function
 
-Once the user uploads a file the importer will return the status of the import along with metadata describing the completed import. Data is returned via two variables: **`result `**and **`data`**.&#x20;
+Once the user uploads a file the importer will return the status of the import along with metadata describing the completed import. Data is returned via two variables: **`result`** and **`data`**.&#x20;
 
-1. **`result `**- It is of type boolean with the value **true **if the import is successful and **false **if the import fails.
-2. **`data `**- It returns JSON data as shown below:
+1. **`result`** - It is of type boolean with the value **true** if the import is successful and **false** if the import fails.
+2. **`data`** - It returns JSON data as shown below:
 
 ```javascript
   {
@@ -402,7 +402,7 @@ You can write custom code to handle the success or failure conditions client sid
 
 {% tabs %}
 {% tab title="Javascript" %}
-The **`result `**and **`data`**variables will be available in the **`callback`**function that is triggered when the import is completed.
+The **`result`** and **`data`**variables will be available in the **`callback`**function that is triggered when the import is completed.
 
 ```javascript
 function callback(result, data) {
@@ -419,7 +419,7 @@ function callback(result, data) {
 {% endtab %}
 
 {% tab title="React" %}
-The **`onImport `**property provides access to the **`result `**and **`data`**variables.
+The **`onImport`** property provides access to the **`result`** and **`data`**variables.
 
 ```javascript
   onImport={(result, data) => {
@@ -437,7 +437,7 @@ The **`onImport `**property provides access to the **`result `**and **`data`**va
 {% endtab %}
 
 {% tab title="Angular" %}
-The **`onImport `**property provides access to the **`result `**and **`data`**variables via the specified callback function.
+The **`onImport`** property provides access to the **`result`** and **`data`**variables via the specified callback function.
 
 ```javascript
   onData(result: boolean, data: any) {
@@ -452,7 +452,7 @@ The **`onImport `**property provides access to the **`result `**and **`data`**va
 {% endtab %}
 
 {% tab title="Vuejs" %}
-The **`onImport `**property provides access to the **`result `**and **`data`**variables.
+The **`onImport`** property provides access to the **`result`** and **`data`**variables.
 
 ```javascript
 onImport: function (result, data) {    
@@ -473,7 +473,7 @@ onImport: function (result, data) {
 
 Once the code is installed the users will be able to submit their files via the csvbox importer. The raw files uploaded by the users will be available on your dashboard's 'Import' page. The data will also be pushed to your app as per the destination type configuration of your sheet.
 
-#### Sample JSON response for destination Webhook: <a href="sample-response" id="sample-response"></a>
+#### Sample JSON response for destination Webhook: <a href="#sample-response" id="sample-response"></a>
 
 ```javascript
 [
@@ -558,7 +558,7 @@ Simply share this link with your users to start collecting spreadsheets.
 
 You can configure the query parameters in the link to identify and match the users with their respective imports. Add up to 5 query parameters with custom user attributes that help you identify the users in your platform. The custom user attributes will be pushed to your destination along with the uploaded data.
 
-**user\_id **is the only custom attribute that is mandatory. Apart from **user\_id, **you can add up to 4 custom attributes in the`&key=value`format. Example:
+**user\_id** is the only custom attribute that is mandatory. Apart from **user\_id,** you can add up to 4 custom attributes in the`&key=value`format. Example:
 
 ```javascript
 https://app.csvbox.io/upload/2gzJa5YO3QPLYK6Bj7Qmq5bpbFqXno?user_id=1a2b3c4d5e6f&team_id=sales2&isAuthenticated=true&permissionLevel=admin&email=abc@example.com
