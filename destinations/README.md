@@ -69,7 +69,7 @@ The data will come in as HTTP POST requests. Each request will have an array of 
 The files uploaded by the users can be pushed to the AWS S3 Bucket of your choice. You simply need to select the destination type as 'Amazon S3' and provide the AWS credentials, bucket/folder name, and access policy for storing the files.
 
 {% hint style="info" %}
-The data will be stored as S3 objects with the name **{{import\_id}}\_{{user\_id}}.csv **where **user\_id** is the custom user attribute that you reference via the **`setUser`**method while installing the importer code. The other 4 custom user attributes will be saved as the [user-defined metadata](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingMetadata.html) of the S3 object.
+The data will be stored as S3 objects with the name **{{import\_id}}\_{{user\_id}}.csv** where **user\_id** is the custom user attribute that you reference via the **`setUser`**method while installing the importer code. The other 4 custom user attributes will be saved as the [user-defined metadata](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingMetadata.html) of the S3 object.
 {% endhint %}
 
 ## MySQL Database
@@ -91,7 +91,21 @@ The user CSV data will then be directly be appended to the MySQL table.
 
 ## Google Sheets
 
-(coming soon)
+Import CSV files and Excel sheets directly into [Google Sheets](https://www.google.co.in/sheets/about/). Here is how it works:
+
+* Select the destination type as 'Google Sheets'.
+* Connect your Google account by clicking the Google button and accepting the relevant permissions.
+
+{% hint style="info" %}
+The importer requires permission to view the list of Google sheets in your account and edit sheet data.
+{% endhint %}
+
+* Provide the Google sheet name.
+* Specify the worksheet name where you want the data to be pushed.
+* Map the template columns to the Google sheet columns.
+* You can also map custom attributes to sheet columns.
+
+The user CSV data will then be directly be added to the Google sheet.
 
 ## Bubble
 
