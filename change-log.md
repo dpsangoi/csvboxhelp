@@ -4,6 +4,12 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 07 December 2021
+
+### Added
+
+* [Google Sheets data destination](https://help.csvbox.io/destinations#google-sheets)
+
 ## 26 November 2021
 
 ### Added
@@ -182,7 +188,7 @@ It was been a busy month for the csvbox team as we reworked the entire architect
 
 ### Added
 
-* A new optional method **setUser() **to the sheet integration code. With the **setUser()** method you can reference the user by providing the value to the **user\_id** option. This helps you identify and match imports to their respective users from within your system.
+* A new optional method **setUser()** to the sheet integration code. With the **setUser()** method you can reference the user by providing the value to the **user\_id** option. This helps you identify and match imports to their respective users from within your system.
 
 ### Changed
 
