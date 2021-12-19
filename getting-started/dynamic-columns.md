@@ -12,7 +12,7 @@ For such cases, csvbox provides the flexibility to add unique **dynamic columns*
 
 You can configure **dynamic columns** via the installation code.
 
-Here's a basic configuration that adds 2 dynamic columns **qualification **and **experience**.&#x20;
+Here's a basic configuration that adds 2 dynamic columns **qualification** and **experience**.&#x20;
 
 {% tabs %}
 {% tab title="Javascript" %}
@@ -326,7 +326,7 @@ Here is an example illustrating more configuration options.
 {% endtabs %}
 
 {% hint style="info" %}
-**column\_name **is the only key that is mandatory for adding a dynamic column.
+**column\_name** is the only key that is mandatory for adding a dynamic column.
 {% endhint %}
 
 #### Configuration Options
@@ -337,7 +337,7 @@ Here is an example illustrating more configuration options.
 | [display\_label](sheet-options.md#display-label)                                | The user-friendly column label that the users will see in the importer.                                                                                                                                     |
 | [info\_hint](sheet-options.md#info-hint)                                        | Info Hints are help tooltips that will get displayed when the users hover the mouse over the Display Label (or click it) in the importer.                                                                   |
 | [matching\_keywords](sheet-options.md#matching-keywords)                        | Comma-separated set of keywords as alternative matching options to help users match column names automatically.                                                                                             |
-| [type](sheet-options.md#column-type)                                            | It specifies the data type of the incoming data. Possible values are: **text**, **number**, **email**, **date**, **boolean**, **regex**, **ip**, **url**, **credit\_card**, **phone\_number **and **list**. |
+| [type](sheet-options.md#column-type)                                            | It specifies the data type of the incoming data. Possible values are: **text**, **number**, **email**, **date**, **boolean**, **regex**, **ip**, **url**, **credit\_card**, **phone\_number** and **list**. |
 | validators                                                                      | The validation rules for the data based on the column type. Validator options are mentioned below.                                                                                                          |
 | [required](sheet-options.md#required)                                           | It indicates whether a column is mandatory.                                                                                                                                                                 |
 
@@ -350,7 +350,7 @@ Here is an example illustrating more configuration options.
 | email         | -                                                                                 |                                                                                                                                                                                                                                                                                                 |
 | date          | <ol><li><strong>format</strong></li></ol>                                         | "format": “MM/DD/YYYY”                                                                                                                                                                                                                                                                          |
 | boolean       | -                                                                                 |                                                                                                                                                                                                                                                                                                 |
-| regex         | <ol><li><strong>expression</strong></li></ol>                                     | <p>"expression": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$"</p><p></p><p><em>Note: The special characters in the expression need to be escaped. You may use a tool like </em><a href="https://www.freeformatter.com/javascript-escape.html#ad-output"><em>this </em></a><em>for escaping.</em></p> |
+| regex         | <ol><li><strong>expression</strong></li></ol>                                     | <p>"expression": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$"</p><p></p><p><em>Note: The special characters in the expression need to be escaped. You may use a tool like</em> <a href="https://www.freeformatter.com/javascript-escape.html#ad-output"><em>this</em> </a><em>for escaping.</em></p> |
 | ip            | <ol><li><strong>version</strong></li></ol>                                        | "version": “ipv4”                                                                                                                                                                                                                                                                               |
 | url           | -                                                                                 |                                                                                                                                                                                                                                                                                                 |
 | credit\_card  | -                                                                                 |                                                                                                                                                                                                                                                                                                 |
@@ -359,14 +359,14 @@ Here is an example illustrating more configuration options.
 
 ### **Displaying Dynamic Data**
 
-The data from the dynamic columns is available in the data destinations along with the data from the regular columns. Currently,** **dynamic columns are supported by the following destinations only:
+The data from the dynamic columns is available in the data destinations along with the data from the regular columns. Currently, **** dynamic columns are supported by the following destinations only:
 
 1. [API/Webhook](../destinations/#webhook)
 2. [Amazon S3](../destinations/#amazon-s3)
 
 #### API/Webhook Data Destination
 
-In the API response JSON object, the dynamic data will be displayed inside the **\_dynamic\_data** object as shown below. The **\_dynamic\_data **object will be visible only if the dynamic columns are configured for the import. In the example below check lines 12 and 31.
+In the API response JSON object, the dynamic data will be displayed inside the **\_dynamic\_data** object as shown below. The **\_dynamic\_data** object will be visible only if the dynamic columns are configured for the import. In the example below check lines 12 and 31.
 
 ```json
 [

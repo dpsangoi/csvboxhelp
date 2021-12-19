@@ -4,6 +4,19 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 15 December 2021
+
+### Added
+
+* The option to transpose (switch) rows and columns in the user datasheet. This helps to accept spreadsheets having horizontal data.
+
+### Updated
+
+* The list type column can now accept any number of valid values. Developers can configure the values via a CSV file.
+* The end users can search/select the list values from a popup.
+
+![List value selector](<.gitbook/assets/image (1).png>)
+
 ## 07 December 2021
 
 ### Added

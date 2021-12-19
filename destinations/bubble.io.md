@@ -48,14 +48,14 @@ Add columns to the sheet. The column names should match column/object names for 
 
 ![Add Columns](../.gitbook/assets/add-columns.png)
 
-Under the "**Settings**" section, for the "**Send Data To**" setting select the "**Bubble.io**" option. 
+Under the "**Settings**" section, for the "**Send Data To**" setting select the "**Bubble.io**" option.&#x20;
 
 ![Bubble.io Data Destination Settings](../.gitbook/assets/bubble.io-settings.jpg)
 
 Fill in the following fields:
 
 * **App Name** - This is the name of your Bubble.io app.
-* **Custom Domain Name **- If you have attached a custom domain name to your Bubble app then you need to provide it here.
+* **Custom Domain Name** - If you have attached a custom domain name to your Bubble app then you need to provide it here.
 * **Environment** - Pick an environment between TEST/DEVELOPMENT and PRODUCTION/LIVE where you want the CSV data to be sent.
 * **API Private Key** - It is the API token that you generated while configuring the [API settings ](https://help.csvbox.io/destinations/bubble.io#api-settings)in the Bubble app.
 * **Data Type** - The data type name where you want to push the CSV data.
@@ -78,22 +78,22 @@ Install the [csvbox.io](https://bubble.io/plugin/csv--excel-importer-|-receive-j
 
 Drag the CSVBox Button element on your web page.
 
-Save the **Sheet License Key **value from the sheet "**Code**" page (that we saved above) into the "**Sheet License Key**" property of the CSVBox element.
+Save the **Sheet License Key** value from the sheet "**Code**" page (that we saved above) into the "**Sheet License Key**" property of the CSVBox element.
 
 ![Bubble App CSVBox Button Element](../.gitbook/assets/bubble-app-csvbox-element.png)
 
-Enter the import button label under the '**button_text**' property. Optionally you can add CSS classes in the "**button_classes**" property to stylize the csvbox.io import button.
+Enter the import button label under the '**button\_text**' property. Optionally you can add CSS classes in the "**button\_classes**" property to stylize the csvbox.io import button.
 
 {% hint style="info" %}
-You can add custom user attributes (such as user_id, user name, company name, etc) as values to the custom_attribute_XX_ properties of the CSVBox Button element. More information on custom attributes is available [here](https://help.csvbox.io/getting-started#referencing-the-user).
+You can add custom user attributes (such as user\_id, user name, company name, etc) as values to the custom\_attribute_XX_ properties of the CSVBox Button element. More information on custom attributes is available [here](https://help.csvbox.io/getting-started#referencing-the-user).
 {% endhint %}
 
 The csvbox.io import button should be available on your app. Your users can click the button to upload CSV files. You will get data in your Bubble Database.
 
 The CSVBox Button element exposes two events that indicate the completion of the import process. The two events are:
 
-1. **import_success **- triggered when the CSV data gets imported successfully into your Bubble database.
-2. **import_fail **- triggered when the import failed completely or partially failed.
+1. **import\_success** - triggered when the CSV data gets imported successfully into your Bubble database.
+2. **import\_fail** - triggered when the import failed completely or partially failed.
 
 ![CSVBox Button Element Events](../.gitbook/assets/bubble-events.png)
 
