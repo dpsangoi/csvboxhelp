@@ -66,6 +66,10 @@ Click the "**Map Columns**" button. It will open a modal where you can map the s
 
 ![Map Sheet Columns to Bubble Data Fields](<../.gitbook/assets/map-columns (1).jpg>)
 
+{% hint style="danger" %}
+The data fields from the Bubble database will be available in the Map Column modal only if they have data in the first row. You may add dummy data for each data field in the first row in order for them to appear in the Map Column modal.
+{% endhint %}
+
 Click the "**Save**" button.
 
 Go to the "**Code**" section of the sheet and note down the **Sheet License Key**.
