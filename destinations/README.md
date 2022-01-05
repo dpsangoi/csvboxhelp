@@ -146,3 +146,7 @@ Steps to get the Base ID are mentioned [here](./#none).
 * You can also map custom attributes to table columns.
 
 The user CSV data will then be directly be appended to the Airtable table.
+
+## Zapier
+
+Import user CSV files and Excel sheets to Zapier. More information [here](zapier.md).

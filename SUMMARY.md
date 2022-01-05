@@ -8,6 +8,7 @@
 * [Validations](validations.md)
 * [Data Destinations](destinations/README.md)
   * [Bubble.io](destinations/bubble.io.md)
+  * [Zapier](destinations/zapier.md)
 * [Account](account.md)
 * [Contact Us](https://share.hsforms.com/1ubpg6RBoQgKOISkRMEViwg5auur)
 
