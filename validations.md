@@ -89,7 +89,7 @@ The column under validation must be formatted as a date. You have to select a `D
 | **Unix Millisecond Timestamp** | x                  | 1360013296123                                                                                                                                                                                                                                                                                                                              |
 
 {% hint style="info" %}
-For example, specifying a token string **`dddd, MMMM Do YYYY, h:mm:ss`** a will require the date to be in the format **`Sunday, February 14th 2010, 3:25:50 pm`.**
+For example, specifying a token string **`dddd, MMMM Do YYYY, h:mm:ss`**  will require the date to be in the format **`Sunday, February 14th 2010, 3:25:50 pm`.**
 {% endhint %}
 
 ### Boolean
