@@ -4,6 +4,28 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 10 January 2022
+
+### Added
+
+* [Zapier Data Destination](destinations/zapier.md)
+
+## 4 January 2022
+
+### Updated
+
+* Included 'Custom' validation option for Date Type columns. Date formatting options available [here](https://help.csvbox.io/validations#date).
+
+![](<.gitbook/assets/date validation.jpg>)
+
+## 29 December 2021
+
+### Added
+
+* Option to add data manually up copy-pasting from any spreadsheet.
+
+![Copy paste table data](<.gitbook/assets/manual upload.jpg>)
+
 ## 15 December 2021
 
 ### Added
