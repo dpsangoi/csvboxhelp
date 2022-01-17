@@ -419,20 +419,18 @@ function callback(result, data) {
 {% endtab %}
 
 {% tab title="React" %}
-The **`onImport`** property provides access to the **`result`** and **`data`**variables.
+Pass additional options as an object to the **`user`**property of the **`CSVBoxButton`** component. The custom user attributes will be pushed to your destination along with the uploaded data.
+
+**user\_id** is the only custom attribute that is mandatory. Apart from **user\_id,** you can add up to 4 custom attributes in the **`<key>: <value>`**format. Example:
 
 ```javascript
-  onImport={(result, data) => {
-    if(result){
-      console.log("success");
-      console.log(data.row_success + " rows uploaded");
-      //custom code
-    }else{
-      console.log("fail");
-      //custom code
-    }
-  }
-}
+  user={{
+              user_id: "1a2b3c4d5e6f",
+              team_id: "sales2",
+              isAuthenticated: "true",
+              permissionLevel: "admin",
+              email: "abc@example.com"
+  }}
 ```
 {% endtab %}
 
@@ -465,6 +463,58 @@ onImport: function (result, data) {
           //custom code
       }
 }
+```
+{% endtab %}
+{% endtabs %}
+
+#### Additional Options
+
+Here is the list of additional configuration options available with the csvbox importer.
+
+| Option        | Type   | Default | Description                                                                                                                                                                                                                                                               |
+| ------------- | ------ | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **max\_rows** | number | null    | <p>Specify the maximum number of rows that a single file can import.<br><br>This value excludes the headers of the file. So if the number of rows in a sheet is 101, but the first row is the header, then this file would be considered to have 100 data rows in it.</p> |
+
+Example usage:
+
+{% tabs %}
+{% tab title="Javascript" %}
+Pass additional options as input parameters to the **`setOptions`**method.
+
+```javascript
+ importer.setOptions({
+        max_rows: 50       
+    })
+```
+{% endtab %}
+
+{% tab title="React" %}
+Pass the additional options as an object to the **`options`**property of the **`CSVBoxButton`** component.&#x20;
+
+```javascript
+  options={{
+              max_rows: 50            
+  }}
+```
+{% endtab %}
+
+{% tab title="Angular" %}
+Pass the additional options as an object to the **`options`**property of the AppComponent.&#x20;
+
+```javascript
+  options={
+              max_rows: 50              
+ }
+```
+{% endtab %}
+
+{% tab title="Vuejs" %}
+Pass the additional options as an object to the **`options`**property of the **`CSVBoxButton`** component.&#x20;
+
+```javascript
+  options: {
+              max_rows: 50
+  },
 ```
 {% endtab %}
 {% endtabs %}
