@@ -4,6 +4,12 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 03 February 2022
+
+### Added
+
+* Importer internationalization. The importer now supports German, French and Spanish languages.
+
 ## 17 January 2022
 
 ### Added
