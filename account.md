@@ -6,7 +6,7 @@ description: FAQs related to account information and subscription plans.
 
 ## Who processes csvbox.io orders?
 
-Our order process is conducted by our online reseller [Paddle.com](https://paddle.com/). Paddle is the Merchant of Record for all our orders.
+Our order process is conducted by our online reseller [Paddle.com](https://paddle.com). Paddle is the Merchant of Record for all our orders.
 
 If you have any questions regarding order processing you can reach out to us or [Paddle](mailto:help@padde.com).
 
@@ -18,7 +18,7 @@ Yes, any subscription plan renews automatically. If you don’t want to be bille
 
 If you choose to upgrade to a more expensive plan, you will get a pro-rated discount according to the period you've already used on your existing plan.
 
-If you choose to downgrade to a less expensive plan, the lower plan will be activated on the expiry date of your previous plan. 
+If you choose to downgrade to a less expensive plan, the lower plan will be activated on the expiry date of your previous plan.&#x20;
 
 ## What will happen if I cancel my subscription?
 
@@ -31,7 +31,9 @@ Your subscription can be canceled for one of the following reasons:
 * If you cancel it yourself on the platform
 * After too many payment declines, in which case our payment system will automatically cancel your subscription.
 
+## What happens when I run out of the monthly quota of imports?
 
+We will send you an email notification when your monthly usage hits 80% and 100%, so you have enough time to react and adapt your plan.
 
 
 
