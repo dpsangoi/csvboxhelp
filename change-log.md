@@ -4,6 +4,14 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 07 February 2022
+
+### Added
+
+* Header row selection step in the importer.
+
+![](.gitbook/assets/header-select.gif)
+
 ## 03 February 2022
 
 ### Added
