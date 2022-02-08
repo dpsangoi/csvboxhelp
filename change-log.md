@@ -4,6 +4,12 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 08 February 2022
+
+### Added
+
+* [FTP Data Destination](destinations/#ftp-server)
+
 ## 07 February 2022
 
 ### Added
