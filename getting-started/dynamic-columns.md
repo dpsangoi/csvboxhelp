@@ -1,5 +1,5 @@
 ---
-description: (Beta) Add new columns to the template at run-time.
+description: Add new columns to the template at run-time.
 ---
 
 # Dynamic Columns
@@ -357,7 +357,7 @@ Here is an example illustrating more configuration options.
 | phone\_number | -                                                                                 |                                                                                                                                                                                                                                                                                                 |
 | list          | <ol><li><strong>values</strong></li><li><strong>case_sensitive</strong></li></ol> | <p>"values": [</p><p>{"value": "m", "display_label": "male"},</p><p>{"value": "f", "display_label": "female"}, </p><p>],</p><p>"case_sensitive": false</p>                                                                                                                                      |
 
-### **Displaying Dynamic Data**
+### **Receiving Dynamic Data**
 
 The data from the dynamic columns is available in the data destinations along with the data from the regular columns. Currently, **** dynamic columns are supported by the following destinations only:
 
