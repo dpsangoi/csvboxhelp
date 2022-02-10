@@ -67,8 +67,8 @@ In the API response JSON object, the dynamic data will be displayed inside the *
           "Quantity": "8",
            "_unmapped_data":{
 		"Barcode": "4532748937411",
-		"_empty_header_1": "",
-		"Tags": "electronics"
+		"_empty_header_1": "EPower",
+		"Tags": ""
            }
         },
     "custom_fields": {
