@@ -47,7 +47,7 @@ In the API response JSON object, the dynamic data will be displayed inside the *
           "Quantity": "3",
           "_unmapped_data":{
 		"Barcode": "7832748937489",
-		"": "TP-Link",
+		"_empty_header_1": "TP-Link",
 		"Tags": "electronics, networking"
            }
     },
@@ -67,7 +67,7 @@ In the API response JSON object, the dynamic data will be displayed inside the *
           "Quantity": "8",
            "_unmapped_data":{
 		"Barcode": "4532748937411",
-		"": "",
+		"_empty_header_1": "",
 		"Tags": "electronics"
            }
         },
@@ -80,7 +80,7 @@ In the API response JSON object, the dynamic data will be displayed inside the *
 ```
 
 {% hint style="info" %}
-If the Unmapped Column does not have a header in the user uploaded file, then the column name will appear blank in the JSON object.
+If any of the Unmapped Columns do not have a header specified in the user uploaded file, then the app will auto-insert column names  _\_empty\_header\_1_, _\_empty\_header\_2_, and so on.
 {% endhint %}
 
 #### S3 Data Destination
