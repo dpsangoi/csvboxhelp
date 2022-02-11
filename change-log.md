@@ -4,6 +4,12 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 11 February 2022
+
+### Added
+
+* [Unmapped Columns](getting-started/unmapped-columns.md): Allowing users to submit columns not included in the sheet template.
+
 ## 08 February 2022
 
 ### Added
