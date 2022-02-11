@@ -1,7 +1,5 @@
 ---
-description: >-
-  (coming soon) Allow users to submit columns not included in your sheet
-  template.
+description: Allow users to submit columns not included in the sheet template.
 ---
 
 # Unmapped Columns
