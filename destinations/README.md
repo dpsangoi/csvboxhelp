@@ -7,6 +7,17 @@ description: >-
 
 # Data Destinations
 
+1. [None](./#none)
+2. [API](./#api-webhook)
+3. [Amazon S3](./#amazon-s3)
+4. [MySQL Database](./#mysql-database)&#x20;
+5. [Google Sheet](./#google-sheets)
+6. [Bubble.io](./#bubble)
+7. [PostgreSQL Database](./#zapier)
+8. [Airtable](./#airtable)
+9. [Zapier](./#zapier)
+10. [FTP Server](./#ftp-server)
+
 {% hint style="info" %}
 At a time only one destination can be selected per sheet.
 {% endhint %}
