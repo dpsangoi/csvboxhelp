@@ -4,6 +4,12 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 22 February 2022
+
+### Added
+
+* Dutch language support for the importer frontend.
+
 ## 11 February 2022
 
 ### Added
