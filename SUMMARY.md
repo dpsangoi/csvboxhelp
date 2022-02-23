@@ -28,4 +28,5 @@
 * [Terms of Use](legal/terms.md)
 * [Cookie Policy](legal/cookie-policy.md)
 * [User Data Policy](legal/data-policy.md)
-* [GDPR](legal/gdpr.md)
+* [GDPR](legal/gdpr/README.md)
+  * [Data Processing Addendum](legal/gdpr/data-processing-addendum.md)

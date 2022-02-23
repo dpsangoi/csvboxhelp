@@ -1,5 +1,5 @@
 ---
-description: Last updated April 13, 2021
+description: Last updated January 31, 2022
 ---
 
 # Cookie Policy
@@ -16,8 +16,7 @@ Cookies set by the website owner (in this case, **** Thalia Technologies Private
 **Why do we use cookies?**
 --------------------------
 
-We use first and third party cookies for several reasons. Some cookies are required for technical reasons in order for our Websites to operate, and we refer to these as "essential" or "strictly necessary" cookies. Other cookies also enable us to track and target the interests of our users to enhance the experience on our Online Properties. **** Third parties serve cookies through our Websites for advertising, analytics and other purposes. This is described in more detail below.\
-The specific types of first and third party cookies served through our Websites and the purposes they perform are described below (please note that the specific cookies served may vary depending on the specific Online Properties you visit):\
+We use first and third party cookies for several reasons. Some cookies are required for technical reasons in order for our Websites to operate, and we refer to these as "essential" or "strictly necessary" cookies. Other cookies also enable us to track and target the interests of our users to enhance the experience on our Online Properties. **** Third parties serve cookies through our Websites for advertising, analytics and other purposes. \
 
 
 ## **How can I control cookies?**
