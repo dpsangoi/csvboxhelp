@@ -6,6 +6,14 @@ description: A record of all notable changes made to the application.
 
 ## 22 February 2022
 
+### Updated
+
+* You can now view the translated texts for all supported languages and submit suggestions for changes.
+
+![Language Correction](.gitbook/assets/language-corrections.jpg)
+
+## 22 February 2022
+
 ### Added
 
 * Dutch language support for the importer frontend.
