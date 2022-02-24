@@ -4,7 +4,7 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
-## 22 February 2022
+## 23 February 2022
 
 ### Updated
 
