@@ -471,9 +471,10 @@ onImport: function (result, data) {
 
 Here is the list of additional configuration options available with the csvbox importer.
 
-| Option        | Type   | Default | Description                                                                                                                                                                                                                                                               |
-| ------------- | ------ | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **max\_rows** | number | null    | <p>Specify the maximum number of rows that a single file can import.<br><br>This value excludes the headers of the file. So if the number of rows in a sheet is 101, but the first row is the header, then this file would be considered to have 100 data rows in it.</p> |
+| Option        | Type   | Default | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| ------------- | ------ | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **max\_rows** | number | null    | <p>Specify the maximum number of rows that a single file can import.<br><br>This value excludes the headers of the file. So if the number of rows in a sheet is 101, but the first row is the header, then this file would be considered to have 100 data rows in it.</p>                                                                                                                                                                                                                                            |
+| **language**  | string | null    | <p>Specify the importer frontend language. This value will override the default language option configured via the csvbox dashboard.<br><br>Acceptable values are:<br><br><strong>Value</strong> <em>(Language)</em></p><p>--------------------</p><p><strong>en</strong> <em>(English)</em><br><strong>de</strong> <em>(German)</em><br><strong>fr</strong> <em>(French)</em><br><strong>es</strong> <em>(Spanish)</em></p><p><strong>nl</strong> <em>(Dutch)</em><br><strong>pt</strong> <em>(Portuguese)</em></p> |
 
 Example usage:
 
@@ -483,7 +484,8 @@ Pass additional options as input parameters to the **`setOptions`**method.
 
 ```javascript
  importer.setOptions({
-        max_rows: 50       
+        max_rows: 50,
+        language: 'de'
     })
 ```
 {% endtab %}
@@ -493,7 +495,8 @@ Pass the additional options as an object to the **`options`**property of the **`
 
 ```javascript
   options={{
-              max_rows: 50            
+              max_rows: 50,
+              language: 'de'            
   }}
 ```
 {% endtab %}
@@ -503,7 +506,8 @@ Pass the additional options as an object to the **`options`**property of the App
 
 ```javascript
   options={
-              max_rows: 50              
+              max_rows: 50,
+              language: 'de'              
  }
 ```
 {% endtab %}
@@ -513,7 +517,8 @@ Pass the additional options as an object to the **`options`**property of the **`
 
 ```javascript
   options: {
-              max_rows: 50
+              max_rows: 50,
+              language: 'de'
   },
 ```
 {% endtab %}
