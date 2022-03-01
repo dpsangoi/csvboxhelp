@@ -1,5 +1,5 @@
 ---
-description: 'Last Modified: February 23, 2022'
+description: 'Last Modified: March 01, 2022'
 ---
 
 # Data Processing Addendum
@@ -80,6 +80,7 @@ Additionally, here is the list of Sub-Processors:
 6. Hubspot: Customer Service
 7. Sender.net: Emails
 8. Hotjar: Behavior Analytics
+9. ArvanCloud: CDN and Security
 
 ### Governing Law and Jurisdiction
 
