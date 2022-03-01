@@ -4,6 +4,13 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 01 March 2022
+
+### Added
+
+* Portuguese language support for the importer frontend.
+* [**language** sheet option](https://help.csvbox.io/getting-started#additional-options) to select the frontend language while initializing the importer.
+
 ## 23 February 2022
 
 ### Updated
