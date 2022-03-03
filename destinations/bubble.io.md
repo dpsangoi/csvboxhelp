@@ -112,3 +112,8 @@ Check the following things:
 * Make sure there are no extra columns in your csvbox.io sheet that do NOT map to a field/attribute in your Bubble.io database object. Bubble does not like extra columns that its database doesn't know about.
 * The csvbox.io sheet column names should **EXACTLY** match the type names in your Bubble.io database object. Verify that capitalization and spaces are exactly the same as your Bubble.io data type object.
 * In your Bubble.io app settings, click "API" and make sure you have all checkboxes checked for exposing the Data API and also checked for every database object you want to import for.
+
+{% hint style="info" %}
+The maximum number of items that can be created in Bubble.io via a single bulk request is currently 1000.&#x20;
+{% endhint %}
+
