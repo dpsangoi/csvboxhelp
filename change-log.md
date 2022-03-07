@@ -4,6 +4,14 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 07 March 2022
+
+### Added
+
+* Custom message for regex validation.
+
+![](.gitbook/assets/regex\_message.jpg)
+
 ## 01 March 2022
 
 ### Added
