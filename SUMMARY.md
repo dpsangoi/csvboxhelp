@@ -6,6 +6,7 @@
   * [Add Columns via CSV](getting-started/add-columns-via-csv.md)
   * [Dynamic Columns](getting-started/dynamic-columns.md)
   * [Unmapped Columns](getting-started/unmapped-columns.md)
+  * [REST File API](getting-started/rest-file-api.md)
 * [Validations](validations.md)
 * [Data Destinations](destinations/README.md)
   * [Bubble.io](destinations/bubble.io.md)
