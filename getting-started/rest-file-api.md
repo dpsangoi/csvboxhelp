@@ -5,7 +5,7 @@ description: Automate CSV submissions via REST File API
 # REST File API
 
 {% hint style="warning" %}
-REST File API is under development. The expected launch date is 31 March 2022.
+REST File API is under development. The expected launch date is early Q2 2022.
 {% endhint %}
 
 The File API lets you accept spreadsheet files programmatically. It is an alternative to the users uploading the files manually, via the Csvbox importer. Files submitted via the REST File API will then be pushed to the data destination as set up in the Csvbox dashboard.
@@ -29,27 +29,23 @@ Include your API key as a `X-Csvbox-Api-Key` header on all API queries.&#x20;
 
 {% endswagger-description %}
 
-{% swagger-parameter in="body" name="file" type="Object" required="true" %}
-File object
+{% swagger-parameter in="body" name="import" type="Object" required="true" %}
+Import file data
 {% endswagger-parameter %}
 
-{% swagger-parameter in="header" name="X-Csvbox-Api-Key" required="true" %}
+{% swagger-parameter in="header" name="X-csvbox-api-key" required="true" %}
 API Key
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="public_file_url" required="true" type="String" %}
+{% swagger-parameter in="body" name="import.public_file_url" required="true" type="String" %}
 The public URL of the spreadsheet that is to be submitted.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="sheet" type="Object" required="true" %}
-Sheet object
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="sheet.license_key" type="String" required="true" %}
+{% swagger-parameter in="body" name="import.license_key" type="String" required="true" %}
 Sheet license key
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="user" type="Object" %}
+{% swagger-parameter in="body" name="import.user" type="Object" %}
 Object 
 
 [referencing the user](https://help.csvbox.io/getting-started#referencing-the-user)
@@ -57,7 +53,7 @@ Object
 
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="options" type="Object" %}
+{% swagger-parameter in="body" name="import.options" type="Object" %}
 Object 
 
 [referencing the import options](https://help.csvbox.io/getting-started#additional-options)
@@ -65,7 +61,7 @@ Object
 
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="dynamic_columns" type="Object" %}
+{% swagger-parameter in="body" name="import.dynamic_columns" type="Object" %}
 Object 
 
 [referencing dynamic columns](https://help.csvbox.io/getting-started/dynamic-columns)
@@ -128,7 +124,7 @@ HTTP/1.1 200 OK
 {% tabs %}
 {% tab title="curl" %}
 ```javascript
-curl -d '{"file":{"public_file_url":"https: //xyx.com/admin/download-csv/UXOR2MphpEu2sSAIISpY7AKmOIzAKygLNy8eviEr"},"sheet":{"license_key":"jhkjsahjkhkjhkjhkjasdasd"},"user":{"user_id":"1a2b3c4d5e6f","team_id":"sales2","permissionLevel":"admin"},"options":{"max_rows":"150","language":"de"},"dynamic_columns":[{"column_name":"qualification","display_label":"HighestQualification","info_hint":"Whatisyourhighesteducationaldegree","matching_keywords":"degree,   education","type":"text","validators":{"min_length":2,"max_length":50},"required":true},{"column_name":"experience","display_label":"WorkExperience","info_hint":"Yearsofworkexperience","matching_keywords":"","type":"number","validators":{"min_value":0,"max_value":100},"required":false}]}' \
+curl -d '{"import":{"public_file_url":"https: //xyx.com/admin/download-csv/UXOR2MphpEu2sSAIISpY7AKmOIzAKygLNy8eviEr","license_key":"jhkjsahjkhkjhkjhkjasdasd","user":{"user_id":"1a2b3c4d5e6f","team_id":"sales2","permissionLevel":"admin"},"options":{"max_rows":"150","language":"de"},"dynamic_columns":[{"column_name":"qualification","display_label":"HighestQualification","info_hint":"Whatisyourhighesteducationaldegree","matching_keywords":"degree,   education","type":"text","validators":{"min_length":2,"max_length":50},"required":true},{"column_name":"experience","display_label":"WorkExperience","info_hint":"Yearsofworkexperience","matching_keywords":"","type":"number","validators":{"min_value":0,"max_value":100},"required":false}]}' \
 -X POST "https://api.csvbox.io/1.1/file" \
 -H "X-Csvbox-Api-Key: {api_key}" \
 -H "Content-Type: application/json"
@@ -140,47 +136,44 @@ curl -d '{"file":{"public_file_url":"https: //xyx.com/admin/download-csv/UXOR2Mp
 $client = new Rest("api.csvbox.io/1.1/file", $apiKey);
 
 $response = $client->post(
-  "file": {
-    "public_file_url": "https: //xyx.com/admin/download-csv/UXOR2MphpEu2sSAIISpY7AKmOIzAKygLNy8eviEr"
-  },
-  "sheet": {
-    "license_key": "jhkjsahjkhkjhkjhkjasdasd"
-  },
-  "user": {
-    "user_id": "1a2b3c4d5e6f",
-    "team_id": "sales2",
-    "permissionLevel": "admin"
-  },
-  "options": {
-    "max_rows": "150",
-    "language": "de"
-  },
-  "dynamic_columns": [
-    {
-      "column_name": "qualification",
-      "display_label": "HighestQualification",
-      "info_hint": "Whatisyourhighesteducationaldegree",
-      "matching_keywords": "degree,   education",
-      "type": "text",
-      "validators": {
-        "min_length": 2,
-        "max_length": 50
-      },
-      "required": true
+  "import": {
+    "public_file_url": "https: //xyx.com/admin/download-csv/UXOR2MphpEu2sSAIISpY7AKmOIzAKygLNy8eviEr", 
+    "license_key": "jhkjsahjkhkjhkjhkjasdasd",  
+    "user": {
+      "user_id": "1a2b3c4d5e6f",
+      "team_id": "sales2",
+      "permissionLevel": "admin"
     },
-    {
-      "column_name": "experience",
-      "display_label": "WorkExperience",
-      "info_hint": "Yearsofworkexperience",
-      "matching_keywords": "",
-      "type": "number",
-      "validators": {
-        "min_value": 0,
-        "max_value": 100
+    "options": {
+      "max_rows": "150",
+      "language": "de"
+    },
+    "dynamic_columns": [
+      {
+        "column_name": "qualification",
+        "display_label": "HighestQualification",
+        "info_hint": "Whatisyourhighesteducationaldegree",
+        "matching_keywords": "degree,   education",
+        "type": "text",
+        "validators": {
+          "min_length": 2,
+          "max_length": 50
+        },
+        "required": true
       },
-      "required": false
-    }
-  ]  
+      {
+        "column_name": "experience",
+        "display_label": "WorkExperience",
+        "info_hint": "Yearsofworkexperience",
+        "matching_keywords": "",
+        "type": "number",
+        "validators": {
+          "min_value": 0,
+          "max_value": 100
+        },
+        "required": false
+      }
+    ]  
 );
 
 ```
