@@ -20,7 +20,7 @@ The spreadsheets submitted via File API will not be [validated](https://help.csv
 
 All REST File API queries require a valid API key. You can find the API key on the **Accounts** page in the Csvbox dashboard.
 
-Include your API key as a `X-Csvbox-Api-Key` header on all API queries.&#x20;
+Include your API key as a `x-csvbox-api-key` header on all API queries.&#x20;
 
 ### Endpoint
 
@@ -33,7 +33,7 @@ Include your API key as a `X-Csvbox-Api-Key` header on all API queries.&#x20;
 Import file data
 {% endswagger-parameter %}
 
-{% swagger-parameter in="header" name="X-csvbox-api-key" required="true" %}
+{% swagger-parameter in="header" name="x-csvbox-api-key" required="true" %}
 API Key
 {% endswagger-parameter %}
 
