@@ -69,6 +69,10 @@ Object
 
 {% endswagger-parameter %}
 
+{% swagger-parameter in="header" name="content-type" required="true" %}
+application/json
+{% endswagger-parameter %}
+
 {% swagger-response status="200: OK" description="File submitted" %}
 ```javascript
 HTTP/1.1 200 OK
@@ -126,8 +130,8 @@ HTTP/1.1 200 OK
 ```javascript
 curl -d '{"import":{"public_file_url":"https: //xyx.com/admin/download-csv/UXOR2MphpEu2sSAIISpY7AKmOIzAKygLNy8eviEr","license_key":"jhkjsahjkhkjhkjhkjasdasd","user":{"user_id":"1a2b3c4d5e6f","team_id":"sales2","permissionLevel":"admin"},"options":{"max_rows":"150","language":"de"},"dynamic_columns":[{"column_name":"qualification","display_label":"HighestQualification","info_hint":"Whatisyourhighesteducationaldegree","matching_keywords":"degree,   education","type":"text","validators":{"min_length":2,"max_length":50},"required":true},{"column_name":"experience","display_label":"WorkExperience","info_hint":"Yearsofworkexperience","matching_keywords":"","type":"number","validators":{"min_value":0,"max_value":100},"required":false}]}' \
 -X POST "https://api.csvbox.io/1.1/file" \
--H "X-Csvbox-Api-Key: {api_key}" \
--H "Content-Type: application/json"
+-H "x-csvbox-api-key: {api_key}" \
+-H "content-type: application/json"
 ```
 {% endtab %}
 
