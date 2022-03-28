@@ -83,6 +83,14 @@ The files uploaded by the users can be pushed to the AWS S3 Bucket of your choic
 The data will be stored as S3 objects with the name **\{{import\_id\}}\_\{{user\_id\}}.csv** where **user\_id** is the custom user attribute that you reference via the **`setUser`**method while installing the importer code. The other 4 custom user attributes will be saved as the [user-defined metadata](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingMetadata.html) of the S3 object.
 {% endhint %}
 
+The AWS credentials need the following 3 minimum policies for uploading files to S3:
+
+1. _ListBucket_ policy is required for testing the connection.
+2. _PutObject_ is required to add objects to S3.
+3. _PutObjectTagging_ is required to add the tags (metadata) to the uploaded objects.
+
+
+
 ## MySQL Database
 
 Import CSV files and Excel sheets directly into your MySQL tables. How it works:
