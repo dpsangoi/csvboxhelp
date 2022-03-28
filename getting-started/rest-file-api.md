@@ -128,7 +128,7 @@ HTTP/1.1 200 OK
 {% tabs %}
 {% tab title="curl" %}
 ```javascript
-curl -d '{"import":{"public_file_url":"https: //xyx.com/admin/download-csv/UXOR2MphpEu2sSAIISpY7AKmOIzAKygLNy8eviEr","license_key":"jhkjsahjkhkjhkjhkjasdasd","user":{"user_id":"1a2b3c4d5e6f","team_id":"sales2","permissionLevel":"admin"},"options":{"max_rows":"150","language":"de"},"dynamic_columns":[{"column_name":"qualification","display_label":"HighestQualification","info_hint":"Whatisyourhighesteducationaldegree","matching_keywords":"degree,   education","type":"text","validators":{"min_length":2,"max_length":50},"required":true},{"column_name":"experience","display_label":"WorkExperience","info_hint":"Yearsofworkexperience","matching_keywords":"","type":"number","validators":{"min_value":0,"max_value":100},"required":false}]}' \
+curl -d '{"import":{"public_file_url":"https://some-domain.com/admin/download-csv/UXOR2MphpEu2sSAIISpY7AKmOIzAKygLNy8eviEr","license_key":"jhkjsahjkhkjhkjhkjasdasd","user":{"user_id":"1a2b3c4d5e6f","team_id":"sales2","permissionLevel":"admin"},"options":{"max_rows":"150","language":"de"},"dynamic_columns":[{"column_name":"qualification","display_label":"HighestQualification","info_hint":"Whatisyourhighesteducationaldegree","matching_keywords":"degree,   education","type":"text","validators":{"min_length":2,"max_length":50},"required":true},{"column_name":"experience","display_label":"WorkExperience","info_hint":"Yearsofworkexperience","matching_keywords":"","type":"number","validators":{"min_value":0,"max_value":100},"required":false}]}' \
 -X POST "https://api.csvbox.io/1.1/file" \
 -H "x-csvbox-api-key: {api_key}" \
 -H "content-type: application/json"
@@ -141,7 +141,7 @@ $client = new Rest("api.csvbox.io/1.1/file", $apiKey);
 
 $response = $client->post(
   "import": {
-    "public_file_url": "https: //xyx.com/admin/download-csv/UXOR2MphpEu2sSAIISpY7AKmOIzAKygLNy8eviEr", 
+    "public_file_url": "https://some-domain.com/admin/download-csv/UXOR2MphpEu2sSAIISpY7AKmOIzAKygLNy8eviEr", 
     "license_key": "jhkjsahjkhkjhkjhkjasdasd",  
     "user": {
       "user_id": "1a2b3c4d5e6f",
@@ -190,9 +190,9 @@ The REST Admin API supports a limit of 30 requests per minute. This allotment re
 
 Past the limit, the API will return a `429 Too Many Requests` error.
 
-All REST API responses include the `X-Csvbox-File-Api-Call-Limit` header, which shows how many requests the client has made, and the total number allowed per minute.
+All REST API responses include the x`-csvbox-file-api-call-limit` header, which shows how many requests the client has made, and the total number allowed per minute.
 
-A `429` response will also include a `Retry-After` header with the number of seconds to wait until retrying your query.
+A `429` response will also include a `retry-after` header with the number of seconds to wait until retrying your query.
 
 ### Status and error codes
 
@@ -200,7 +200,7 @@ All API queries return HTTP status codes that can tell you more about the respon
 
 **401 Unauthorized**
 
-The client doesn’t have correct authentication credentials.
+The client doesn’t have the correct authentication credentials.
 
 ```
 HTTP/1.1 401 Unauthorized
