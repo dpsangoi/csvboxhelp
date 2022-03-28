@@ -10,7 +10,23 @@ REST File API is under development. The expected launch date is early Q2 2022.
 
 The File API lets you accept spreadsheet files programmatically. It is an alternative to the users uploading the files manually, via the Csvbox importer. Files submitted via the REST File API will then be pushed to the data destination as set up in the Csvbox dashboard.
 
-After the data is pushed to the destination, the [import complete webhook ](./#import-complete-webhook)will be triggered as configured in the sheet settings.
+#### Simple File API Request
+
+```javascript
+curl --location --request POST 'https://api.csvbox.io/1.1/file' \
+--header 'x-csvbox-api-key: CSBxRLHgIZv3bqMlrJiVKXhKwtcHSv' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "import": {
+        "public_file_url": "https: //some-domain.com/file/3434as.csv",
+        "sheet_license_key": "jhkjsahjkhkjhkjhkjasdasd",
+        "user": {
+            "user_id": "1a2b3c4d5e6f",           
+        }    
+}'
+```
+
+After the data is pushed to the destination, the [import complete webhook ](./#import-complete-webhook)can be triggered as configured in the sheet settings.
 
 {% hint style="info" %}
 The spreadsheets submitted via File API will not be [validated](https://help.csvbox.io/validations). The importer will attempt to push the file directly to the destination in the raw form.
@@ -41,7 +57,7 @@ API Key
 The public URL of the spreadsheet that is to be submitted.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="import.license_key" type="String" required="true" %}
+{% swagger-parameter in="body" name="import.sheet_license_key" type="String" required="true" %}
 Sheet license key
 {% endswagger-parameter %}
 
@@ -126,59 +142,164 @@ HTTP/1.1 200 OK
 #### Example Request
 
 {% tabs %}
-{% tab title="curl" %}
+{% tab title="cURL" %}
 ```javascript
-curl -d '{"import":{"public_file_url":"https://some-domain.com/admin/download-csv/UXOR2MphpEu2sSAIISpY7AKmOIzAKygLNy8eviEr","license_key":"jhkjsahjkhkjhkjhkjasdasd","user":{"user_id":"1a2b3c4d5e6f","team_id":"sales2","permissionLevel":"admin"},"options":{"max_rows":"150","language":"de"},"dynamic_columns":[{"column_name":"qualification","display_label":"HighestQualification","info_hint":"Whatisyourhighesteducationaldegree","matching_keywords":"degree,   education","type":"text","validators":{"min_length":2,"max_length":50},"required":true},{"column_name":"experience","display_label":"WorkExperience","info_hint":"Yearsofworkexperience","matching_keywords":"","type":"number","validators":{"min_value":0,"max_value":100},"required":false}]}' \
--X POST "https://api.csvbox.io/1.1/file" \
--H "x-csvbox-api-key: {api_key}" \
--H "content-type: application/json"
+curl --location --request POST 'https://api.csvbox.io/1.1/file' \
+--header 'x-csvbox-api-key: CSBxRLHgIZv3bqMlrJiVKXhKwtcHSv' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "import": {
+        "public_file_url": "https: //some-domain.com/admin/download-csv/UXOR2MphpEu2sSAIISpY7AKmOIzAKygLNy8eviEr",
+        "sheet_license_key": "jhkjsahjkhkjhkjhkjasdasd",
+        "user": {
+            "user_id": "1a2b3c4d5e6f",
+            "team_id": "sales2",
+            "permissionLevel": "admin"
+        },
+        "options": {
+            "max_rows": "150",
+            "language": "de"
+        },
+        "dynamic_columns": [
+            {
+                "column_name": "qualification",
+                "display_label": "HighestQualification",
+                "info_hint": "Whatisyourhighesteducationaldegree",
+                "matching_keywords": "degree,   education",
+                "type": "text",
+                "validators": {
+                    "min_length": 2,
+                    "max_length": 50
+                },
+                "required": true
+            },
+            {
+                "column_name": "experience",
+                "display_label": "WorkExperience",
+                "info_hint": "Yearsofworkexperience",
+                "matching_keywords": "",
+                "type": "number",
+                "validators": {
+                    "min_value": 0,
+                    "max_value": 100
+                },
+                "required": false
+            }
+        ]
+    }'
 ```
 {% endtab %}
 
-{% tab title="php" %}
-```php
-$client = new Rest("api.csvbox.io/1.1/file", $apiKey);
+{% tab title="jQuery" %}
+```javascript
+var settings = {
+  "url": "https://api.csvbox.io/1.1/file",
+  "method": "POST",
+  "timeout": 0,
+  "headers": {
+    "x-csvbox-api-key": "CSBxRLHgIZv3bqMlrJiVKXhKwtcHSv",
+    "Content-Type": "application/json"
+  },
+  "data": "{\r\n    \"import\": {\r\n        \"public_file_url\": \"https: //some-domain.com/admin/download-csv/UXOR2MphpEu2sSAIISpY7AKmOIzAKygLNy8eviEr\",\r\n        \"sheet_license_key\": \"jhkjsahjkhkjhkjhkjasdasd\",\r\n        \"user\": {\r\n            \"user_id\": \"1a2b3c4d5e6f\",\r\n            \"team_id\": \"sales2\",\r\n            \"permissionLevel\": \"admin\"\r\n        },\r\n        \"options\": {\r\n            \"max_rows\": \"150\",\r\n            \"language\": \"de\"\r\n        },\r\n        \"dynamic_columns\": [\r\n            {\r\n                \"column_name\": \"qualification\",\r\n                \"display_label\": \"HighestQualification\",\r\n                \"info_hint\": \"Whatisyourhighesteducationaldegree\",\r\n                \"matching_keywords\": \"degree,   education\",\r\n                \"type\": \"text\",\r\n                \"validators\": {\r\n                    \"min_length\": 2,\r\n                    \"max_length\": 50\r\n                },\r\n                \"required\": true\r\n            },\r\n            {\r\n                \"column_name\": \"experience\",\r\n                \"display_label\": \"WorkExperience\",\r\n                \"info_hint\": \"Yearsofworkexperience\",\r\n                \"matching_keywords\": \"\",\r\n                \"type\": \"number\",\r\n                \"validators\": {\r\n                    \"min_value\": 0,\r\n                    \"max_value\": 100\r\n                },\r\n                \"required\": false\r\n            }\r\n        ]\r\n    }",
+};
 
-$response = $client->post(
-  "import": {
-    "public_file_url": "https://some-domain.com/admin/download-csv/UXOR2MphpEu2sSAIISpY7AKmOIzAKygLNy8eviEr", 
-    "license_key": "jhkjsahjkhkjhkjhkjasdasd",  
-    "user": {
-      "user_id": "1a2b3c4d5e6f",
-      "team_id": "sales2",
-      "permissionLevel": "admin"
-    },
-    "options": {
-      "max_rows": "150",
-      "language": "de"
-    },
-    "dynamic_columns": [
-      {
-        "column_name": "qualification",
-        "display_label": "HighestQualification",
-        "info_hint": "Whatisyourhighesteducationaldegree",
-        "matching_keywords": "degree,   education",
-        "type": "text",
-        "validators": {
-          "min_length": 2,
-          "max_length": 50
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+```
+{% endtab %}
+
+{% tab title="PHP" %}
+```php
+<?php
+
+$curl = curl_init();
+
+curl_setopt_array($curl, array(
+  CURLOPT_URL => 'https://api.csvbox.io/1.1/file',
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_ENCODING => '',
+  CURLOPT_MAXREDIRS => 10,
+  CURLOPT_TIMEOUT => 0,
+  CURLOPT_FOLLOWLOCATION => true,
+  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST => 'POST',
+  CURLOPT_POSTFIELDS =>'{
+    "import": {
+        "public_file_url": "https: //some-domain.com/admin/download-csv/UXOR2MphpEu2sSAIISpY7AKmOIzAKygLNy8eviEr",
+        "sheet_license_key": "jhkjsahjkhkjhkjhkjasdasd",
+        "user": {
+            "user_id": "1a2b3c4d5e6f",
+            "team_id": "sales2",
+            "permissionLevel": "admin"
         },
-        "required": true
-      },
-      {
-        "column_name": "experience",
-        "display_label": "WorkExperience",
-        "info_hint": "Yearsofworkexperience",
-        "matching_keywords": "",
-        "type": "number",
-        "validators": {
-          "min_value": 0,
-          "max_value": 100
+        "options": {
+            "max_rows": "150",
+            "language": "de"
         },
-        "required": false
-      }
-    ]  
-);
+        "dynamic_columns": [
+            {
+                "column_name": "qualification",
+                "display_label": "HighestQualification",
+                "info_hint": "Whatisyourhighesteducationaldegree",
+                "matching_keywords": "degree,   education",
+                "type": "text",
+                "validators": {
+                    "min_length": 2,
+                    "max_length": 50
+                },
+                "required": true
+            },
+            {
+                "column_name": "experience",
+                "display_label": "WorkExperience",
+                "info_hint": "Yearsofworkexperience",
+                "matching_keywords": "",
+                "type": "number",
+                "validators": {
+                    "min_value": 0,
+                    "max_value": 100
+                },
+                "required": false
+            }
+        ]
+    }',
+  CURLOPT_HTTPHEADER => array(
+    'x-csvbox-api-key: CSBxRLHgIZv3bqMlrJiVKXhKwtcHSv',
+    'Content-Type: application/json'
+  ),
+));
+
+$response = curl_exec($curl);
+
+curl_close($curl);
+echo $response;
+
+```
+{% endtab %}
+
+{% tab title="NodeJS" %}
+```javascript
+var axios = require('axios');
+var data = '{\r\n    "import": {\r\n        "public_file_url": "https: //some-domain.com/admin/download-csv/UXOR2MphpEu2sSAIISpY7AKmOIzAKygLNy8eviEr",\r\n        "sheet_license_key": "jhkjsahjkhkjhkjhkjasdasd",\r\n        "user": {\r\n            "user_id": "1a2b3c4d5e6f",\r\n            "team_id": "sales2",\r\n            "permissionLevel": "admin"\r\n        },\r\n        "options": {\r\n            "max_rows": "150",\r\n            "language": "de"\r\n        },\r\n        "dynamic_columns": [\r\n            {\r\n                "column_name": "qualification",\r\n                "display_label": "HighestQualification",\r\n                "info_hint": "Whatisyourhighesteducationaldegree",\r\n                "matching_keywords": "degree,   education",\r\n                "type": "text",\r\n                "validators": {\r\n                    "min_length": 2,\r\n                    "max_length": 50\r\n                },\r\n                "required": true\r\n            },\r\n            {\r\n                "column_name": "experience",\r\n                "display_label": "WorkExperience",\r\n                "info_hint": "Yearsofworkexperience",\r\n                "matching_keywords": "",\r\n                "type": "number",\r\n                "validators": {\r\n                    "min_value": 0,\r\n                    "max_value": 100\r\n                },\r\n                "required": false\r\n            }\r\n        ]\r\n    }';
+
+var config = {
+  method: 'post',
+  url: 'https://api.csvbox.io/1.1/file',
+  headers: { 
+    'x-csvbox-api-key': 'CSBxRLHgIZv3bqMlrJiVKXhKwtcHSv', 
+    'Content-Type': 'application/json'
+  },
+  data : data
+};
+
+axios(config)
+.then(function (response) {
+  console.log(JSON.stringify(response.data));
+})
+.catch(function (error) {
+  console.log(error);
+});
 
 ```
 {% endtab %}
