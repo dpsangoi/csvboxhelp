@@ -22,6 +22,9 @@ curl --location --request POST 'https://api.csvbox.io/1.1/file' \
         "sheet_license_key": "jhkjsahjkhkjhkjhkjasdasd",
         "user": {
             "user_id": "1a2b3c4d5e6f",           
+        },
+         "options": {           
+            "has_header": 1
         }    
 }'
 ```
@@ -72,7 +75,7 @@ Object
 {% swagger-parameter in="body" name="import.options" type="Object" %}
 Object 
 
-[referencing the import options](https://help.csvbox.io/getting-started#additional-options)
+[referencing the import options](rest-file-api.md#additional-options)
 
 
 {% endswagger-parameter %}
@@ -106,7 +109,7 @@ HTTP/1.1 200 OK
   },
   "options": {
     "max_rows": 150,
-    "language": "de"
+    "has_header": 1
   },
   "dynamic_olumns": [
      {
@@ -158,7 +161,7 @@ curl --location --request POST 'https://api.csvbox.io/1.1/file' \
         },
         "options": {
             "max_rows": "150",
-            "language": "de"
+            "has_header": 1
         },
         "dynamic_columns": [
             {
@@ -200,7 +203,7 @@ var settings = {
     "x-csvbox-api-key": "CSBxRLHgIZv3bqMlrJiVKXhKwtcHSv",
     "Content-Type": "application/json"
   },
-  "data": "{\r\n    \"import\": {\r\n        \"public_file_url\": \"https: //some-domain.com/admin/download-csv/UXOR2MphpEu2sSAIISpY7AKmOIzAKygLNy8eviEr\",\r\n        \"sheet_license_key\": \"jhkjsahjkhkjhkjhkjasdasd\",\r\n        \"user\": {\r\n            \"user_id\": \"1a2b3c4d5e6f\",\r\n            \"team_id\": \"sales2\",\r\n            \"permissionLevel\": \"admin\"\r\n        },\r\n        \"options\": {\r\n            \"max_rows\": \"150\",\r\n            \"language\": \"de\"\r\n        },\r\n        \"dynamic_columns\": [\r\n            {\r\n                \"column_name\": \"qualification\",\r\n                \"display_label\": \"HighestQualification\",\r\n                \"info_hint\": \"Whatisyourhighesteducationaldegree\",\r\n                \"matching_keywords\": \"degree,   education\",\r\n                \"type\": \"text\",\r\n                \"validators\": {\r\n                    \"min_length\": 2,\r\n                    \"max_length\": 50\r\n                },\r\n                \"required\": true\r\n            },\r\n            {\r\n                \"column_name\": \"experience\",\r\n                \"display_label\": \"WorkExperience\",\r\n                \"info_hint\": \"Yearsofworkexperience\",\r\n                \"matching_keywords\": \"\",\r\n                \"type\": \"number\",\r\n                \"validators\": {\r\n                    \"min_value\": 0,\r\n                    \"max_value\": 100\r\n                },\r\n                \"required\": false\r\n            }\r\n        ]\r\n    }",
+  "data": "{\r\n    \"import\": {\r\n        \"public_file_url\": \"https: //some-domain.com/admin/download-csv/UXOR2MphpEu2sSAIISpY7AKmOIzAKygLNy8eviEr\",\r\n        \"sheet_license_key\": \"jhkjsahjkhkjhkjhkjasdasd\",\r\n        \"user\": {\r\n            \"user_id\": \"1a2b3c4d5e6f\",\r\n            \"team_id\": \"sales2\",\r\n            \"permissionLevel\": \"admin\"\r\n        },\r\n        \"options\": {\r\n            \"max_rows\": \"150\",\r\n            \"has_header\": \"1\"\r\n        },\r\n        \"dynamic_columns\": [\r\n            {\r\n                \"column_name\": \"qualification\",\r\n                \"display_label\": \"HighestQualification\",\r\n                \"info_hint\": \"Whatisyourhighesteducationaldegree\",\r\n                \"matching_keywords\": \"degree,   education\",\r\n                \"type\": \"text\",\r\n                \"validators\": {\r\n                    \"min_length\": 2,\r\n                    \"max_length\": 50\r\n                },\r\n                \"required\": true\r\n            },\r\n            {\r\n                \"column_name\": \"experience\",\r\n                \"display_label\": \"WorkExperience\",\r\n                \"info_hint\": \"Yearsofworkexperience\",\r\n                \"matching_keywords\": \"\",\r\n                \"type\": \"number\",\r\n                \"validators\": {\r\n                    \"min_value\": 0,\r\n                    \"max_value\": 100\r\n                },\r\n                \"required\": false\r\n            }\r\n        ]\r\n    }",
 };
 
 $.ajax(settings).done(function (response) {
@@ -235,7 +238,7 @@ curl_setopt_array($curl, array(
         },
         "options": {
             "max_rows": "150",
-            "language": "de"
+            "has_header": 1
         },
         "dynamic_columns": [
             {
@@ -281,7 +284,7 @@ echo $response;
 {% tab title="NodeJS" %}
 ```javascript
 var axios = require('axios');
-var data = '{\r\n    "import": {\r\n        "public_file_url": "https: //some-domain.com/admin/download-csv/UXOR2MphpEu2sSAIISpY7AKmOIzAKygLNy8eviEr",\r\n        "sheet_license_key": "jhkjsahjkhkjhkjhkjasdasd",\r\n        "user": {\r\n            "user_id": "1a2b3c4d5e6f",\r\n            "team_id": "sales2",\r\n            "permissionLevel": "admin"\r\n        },\r\n        "options": {\r\n            "max_rows": "150",\r\n            "language": "de"\r\n        },\r\n        "dynamic_columns": [\r\n            {\r\n                "column_name": "qualification",\r\n                "display_label": "HighestQualification",\r\n                "info_hint": "Whatisyourhighesteducationaldegree",\r\n                "matching_keywords": "degree,   education",\r\n                "type": "text",\r\n                "validators": {\r\n                    "min_length": 2,\r\n                    "max_length": 50\r\n                },\r\n                "required": true\r\n            },\r\n            {\r\n                "column_name": "experience",\r\n                "display_label": "WorkExperience",\r\n                "info_hint": "Yearsofworkexperience",\r\n                "matching_keywords": "",\r\n                "type": "number",\r\n                "validators": {\r\n                    "min_value": 0,\r\n                    "max_value": 100\r\n                },\r\n                "required": false\r\n            }\r\n        ]\r\n    }';
+var data = '{\r\n    "import": {\r\n        "public_file_url": "https: //some-domain.com/admin/download-csv/UXOR2MphpEu2sSAIISpY7AKmOIzAKygLNy8eviEr",\r\n        "sheet_license_key": "jhkjsahjkhkjhkjhkjasdasd",\r\n        "user": {\r\n            "user_id": "1a2b3c4d5e6f",\r\n            "team_id": "sales2",\r\n            "permissionLevel": "admin"\r\n        },\r\n        "options": {\r\n            "max_rows": "150",\r\n            "has_header": "1"\r\n        },\r\n        "dynamic_columns": [\r\n            {\r\n                "column_name": "qualification",\r\n                "display_label": "HighestQualification",\r\n                "info_hint": "Whatisyourhighesteducationaldegree",\r\n                "matching_keywords": "degree,   education",\r\n                "type": "text",\r\n                "validators": {\r\n                    "min_length": 2,\r\n                    "max_length": 50\r\n                },\r\n                "required": true\r\n            },\r\n            {\r\n                "column_name": "experience",\r\n                "display_label": "WorkExperience",\r\n                "info_hint": "Yearsofworkexperience",\r\n                "matching_keywords": "",\r\n                "type": "number",\r\n                "validators": {\r\n                    "min_value": 0,\r\n                    "max_value": 100\r\n                },\r\n                "required": false\r\n            }\r\n        ]\r\n    }';
 
 var config = {
   method: 'post',
@@ -395,3 +398,13 @@ HTTP/1.1 500 Internal Server Error
     "errors": "An unexpected error occurred."
 }
 ```
+
+#### Options
+
+Here is the list of additional configuration options available with the File API.
+
+| Option          | Type    | Default | Description                                                                                                                                                         |
+| --------------- | ------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **max\_rows**   | number  | null    | Specify the maximum number of rows to import.                                                                                                                       |
+| **has\_header** | boolean | 0       | <p>Specify whether the file contains a header row.<br><br>Acceptable values are:</p><p><strong>0</strong> (no header)</p><p><strong>1</strong> (has header row)</p> |
+
