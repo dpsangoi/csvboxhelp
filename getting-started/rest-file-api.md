@@ -31,8 +31,12 @@ curl --location --request POST 'https://api.csvbox.io/1.1/file' \
 
 After the data is pushed to the destination, the [import complete webhook ](./#import-complete-webhook)can be triggered as configured in the sheet settings.
 
-{% hint style="info" %}
-The spreadsheets submitted via File API will not be [validated](https://help.csvbox.io/validations). The importer will attempt to push the file directly to the destination in the raw form.
+{% hint style="warning" %}
+The spreadsheet data submitted via File API will not be [validated](https://help.csvbox.io/validations) based on the rules configured in the sheet settings. The importer will attempt to push the data directly to the destination in the raw form.
+{% endhint %}
+
+{% hint style="warning" %}
+The columns in the file should be arranged in the same order as configured in the sheet template.
 {% endhint %}
 
 ### Authentication
@@ -418,12 +422,4 @@ Here is the list of additional configuration options available with the File API
 | Type        | Boolean                                                                                                                                                               |   |
 | Default     | 0                                                                                                                                                                     |   |
 | Description | <p>Specify whether the file contains a header row.<br><br>Acceptable values are:</p><p><strong>0</strong> (no header)</p><p><strong>1</strong> (has a header row)</p> |   |
-
-#### match\_columns
-
-|             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |   |
-| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | - |
-| Type        | Boolean                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |   |
-| Default     | 0                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |   |
-| Description | <p>Specifies if the importer automatically should match the file column names with the template sheet column names.<br><br>Acceptable values are:<br><strong>0</strong> - Don't match columns. In this case, the file columns and the template columns should have the exact same names and should be arranged in the same order.<br><strong>1</strong> - Match columns names. File columns that do not have a matching column name in the sheet template will be ignored</p> |   |
 
