@@ -399,12 +399,31 @@ HTTP/1.1 500 Internal Server Error
 }
 ```
 
-#### Options
+### Options
 
 Here is the list of additional configuration options available with the File API.
 
-| Option          | Type    | Default | Description                                                                                                                                                         |
-| --------------- | ------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **max\_rows**   | number  | null    | Specify the maximum number of rows to import.                                                                                                                       |
-| **has\_header** | boolean | 0       | <p>Specify whether the file contains a header row.<br><br>Acceptable values are:</p><p><strong>0</strong> (no header)</p><p><strong>1</strong> (has header row)</p> |
+#### max\_rows
+
+|             |                                       |   |
+| ----------- | ------------------------------------- | - |
+| Type        | Integer                               |   |
+| Default     | Null                                  |   |
+| Description | The maximum number of rows to import. |   |
+
+#### has\_header
+
+|             |                                                                                                                                                                       |   |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | - |
+| Type        | Boolean                                                                                                                                                               |   |
+| Default     | 0                                                                                                                                                                     |   |
+| Description | <p>Specify whether the file contains a header row.<br><br>Acceptable values are:</p><p><strong>0</strong> (no header)</p><p><strong>1</strong> (has a header row)</p> |   |
+
+#### match\_columns
+
+|             |                                                                                                                                                                                                                                                                                                                                                                             |   |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | - |
+| Type        | Boolean                                                                                                                                                                                                                                                                                                                                                                     |   |
+| Default     | 0                                                                                                                                                                                                                                                                                                                                                                           |   |
+| Description | <p>Specifies if the importer automatically should match the file column names with the template sheet column names.<br><br>Acceptable values are:<br><strong>0</strong> - Don't match columns. In this case, the file columns and the template columns should have the exact same names and should be arranged in the same order.<br><strong>1</strong> (Match columns)</p> |   |
 
