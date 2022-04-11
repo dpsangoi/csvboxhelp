@@ -398,6 +398,10 @@ Once the user uploads a file the importer will return the status of the import a
   }
 ```
 
+{% hint style="info" %}
+The data object will be null if the import fails
+{% endhint %}
+
 You can write custom code to handle the success or failure conditions client side.
 
 {% tabs %}
