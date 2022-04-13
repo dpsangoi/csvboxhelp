@@ -13,6 +13,7 @@ description: A record of all notable changes made to the application.
 * New [importer events](getting-started/2.-install-code.md#events) (onReady, onClose)
 * [request\_headers](getting-started/2.-install-code.md#request\_headers) option to send headers at run-time
 * PATCH request type
+* **total\_rows** parameter to the [API output](getting-started/3.-receive-data.md#sample-response).
 
 ### Updated
 
