@@ -10,7 +10,7 @@ description: A record of all notable changes made to the application.
 
 * Yearly pricing plans
 * [REST File API](advanced-installation/rest-file-api.md) beta
-* New [importer events](getting-started/2.-install-code.md#importer-events) (onReady, onClose)
+* New [importer events](getting-started/2.-install-code.md#events) (onReady, onClose)
 * [request\_headers](getting-started/2.-install-code.md#request\_headers) option to send headers at run-time
 * PATCH request type
 
