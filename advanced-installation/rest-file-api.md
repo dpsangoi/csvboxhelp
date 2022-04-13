@@ -29,7 +29,7 @@ curl --location --request POST 'https://api.csvbox.io/1.1/file' \
 }'
 ```
 
-After the data is pushed to the destination, the [import complete webhook ](../getting-started/#import-complete-webhook)can be triggered as configured in the sheet settings.
+After the data is pushed to the destination, the [import complete webhook ](../getting-started/3.-receive-data.md#import-complete-webhook)can be triggered as configured in the sheet settings.
 
 {% hint style="warning" %}
 The spreadsheet data submitted via File API will not be [validated](https://help.csvbox.io/validations) based on the rules configured in the sheet settings. The importer will attempt to push the data directly to the destination in the raw form.

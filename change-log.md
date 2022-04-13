@@ -139,7 +139,7 @@ description: A record of all notable changes made to the application.
 
 ### Added
 
-* [Dynamic Columns (Beta)](template-settings/sheet-options.md)
+* [Dynamic Columns (Beta)](dashboard-settings/sheet-options.md)
 
 ## 28 October 2021
 
