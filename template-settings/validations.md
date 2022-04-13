@@ -116,7 +116,7 @@ The column under validation must be formatted as a credit card number. Acceptabl
 
 With the **List** data type, you can specify a list of acceptable values. The importer will compare the CSV column data with the list of acceptable values and throw a validation error if there is a mismatch. You can specify a list of acceptable `Values` and related `Display Labels`. The importer will match the column data with the list of `Display Labels`. If the data passes validation then the `Values` corresponding to the `Display Labels` will be pushed to the destination. For example say, you configure the List column as shown below:
 
-![List Data Type](.gitbook/assets/List.jpg)
+![List Data Type](../.gitbook/assets/List.jpg)
 
 In this case, the acceptable data in the CSV column will be _Small_, _Medium_, and _Large_. Based on the actual data found in the user CSV, the values _s_, _m_ or _l_ will be pushed to your data destination. This allows you to accept readable values from your users while pushing data to your system that is in a format it understands.
 

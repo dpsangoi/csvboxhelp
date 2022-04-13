@@ -29,7 +29,7 @@ importer.setDynamicColumns([
 ])
 ```
 
-Basic installation steps are available [here](./#2.-install-code).
+Basic installation steps are available [here](../getting-started/#2.-install-code).
 {% endtab %}
 
 {% tab title="React" %}
@@ -46,7 +46,7 @@ Pass the dynamic columns as an object to the **`dynamicColumns`**property of the
   ]}
 ```
 
-Basic installation steps are available [here](./#2.-install-code).
+Basic installation steps are available [here](../getting-started/#2.-install-code).
 {% endtab %}
 
 {% tab title="Angular" %}
@@ -80,7 +80,7 @@ Then pass the dynamic columns as an object to the**`dynamicColumns`**property of
   ]
 ```
 
-Basic installation steps are available [here](./#2.-install-code).
+Basic installation steps are available [here](../getting-started/#2.-install-code).
 {% endtab %}
 
 {% tab title="Vuejs" %}
@@ -113,13 +113,13 @@ Pass the dynamic columns as an object to the**`dynamicColumns`**property of the*
   ]
 ```
 
-Basic installation steps are available [here](./#2.-install-code).
+Basic installation steps are available [here](../getting-started/#2.-install-code).
 {% endtab %}
 {% endtabs %}
 
 Dynamic columns will be visible in the importer along with the other regular columns.
 
-![Dynamic Columns](<../.gitbook/assets/Dynamic Columns.jpg>)
+<img src="../.gitbook/assets/Dynamic Columns.jpg" alt="Dynamic Columns" data-size="original">
 
 ### **Advanced Configuration**
 
@@ -331,15 +331,15 @@ Here is an example illustrating more configuration options.
 
 #### Configuration Options
 
-| Key                                                                             | Description                                                                                                                                                                                                 |
-| ------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [column\_name](sheet-options.md#column-name) <mark style="color:red;">\*</mark> | It is the column name that will be pushed to the data destination.                                                                                                                                          |
-| [display\_label](sheet-options.md#display-label)                                | The user-friendly column label that the users will see in the importer.                                                                                                                                     |
-| [info\_hint](sheet-options.md#info-hint)                                        | Info Hints are help tooltips that will get displayed when the users hover the mouse over the Display Label (or click it) in the importer.                                                                   |
-| [matching\_keywords](sheet-options.md#matching-keywords)                        | Comma-separated set of keywords as alternative matching options to help users match column names automatically.                                                                                             |
-| [type](sheet-options.md#column-type)                                            | It specifies the data type of the incoming data. Possible values are: **text**, **number**, **email**, **date**, **boolean**, **regex**, **ip**, **url**, **credit\_card**, **phone\_number** and **list**. |
-| validators                                                                      | The validation rules for the data based on the column type. Validator options are mentioned below.                                                                                                          |
-| [required](sheet-options.md#required)                                           | It indicates whether a column is mandatory.                                                                                                                                                                 |
+| Key                                                                                                  | Description                                                                                                                                                                                                 |
+| ---------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [column\_name](../template-settings/sheet-options.md#column-name) <mark style="color:red;">\*</mark> | It is the column name that will be pushed to the data destination.                                                                                                                                          |
+| [display\_label](../template-settings/sheet-options.md#display-label)                                | The user-friendly column label that the users will see in the importer.                                                                                                                                     |
+| [info\_hint](../template-settings/sheet-options.md#info-hint)                                        | Info Hints are help tooltips that will get displayed when the users hover the mouse over the Display Label (or click it) in the importer.                                                                   |
+| [matching\_keywords](../template-settings/sheet-options.md#matching-keywords)                        | Comma-separated set of keywords as alternative matching options to help users match column names automatically.                                                                                             |
+| [type](../template-settings/sheet-options.md#column-type)                                            | It specifies the data type of the incoming data. Possible values are: **text**, **number**, **email**, **date**, **boolean**, **regex**, **ip**, **url**, **credit\_card**, **phone\_number** and **list**. |
+| validators                                                                                           | The validation rules for the data based on the column type. Validator options are mentioned below.                                                                                                          |
+| [required](../template-settings/sheet-options.md#required)                                           | It indicates whether a column is mandatory.                                                                                                                                                                 |
 
 #### Validator options
 

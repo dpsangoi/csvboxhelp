@@ -5,7 +5,7 @@ description: Automate CSV submissions via REST File API
 # REST File API
 
 {% hint style="warning" %}
-REST File API is under development. The expected launch date is early Q2 2022.
+Please note that this is a _beta version_ of the REST File API which is still undergoing final testing before its official _release_.
 {% endhint %}
 
 The File API lets you accept spreadsheet files programmatically. It is an alternative to the users uploading the files manually, via the Csvbox importer. Files submitted via the REST File API will then be pushed to the data destination as set up in the Csvbox dashboard.
@@ -29,7 +29,7 @@ curl --location --request POST 'https://api.csvbox.io/1.1/file' \
 }'
 ```
 
-After the data is pushed to the destination, the [import complete webhook ](./#import-complete-webhook)can be triggered as configured in the sheet settings.
+After the data is pushed to the destination, the [import complete webhook ](../getting-started/#import-complete-webhook)can be triggered as configured in the sheet settings.
 
 {% hint style="warning" %}
 The spreadsheet data submitted via File API will not be [validated](https://help.csvbox.io/validations) based on the rules configured in the sheet settings. The importer will attempt to push the data directly to the destination in the raw form.

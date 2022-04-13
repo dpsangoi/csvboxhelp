@@ -4,6 +4,25 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 13 April 2022
+
+### Added
+
+* Yearly pricing plans
+* [REST File API](advanced-installation/rest-file-api.md) beta
+* New [importer events](getting-started/2.-install-code.md#importer-events) (onReady, onClose)
+* [request\_headers](getting-started/2.-install-code.md#request\_headers) option to send headers at run-time
+* PATCH request type
+
+### Updated
+
+* Fixed issue related to freezing of the importer
+* Updated the code from Laravel 8 to Laravel 9
+* Added new layers of database security
+* Fixed issue related to the downloading of the template files
+* Added custom attribute mapping for Airtable&#x20;
+* UI enhancements
+
 ## 07 March 2022
 
 ### Added
@@ -37,7 +56,7 @@ description: A record of all notable changes made to the application.
 
 ### Added
 
-* [Unmapped Columns](getting-started/unmapped-columns.md): Allowing users to submit columns not included in the sheet template.
+* [Unmapped Columns](advanced-installation/unmapped-columns.md): Allowing users to submit columns not included in the sheet template.
 
 ## 08 February 2022
 
@@ -120,7 +139,7 @@ description: A record of all notable changes made to the application.
 
 ### Added
 
-* [Dynamic Columns (Beta)](getting-started/sheet-options.md)
+* [Dynamic Columns (Beta)](template-settings/sheet-options.md)
 
 ## 28 October 2021
 
@@ -152,7 +171,7 @@ description: A record of all notable changes made to the application.
 
 * The display order of the columns in the importer can now be changed by simply drag-dropping in the dashboard.
 
-![Order Columns](.gitbook/assets/column-order.gif)
+<img src=".gitbook/assets/column-order.gif" alt="Order Columns" data-size="original">
 
 * Ability to add rows directly in the importer.
 
