@@ -4,6 +4,14 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 22 April 2022
+
+### Added
+
+* Ability to add help texts for each page (header selection, column mapping, data validation) on the importer
+
+![Help text on Select Header page](.gitbook/assets/hs.jpg)
+
 ## 13 April 2022
 
 ### Added
