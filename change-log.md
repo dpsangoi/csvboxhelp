@@ -8,6 +8,14 @@ description: A record of all notable changes made to the application.
 
 ### Added
 
+* ****[**allow\_invalid** option](https://help.csvbox.io/getting-started/2.-install-code#allow\_invalid)
+
+![allow\_invalid option](.gitbook/assets/allow\_invalid.jpg)
+
+## 22 April 2022
+
+### Added
+
 * Ability to add help texts for each page (header selection, column mapping, data validation) on the importer
 
 ![Help text on Select Header page](.gitbook/assets/hs.jpg)
