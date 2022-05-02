@@ -4,6 +4,12 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 02 May 2022
+
+### Added
+
+* [SQL Server Data Destination](destinations/#sql-server)
+
 ## 26 April 2022
 
 ### Added

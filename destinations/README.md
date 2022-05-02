@@ -10,13 +10,14 @@ description: >-
 1. [None](./#none)
 2. [API](./#api-webhook)
 3. [Amazon S3](./#amazon-s3)
-4. [MySQL Database](./#mysql-database)&#x20;
-5. [Google Sheet](./#google-sheets)
-6. [Bubble.io](./#bubble)
-7. [PostgreSQL Database](./#zapier)
-8. [Airtable](./#airtable)
-9. [Zapier](./#zapier)
-10. [FTP Server](./#ftp-server)
+4. [MySQL](./#mysql-database)
+5. [SQL Server ](./#sql-server)
+6. [Google Sheet](./#google-sheets)
+7. [Bubble.io](./#bubble)
+8. [PostgreSQL](./#zapier)
+9. [Airtable](./#airtable)
+10. [Zapier](./#zapier)
+11. [FTP Server](./#ftp-server)
 
 {% hint style="info" %}
 At a time only one destination can be selected per sheet.
@@ -91,7 +92,7 @@ The AWS credentials need the following 3 minimum policies for uploading files to
 
 
 
-## MySQL Database
+## MySQL
 
 Import CSV files and Excel sheets directly into your MySQL tables. How it works:
 
@@ -107,6 +108,19 @@ Import CSV files and Excel sheets directly into your MySQL tables. How it works:
 ![map sheet to table columns](../.gitbook/assets/map-columns.jpg)
 
 The user CSV data will then be directly be appended to the MySQL table.
+
+## SQL Server
+
+Import CSV files and Excel sheets directly into your SQL Server tables. How it works:
+
+* Select the destination type as 'SQL Server Database'.
+* Connect your SQL Server database by providing the credentials.
+* Specify the table name where you want the data to be pushed.
+* Click the 'Test Connection' button.
+* If the connection is successful, then click the 'Map Columns' button and match the sheet template columns to the SQL Server table columns.
+* You can also map custom attributes to table columns.
+
+The user CSV data will then be pushed into the SQL Server table.
 
 ## Google Sheets
 
