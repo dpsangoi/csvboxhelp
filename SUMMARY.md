@@ -15,6 +15,7 @@
   * [Import Links](advanced-installation/import-links.md)
   * [REST File API](advanced-installation/rest-file-api.md)
 * [Data Destinations](destinations/README.md)
+  * [Notion](destinations/notion.md)
   * [Bubble.io](destinations/bubble.io.md)
   * [Zapier](destinations/zapier.md)
 * [Account](account.md)
