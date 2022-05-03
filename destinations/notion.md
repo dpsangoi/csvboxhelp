@@ -34,7 +34,7 @@ You will have to select the page and the relevant workspace where you want the C
 
 ![](<../.gitbook/assets/image (4).png>)
 
-Click 'Allow access'.
+Click '**Allow access**'.
 
 Login to your Notion account.
 
@@ -48,11 +48,11 @@ Click the "**Share"** button (top right of the dashboard.) Share the workspace w
 Only after sharing the workspace with the CSV to Notion integration, the Notion database will be visible in the Csvbox dashboard.
 {% endhint %}
 
-Pick the Notion database from the list.
+Go back to your Csvbox sheet and pick the Notion database from the list.
 
 ![](<../.gitbook/assets/image (10).png>)
 
-Click 'Map Columns' button and map the sheet columns to the Notion database columns.
+Click the "**Map Columns**" button and map the sheet columns to the Notion database columns.
 
 ![](<../.gitbook/assets/image (5).png>)
 
