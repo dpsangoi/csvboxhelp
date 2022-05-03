@@ -11,13 +11,14 @@ description: >-
 2. [API](./#api-webhook)
 3. [Amazon S3](./#amazon-s3)
 4. [MySQL](./#mysql-database)
-5. [SQL Server ](./#sql-server)
-6. [Google Sheet](./#google-sheets)
-7. [Bubble.io](./#bubble)
-8. [PostgreSQL](./#zapier)
-9. [Airtable](./#airtable)
-10. [Zapier](./#zapier)
-11. [FTP Server](./#ftp-server)
+5. [PostgreSQL](./#zapier)
+6. [SQL Server ](./#sql-server)
+7. [Google Sheet](./#google-sheets)
+8. [FTP Server](./#ftp-server)
+9. [Bubble.io](./#bubble)
+10. [Airtable](./#airtable)
+11. [Zapier](./#zapier)
+12. Notion
 
 {% hint style="info" %}
 At a time only one destination can be selected per sheet.
@@ -143,6 +144,10 @@ The user CSV data will then be directly be added to the Google sheet.
 ## Bubble
 
 Import user CSV files and Excel sheets directly into your Bubble app. More information [here](bubble.io.md).
+
+## Notion
+
+Import user CSV files and Excel sheets directly into your Notion databases. More information [here](notion.md).
 
 ## PostgreSQL
 
