@@ -4,6 +4,12 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 04 May 2022
+
+### Added
+
+* [Notion Data Destination](destinations/notion.md)
+
 ## 02 May 2022
 
 ### Added

@@ -4,11 +4,7 @@ description: Import customer CSV data to your Notion database.
 
 # Notion
 
-{% hint style="info" %}
-coming soon
-{% endhint %}
-
-### Steps to configure Notion data destination:
+Steps to configure Notion data destination:
 
 Log in to [csvbox.io](https://app.csvbox.io/login).
 

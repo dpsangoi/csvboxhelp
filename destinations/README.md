@@ -18,7 +18,7 @@ description: >-
 9. [Bubble.io](./#bubble)
 10. [Airtable](./#airtable)
 11. [Zapier](./#zapier)
-12. Notion
+12. [Notion](./#none)
 
 {% hint style="info" %}
 At a time only one destination can be selected per sheet.
