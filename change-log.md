@@ -6,9 +6,8 @@ description: A record of all notable changes made to the application.
 
 ## 04 May 2022
 
-### Added
-
-* [Notion Data Destination](destinations/notion.md)
+* Added [Notion Data Destination](destinations/notion.md)
+* Fixed a bug for very large file uploads with [REST FileAPI](advanced-installation/rest-file-api.md)
 
 ## 02 May 2022
 
