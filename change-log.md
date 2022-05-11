@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 11 May 2022
+
+* Added the option to receive the CSV data in JSON format in the callback function. More info [here](getting-started/3.-receive-data.md#data-at-the-client-side).
+
 ## 04 May 2022
 
 * Added [Notion Data Destination](destinations/notion.md)
