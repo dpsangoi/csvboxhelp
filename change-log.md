@@ -4,6 +4,12 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 12 May 2022
+
+* Added 'Multiple' option to Date Type columns. With this, you can provide multiple date formats that are allowed for the incoming data.
+
+![](<.gitbook/assets/multiple dates.jpg>)
+
 ## 11 May 2022
 
 * Added the option to receive the CSV data in JSON format in the callback function. More info [here](getting-started/3.-receive-data.md#data-at-the-client-side).
