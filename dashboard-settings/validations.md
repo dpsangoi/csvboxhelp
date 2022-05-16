@@ -138,7 +138,7 @@ The API should return the list of values in the JSON format as shown below.&#x20
 ]
 ```
 
-For each list item, the `value` field is mandatory and `display_label` is optional.
+For each list item, the `value` field is mandatory while `display_label` is optional.
 
 ## Other Validation Options
 
