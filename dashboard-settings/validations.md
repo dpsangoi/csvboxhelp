@@ -120,6 +120,26 @@ With the **List** data type, you can specify a list of acceptable values. The im
 
 In this case, the acceptable data in the CSV column will be _Small_, _Medium_, and _Large_. Based on the actual data found in the user CSV, the values _s_, _m_ or _l_ will be pushed to your data destination. This allows you to accept readable values from your users while pushing data to your system that is in a format it understands.
 
+### Dynamic List
+
+{% hint style="warning" %}
+coming soon
+{% endhint %}
+
+This is similar to the **List** type column above where the importer will validate the column data against a list of values. However, instead of providing a static list of values, with the **Dynamic List** column type, you can now specify a list of acceptable values in real-time via an API.
+
+The API should return the list of values in the JSON format as shown below.&#x20;
+
+```json
+[
+   {"value": "uk", "display_label": "England"},
+   {"value": "us", "display_label": "United States"},
+   {"value": "au", "display_label": "Australia"}
+]
+```
+
+For each list item, the `value` field is mandatory and `display_label` is optional.
+
 ## Other Validation Options
 
 ### Column Required
