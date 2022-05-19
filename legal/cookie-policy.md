@@ -4,7 +4,7 @@ description: Last updated January 31, 2022
 
 # Cookie Policy
 
-This Cookie Policy explains how Thalia Technologies Private Limited ("**Company**", "**we**", "**us**", "**our**", "**csvbox.io**") uses cookies and similar technologies to recognize you when you visit our websites at [http://csvbox.io](http://csvbox.io), [http://app.csvbox.io/](http://app.csvbox.io) ("**Websites**"). It explains what these technologies are and why we use them, as well as your rights to control our use of them.
+This Cookie Policy explains how Thalia Technologies Private Limited ("**Company**", "**we**", "**us**", "**our**", "**csvbox.io**") uses cookies and similar technologies to recognize you when you visit our websites at [http://csvbox.io](http://csvbox.io), [http://app.csvbox.io/](http://app.csvbox.io/) ("**Websites**"). It explains what these technologies are and why we use them, as well as your rights to control our use of them.
 
 ## **What are cookies?**
 

@@ -120,8 +120,15 @@ Import CSV files and Excel sheets directly into your SQL Server tables. How it w
 * Click the 'Test Connection' button.
 * If the connection is successful, then click the 'Map Columns' button and match the sheet template columns to the SQL Server table columns.
 * You can also map custom attributes to table columns.
+* Select between the following 2 operations:
+  * **Insert** - The importer will always push the incoming CSV data as new records in the database.
+  * **Upsert** - The importer will check if the record exists in the database. If the record exists, then it will be updated with the incoming data from the CSV. If the record does not exist, then a new record will be inserted. The record check will be done based on the index keys specified in the mapping modal.
 
-The user CSV data will then be pushed into the SQL Server table.
+![Define Unique Key for Upsert Operation](../.gitbook/assets/unique.jpg)
+
+{% hint style="warning" %}
+The **Upsert** operation will be significantly slower than the **Insert** operation. For the **Insert** operation, the records can be pushed in chunks. Whereas for the **Upsert** operation only one record can be processed at a time, and it requires multiple queries.
+{% endhint %}
 
 ## Google Sheets
 
@@ -168,7 +175,7 @@ The user CSV data will then be directly be appended to the PostgreSQL table.
 
 ## Airtable
 
-Import CSV files and Excel sheets directly into your [Airtable](https://airtable.com). Here is how it works:
+Import CSV files and Excel sheets directly into your [Airtable](https://airtable.com/). Here is how it works:
 
 * Select the destination type as 'Airtable'.
 * Connect your Airtable by providing the credentials.

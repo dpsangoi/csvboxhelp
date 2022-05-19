@@ -6,7 +6,7 @@ description: FAQs related to account information and subscription plans.
 
 ## Who processes csvbox.io orders?
 
-Our order process is conducted by our online reseller [Paddle.com](https://paddle.com). Paddle is the Merchant of Record for all our orders.
+Our order process is conducted by our online reseller [Paddle.com](https://paddle.com/). Paddle is the Merchant of Record for all our orders.
 
 If you have any questions regarding order processing you can reach out to us or [Paddle](mailto:help@padde.com).
 
