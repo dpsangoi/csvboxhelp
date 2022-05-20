@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 19 May 2022
+
+* Added the option (DELETE button on Accounts page) to delete and close down the CSVbox account permanently.
+
 ## 12 May 2022
 
 * Added 'Multiple' option to Date Type columns. With this, you can provide multiple date formats that are allowed for the incoming data.
