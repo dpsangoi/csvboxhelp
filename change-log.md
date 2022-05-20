@@ -4,6 +4,18 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 20 May 2022
+
+* New display options for the 'Select Header Row' page of the importer.
+
+![DIsplay options](<.gitbook/assets/display options.jpg>)
+
+1. **Skip this step?** - Hide/Show the 'Select header row' page to the users.
+2. **Show encoding** - Hide/Show the character set selection list to the users.
+3. **Switch Row/Columns** - Hide/Show the option to switch rows and columns to the users.
+
+These settings help to remove the non-essential options from the importer and make the user experience cleaner.
+
 ## 19 May 2022
 
 * Added the option (DELETE button on Accounts page) to delete and close down the CSVbox account permanently.
