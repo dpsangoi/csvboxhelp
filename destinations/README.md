@@ -77,6 +77,8 @@ The data will be pushed to a webhook endpoint as configured in the sheet setting
 The data will come in as HTTP POST requests. Each request will have an array of rows based on the chunk size defined in the sheet settings. You can set the chunk size to 1 to receive 1 record per HTTP request.
 {% endhint %}
 
+If you want to jump in and get started, we recommend testing using [webhook.site](https://webhook.site), to get your webhook URL. For testing on your local machine, we recommend using [ngrok](https://ngrok.com/).
+
 ## Amazon S3
 
 The files uploaded by the users can be pushed to the AWS S3 Bucket of your choice. You simply need to select the destination type as 'Amazon S3' and provide the AWS credentials, bucket/folder name, and access policy for storing the files.
