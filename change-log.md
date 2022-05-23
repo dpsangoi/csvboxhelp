@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 23 May 2022
+
+* Added [Dynamic List](dashboard-settings/validations.md#dynamic-list) column type to accept valid list values via API, real-time.
+
 ## 20 May 2022
 
 * New display options for the 'Select Header Row' page of the importer.
