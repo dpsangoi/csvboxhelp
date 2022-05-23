@@ -122,10 +122,6 @@ In this case, the acceptable data in the CSV column will be _Small_, _Medium_, a
 
 ### Dynamic List
 
-{% hint style="warning" %}
-coming soon
-{% endhint %}
-
 This is similar to the **List** type column above where the importer will validate the column data against a list of values. However, instead of providing a static list of values, with the **Dynamic List** column type, you can now specify a list of acceptable values in real-time via an API.
 
 The API should return the list of values in the JSON format as shown below.&#x20;

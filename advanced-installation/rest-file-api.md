@@ -4,10 +4,6 @@ description: Automate CSV submissions via REST File API
 
 # REST File API
 
-{% hint style="warning" %}
-Please note that this is a _beta version_ of the REST File API which is still undergoing final testing before its official _release_.
-{% endhint %}
-
 The File API lets you accept spreadsheet files programmatically. It is an alternative to the users uploading the files manually, via the Csvbox importer. Files submitted via the REST File API will then be pushed to the data destination as set up in the Csvbox dashboard.
 
 #### Simple File API Request
