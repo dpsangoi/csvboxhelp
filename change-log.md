@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 30 May 2022
+
+* Added **Upsert** operation to MySQL, PostgreSQL and MS SQL data destinations. Instead of directly inserting the file data to the databases, the importer will first check if the record exists. If the record exists, then the row will be updated. Only if the record does not exist then a new row will be added.
+
 ## 23 May 2022
 
 * Added [Dynamic List](dashboard-settings/validations.md#dynamic-list) column type to accept valid list values via API, real-time.
