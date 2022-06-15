@@ -11,7 +11,7 @@ description: >-
 2. [API](./#api-webhook)
 3. [Amazon S3](./#amazon-s3)
 4. [MySQL](./#mysql-database)
-5. [PostgreSQL](./#zapier)
+5. [PostgreSQL](./#postgresql)
 6. [SQL Server ](./#sql-server)
 7. [Google Sheet](./#google-sheets)
 8. [FTP Server](./#ftp-server)
