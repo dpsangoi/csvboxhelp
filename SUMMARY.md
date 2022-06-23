@@ -10,6 +10,7 @@
   * [Add Columns via CSV](dashboard-settings/add-columns-via-csv.md)
   * [Validations](dashboard-settings/validations.md)
   * [Custom Theming](dashboard-settings/custom-theming.md)
+  * [Advanced Options](dashboard-settings/advanced-options.md)
 * [Advanced Installation](advanced-installation/README.md)
   * [Dynamic Columns](advanced-installation/dynamic-columns.md)
   * [Unmapped Columns](advanced-installation/unmapped-columns.md)
