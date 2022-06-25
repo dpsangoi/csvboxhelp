@@ -4,6 +4,14 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 24 June 2022
+
+* Added the Arabic language (ltr) support for the importer frontend.
+
+## 23 June 2022
+
+* Added option to allow displaying the import fail error messages to the end user.
+
 ## 22 June 2022
 
 * Added **Primary Color** custom theme option. You can stylize the importer with the primary color of your brand. More styling options coming soon.
