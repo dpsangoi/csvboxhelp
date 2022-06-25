@@ -1,8 +1,8 @@
 ---
-description: Description of additional sheet configuration options
+description: Description of sheet configuration settings
 ---
 
-# Advance Options
+# Sheet Options
 
 ### Show Error Text
 
