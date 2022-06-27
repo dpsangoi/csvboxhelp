@@ -4,13 +4,17 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 27 June 2022
+
+* New styling options added - upload logo and custom fonts.
+
 ## 24 June 2022
 
 * Added the Arabic language (ltr) support for the importer frontend.
 
 ## 23 June 2022
 
-* Added option to allow displaying the import fail error messages to the end user.
+* Added option to allow displaying the import fail error messages to the end-user.
 
 ## 22 June 2022
 
