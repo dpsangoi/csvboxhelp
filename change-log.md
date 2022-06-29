@@ -4,6 +4,13 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 29 June 2022
+
+* Added phone number validation based on the [libphonenumber.js library](https://catamphetamine.gitlab.io/libphonenumber-js/).
+* Minor UI changes to the import modal. Changes include:
+  * The importer modal is now full screen across all devices.
+  * The column mapping table & validation error text are center-aligned for better visibility.
+
 ## 27 June 2022
 
 * New styling options added - upload logo and custom fonts.

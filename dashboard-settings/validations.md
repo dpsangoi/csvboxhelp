@@ -112,10 +112,6 @@ The column under validation must be a valid URL.
 
 The column under validation must be formatted as a credit card number. Acceptable formats are _5555555555554444_, _5555-5555-5555-4444_ and _5555 5555 5555 4444_.
 
-### Phone Number
-
-The column will be validated for phone number formats based on the [libphonenumber.js library](https://catamphetamine.gitlab.io/libphonenumber-js/). You have to select a default country code. If the incoming phone number does not have a country code then this default country code will be used for validation.
-
 ### List
 
 With the **List** data type, you can specify a list of acceptable values. The importer will compare the CSV column data with the list of acceptable values and throw a validation error if there is a mismatch. You can specify a list of acceptable `Values` and related `Display Labels`. The importer will match the column data with the list of `Display Labels`. If the data passes validation then the `Values` corresponding to the `Display Labels` will be pushed to the destination. For example say, you configure the List column as shown below:
