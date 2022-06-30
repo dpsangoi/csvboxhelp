@@ -4,6 +4,12 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 30 June 2022
+
+* Added Max Rows option to the importer dashboard. It limits the number of rows per import.
+
+![](.gitbook/assets/max\_rows.jpg)
+
 ## 29 June 2022
 
 * Added phone number validation based on the [libphonenumber.js library](https://catamphetamine.gitlab.io/libphonenumber-js/).
