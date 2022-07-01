@@ -7,6 +7,7 @@ description: A record of all notable changes made to the application.
 ## 01 July 2022
 
 * Added an **Export** button that downloads the validation errors and row data in an Excel sheet. More info [here](dashboard-settings/sheet-options-1.md#export-button).
+* Updates importer UI to show the truncated row count.
 
 ## 30 June 2022
 
