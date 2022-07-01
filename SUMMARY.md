@@ -9,7 +9,6 @@
   * [Column Options](dashboard-settings/sheet-options.md)
   * [Add Columns via CSV](dashboard-settings/add-columns-via-csv.md)
   * [Validations](dashboard-settings/validations.md)
-  * [Custom Theming](dashboard-settings/custom-theming.md)
   * [Sheet Options](dashboard-settings/sheet-options-1.md)
 * [Advanced Installation](advanced-installation/README.md)
   * [Dynamic Columns](advanced-installation/dynamic-columns.md)
