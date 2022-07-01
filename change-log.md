@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 01 July 2022
+
+* Added an **Export** button that downloads the validation errors and row data in an Excel sheet. More info [here](dashboard-settings/sheet-options-1.md#export-button).
+
 ## 30 June 2022
 
 * Added Max Rows option to the importer dashboard. It limits the number of rows per import.
