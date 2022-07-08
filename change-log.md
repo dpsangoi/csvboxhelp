@@ -4,10 +4,16 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 07 July 2022
+
+* Added **column\_mappings** object to the [import complete webhook](getting-started/3.-receive-data.md#import-complete-webhook) and the [callback function](getting-started/2.-install-code.md#callback-function). The **column\_mappings** object contains the user-defined mappings between the columns of the sheet (template) and columns in the uploaded CSV file.
+* Added the **Import ID** column in the table on the Imports page of the CSVbox dashboard.
+* The dynamic columns now support multiple date validation.
+
 ## 01 July 2022
 
 * Added an **Export** button that downloads the validation errors and row data in an Excel sheet. More info [here](dashboard-settings/sheet-options-1.md#export-button).
-* Updates importer UI to show the truncated row count.
+* Updated importer UI to show the truncated row count.
 
 ## 30 June 2022
 
