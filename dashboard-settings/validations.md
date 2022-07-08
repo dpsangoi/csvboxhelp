@@ -144,6 +144,47 @@ For each list item, the `value` field is mandatory while `display_label` is opti
 The importer will attach the [custom user attributes](../getting-started/2.-install-code.md#referencing-the-user) as query parameters to the Dynamic List API request. **csvbox\_** prefix will be added to the custom user attribute query parameters. This will help you identify the users/environment and return back a relevant list of values.
 {% endhint %}
 
+### Dependent Dynamic List
+
+{% hint style="info" %}
+coming soon
+{% endhint %}
+
+Sometimes, you may want to use more than one list such that the items available in a second drop-down list are dependent on the selection made in the first drop-down list.
+
+Let us call them dependent lists. Below is an example of a dependent list.
+
+![Conditional dependent list](<../.gitbook/assets/conditional list.png>)
+
+You can see that the options in the City column depend on the selection made in the Country column. If you select 'USA' in Drop Down 1, then you will cities from the USA, but if you select Canada in Drop Down 1, then you see the cities from Canada in Drop Down 2.
+
+The same functionality can be achieved in CSVbox via a combination of [Dynamic List](validations.md#dynamic-list) and Dependent Dynamic List column types.
+
+Here are the steps to create conditional lists using the example above:
+
+1. Create a column 'Country'. Configure column type as 'Dynamic List'
+2. Create a column 'City'. Configure column type as 'Dependent Dynamic List'. Select 'Country' as the Primary column.
+3. Go back to the 'Country' column and configure the API that will fetch valid values from your application for 'Country' as well as its dependent column i.e. City column. Your API should return the list of values in the JSON format as shown below.&#x20;
+
+```json
+[
+   {"value": "USA", "display_label": "USA", "dependents": [
+      {"value": "ny", "display_label": "New York"},
+      {"value": "ch", "display_label": "Chicago"},
+      {"value": "se", "display_label": "Seatle"},
+      {"value": "mi", "display_label": "Miami"}
+   ]},
+   {"value": "Canada", "display_label": "Canada", "dependents": [
+      {"value": "to", "display_label": "Toronto"},
+      {"value": "va", "display_label": "Vancouver"}    
+   ]}
+]
+```
+
+Note the **dependents** object. It contains the list of valid values for the dependent column.
+
+
+
 ## Other Validation Options
 
 ### Column Required
