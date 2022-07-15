@@ -163,8 +163,11 @@ The same functionality can be achieved in CSVbox via a combination of [Dynamic L
 Here are the steps to create conditional lists using the example above:
 
 1. Create a column 'Country'. Configure column type as 'Dynamic List'
-2. Create a column 'City'. Configure column type as 'Dependent Dynamic List'. Select 'Country' as the Primary column.
+2. Create a column 'City'. Configure column type as 'Dependent Dynamic List'. Select 'Country' as the Primary column.\
+   <img src="../.gitbook/assets/cols.png" alt="" data-size="original">
 3. Go back to the 'Country' column and configure the API that will fetch valid values from your application for 'Country' as well as its dependent column i.e. City column. Your API should return the list of values in the JSON format as shown below.&#x20;
+
+
 
 ```json
 [
