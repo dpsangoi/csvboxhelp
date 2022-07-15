@@ -167,8 +167,6 @@ Here are the steps to create conditional lists using the example above:
    <img src="../.gitbook/assets/cols.png" alt="" data-size="original">
 3. Go back to the 'Country' column and configure the API that will fetch valid values from your application for 'Country' as well as its dependent column i.e. City column. Your API should return the list of values in the JSON format as shown below.&#x20;
 
-
-
 ```json
 [
    {"value": "USA", "display_label": "USA", "dependents": [
@@ -184,9 +182,11 @@ Here are the steps to create conditional lists using the example above:
 ]
 ```
 
-Note the **dependents** object. It contains the list of valid values for the dependent column.
+Note the **dependents** object above. It contains the list of valid values for the dependent column.
 
-
+{% hint style="warning" %}
+If you change the name of the primary name or reorder its priority, then it needs to be reassigned as the primary column in the Dependent Dynamic List column settings.
+{% endhint %}
 
 ## Other Validation Options
 
