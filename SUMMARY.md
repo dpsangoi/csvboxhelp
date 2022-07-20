@@ -12,6 +12,7 @@
   * [Sheet Options](dashboard-settings/sheet-options-1.md)
 * [Advanced Installation](advanced-installation/README.md)
   * [Dynamic Columns](advanced-installation/dynamic-columns.md)
+  * [Virtual Columns](advanced-installation/virtual-columns.md)
   * [Unmapped Columns](advanced-installation/unmapped-columns.md)
   * [Import Links](advanced-installation/import-links.md)
   * [REST File API](advanced-installation/rest-file-api.md)
