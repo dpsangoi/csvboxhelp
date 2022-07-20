@@ -146,10 +146,6 @@ The importer will attach the [custom user attributes](../getting-started/2.-inst
 
 ### Dependent Dynamic List
 
-{% hint style="info" %}
-coming soon
-{% endhint %}
-
 Sometimes, you may want to use more than one list such that the items available in a second drop-down list are dependent on the selection made in the first drop-down list.
 
 Let us call them dependent lists. Below is an example of a dependent list.
