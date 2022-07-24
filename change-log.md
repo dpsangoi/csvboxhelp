@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 22 July 2022
+
+* Added options for controlling the close of importer dialog after the import is complete. ![](<.gitbook/assets/exit options.jpg>)
+
 ## 20 July 2022
 
 * Added [Dependent Dynamic List Columns](dashboard-settings/validations.md#dependent-dynamic-list).
