@@ -124,6 +124,30 @@ With the **List** data type, you can specify a list of acceptable values. The im
 
 In this case, the acceptable data in the CSV column will be _Small_, _Medium_, and _Large_. Based on the actual data found in the user CSV, the values _s_, _m_ or _l_ will be pushed to your data destination. This allows you to accept readable values from your users while pushing data to your system that is in a format it understands.
 
+### Dependent List
+
+Sometimes, you may want to use more than one list such that the items available in a second drop-down list dependent on the selection made in the first drop-down list.
+
+Let us call them dependent lists. Below is an example of a dependent list.
+
+![](../.gitbook/assets/image.png)
+
+You can see that the options in the City column depend on the selection made in the Country column. If you select 'USA' in Drop Down 1, then you will cities from the USA, but if you select Canada in Drop Down 1, then you see the cities from Canada in Drop Down 2.
+
+The same functionality can be achieved in CSVbox via a combination of [List](validations.md#list) and Dependent List column types (or a combination of [Dynamic List](validations.md#dynamic-list) and [Dependent Dynamic List](validations.md#dependent-dynamic-list) column types).
+
+Here are the steps to create conditional lists using the example above:
+
+1. Create a column 'Country'. Configure column type as 'List'.
+2. Create a column 'City'. Configure column type as 'Dependent List'. Select 'Country' as the Primary column.\
+   <img src="../.gitbook/assets/cols.png" alt="" data-size="original">
+3. Go back to the 'Country' column and add the list of valid values.&#x20;
+4. For each valid country value, you can add dependent (city) values as shown below. ![](../.gitbook/assets/dependents.jpg)
+
+{% hint style="warning" %}
+If you change the name of the primary column or reorder the priority of any of the columns, then you need to reassign the primary column in the Dependent List column settings.
+{% endhint %}
+
 ### Dynamic List
 
 This is similar to the **List** type column above where the importer will validate the column data against a list of values. However, instead of providing a static list of values, with the **Dynamic List** column type, you can now specify a list of acceptable values in real-time via an API.
@@ -146,7 +170,7 @@ The importer will attach the [custom user attributes](../getting-started/2.-inst
 
 ### Dependent Dynamic List
 
-Sometimes, you may want to use more than one list such that the items available in a second drop-down list are dependent on the selection made in the first drop-down list.
+Sometimes, you may want to use more than one list such that the items available in a second drop-down list depend on the selection made in the first drop-down list.
 
 Let us call them dependent lists. Below is an example of a dependent list.
 
@@ -154,7 +178,7 @@ Let us call them dependent lists. Below is an example of a dependent list.
 
 You can see that the options in the City column depend on the selection made in the Country column. If you select 'USA' in Drop Down 1, then you will cities from the USA, but if you select Canada in Drop Down 1, then you see the cities from Canada in Drop Down 2.
 
-The same functionality can be achieved in CSVbox via a combination of [Dynamic List](validations.md#dynamic-list) and Dependent Dynamic List column types.
+The same functionality can be achieved in CSVbox via a combination of [Dynamic List](validations.md#dynamic-list) and Dependent Dynamic List column types (or a combination of [List](validations.md#list) and [Dependent List](validations.md#dependent-list) column types).
 
 Here are the steps to create conditional lists using the example above:
 
