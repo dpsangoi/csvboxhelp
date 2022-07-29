@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 29 July 2022
+
+* Added the Thai language option for the importer frontend.
+
 ## 22 July 2022
 
 * Added options for controlling the close of importer dialog after the import is complete. ![](<.gitbook/assets/exit options.jpg>)
