@@ -33,3 +33,13 @@ With this option, you can enable/disable the **Export** button on the verify dat
 ![](../.gitbook/assets/Excel1.png)
 
 </details>
+
+## Import Complete Message
+
+<details>
+
+<summary>Show custom messages when the import is completed</summary>
+
+Coming Soon
+
+</details>
