@@ -40,6 +40,11 @@ With this option, you can enable/disable the **Export** button on the verify dat
 
 <summary>Show custom messages when the import is completed</summary>
 
-Coming Soon
+You can show customized success or failure messages when the import is complete. <img src="../.gitbook/assets/custom messages.jpg" alt="" data-size="original">
+
+The messages can be:
+
+1. Static - Any fixed text as per your requirements.
+2. Dynamix - Provide an API to fetch the message text in real-time. The importer will append metadata (`import_id`, `sheet_id`) to the API as query parameters. This will help determine the context and return relevant messages.
 
 </details>

@@ -4,6 +4,15 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 03 August 2022
+
+* Added functionality to configure custom success or failure messages at import complete. More info [here](dashboard-settings/sheet-options-1.md#import-complete-messages).
+
+## 01 August 2022
+
+* Added [dynamic column](advanced-installation/dynamic-columns.md) support for [Depenedent List](dashboard-settings/validations.md#dependent-list) and [Dependent Dynamic List](dashboard-settings/validations.md#dependent-dynamic-list) columns.
+* Added the Polish language option for the importer frontend.
+
 ## 29 July 2022
 
 * Added the Thai language option for the importer frontend.

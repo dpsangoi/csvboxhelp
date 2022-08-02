@@ -126,8 +126,6 @@ In this case, the acceptable data in the CSV column will be _Small_, _Medium_, a
 
 ### Dependent List
 
-\[coming soon]
-
 Sometimes, you may want to use more than one list such that the items available in a second drop-down list dependent on the selection made in the first drop-down list.
 
 Let us call them dependent lists. Below is an example of a dependent list.
