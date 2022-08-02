@@ -44,7 +44,7 @@ You can show customized success or failure messages when the import is complete.
 
 The messages can be:
 
-1. Static - Any fixed text as per your requirements.
-2. Dynamix - Provide an API to fetch the message text in real-time. The importer will append metadata (`import_id`, `sheet_id`) to the API as query parameters. This will help determine the context and return relevant messages.
+1. **Static** - Any fixed text as per your requirements.
+2. **Dynamic** - Provide an API to fetch the message text in real-time. The importer will append metadata (`import_id`, `sheet_id`) to the API as query parameters. This will help determine the context and return relevant messages.
 
 </details>
