@@ -34,6 +34,16 @@ With this option, you can enable/disable the **Export** button on the verify dat
 
 </details>
 
+## Domain Authorization
+
+<details>
+
+<summary>Run the importer on select domains only</summary>
+
+Coming Soon
+
+</details>
+
 ## Import Complete Messages
 
 <details>
