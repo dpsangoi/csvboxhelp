@@ -40,7 +40,7 @@ With this option, you can enable/disable the **Export** button on the verify dat
 
 <summary>Run the importer on select domains only</summary>
 
-You can provide a list of _domains/sub-domains_ approved for embedding the importer. The embedded importer will work on the whitelisted domains only.
+You can provide a list of authorized _domains/sub-domains_ for embedding the importer. The embedded importer will work on the whitelisted domains only.
 
 Go to **Edit Sheets** > **Options** > **Authorized Domains** > Add the domain/subdomains
 
