@@ -34,6 +34,16 @@ You can provide a set of keywords as alternative matching options to help users 
 CSVBox also deploys an intelligent column mapping algorithm. Based on the historical columns mapped by the users, the importer automatically maps the columns for new uploads to simplify column matching. Even if you do not provide Matching Keywords, the importer will adapt and auto-suggest columns as more sheets get uploaded.
 {% endhint %}
 
+## Default Value
+
+`optional`
+
+You can specify a default value for the column in case the incoming data is blank.
+
+{% hint style="warning" %}
+coming soon
+{% endhint %}
+
 ## Column Type
 
 `required`
