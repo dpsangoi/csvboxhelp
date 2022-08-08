@@ -40,7 +40,23 @@ With this option, you can enable/disable the **Export** button on the verify dat
 
 <summary>Run the importer on select domains only</summary>
 
-Coming Soon
+You can provide a list of _domains/sub-domains_ approved for embedding the importer. The embedded importer will work on the whitelisted domains only.
+
+Go to **Edit Sheets** > **Options** > **Authorized Domains** > Add the domain/subdomains
+
+![](../.gitbook/assets/domains.jpg)
+
+* If you do not whitelist any domain, then the importer embed will work on all the domains. This is the default configuration.
+*   You can use the "\*" wildcard prefix to include any subdomain. A few examples:
+
+    | Text              | Valid                        | Invalid                              |
+    | ----------------- | ---------------------------- | ------------------------------------ |
+    | exampleco.com     | exampleco.com                | www.exampleco.com, app.exampleco.com |
+    | www.exampleco.com | www.exampleco.com            | exampleco.com, app.exampleco.com     |
+    | app.exampleco.com | app.exampleco.com            | exampleco.com, www.exampleco.com     |
+    | \*.exampleco.com  | all exampleco.com subdomains |                                      |
+
+If a domain fails validation then the user will see the error screen as below:![](../.gitbook/assets/udo.jpg)
 
 </details>
 
