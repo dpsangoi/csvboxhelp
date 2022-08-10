@@ -38,11 +38,7 @@ CSVBox also deploys an intelligent column mapping algorithm. Based on the histor
 
 `optional`
 
-You can specify a default value for the column in case the incoming data is blank.
-
-{% hint style="warning" %}
-coming soon
-{% endhint %}
+You can specify a default filler value for the column in case the incoming data is blank.
 
 ## Column Type
 
