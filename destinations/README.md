@@ -18,7 +18,7 @@ description: >-
 9. [Bubble.io](./#bubble)
 10. [Airtable](./#airtable)
 11. [Zapier](./#zapier)
-12. [Notion](./#notion-1)
+12. [Notion](./#notion)
 13. [Webflow](./#zapier-1)
 
 {% hint style="info" %}
