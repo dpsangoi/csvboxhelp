@@ -19,7 +19,7 @@ description: >-
 10. [Airtable](./#airtable)
 11. [Zapier](./#zapier)
 12. [Notion](./#notion)
-13. [Webflow](./#zapier-1)
+13. [Webflow](./#webflow)
 
 {% hint style="info" %}
 At a time only one destination can be selected per sheet.
@@ -198,10 +198,6 @@ The user CSV data will then be directly be appended to the Airtable table.
 ## Zapier
 
 Import user CSV files and Excel sheets to Zapier. More information [here](zapier.md).
-
-## Notion
-
-Import user CSV files and Excel sheets to Notion. More information [here](notion.md).
 
 ## Webflow <a href="#webflow" id="webflow"></a>
 
