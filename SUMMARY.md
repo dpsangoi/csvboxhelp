@@ -20,6 +20,7 @@
   * [Bubble.io](destinations/bubble.io.md)
   * [Zapier](destinations/zapier.md)
   * [Notion](destinations/notion.md)
+  * [Webflow](destinations/webflow.md)
 * [Account](account.md)
 * [Contact Us](https://share.hsforms.com/1ubpg6RBoQgKOISkRMEViwg5auur)
 
