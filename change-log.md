@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 16 August 2022
+
+* Added [onSubmit Importer event](getting-started/2.-install-code.md#events)
+
 ## 10 August 2022
 
 * You now have the option to specify a default filler value for the column in case the incoming data is blank.&#x20;
