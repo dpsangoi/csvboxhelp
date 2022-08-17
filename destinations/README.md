@@ -193,7 +193,11 @@ Steps to get the Base ID are mentioned [here](./#none).
 * Map sheet columns to the Airtable table column.
 * You can also map custom attributes to table columns.
 
-The user CSV data will then be directly be appended to the Airtable table.
+The user CSV data will then be directly appended to the Airtable table.
+
+{% hint style="warning" %}
+The data fields from the Airtable will be available in the Map Column modal only if they have **data in the first row**. You may add dummy data for each data field in the first row in order for them to appear in the Map Column modal.
+{% endhint %}
 
 ## Zapier
 
