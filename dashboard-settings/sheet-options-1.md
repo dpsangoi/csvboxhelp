@@ -74,3 +74,13 @@ The messages can be:
 2. **Dynamic** - Provide an API to fetch the message text in real-time. The importer will append metadata (`import_id`, `sheet_id`) to the API as query parameters. This will help determine the context and return relevant messages.
 
 </details>
+
+## Importer Dialog Size
+
+<details>
+
+<summary>Control the height and width of the importer for large screens</summary>
+
+coming soon
+
+</details>
