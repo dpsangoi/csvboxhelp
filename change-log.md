@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 23 August 2022
+
+* Updated React, Angular, Vuejs libraries for [onSubmit Importer event](getting-started/2.-install-code.md#events)
+
 ## 16 August 2022
 
 * Added [onSubmit Importer event](getting-started/2.-install-code.md#events)
