@@ -79,8 +79,21 @@ The messages can be:
 
 <details>
 
-<summary>Control the height and width of the importer for large screens</summary>
+<summary>Control the size of the import dialog box for large screens</summary>
 
-coming soon
+Based on your import data structure (# of columns) you can pick between two import dialog sizes:
+
+1.  Medium
+
+    <figure><img src="../.gitbook/assets/medium_screen.jpg" alt=""><figcaption><p>Medium size</p></figcaption></figure>
+2.  Large
+
+    <figure><img src="../.gitbook/assets/large_screen.jpg" alt=""><figcaption><p>Large size</p></figcaption></figure>
+
+To change the size go to sheet settings > display > Importer Dialog Size
+
+![](<../.gitbook/assets/select size.jpg>)
+
+Note: The dialog size configuration will be applicable for large (desktop) screens only. For smaller screens the dialog will always occupy the entire screen.
 
 </details>
