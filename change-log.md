@@ -4,6 +4,11 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 24 August 2022
+
+* Added option to control[ import dialog size](dashboard-settings/sheet-options-1.md#importer-dialog-size)
+* Added decimal / integer validation
+
 ## 23 August 2022
 
 * Updated React, Angular, Vuejs libraries for [onSubmit Importer event](getting-started/2.-install-code.md#events)
