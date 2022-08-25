@@ -76,7 +76,7 @@ After the user submits the CSV, the Javascript will run for each data row in seq
 
 The `csvbox.row` object is available to work with each row. You can use `csvbox.row["column_name"]` to read the specific column of the data row. Utilize data from a single column, multiple columns, or no columns to process via Javascript and populate Virtual Columns.&#x20;
 
-### Adding Data to Virtual Columns
+### Inserting Data into Virtual Columns
 
 The value returned by the Javascript snippet is added to the Virtual Column.&#x20;
 
@@ -101,7 +101,7 @@ If Javascript returns a `NULL` value, an empty string will be added to the Virtu
 
 ### Receiving Virtual Data
 
-The Virtual Column data is available in all the data destinations along with the data from the regular columns.
+The Virtual Column data is available at all the data destinations along with the data from the regular columns.
 
 {% tabs %}
 {% tab title="API/Webhook, Zapier etc" %}
