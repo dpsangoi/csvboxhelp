@@ -179,6 +179,8 @@ In the AWS S3 file store, the Virtual Columns will be added as new columns in th
 {% endtab %}
 {% endtabs %}
 
+The virtual data will also be available on the [client-side JSON object](../getting-started/3.-receive-data.md#data-at-the-client-side).
+
 ### Dependencies
 
 coming soon
