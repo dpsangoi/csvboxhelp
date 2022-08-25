@@ -23,3 +23,8 @@ You can configure the query parameters in the link to identify and match the use
 ```javascript
 https://app.csvbox.io/upload/2gzJa5YO3QPLYK6Bj7Qmq5bpbFqXno?user_id=1a2b3c4d5e6f&team_id=sales2&isAuthenticated=true&permissionLevel=admin&email=abc@example.com
 ```
+
+#### Disabling Import Links
+
+coming soon
+
