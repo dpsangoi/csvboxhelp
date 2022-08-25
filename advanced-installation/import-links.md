@@ -26,9 +26,10 @@ https://app.csvbox.io/upload/2gzJa5YO3QPLYK6Bj7Qmq5bpbFqXno?user_id=1a2b3c4d5e6f
 
 #### Activating Import Links
 
-You can activate or deactivate import links via sheet settings. Go to Sheet edit page > Options tab > Import Links > Activate or Deactivate dropdown.
+You can activate or deactivate import links via sheet settings. Go to **Sheet Edit** page > **Options** tab > **Import Links** > Select _Activate_ or _Deactivate in the_ dropdown.
 
 <figure><img src="../.gitbook/assets/import links activation.jpg" alt=""><figcaption><p>Import Links</p></figcaption></figure>
 
+If the Import Links are deactivated the users will see the following message:
 
-
+<figure><img src="../.gitbook/assets/disabled.jpg" alt=""><figcaption><p>Import Links disabled</p></figcaption></figure>

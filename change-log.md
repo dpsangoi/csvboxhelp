@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 25 Aug 2022
+
+* Added [Import Link disable](advanced-installation/import-links.md#activating-import-links) option
+
 ## 24 August 2022
 
 * Added option to control[ import dialog size](dashboard-settings/sheet-options-1.md#importer-dialog-size)
