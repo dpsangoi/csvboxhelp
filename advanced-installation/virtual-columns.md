@@ -56,6 +56,21 @@ catch(err)
 }
 ```
 {% endtab %}
+
+{% tab title="Static" %}
+Pass any static value to the Virtual Column.
+
+```javascript
+try
+{  	
+	return csvbox.import["sheet_id"];
+}
+catch(err)
+{  
+  	return 'error: ' + err.name + ' | ' + err.message;
+}
+```
+{% endtab %}
 {% endtabs %}
 
 ### Adding Virtual Columns
