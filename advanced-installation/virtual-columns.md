@@ -174,7 +174,7 @@ Virtual Columns will be available in the column mapping modal. You can push Virt
 <figure><img src="../.gitbook/assets/virtual_col_mapping.jpg" alt=""><figcaption><p>Mapping Virtual Columns</p></figcaption></figure>
 {% endtab %}
 
-{% tab title="S3" %}
+{% tab title="S3, FTP etc" %}
 In the AWS S3 file store, the Virtual Columns will be added as new columns in the uploaded file.
 {% endtab %}
 {% endtabs %}
