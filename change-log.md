@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 26 Aug 2022
+
+* Added the Romanian language option for the importer frontend
+
 ## 25 Aug 2022
 
 * Added [Import Link disable](advanced-installation/import-links.md#activating-import-links) option
@@ -15,7 +19,7 @@ description: A record of all notable changes made to the application.
 
 ## 23 August 2022
 
-* Updated React, Angular, Vuejs libraries for [onSubmit Importer event](getting-started/2.-install-code.md#events)
+* Updated React, Angular and Vuejs libraries for [onSubmit Importer event](getting-started/2.-install-code.md#events)
 
 ## 16 August 2022
 
