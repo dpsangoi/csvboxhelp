@@ -10,15 +10,15 @@ Beta version coming soon
 
 **Virtual Columns** are one of CSVbox’s most powerful data transformation tools.&#x20;
 
-You can run small snippets of JavaScript that can **re-format**, **correct**, **validate**, and **enrich** incoming data during a data import.
+You can run small snippets of JavaScript that can **merge**, **split**, **re-format**, **correct**, **validate**, and **enrich** incoming data during a data import.
 
 Super useful if you need to process your data, do calculations, merge things together, etc before receiving it at your end. The sky is the limit!
 
 ### How it works
 
-1. For any sheet, add a Virtual Column via the CSVbox dashboard.
+1. For any sheet (template), add a Virtual Column via the CSVbox dashboard.
 2. Attach a Javascript snippet to the Virtual Column.
-3. When users upload a CSV file, the Javascript will run to populate data in the Virtual Column.
+3. After the users submit the CSV file, the Javascript will run to populate data in the Virtual Columns.
 4. Data from the uploaded CSV as well as the Virtual Column will be pushed to the data destination.
 
 #### Example
@@ -41,7 +41,7 @@ catch(err)
 ```
 {% endtab %}
 
-{% tab title="Reformat" %}
+{% tab title="Re-format" %}
 Normalize the incoming _order\_date_ into UTC format.
 
 ```javascript
@@ -63,7 +63,7 @@ Pass any static value to the Virtual Column.
 ```javascript
 try
 {  	
-	return csvbox.import["sheet_id"];
+	return 'Amazon';
 }
 catch(err)
 {  
@@ -183,8 +183,36 @@ The virtual data will also be available on the [client-side JSON object](../gett
 
 ### Dependencies
 
-coming soon
+In the Javascript snippet, you can utilize an external library that is hosted via a CDN. Simply add the library script tag, and start using it.
+
+#### Example
+
+Consider you want to convert incoming USD currency into GBP for the virtual column. We can utilize the [money.js](https://github.com/openexchangerates/money.js) library for conversions at real-time rates. Simply add the script tag of the library to the virtual column:
+
+{% code title="money.js CDN script tag" overflow="wrap" %}
+```javascript
+<script src="https://cdnjs.cloudflare.com/ajax/libs/money.js/0.0.1/money.min.js" integrity="sha512-dfZQaBBlTXvL+AUQKi7dd/9kb/KhreymnZYVdinjigqTdZUrAnLUNJRV34DUPFCdyek9mMBns3rzTlipnBKhTg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+```
+{% endcode %}
+
+Then simply use it in the Javascript
+
+```javascript
+//USD to GBP
+try
+{  	
+	return fx.convert(csvbox.row["USD_amount"], {from: "USD", to: "GBP"});
+	
+}
+catch(err)
+{  
+	//returning error
+  	return 'error: ' + err.name + ' | ' + err.message;
+}
+```
 
 ### Environment Variables
 
 coming soon
+
+### Debugging
