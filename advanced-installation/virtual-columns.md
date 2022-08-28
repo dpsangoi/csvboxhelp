@@ -183,24 +183,60 @@ The virtual data will also be available on the [client-side JSON object](../gett
 
 ### Dependencies
 
-In the Javascript snippet, you can utilize an external library that is hosted via a CDN. Simply add the library script tag, and start using it.
+In the Javascript snippet, you can utilize an external library that is hosted via a CDN. You can also call any external API endpoint to fetch real-time data. Simply add the library script tag and/or any custom scripts to the 'Dependencies' section and start using it in the main Javascript snippet.
 
-#### Example
+For each import, the dependent scripts will be run only once. Whereas the main Javascript snippet will be executed once for each row.
 
-Consider you want to convert incoming USD currency into GBP for the virtual column. We can utilize the [money.js](https://github.com/openexchangerates/money.js) library for conversions at real-time rates. Simply add the script tag of the library to the virtual column:
+<figure><img src="../.gitbook/assets/VirtualColumnProcessing.jpeg" alt=""><figcaption><p>VIrtual Column Processing</p></figcaption></figure>
 
-{% code title="money.js CDN script tag" overflow="wrap" %}
+<details>
+
+<summary>Example</summary>
+
+Consider you want to use the data from the incoming **USD\_amount** __ column to create a new **GBP\_amount** Virtual Column. The currency amount should be converted from USD to GBP using real-time exchange rates.
+
+We can utilize the [Money.js](https://github.com/openexchangerates/money.js) library for currency conversions and [Open Exchange Rates ](https://openexchangerates.org/)for fetching real-time conversion rates. Here is the sample dependency code:
+
+{% code title="Dependent Scripts" %}
 ```javascript
-<script src="https://cdnjs.cloudflare.com/ajax/libs/money.js/0.0.1/money.min.js" integrity="sha512-dfZQaBBlTXvL+AUQKi7dd/9kb/KhreymnZYVdinjigqTdZUrAnLUNJRV34DUPFCdyek9mMBns3rzTlipnBKhTg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+//Load jQuery via CDN
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"> </script>
+
+//Load Money.js via CDN
+<script src="https://cdnjs.cloudflare.com/ajax/libs/money.js/0.0.1/money.min.js" integrity="sha512-dfZQaBBlTXvL+AUQKi7dd/9kb/KhreymnZYVdinjigqTdZUrAnLUNJRV34DUPFCdyek9mMBns3rzTlipnBKhTg==" crossorigin="anonymous" referrerpolicy="no-referrer"> </script>
+
+//Fetch real-time conversion rates via ajax call and initialize fx object
+<script type="text/javascript" >
+
+    // Load exchange rates data via AJAX:
+    $.getJSON(
+        // NB: using Open Exchange Rates here, but you can use any source!
+        'https://openexchangerates.org/api/latest.json?app_id=fa4744d77e844adb9cc3533b7ae162f3',
+        function(data) {
+            // Check money.js has finished loading:
+            if (typeof fx !== "undefined" && fx.rates) {
+                fx.rates = data.rates;
+                fx.base = data.base;
+            } else {
+                // If not, apply to fxSetup global:
+                var fxSetup = {
+                    rates: data.rates,
+                    base: data.base
+                }
+            }
+        }
+    );
+</script>
 ```
 {% endcode %}
 
-Then simply use it in the Javascript
+Corresponding Javascript snippet for **GBP\_amount** Virtual Column:
 
+{% code title="Javascript snippet" %}
 ```javascript
-//USD to GBP
 try
 {  	
+	//USD to GBP
 	return fx.convert(csvbox.row["USD_amount"], {from: "USD", to: "GBP"});
 	
 }
@@ -210,6 +246,9 @@ catch(err)
   	return 'error: ' + err.name + ' | ' + err.message;
 }
 ```
+{% endcode %}
+
+</details>
 
 ### Environment Variables
 
