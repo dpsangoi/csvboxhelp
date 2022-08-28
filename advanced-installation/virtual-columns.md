@@ -291,7 +291,7 @@ csvbox.import["destination_type"]
 ```
 
 {% hint style="info" %}
-&#x20;<mark style="background-color:purple;">**console.log(csvbox);**</mark>&#x20;
+&#x20;_**console.log(csvbox);**_&#x20;
 
-With this statement you can print all the available variables in the debugging console,
+With this statement, you can print all the available variables in the debugging console,
 {% endhint %}
