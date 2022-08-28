@@ -250,8 +250,48 @@ catch(err)
 
 </details>
 
-### Environment Variables
+### Variables
 
-coming soon
+In the Virtual Column Javascript snippet, you have access to data variables included in the **`csvbox`** object. The following data is available:
+
+#### `csvbox.row`
+
+It contains the reference to row data. Each cell in the row can be accessed by providing the column name. Examples:
+
+```javascript
+csvbox.row["first_name"]
+csvbox.row["order_id"]
+csvbox.row["price"]
+```
+
+{% hint style="warning" %}
+The column name must exist on the sheet or an error will be thrown.
+{% endhint %}
+
+#### `csvbox.user`
+
+It contains the [custom user attributes](../getting-started/2.-install-code.md#referencing-the-user) defined while initializing the importer. Examples:
+
+```javascript
+csvbox.user["user_id"]
+csvbox.user["team_id"]
+csvbox.user["isAuthenticated"]
+```
+
+#### `csvbox.import`
+
+This refers to the current import-specific data. The following data is available:
+
+```javascript
+csvbox.import["sheet_id"]
+csvbox.import["sheet_name"]
+csvbox.import["original_filename"]
+csvbox.import["import_start_time"]
+csvbox.import["destination_type"]
+```
+
+{% hint style="info" %}
+More data will be added soon.
+{% endhint %}
 
 ### Debugging
