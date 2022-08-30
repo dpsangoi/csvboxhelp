@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 30 Aug 2022
+
+* Added Virtual Columns. Create new columns by applying custom data transformation logic.
+
 ## 26 Aug 2022
 
 * Added the Romanian language option for the importer frontend
