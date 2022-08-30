@@ -10,7 +10,7 @@ Beta version coming soon
 
 **Virtual Columns** are one of CSVbox’s most powerful data transformation tools.&#x20;
 
-You can run small snippets of JavaScript that can **merge**, **split**, **re-format**, **correct**, **validate**, and **enrich** incoming data during a data import.
+You can run small snippets of JavaScript that can **merge**, **split**, **re-format**, **correct**, and **enrich** incoming data during a data import.
 
 Super useful if you need to process your data, do calculations, merge things together, etc before receiving it at your end. The sky is the limit!
 
