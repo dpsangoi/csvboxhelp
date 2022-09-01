@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 01 Sep 2022
+
+* Added **Time** Column type validation.
+
 ## 30 Aug 2022
 
 * Added [Virtual Columns](advanced-installation/virtual-columns.md). Create new columns by applying custom data transformation logic.
