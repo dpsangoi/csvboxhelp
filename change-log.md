@@ -4,10 +4,12 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+##
+
 ## 01 Sep 2022
 
 * Added **Time** Column type validation.
-* 100 column sheet restriction removed.
+* The 100 column sheet restriction removed.
 
 ## 30 Aug 2022
 
