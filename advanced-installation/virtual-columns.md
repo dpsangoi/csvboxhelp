@@ -4,10 +4,6 @@ description: Create new columns by applying custom data transformation logic.
 
 # Virtual Columns
 
-{% hint style="warning" %}
-Beta version coming soon
-{% endhint %}
-
 **Virtual Columns** are one of CSVbox’s most powerful data transformation tools.&#x20;
 
 You can run small snippets of JavaScript that can **merge**, **split**, **re-format**, **correct**, and **enrich** incoming data during a data import.
