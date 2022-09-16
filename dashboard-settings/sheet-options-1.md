@@ -34,6 +34,16 @@ With this option, you can enable/disable the **Export** button on the verify dat
 
 </details>
 
+## Server & Data Location
+
+<details>
+
+<summary>Select the geographic location of the servers &#x26; database for the user data.</summary>
+
+coming soon
+
+</details>
+
 ## Domain Authorization
 
 <details>
