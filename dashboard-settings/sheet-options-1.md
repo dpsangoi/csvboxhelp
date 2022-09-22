@@ -40,7 +40,25 @@ With this option, you can enable/disable the **Export** button on the verify dat
 
 <summary>Select the geographic location of the servers &#x26; database for the user data.</summary>
 
-coming soon
+Data residency refers to where the data is stored in a geographical location. The location is important usually for regulatory or policy reasons.
+
+You have the option to select the storage location of the data uploaded by your users.
+
+Go to **Edit Sheets** > **Options** > **Privacy & Security** section > Select the location from the dropdown.
+
+<img src="../.gitbook/assets/locations.png" alt="" data-size="original">
+
+The US is the default location. The other option is Europe (Germany.)
+
+The data uploaded by the users will then pass through servers and get stored in the database situated in the selected location only.
+
+Note, that you also have the option to not store the data at all.
+
+The long-lived data about the import and the user files is not covered under the selected location. It mainly consists of supplementary log data helpful for troubleshooting and analyzing the import processes. This data does not include any original data from inside the user files.\
+\
+The image below shows how the data will flow if you select Europe as the data residency location.
+
+<img src="../.gitbook/assets/data flow location (1).svg" alt="" data-size="original">
 
 </details>
 

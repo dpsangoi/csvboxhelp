@@ -1,20 +1,28 @@
 ---
-description: 'Revision Date: 24 February 2022'
+description: 'Revision Date: 22 September 2022'
 ---
 
 # User Data Policy
 
 ## Data Retention
 
-Ensuring the privacy and security of the user data is a top priority for us. You can rest easy, knowing that we take every precaution to provide an import service with high-grade security.
+Ensuring the privacy and security of user data is a top priority for us. You can rest easy, knowing that we take every precaution to provide an import service with high-grade security.
 
-When a user submits a file, csvbox.io parses the file on the client-side and then sends it to our servers. The data in transit is fully protected with a 256 bit SSL (Secure Socket Layer) connection that uses a SHA256 Certificate. This is the same level of protection used by online banking or e-commerce providers. &#x20;
+When a user submits a file, csvbox.io parses the file on the client-side and then sends it to our servers. The data in transit is fully protected with a 256-bit SSL (Secure Socket Layer) connection that uses a SHA256 Certificate. This is the same level of protection used by online banking or e-commerce providers. &#x20;
 
 We use databases from Amazon Web Services (AWS) with encryption enabled by default. The uploaded data is secured at rest and no one else can read it while it resides in our storage. Once the data is fully stored in our database, csvbox.io then pushes it to your app or any other destination as configured by you in the dashboard.
 
-The user data from our storage is later deleted automatically after one month. Meanwhile, you can securely view and download this data anytime via the csvbox.io dashboard. We provide the option to get all the user uploaded data deleted from our database (AWS S3) anytime by the click of a button. Lastly, you can configure the importer to completely bypass storing the data in our database (AWS S3).   &#x20;
+<figure><img src="../.gitbook/assets/csvbox workflow.svg" alt=""><figcaption><p>Data flow</p></figcaption></figure>
+
+The user data from our storage is later deleted automatically after one month. Meanwhile, you can securely view and download this data anytime via the csvbox.io dashboard. We provide the option to get all the user-uploaded data deleted from our database (AWS S3) anytime with the click of a button. Lastly, you can configure the importer to completely bypass storing the data in our database (AWS S3).   &#x20;
 
 The long-lived data about the import and the user files is not deleted. It mainly consists of supplementary log data helpful for troubleshooting and analyzing the import processes. This data does not include any original data from inside the user files.
+
+## Data Residency
+
+Data residency refers to where the data is stored in a geographical location. The location is important usually for regulatory or policy reasons. The data, uploaded by your users, goes through our servers and gets stored in our databases all located in the US by default.
+
+We offer the option to configure the data residency location to US and Europe (Germany).
 
 ## Zero-knowledge design
 
