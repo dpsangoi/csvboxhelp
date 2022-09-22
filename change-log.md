@@ -6,7 +6,7 @@ description: A record of all notable changes made to the application.
 
 ## 22 Sep 2022
 
-* Added the option to select the location of data residency. More info [here](dashboard-settings/sheet-options-1.md#server-and-data-location).
+* Added the option to select Europe (Germany) location for data residency. More info [here](dashboard-settings/sheet-options-1.md#server-and-data-location).
 
 ## 05 Sep 2022
 
