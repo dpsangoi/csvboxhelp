@@ -196,6 +196,8 @@ For each list item, the `value` field is mandatory while `display_label` is opti
 The importer will attach the [custom user attributes](../getting-started/2.-install-code.md#referencing-the-user) as query parameters to the Dynamic List API request. **csvbox\_** prefix will be added to the custom user attribute query parameters. This will help you identify the users/environment and return back a relevant list of values.
 {% endhint %}
 
+For authenticating the requests you can pass the authorization headers via the [**dynamic\_list\_request\_headers** ](../getting-started/2.-install-code.md#dynamic\_list\_request\_headers)initialization option.
+
 ### Dependent Dynamic List
 
 Sometimes, you may want to use more than one list such that the items available in a second drop-down list depend on the selection made in the first drop-down list.
