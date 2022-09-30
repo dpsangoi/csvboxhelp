@@ -1,5 +1,5 @@
 ---
-description: 'Last Modified: March 01, 2022'
+description: 'Last Modified: September 30, 2022'
 ---
 
 # Data Processing Addendum
@@ -68,7 +68,7 @@ The Processor will notify the Controller as soon as practicable after it becomes
 
 The Processor shall be entitled to engage sub-processors to fulfill the Processor’s obligations defined in the Agreement by way of the controller agreeing to the terms of service of CSVBox. Where the Processor engages sub-processors, the Processor will engage only with sub-processors whose terms of service honor the similar obligations that apply to the Processor under this DPA.
 
-The Processor hosts its Service with outsourced cloud infrastructure provider, Amazon Web Services (AWS). The servers and the databases are located in the US.
+The Processor hosts its Service with outsourced cloud infrastructure provider, Amazon Web Services (AWS). The servers and the databases are located in the US and optionally Europe.
 
 Additionally, here is the list of Sub-Processors:
 
