@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 30 Sep 2022
+
+* Updated [DPA ](legal/gdpr/data-processing-addendum.md)to add Europe Data Residency option.
+
 ## 22 Sep 2022
 
 * Added the option to select Europe (Germany) location for data residency. More info [here](dashboard-settings/sheet-options-1.md#server-and-data-location).
