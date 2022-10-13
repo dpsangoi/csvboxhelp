@@ -4,6 +4,12 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 13 Oct 2022
+
+* Fixed UI buys related to **max\_rows** option.
+* Upgraded infrastructure and added optimizations for improved speed for EU region.
+* Improved performance for imports with many Virtual Columns.
+
 ## 30 Sep 2022
 
 * Updated [DPA ](legal/gdpr/data-processing-addendum.md)to add Europe Data Residency option.
