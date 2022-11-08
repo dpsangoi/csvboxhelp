@@ -4,6 +4,11 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 29 Oct 2022
+
+* Optimized SQL Server integration code to improve speed.
+* Added **data\_location** initialization parameter for specifying data and server location.
+
 ## 13 Oct 2022
 
 * Fixed UI buys related to **max\_rows** option.
@@ -20,7 +25,7 @@ description: A record of all notable changes made to the application.
 
 ## 05 Sep 2022
 
-* Added Hebrew language for importer frontend
+* Added Hebrew language for importer frontend.
 
 ## 01 Sep 2022
 
