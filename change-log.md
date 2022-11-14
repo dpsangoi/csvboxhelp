@@ -4,6 +4,11 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 14 Nov 2022
+
+* Added the Italian language option for the importer front end.
+* Added option to Copy sheet settings to an existing sheet. The data destination config and license key remain the same in the target sheet.
+
 ## 29 Oct 2022
 
 * Optimized SQL Server integration code to improve speed.
