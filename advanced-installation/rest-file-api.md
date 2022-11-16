@@ -405,17 +405,9 @@ Here is the list of additional configuration options available with the File API
 
 #### max\_rows
 
-|             |                                       |   |
-| ----------- | ------------------------------------- | - |
-| Type        | Integer                               |   |
-| Default     | Null                                  |   |
-| Description | The maximum number of rows to import. |   |
+<table><thead><tr><th></th><th></th><th data-hidden></th></tr></thead><tbody><tr><td>Type</td><td>Integer</td><td></td></tr><tr><td>Default</td><td>Null</td><td></td></tr><tr><td>Description</td><td>The maximum number of rows to import.</td><td></td></tr></tbody></table>
 
 #### has\_header
 
-|             |                                                                                                                                                                       |   |
-| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | - |
-| Type        | Boolean                                                                                                                                                               |   |
-| Default     | 0                                                                                                                                                                     |   |
-| Description | <p>Specify whether the file contains a header row.<br><br>Acceptable values are:</p><p><strong>0</strong> (no header)</p><p><strong>1</strong> (has a header row)</p> |   |
+<table><thead><tr><th></th><th></th><th data-hidden></th></tr></thead><tbody><tr><td>Type</td><td>Boolean</td><td></td></tr><tr><td>Default</td><td>0</td><td></td></tr><tr><td>Description</td><td><p>Specify whether the file contains a header row.<br><br>Acceptable values are:</p><p><strong>0</strong> (no header)</p><p><strong>1</strong> (has a header row)</p></td><td></td></tr></tbody></table>
 

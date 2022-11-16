@@ -4,6 +4,12 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 16 Nov 2022
+
+* Added a Reset All Mappings button to make it easier for the users to reset and remap the columns. This button is optional and its visibility can be controlled via the Sheet settings page.
+
+<figure><img src=".gitbook/assets/reset mappings.jpg" alt=""><figcaption><p>Reset Mappings Button</p></figcaption></figure>
+
 ## 14 Nov 2022
 
 * Added the Italian language option for the importer front end.
