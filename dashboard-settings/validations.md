@@ -238,6 +238,42 @@ Note the **`dependents` ** object above. It contains the list of valid values fo
 If you change the name of the primary column or reorder the priority of any of the columns, then you need to reassign the primary column in the Dependent Dynamic List column settings.
 {% endhint %}
 
+### Multi-select List
+
+{% hint style="warning" %}
+coming soon
+{% endhint %}
+
+The **Multi-select List** data type is similar to the [**List**](validations.md#list) data type, where you can specify a list of acceptable values. While the **List** data type accepts only one value per cell, the **Multi-select List** accepts multiple comma-separated values.
+
+<figure><img src="../.gitbook/assets/Multi-select List.png" alt=""><figcaption><p>Multi-Select List</p></figcaption></figure>
+
+The importer will compare the values in the incoming data with the list of acceptable values and throw a validation error if there is a mismatch.
+
+### Dynamic Multi-select List
+
+{% hint style="warning" %}
+coming soon
+{% endhint %}
+
+This is similar to the **Multi-select** **List** type column above where the importer accepts multiple comma-separated values. However, instead of providing a static list of values, here, you can now specify a list of acceptable values in real time via an API.
+
+The API should return the list of values in the JSON format as shown below.&#x20;
+
+```json
+[
+   {"value": "Red"},
+   {"value": "Green"},
+   {"value": "Blue"}
+]
+```
+
+{% hint style="info" %}
+The importer will attach the [custom user attributes](../getting-started/2.-install-code.md#referencing-the-user) as query parameters to the Dynamic List API request. **csvbox\_** prefix will be added to the custom user attribute query parameters. This will help you identify the users/environment and return back a relevant list of values.
+{% endhint %}
+
+For authenticating the requests you can pass the authorization headers via the [**dynamic\_list\_request\_headers** ](../getting-started/2.-install-code.md#dynamic\_list\_request\_headers)initialization option.
+
 ## Other Validation Options
 
 ### Column Required
