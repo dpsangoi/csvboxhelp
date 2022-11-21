@@ -31,7 +31,15 @@ Info Hints are help tooltips that will get displayed when the users hover the mo
 You can provide a set of keywords as alternative matching options to help users match column names automatically. For example, let's say you have a column name 'First Name'. If you think a lot of your users might have sheets with columns as 'F\_Name' or simply 'First', then you can add two matching keywords 'F\_Name' and 'First'. The importer will then automatically match columns to the specified keywords to speed up column mapping.
 
 {% hint style="info" %}
-CSVBox also deploys an intelligent column mapping algorithm. Based on the historical columns mapped by the users, the importer automatically maps the columns for new uploads to simplify column matching. Even if you do not provide Matching Keywords, the importer will adapt and auto-suggest columns as more sheets get uploaded.
+#### **User Keywords**
+
+Apart from Matching Keywords, CSVBox auto-maps columns via continuous learning.
+
+The importer remembers the columns mapped by the users.  It then uses the historical mappings to automatically map columns for new uploads. This way the importer adapts and collects new **User Keywords** as more sheets get uploaded.
+
+You have the option to view and delete the User Keywords via Column Settings.
+
+![](<../.gitbook/assets/user keywords.jpg>)
 {% endhint %}
 
 ## Default Value
