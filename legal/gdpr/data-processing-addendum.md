@@ -1,8 +1,14 @@
 ---
-description: 'Last Modified: September 30, 2022'
+description: 'Last Modified: November 21, 2022'
 ---
 
 # Data Processing Addendum
+
+{% hint style="info" %}
+Summary of changes: Nov 21, 2022
+
+* Removed ArvanCloud as Sub Processor
+{% endhint %}
 
 This Data Processing Agreement (“DPA”) is for the product named CSVbox offered by Thalia Technologies Private Limited. This agreement includes the Standard Contractual Clauses adopted by the European Commission, as applicable, and reflects the parties’ agreement with respect to the terms governing the Processing of Personal Data under the CSVBox [Terms of Use](https://help.csvbox.io/legal/terms). This DPA is an amendment to the Agreement and is effective upon its incorporation into the Agreement, which incorporation may be specified in the Agreement, an Order, or an executed amendment to the Agreement. Upon its incorporation into the Agreement, the DPA will form a part of the Agreement.
 
