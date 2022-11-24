@@ -109,7 +109,15 @@ The messages can be:
 
 <summary>1-click to resubmit the same CSV file again</summary>
 
-coming soon
+With this option, you can show or hide the Resubmit button on the Import Success screen.
+
+The Resubmit button triggers a new import pushing the same file with the same import configuration.
+
+This is useful during testing and debugging. You don't have to upload the file, match columns and confirm data for importing the file. Simply click the Resubmit button and push the file to the same destination.
+
+![](<../.gitbook/assets/resubmit button.jpg>)
+
+
 
 </details>
 
