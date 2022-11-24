@@ -103,6 +103,16 @@ The messages can be:
 
 </details>
 
+## Resubmit Button
+
+<details>
+
+<summary>1-click to resubmit the same CSV file again</summary>
+
+coming soon
+
+</details>
+
 ## Importer Dialog Size
 
 <details>
