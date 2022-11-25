@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 25 Nov 2022
+
+* Added [Multi-select List](https://help.csvbox.io/dashboard-settings/validations#multi-select-list) and [Dynamic Multi-select List](https://help.csvbox.io/dashboard-settings/validations#dynamic-multi-select-list) column types.&#x20;
+
 ## 21 Nov 2022
 
 * Added option to view and delete [User Keywords](https://help.csvbox.io/dashboard-settings/sheet-options#matching-keywords).

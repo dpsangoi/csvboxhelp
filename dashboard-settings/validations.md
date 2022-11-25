@@ -240,10 +240,6 @@ If you change the name of the primary column or reorder the priority of any of t
 
 ### Multi-select List
 
-{% hint style="warning" %}
-coming soon
-{% endhint %}
-
 The **Multi-select List** data type is similar to the [**List**](validations.md#list) data type, where you can specify a list of acceptable values. While the **List** data type accepts only one value per cell, the **Multi-select List** accepts multiple comma-separated values.
 
 <figure><img src="../.gitbook/assets/Multi-select List.png" alt=""><figcaption><p>Multi-Select List</p></figcaption></figure>
@@ -251,10 +247,6 @@ The **Multi-select List** data type is similar to the [**List**](validations.md#
 The importer will compare the values in the incoming data with the list of acceptable values and throw a validation error if there is a mismatch.
 
 ### Dynamic Multi-select List
-
-{% hint style="warning" %}
-coming soon
-{% endhint %}
 
 This is similar to the **Multi-select** **List** type column above where the importer accepts multiple comma-separated values. However, instead of providing a static list of values, here, you can now specify a list of acceptable values in real time via an API.
 
