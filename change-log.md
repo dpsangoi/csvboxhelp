@@ -4,6 +4,11 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 05 Dec 2022
+
+* `csvbox.row["total_rows"]` and `csvbox.row["current_row"]` [data variables](advanced-installation/virtual-columns.md#csvbox.row) added to Virtual Columns.
+* ``[`csvbox.virtual`](advanced-installation/virtual-columns.md#csvbox.virtual) object added to Virtual Columns.
+
 ## 29 Nov 2022
 
 * Added [1-click Resubmit button](dashboard-settings/sheet-options-1.md#1-click-to-resubmit-the-same-csv-file-again) to trigger a new import on the recently submitted file.

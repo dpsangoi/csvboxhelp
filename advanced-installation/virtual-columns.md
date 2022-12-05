@@ -252,7 +252,7 @@ In the Virtual Column Javascript snippet, you have access to data variables incl
 
 #### `csvbox.row`
 
-It contains the reference to row data. Each cell in the row can be accessed by providing the column name. Examples:
+It contains row data. Each cell in the row can be accessed by providing the column name. Examples:
 
 ```javascript
 csvbox.row["first_name"]
@@ -284,7 +284,22 @@ csvbox.import["sheet_name"]
 csvbox.import["original_filename"]
 csvbox.import["import_start_time"]
 csvbox.import["destination_type"]
+csvbox.import["total_rows"]
+csvbox.import["row_number"] //current row number starting with 1
 ```
+
+#### `csvbox.virtual`
+
+It contains data from the preceeding virtual columns.
+
+```javascript
+csvbox.virtual["final_name"]
+csvbox.virtual["age"]
+```
+
+{% hint style="warning" %}
+Data from only the virtual columns that are defined before the current virtual column are available for use.
+{% endhint %}
 
 {% hint style="info" %}
 &#x20;_**console.log(csvbox);**_&#x20;
