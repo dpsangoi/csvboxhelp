@@ -4,6 +4,15 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 18 Dec 2022
+
+* Added Slovenian language.
+* Added the option to provide help text in multiple languages.
+
+![](.gitbook/assets/language\_options.jpg)
+
+* Added option to configure the default state of the 'Data has headers' dropdown.
+
 ## 05 Dec 2022
 
 * `csvbox.row["total_rows"]` and `csvbox.row["row_number"]` [data variables](advanced-installation/virtual-columns.md#csvbox.row) added to Virtual Columns.
