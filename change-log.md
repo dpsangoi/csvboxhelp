@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 26 Dec 2022
+
+* Added support for delimiters such as "." and "|" for [Multi-select List](https://help.csvbox.io/dashboard-settings/validations#multi-select-list) and [Dynamic Multi-select List](https://help.csvbox.io/dashboard-settings/validations#dynamic-multi-select-list) column types.&#x20;
+
 ## 18 Dec 2022
 
 * Added Slovenian language.
