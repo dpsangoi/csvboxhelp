@@ -607,45 +607,5 @@ It was been a busy month for the csvbox team as we reworked the entire architect
 
 * Filter UI on the Import Page
 
-## 03 Mar 2021
 
-### Added
-
-* Date type validation for the sheet columns
-
-### Fixed
-
-* UI bugs on the importer widget
-
-## 18 Feb 2021
-
-### Added
-
-* You can now subscribe to a webhook that will be triggered each time an import event is completed.
-
-### Fixed
-
-* CDN file caching problem.
-
-## 10 Feb 2021
-
-### Added
-
-* Added a callback function to the sheet integration code. This function will be invoked client side each time an import event is completed.
-
-## 20 Dec 2020
-
-### Fixed
-
-* UI errors on the Imports page.
-
-### Changed
-
-* Location of the plans page. Moved it under the User menu.
-
-## 14 Dec 2020
-
-### Added
-
-* Introduced csvbox.io to the world
 
