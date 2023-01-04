@@ -4,7 +4,7 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
-## 05 Dec 2022
+## 04 Jan 2023
 
 * Added the Japanese language to the importer.
 
