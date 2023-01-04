@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 05 Dec 2022
+
+* Added the Japanese language to the importer.
+
 ## 29 Dec 2022
 
 * Added option to skip Column Mapping screen if there is an exact match of columns.
