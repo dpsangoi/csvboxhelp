@@ -94,7 +94,7 @@ The value returned by the Javascript snippet is added to the Virtual Column.&#x2
 ```javascript
 // Extracting first name    
 try
-{  	var fullName = csvbox.row["full_name"].split(' '),
+{  	var fullName = csvbox.row["full_name"].split(' ');
 
 	// retruning value
 	return  fullName[0];
