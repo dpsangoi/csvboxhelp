@@ -16,6 +16,7 @@
   * [Unmapped Columns](advanced-installation/unmapped-columns.md)
   * [Import Links](advanced-installation/import-links.md)
   * [REST File API](advanced-installation/rest-file-api.md)
+  * [Server Side Validation](advanced-installation/server-side-validation.md)
 * [Data Destinations](destinations/README.md)
   * [Bubble.io](destinations/bubble.io.md)
   * [Zapier](destinations/zapier.md)
