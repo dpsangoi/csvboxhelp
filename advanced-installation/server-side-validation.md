@@ -8,4 +8,5 @@ description: Validate data at your server, report back errors for correction & r
 coming soon
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/External Validation (1).svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/External Validation (1).svg" alt=""><figcaption><p>Server Side Validation</p></figcaption></figure>
+
