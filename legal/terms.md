@@ -1,5 +1,5 @@
 ---
-description: 'Last updated: 23 February 2022'
+description: 'Last updated: 27 January 2023'
 ---
 
 # Terms of Use
@@ -54,7 +54,7 @@ Our Service allows you to post, link, store, share and otherwise make available 
 
 By posting Content on or through Service, You represent and warrant that: (i) Content is yours (you own it) and/or you have the right to use it and the right to grant us the rights and license as provided in these Terms, and (ii) that the posting of your Content on or through Service does not violate the privacy rights, publicity rights, copyrights, contract rights or any other rights of any person or entity. We reserve the right to terminate the account of anyone found to be infringing on a copyright.
 
-You retain any and all of your rights to any Content you submit, post, or display on or through Service and you are responsible for protecting those rights. We take no responsibility and assume no liability for Content you or any third party posts on or through Service. However, by posting Content using Service you grant us the right and license to use, modify, publicly perform, publicly display, reproduce, and distribute such Content on and through Service. You agree that this license includes the right for us to make your Content available to other users of Service, who may also use your Content subject to these Terms.
+You retain any and all of your rights to any Content you submit, post, or display on or through Service and you are responsible for protecting those rights. We take no responsibility and assume no liability for Content you or any third party posts on or through Service.&#x20;
 
 We have the right but not the obligation to monitor and edit all Content provided by users.
 
@@ -174,3 +174,11 @@ BY USING SERVICE OR OTHER SERVICES PROVIDED BY US, YOU ACKNOWLEDGE THAT YOU HAVE
 ## Contact Us
 
 Please send your feedback, comments, requests for technical support [here](https://share.hsforms.com/1ubpg6RBoQgKOISkRMEViwg5auur).
+
+{% hint style="info" %}
+## Changelog
+
+#### 27 Jan 2023
+
+* Removed: 'However, by posting Content using Service you grant us the right and license to use, modify, publicly perform, publicly display, reproduce, and distribute such Content on and through Service. You agree that this license includes the right for us to make your Content available to other users of Service, who may also use your Content subject to these Terms.'
+{% endhint %}
