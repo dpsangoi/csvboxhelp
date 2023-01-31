@@ -4,6 +4,14 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 24 Jan 2023
+
+* Added Lazy Load option for importer initialization.
+* Added multiple-level List-Dependent List validations.
+* Added info icons on the Column Mapping page.
+* Updated email validation to accept special characters.
+* Fixed bugs, improved notifications and made minor UI changes to the admin section.
+
 ## 04 Jan 2023
 
 * Added the Japanese language to the importer.
