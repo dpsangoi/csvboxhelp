@@ -6,7 +6,7 @@ description: A record of all notable changes made to the application.
 
 ## 24 Jan 2023
 
-* Added Lazy Load option for importer initialization.
+* Added [Lazy Load](https://help.csvbox.io/getting-started/2.-install-code#lazy-load) option for importer initialization.
 * Added multiple-level List-Dependent List validations.
 * Added info icons on the Column Mapping page.
 * Updated email validation to accept special characters.
