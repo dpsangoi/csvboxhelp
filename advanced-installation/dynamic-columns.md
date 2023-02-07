@@ -142,6 +142,7 @@ Here is an example illustrating more configuration options.
               "min_length": 2,
               "max_length": 50
             },
+          "position": 2,
           "required": true
         },
         {
@@ -155,6 +156,7 @@ Here is an example illustrating more configuration options.
               "min_value": 0,
               "max_value": 100
             },
+          "position": 4,
           "required": false
         },
         {
@@ -191,6 +193,7 @@ Here is an example illustrating more configuration options.
             "min_length": 2,
             "max_length": 50
           },
+          "position": 2,
           "required": true
     },
  {
@@ -204,6 +207,7 @@ Here is an example illustrating more configuration options.
             "min_value": 0,
             "max_value": 100
           },
+          "position": 4,
           "required": false
     },
     {
@@ -230,7 +234,7 @@ Here is an example illustrating more configuration options.
 ```javascript
   dynamicColumns=[
          {
-          column_name : "qualification",
+          column_name: "qualification",
           display_label: "Highest Qualification",
           info_hint: "What is your highest educational degree",
           matching_keywords: "degree, education",
@@ -240,6 +244,7 @@ Here is an example illustrating more configuration options.
             min_length: 2,
             max_length: 50
           },
+          position: 2,
           required: true
     },
  {
@@ -253,6 +258,7 @@ Here is an example illustrating more configuration options.
             min_value: 0,
             max_value: 100
           },
+          position: 4,
           required: false
     },
     {
@@ -279,7 +285,7 @@ Here is an example illustrating more configuration options.
 ```javascript
   dynamicColumns: [
          {
-          column_name : "qualification",
+          column_name: "qualification",
           display_label: "Highest Qualification",
           info_hint: "What is your highest educational degree",
           matching_keywords: "degree, education",
@@ -289,6 +295,7 @@ Here is an example illustrating more configuration options.
             min_length: 2,
             max_length: 50
           },
+          position: 2,
           required: true
     },
  {
@@ -302,6 +309,7 @@ Here is an example illustrating more configuration options.
             min_value: 0,
             max_value: 100
           },
+          position: 4,
           required: false
     },
     {
@@ -338,8 +346,9 @@ Here is an example illustrating more configuration options.
 | [info\_hint](../dashboard-settings/sheet-options.md#info-hint)                                        | Info Hints are help tooltips that will get displayed when the users hover the mouse over the Display Label (or click it) in the importer.                                                                                                                                                                             |
 | [matching\_keywords](../dashboard-settings/sheet-options.md#matching-keywords)                        | Comma-separated set of keywords as alternative matching options to help users match column names automatically.                                                                                                                                                                                                       |
 | [type](../dashboard-settings/sheet-options.md#column-type)                                            | It specifies the data type of the incoming data. Possible values are: **text**, **number**, **email**, **date**, **boolean**, **regex**, **ip**, **url**, **credit\_card**, **phone\_number, list, dependent\_list, dynamic\_list, dependent\_dynamic\_list, multiselect\_list,** and **multiselect\_dynamic\_list.** |
-| validators                                                                                            | The validation rules for the data based on the column type. Validator options are mentioned below.                                                                                                                                                                                                                    |
+| [validators](dynamic-columns.md#validator-options)                                                    | The validation rules for the data based on the column type. Validator options are mentioned below.                                                                                                                                                                                                                    |
 | [required](../dashboard-settings/sheet-options.md#required)                                           | It indicates whether a column is mandatory.                                                                                                                                                                                                                                                                           |
+| [position](dynamic-columns.md#column-position)                                                        | It defines the display index of the column. Starts from 1.                                                                                                                                                                                                                                                            |
 
 #### Validator options
 
@@ -361,6 +370,14 @@ Here is an example illustrating more configuration options.
 | dependent\_dynamic\_list   | <ol><li><strong>primary_column</strong></li></ol>                                                                                                                                                                                                                                                                       | "primary\_column": "countries"                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | multiselect\_list          | <ol><li><strong>values</strong></li><li><strong>delimiter</strong> (Optional. Default is comma ",")</li><li><strong>case_sensitive</strong></li></ol>                                                                                                                                                                   | <p>"values": ["Red", "Green", "Blue"],</p><p>"delimiter": ".",<br>"case_sensitive": false</p>                                                                                                                                                                                                                                                                                                                                                                                  |
 | multiselect\_dynamic\_list | <ol><li><strong>source_url</strong></li><li><strong>request_method</strong></li><li><strong>request_headers</strong></li><li><strong>delimiter</strong> (Optional. Default is comma ",")</li></ol>                                                                                                                      | <p>"source_url": "https://api.myapp.com/colors",<br>"request_method": "POST",</p><p>"request_headers": [</p><p>{"key": "Content-Type", "value": "application/json"},</p><p>{"key": "X-Access-Token", "value": "71ab1d73a4d1319b260e9a0sdbdbc1c"}</p><p>],<br>"delimiter": "."</p>                                                                                                                                                                                              |
+
+#### **Column Position**
+
+In general, the dynamic columns are displayed only after the regular columns.
+
+The `position`parameter helps to re-order the position of the dynamic columns and get them displayed before or in between the regular columns.&#x20;
+
+The `position` value starts from 1 indicating the first position in the final column list. It is an optional parameter while defining the dynamic columns.
 
 ### **Receiving Dynamic Data**
 
