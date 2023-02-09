@@ -40,6 +40,10 @@ The importer remembers the columns mapped by the users.  It then uses the histor
 You have the option to view and delete the User Keywords via Column Settings.
 
 ![](<../.gitbook/assets/user keywords.jpg>)
+
+You also have the option to disable the user keywords-based column mapping completely. Go to the **Sheets** page > **Options** tab > Select Enable or Disable **User Keywords for Column Mapping**.&#x20;
+
+![](../.gitbook/assets/user\_keywords.jpg)
 {% endhint %}
 
 ## Default Value

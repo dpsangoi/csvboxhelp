@@ -4,6 +4,12 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 09 Feb 2023
+
+* Option to disable [user keywords](dashboard-settings/sheet-options.md#matching-keywords) based column mapping.
+
+![](.gitbook/assets/keywords.jpg)
+
 ## 06 Feb 2023
 
 * Added [`position` ](advanced-installation/dynamic-columns.md#column-position)parameter to control the display order of the dynamic columns.
