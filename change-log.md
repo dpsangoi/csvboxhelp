@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 14 Feb 2023
+
+* Added [Upsert ](destinations/#2.-upsert)operation for Airtable.
+
 ## 09 Feb 2023
 
 * Option to disable [user keywords](dashboard-settings/sheet-options.md#matching-keywords) based column mapping.

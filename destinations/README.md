@@ -199,6 +199,24 @@ The user CSV data will then be directly appended to the Airtable table.
 The data fields from the Airtable will be available in the Map Column modal only if they have **data in the first row**. You may add dummy data for each data field in the first row in order for them to appear in the Map Column modal.
 {% endhint %}
 
+There are 2 operations available for Airtable:
+
+#### 1. Insert
+
+Creates a new row in the table.
+
+#### 2. Upsert
+
+Update an existing row if a specified value already exists in a table, and insert a new row if the specified value doesn't already exist.
+
+The column to check for uniqueness needs to be selected in the Column Mapping popup.
+
+![](../.gitbook/assets/upset\_airtable.jpg)
+
+* If zero matches are found, a new row will be created.
+* If one match is found, that row will be updated.
+* **If multiple matches are found, the request will fail.**
+
 ## Zapier
 
 Import user CSV files and Excel sheets to Zapier. More information [here](zapier.md).
