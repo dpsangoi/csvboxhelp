@@ -60,7 +60,7 @@ Add `[dynamicColumns]="dynamicColumns"` to the existing template.&#x20;
       [licenseKey]="licenseKey"
       [user]="user"
       [dynamicColumns]="dynamicColumns"
-      [isImported]="isImported.bind(this)">
+      [Imported]="Imported.bind(this)">
       Import
     </csvbox-button>
   `
