@@ -24,14 +24,21 @@ Go to Edit Sheet > Select Destination Tab > Enable Server Side validation
 The External Validation option is available only for the API data destination.
 {% endhint %}
 
-#### 2. The user submits the spreadsheet as usual.
+#### 2. The users upload and submit the spreadsheet.
 
-#### 3. The importer pushes the data to the API endpoint configured by you.
+#### 3. The CSVbox importer pushes the data to the API endpoint configured by you.
 
-#### 4. Your app processes the data.
+The spreadsheet file data will be sent via POST requests with JSON values to the supplied endpoint. The request schema is available [here](https://help.csvbox.io/destinations#sample-json-post-to-your-api).
 
-1. Case 1: Validation success, no errors found. Your API returns a **`200`** response code. The success screen is displayed to the user.
-2. Case 2: Validation failed, one or more errors found. Your API returns **`211`** response code along with data on the validation errors.
+#### 4. Your app can then processes the data and validate it against the business rules.
+
+Case 1: Validation is successful - no errors found. Your API returns a **`200`** HTTP response code. The success screen is displayed to the user.
+
+Case 2: Validation failed - one or more errors found. Your API returns **`211`** HTTP response code along with the validation errors in JSON format. The error response JSON format is mentioned [here](server-side-validation.md#validation-error-json-response-format).
+
+{% hint style="info" %}
+It is mandatory for your API to return **`211`** HTTP response status code to instruct the CSVbox importer that there are one or more server-side validation errors.
+{% endhint %}
 
 #### 5. Validation Fail Screen is displayed to the user.
 
@@ -41,9 +48,21 @@ The External Validation option is available only for the API data destination.
 
 
 
-### Validation Error JSON Response Format
+### Validation Error Response JSON Format
 
-```
+CSVbox will expect the API endpoint to return an array of errors. Each error should specify the `row_id`, the `column` the error appeared in, and a `message` to be displayed in the UI.
+
+#### JSON Response Schema
+
+| Parameter | Type    | Description                                                                                          |
+| --------- | ------- | ---------------------------------------------------------------------------------------------------- |
+| row\_id   | integer | The row number of the error. Starts with 1.                                                          |
+| column    | string  | The [column name ](https://help.csvbox.io/dashboard-settings/sheet-options#column-name)of the error. |
+| message   | string  | The message to be displayed to the user on the validation screen of the importer.                    |
+
+#### JSON Response Example
+
+```json
 [
   {
     "row_id": 1,
@@ -62,3 +81,7 @@ The External Validation option is available only for the API data destination.
   }
 ]
 ```
+
+{% hint style="info" %}
+The Server Side Validation is an invite-only beta feature.
+{% endhint %}
