@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 17 Feb 2023
+
+* Added the importer event [onLoadStart](getting-started/2.-install-code.md#onloadstart). It gets triggered when the importer iFrame starts loading.
+
 ## 14 Feb 2023
 
 * Added [Upsert ](destinations/#2.-upsert)operation for Airtable.
