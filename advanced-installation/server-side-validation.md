@@ -8,7 +8,9 @@ description: Validate data at your server, report back errors for correction.
 coming soon
 {% endhint %}
 
-Consider a case where you want to validate the incoming data against business rules. This could be as simple as verifying if the user ID is found in the database or something more complex that involves complex logic. Here you want the validation to be done at your server end and relay back errors if any. The users can fix the errors and re-submit the data.
+Consider a case where you want to validate the incoming data against your business rules. This could be as simple as verifying if the user ID is found in the database or something more complex that involves custom logic. Here you want the validation to be done at your server end and relay back errors if any.
+
+With CSVbox you have the option of server-side validation of the submitted data and returning errors. The users can fix the errors and re-submit the data.
 
 ### How it Works
 
@@ -21,7 +23,7 @@ Go to Edit Sheet > Select Destination Tab > Enable Server Side validation
 &#x20;![](<../.gitbook/assets/external validation.png>)
 
 {% hint style="warning" %}
-The External Validation option is available only for the API data destination.
+The External Validation option is available only for the [API data destination](../destinations/#api-webhook).
 {% endhint %}
 
 #### 2. The users upload and submit the spreadsheet.
