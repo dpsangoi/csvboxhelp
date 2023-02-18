@@ -18,9 +18,9 @@ With CSVbox you have the option of server-side validation of the submitted data 
 
 #### 1. Activate Server Side Validation via Sheet Settings.
 
-Go to Edit Sheet > Select Destination Tab > Enable Server Side validation
+Go to Edit Sheet > Select Destination Tab > Enable Server Side Validation
 
-&#x20;![](<../.gitbook/assets/external validation.png>)
+<figure><img src="../.gitbook/assets/server-side button.jpg" alt=""><figcaption><p>Activate Server Side Validation</p></figcaption></figure>
 
 {% hint style="warning" %}
 The External Validation option is available only for the [API data destination](../destinations/#api-webhook).
@@ -38,7 +38,7 @@ The importer will send the spreadsheet data via POST requests with JSON values t
 
 Case 1: Validation is successful - no errors found. Your API returns a **`200`** HTTP response code. The success screen is displayed to the user.
 
-![](<../.gitbook/assets/success (1).jpg>)
+<figure><img src="../.gitbook/assets/success (1).jpg" alt=""><figcaption><p>Success Screen</p></figcaption></figure>
 
 Case 2: Validation failed - one or more errors found. Your API returns **`211`** HTTP response code along with the validation errors in JSON format. The error response JSON format is mentioned [here](server-side-validation.md#validation-error-json-response-format).
 
@@ -50,13 +50,13 @@ It is mandatory for your API to return **`211`** HTTP response status code to in
 
 If there are one or more server-side validation errors then the users will see the Fail Screen with a button to view the errors.
 
-![](../.gitbook/assets/errors.jpg)
+<figure><img src="../.gitbook/assets/errors.jpg" alt=""><figcaption><p>Fail Screen with Errors Button</p></figcaption></figure>
 
 #### 6. Users can view the validation errors.
 
 Clicking on the Errors button will take the users to the Verify Data screen with all the server-side errors displayed in yellow color.
 
-![](../.gitbook/assets/verify.jpg)
+<figure><img src="../.gitbook/assets/verify.jpg" alt=""><figcaption><p>Validation Errors in Yellow Color</p></figcaption></figure>
 
 Only the rows having the errors will be displayed.
 
