@@ -4,6 +4,12 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 27 Feb 2023
+
+* Option to add a new sheet in Google Sheets for each file upload.
+
+![](.gitbook/assets/gsheet.jpg)
+
 ## 17 Feb 2023
 
 * Added the importer event [onLoadStart](getting-started/2.-install-code.md#onloadstart). It gets triggered when the importer iFrame starts loading.
