@@ -38,7 +38,7 @@ The importer will send the spreadsheet data via POST requests with JSON values t
 
 Case 1: Validation is successful - no errors found. Your API returns a **`200`** HTTP response code. The success screen is displayed to the user.
 
-<figure><img src="../.gitbook/assets/success (1).jpg" alt=""><figcaption><p>Success Screen</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>Success Screen</p></figcaption></figure>
 
 Case 2: Validation failed - one or more errors found. Your API returns **`211`** HTTP response code along with the validation errors in JSON format. The error response JSON format is mentioned [here](server-side-validation.md#validation-error-json-response-format).
 
@@ -50,7 +50,7 @@ It is mandatory for your API to return **`211`** HTTP response status code to in
 
 If there are one or more server-side validation errors then the users will see the Fail Screen with a button to view the errors.
 
-<figure><img src="../.gitbook/assets/errors.jpg" alt=""><figcaption><p>Fail Screen with Errors Button</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Fail Screen with View Errors Button</p></figcaption></figure>
 
 #### 6. Users can view the validation errors.
 

@@ -24,7 +24,7 @@ Click the "**Connect Notion**" button.
 
 This will redirect you to the Notion Integration Authorization screen.&#x20;
 
-![](<../.gitbook/assets/image (2).png>)
+![](<../.gitbook/assets/image (2) (1).png>)
 
 You will have to select the page and the relevant workspace where you want the CSV data to be pushed.
 

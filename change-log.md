@@ -66,7 +66,7 @@ description: A record of all notable changes made to the application.
 
 * Added [1-click Resubmit button](dashboard-settings/sheet-options-1.md#1-click-to-resubmit-the-same-csv-file-again) to trigger a new import on the recently submitted file.
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption><p>Resubmit</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption><p>Resubmit</p></figcaption></figure>
 
 ## 25 Nov 2022
 
