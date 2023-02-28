@@ -232,102 +232,102 @@ Here is an example illustrating more configuration options.
 
 {% tab title="Angular" %}
 ```javascript
-  dynamicColumns=[
-         {
-          column_name: "qualification",
-          display_label: "Highest Qualification",
-          info_hint: "What is your highest educational degree",
-          matching_keywords: "degree, education",
-          type: "text",
-          validators": 
-          {          	
-            min_length: 2,
-            max_length: 50
-          },
-          position: 2,
-          required: true
-    },
- {
-          column_name: "experience",
-          display_label: "Work Experience",
-          info_hint: "Years of work experience",
-          matching_keywords: "",
-          type: "number",
-          "validators: 
-          {          	
-            min_value: 0,
-            max_value: 100
-          },
-          position: 4,
-          required: false
-    },
+dynamicColumns=[
     {
-          column_name: "gender",
-          display_label: "Gender",
-          info_hint: "",
-          matching_keywords: "",
-          type: "list",
-          validators: 
-          {          	
-            values: [
-                            {value: "m", display_label: "male"},
-                            {value: "f", display_label: "female"} 
-                      ],
-            case_sensitive: false
-          },
-          required: true
-    }
-]
+     column_name: "qualification",
+     display_label: "Highest Qualification",
+     info_hint: "What is your highest educational degree",
+     matching_keywords: "degree, education",
+     type: "text",
+     validators: 
+     {            
+       min_length: 2,
+       max_length: 50
+     },
+     position: 2,
+     required: true
+  },
+  {
+     column_name: "experience",
+     display_label: "Work Experience",
+     info_hint: "Years of work experience",
+     matching_keywords: "",
+     type: "number",
+     validators: 
+     {            
+       min_value: 0,
+       max_value: 100
+     },
+     position: 4,
+     required: false
+  },
+  {
+     column_name: "gender",
+     display_label: "Gender",
+     info_hint: "",
+     matching_keywords: "",
+     type: "list",
+     validators: 
+     {            
+       values: [
+                       {value: "m", display_label: "male"},
+                       {value: "f", display_label: "female"} 
+                 ],
+       case_sensitive: false
+     },
+     required: true
+  }
+  ];
 ```
 {% endtab %}
 
 {% tab title="Vuejs" %}
 ```javascript
-  dynamicColumns: [
-         {
-          column_name: "qualification",
-          display_label: "Highest Qualification",
-          info_hint: "What is your highest educational degree",
-          matching_keywords: "degree, education",
-          type: "text",
-          validators": 
-          {          	
-            min_length: 2,
-            max_length: 50
-          },
-          position: 2,
-          required: true
-    },
- {
-          column_name: "experience",
-          display_label: "Work Experience",
-          info_hint: "Years of work experience",
-          matching_keywords: "",
-          type: "number",
-          "validators: 
-          {          	
-            min_value: 0,
-            max_value: 100
-          },
-          position: 4,
-          required: false
-    },
-    {
-          column_name: "gender",
-          display_label: "Gender",
-          info_hint: "",
-          matching_keywords: "",
-          type: "list",
-          validators: 
-          {          	
-            values: [
-                            {value: "m", display_label: "male"},
-                            {value: "f", display_label: "female"} 
-                      ],
-            case_sensitive: false
-          },
-          required: true
-    }
+ dynamicColumns: [
+  {
+   column_name: "qualification",
+   display_label: "Highest Qualification",
+   info_hint: "What is your highest educational degree",
+   matching_keywords: "degree, education",
+   type: "text",
+   validators: 
+   {            
+     min_length: 2,
+     max_length: 50
+   },
+   position: 2,
+   required: true
+},
+{
+   column_name: "experience",
+   display_label: "Work Experience",
+   info_hint: "Years of work experience",
+   matching_keywords: "",
+   type: "number",
+   validators: 
+   {            
+     min_value: 0,
+     max_value: 100
+   },
+   position: 4,
+   required: false
+},
+{
+   column_name: "gender",
+   display_label: "Gender",
+   info_hint: "",
+   matching_keywords: "",
+   type: "list",
+   validators: 
+   {            
+     values: [
+                     {value: "m", display_label: "male"},
+                     {value: "f", display_label: "female"} 
+               ],
+     case_sensitive: false
+   },
+   required: true
+}
 ]
 ```
 {% endtab %}
