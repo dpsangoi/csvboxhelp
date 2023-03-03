@@ -78,6 +78,13 @@ The data will be pushed to a webhook endpoint as configured in the sheet setting
 The data will come in as HTTP POST requests. Each request will have an array of rows based on the chunk size defined in the sheet settings. You can set the chunk size to 1 to receive 1 record per HTTP request.
 {% endhint %}
 
+#### Request Type
+
+To push the data to the destination the webhook can be called in two modes:
+
+1. **Sequential** - Webhook APIs will be invoked in a sequential order one after another.
+2. **Parallel** (Default) - Multiple webhook APIs will be invoked concurrently. It means your application will receive chunks of rows in parallel. This method reduces overall import time. However, your application will need to manage the order of data based on the row\_number attribute.
+
 If you want to jump in and get started, we recommend testing using [webhook.site](https://webhook.site), to get your webhook URL. For testing on your local machine, we recommend using [ngrok](https://ngrok.com/).
 
 ## Amazon S3
