@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 06 Mar 2023
+
+* Added option to select between Sequential and Parallel sending of data via webhooks. More info [here](https://help.csvbox.io/destinations#request-type).
+
 ## 27 Feb 2023
 
 * Option to add a new sheet in Google Sheets for each file upload.
