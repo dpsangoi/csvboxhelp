@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 09 Mar 2023
+
+* Added the Danish language to the importer.
+
 ## 06 Mar 2023
 
 * Added option to select between Sequential and Parallel sending of data via webhooks. More info [here](https://help.csvbox.io/destinations#request-type).
