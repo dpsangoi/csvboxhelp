@@ -76,6 +76,8 @@ The data will be pushed to a webhook endpoint as configured in the sheet setting
 
 {% hint style="info" %}
 The data will come in as HTTP POST requests. Each request will have an array of rows based on the chunk size defined in the sheet settings. You can set the chunk size to 1 to receive 1 record per HTTP request.
+
+If the row count is greater than 10,000 then the chunk size will default to 1000. A large row count having a small chunk size increases the processing time significantly.
 {% endhint %}
 
 #### Request Type
