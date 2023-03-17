@@ -12,4 +12,3 @@ description: >-
 | --------------- | --------------------------------------------------- | --------------------------------------------------- | ----------------------------- |
 | Data Processing | <ul><li>Web browser</li><li>CSVbox server</li></ul> | <ul><li>Web browser</li><li>CSVbox server</li></ul> | <ul><li>Web browser</li></ul> |
 | Data Storage    | <ul><li>CSVbox datastore</li></ul>                  | -                                                   | -                             |
-|                 |                                                     |                                                     |                               |
