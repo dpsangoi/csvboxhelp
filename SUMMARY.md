@@ -22,6 +22,7 @@
   * [Zapier](destinations/zapier.md)
   * [Notion](destinations/notion.md)
   * [Webflow](destinations/webflow.md)
+  * [Private Mode](destinations/private-mode.md)
 * [Account](account.md)
 * [Contact Us](https://share.hsforms.com/1ubpg6RBoQgKOISkRMEViwg5auur)
 
