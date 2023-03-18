@@ -1,12 +1,12 @@
 ---
 description: >-
-  User data does not transit CSVbox servers/network and does not get stored in
+  User data does not transit CSVbox servers/networks and does not get stored in
   CSVbox data stores.
 ---
 
 # Private Mode
 
-#### Modes of Operation
+CSVbox offers a variety of configurations for handling user data.
 
 |                 | Standard                                            | No Store                                            | Private (coming soon)         |
 | --------------- | --------------------------------------------------- | --------------------------------------------------- | ----------------------------- |
