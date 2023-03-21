@@ -383,8 +383,9 @@ The `position` value starts from 1 indicating the first position in the final co
 
 The data from the dynamic columns is available in the data destinations along with the data from the regular columns. Currently, **** dynamic columns are supported by the following destinations only:
 
-1. [API/Webhook](../destinations/#webhook)
-2. [Amazon S3](../destinations/#amazon-s3)
+1. [None](../destinations/#none)
+2. [API/Webhook](../destinations/#webhook)
+3. [Amazon S3](../destinations/#amazon-s3)
 
 #### API/Webhook Data Destination
 
