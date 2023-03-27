@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 27 Mar 2023
+
+* Added [Server Side Validation](advanced-installation/server-side-validation.md) (Beta) feature
+
 ## 09 Mar 2023
 
 * Added the Danish language to the importer.

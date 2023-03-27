@@ -5,7 +5,7 @@ description: Validate data at your server, report back errors for correction.
 # Server Side Validation
 
 {% hint style="warning" %}
-coming soon
+beta
 {% endhint %}
 
 Consider a case where you want to validate the incoming data against your business rules. This could be as simple as verifying if the user ID is found in the database or something more complex that involves custom logic. Here you want the validation to be done at your server end and relay back errors if any.
@@ -101,7 +101,3 @@ CSVbox will expect the API endpoint to return an array of errors. Each error sho
   }
 ]
 ```
-
-{% hint style="info" %}
-The Server Side Validation is an invite-only beta feature.
-{% endhint %}
