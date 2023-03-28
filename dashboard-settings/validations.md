@@ -176,6 +176,10 @@ Here are the steps to create conditional lists using the example above:
 If you change the name of the primary column or reorder the priority of any of the columns, then you need to reassign the primary column in the Dependent List column settings.
 {% endhint %}
 
+{% hint style="warning" %}
+The Display Label and the Value should be unique across all the items. Primary items cannot share dependents having the same Display Label and/or same Value.
+{% endhint %}
+
 ### Dynamic List
 
 This is similar to the **List** type column above where the importer will validate the column data against a list of values. However, instead of providing a static list of values, with the **Dynamic List** column type, you can now specify a list of acceptable values in real-time via an API.
@@ -236,6 +240,10 @@ Note the **`dependents` ** object above. It contains the list of valid values fo
 
 {% hint style="warning" %}
 If you change the name of the primary column or reorder the priority of any of the columns, then you need to reassign the primary column in the Dependent Dynamic List column settings.
+{% endhint %}
+
+{% hint style="warning" %}
+The Display Label and the Value should be unique across all the items. Primary items cannot share dependents having the same Display Label and/or same Value.
 {% endhint %}
 
 ### Multi-select List
