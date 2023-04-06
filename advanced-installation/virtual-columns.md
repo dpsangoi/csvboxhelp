@@ -189,7 +189,7 @@ For each import, the dependent scripts will be run only once. Whereas the main J
 
 <summary>Example</summary>
 
-Consider you want to use the data from the incoming **USD\_amount** __ column to create a new **GBP\_amount** Virtual Column. The currency amount should be converted from USD to GBP using real-time exchange rates.
+Consider you want to use the data from the incoming **USD\_amount** column to create a new **GBP\_amount** Virtual Column. The currency amount should be converted from USD to GBP using real-time exchange rates.
 
 We can utilize the [Money.js](https://github.com/openexchangerates/money.js) library for currency conversions and [Open Exchange Rates ](https://openexchangerates.org/)for fetching real-time conversion rates. Here is the sample dependency code:
 

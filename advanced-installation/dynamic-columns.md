@@ -381,7 +381,7 @@ The `position` value starts from 1 indicating the first position in the final co
 
 ### **Receiving Dynamic Data**
 
-The data from the dynamic columns is available in the data destinations along with the data from the regular columns. Currently, **** dynamic columns are supported by the following destinations only:
+The data from the dynamic columns is available in the data destinations along with the data from the regular columns. Currently, dynamic columns are supported by the following destinations only:
 
 1. [None](../destinations/#none)
 2. [API/Webhook](../destinations/#webhook)
@@ -439,4 +439,3 @@ In the API response JSON object, the dynamic data will be displayed inside the *
 
 In the AWS S3 file store, the dynamic columns will be added as new columns in the uploaded file.
 
-****

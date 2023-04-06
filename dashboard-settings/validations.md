@@ -236,7 +236,7 @@ Here are the steps to create conditional lists using the example above:
 ]
 ```
 
-Note the **`dependents` ** object above. It contains the list of valid values for the dependent column based on the primary column value.
+Note the **`dependents`** object above. It contains the list of valid values for the dependent column based on the primary column value.
 
 {% hint style="warning" %}
 If you change the name of the primary column or reorder the priority of any of the columns, then you need to reassign the primary column in the Dependent Dynamic List column settings.

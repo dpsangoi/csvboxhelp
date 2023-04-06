@@ -72,7 +72,7 @@ description: A record of all notable changes made to the application.
 ## 05 Dec 2022
 
 * `csvbox.row["total_rows"]` and `csvbox.row["row_number"]` [data variables](advanced-installation/virtual-columns.md#csvbox.row) added to Virtual Columns.
-* ``[`csvbox.virtual`](advanced-installation/virtual-columns.md#csvbox.virtual) object added to Virtual Columns.
+* [`csvbox.virtual`](advanced-installation/virtual-columns.md#csvbox.virtual) object added to Virtual Columns.
 
 ## 29 Nov 2022
 
@@ -278,7 +278,7 @@ These settings help to remove the non-essential options from the importer and ma
 
 ### Added
 
-* ****[**allow\_invalid** option](https://help.csvbox.io/getting-started/2.-install-code#allow\_invalid)
+* [**allow\_invalid** option](https://help.csvbox.io/getting-started/2.-install-code#allow\_invalid)
 
 ![allow\_invalid option](.gitbook/assets/allow\_invalid.jpg)
 

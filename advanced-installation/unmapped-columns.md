@@ -22,7 +22,7 @@ The importer will then start accepting data from the Unmapped Columns submitted 
 
 ### **Receiving Data from Unmapped Columns**
 
-The data from the Unmapped Columns is available in the data destinations along with the data from the regular columns. Currently, **** Unmapped Columns are supported by the following destinations only:
+The data from the Unmapped Columns is available in the data destinations along with the data from the regular columns. Currently, Unmapped Columns are supported by the following destinations only:
 
 1. [API/Webhook](../destinations/#webhook)
 2. [Amazon S3](../destinations/#amazon-s3)
