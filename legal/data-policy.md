@@ -1,5 +1,5 @@
 ---
-description: 'Revision Date: 22 September 2022'
+description: 'Revision Date: 06 April 2023'
 ---
 
 # User Data Policy
