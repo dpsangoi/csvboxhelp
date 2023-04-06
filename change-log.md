@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 06 April 2023
+
+* Added [Private Mode](destinations/private-mode.md) for data processing.
+
 ## 27 Mar 2023
 
 * Added [Server Side Validation](advanced-installation/server-side-validation.md) (Beta) feature
