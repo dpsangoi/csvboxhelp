@@ -17,7 +17,7 @@ CSVbox offers a variety of configurations for handling user data.
 
 <figure><img src="../.gitbook/assets/Standard Mode.svg" alt=""><figcaption><p>Standard Mode</p></figcaption></figure>
 
-This is the default configuration. User data is encrypted in transit and at rest. A copy of the data is stored in the CSVbox database. It gets auto-deleted after one month. Your system can access the data from CSVbox datastore any time during this one month. Optionally the data is also available in the client browser.
+This is the default configuration. User data is encrypted in transit and at rest. The data is pushed to your system and a copy of it is stored in the CSVbox database. It gets auto-deleted after one month. Your system can access the data from CSVbox datastore any time during this one month. Optionally the data is also available in the client browser.
 
 ### No Store Mode
 
