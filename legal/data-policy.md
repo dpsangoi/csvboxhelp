@@ -8,11 +8,13 @@ description: 'Revision Date: 22 September 2022'
 
 Ensuring the privacy and security of user data is a top priority for us. You can rest easy, knowing that we take every precaution to provide an import service with high-grade security.
 
-When a user submits a file, csvbox.io parses the file on the client-side and then sends it to our servers. The data in transit is fully protected with a 256-bit SSL (Secure Socket Layer) connection that uses a SHA256 Certificate. This is the same level of protection used by online banking or e-commerce providers. &#x20;
+We provide a variety of data processing modes, including the [**Private Mode**](../destinations/private-mode.md). The following is the description of the Standard Mode.
 
-We use databases from Amazon Web Services (AWS) with encryption enabled by default. The uploaded data is secured at rest and no one else can read it while it resides in our storage. Once the data is fully stored in our database, csvbox.io then pushes it to your app or any other destination as configured by you in the dashboard.
+When a user submits a file, CSVbox parses the file on the client side and then sends it to our servers. The data in transit is fully protected with a 256-bit SSL (Secure Socket Layer) connection that uses a SHA256 Certificate. This is the same level of protection used by online banking or e-commerce providers. &#x20;
 
-<figure><img src="../.gitbook/assets/csvbox workflow.svg" alt=""><figcaption><p>Data flow</p></figcaption></figure>
+We use databases from Amazon Web Services (AWS) with encryption enabled by default. The uploaded data is secured at rest and no one else can read it while it resides in our storage. Once the data is fully stored in our database, CSVbox then pushes it to your app or any other destination as configured by you in the dashboard.
+
+<figure><img src="../.gitbook/assets/csvbox workflow.svg" alt=""><figcaption><p>Data flow in Standard Mode</p></figcaption></figure>
 
 The user data from our storage is later deleted automatically after one month. Meanwhile, you can securely view and download this data anytime via the csvbox.io dashboard. We provide the option to get all the user-uploaded data deleted from our database (AWS S3) anytime with the click of a button. Lastly, you can configure the importer to completely bypass storing the data in our database (AWS S3).   &#x20;
 
@@ -40,3 +42,13 @@ If you have any specific questions you may raise a ticket [here](https://share.h
 * We now have a GDPR compliant [Data Processing Agreement (DPA)](gdpr/data-processing-addendum.md), that our customers can optionally sign with us.
 * We're continuously working on adding more data control options (for activity log data and others).
 * More information on our GDPR readiness is available [here](gdpr/).
+
+{% hint style="info" %}
+## User Data Policy Changelog
+
+#### 06 April 2023
+
+* Added text:
+
+We provide a variety of data processing modes, including the [**Private Mode**](../destinations/private-mode.md). The following is the description of the Standard Mode.
+{% endhint %}
