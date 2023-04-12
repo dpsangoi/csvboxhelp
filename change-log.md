@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 12 April 2023
+
+* Few UI enhancements. Now the entire row gets highlighted when there is a validation issue in any one cell.
+
 ## 06 April 2023
 
 * Added [Private Mode](destinations/private-mode.md) for data processing.
