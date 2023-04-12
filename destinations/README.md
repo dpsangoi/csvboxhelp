@@ -195,7 +195,7 @@ Import CSV files and Excel sheets directly into your [Airtable](https://airtable
 {% hint style="info" %}
 Steps to get the Airtable API Key are mentioned [here](https://support.airtable.com/hc/en-us/articles/219046777-How-do-I-get-my-API-key-).
 
-Steps to get the Base ID are mentioned [here](./#none).
+Steps to get the Base ID are mentioned [here](https://support.airtable.com/docs/finding-airtable-ids#finding-ids-in-airtable-api).
 {% endhint %}
 
 * Specify the table name where you want the data to be pushed.
