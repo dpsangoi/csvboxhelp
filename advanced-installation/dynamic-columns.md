@@ -4,7 +4,7 @@ description: Add new columns to the template at run-time.
 
 # Dynamic Columns
 
-Consider a scenario where you cannot have a fixed template for collecting data. The columns in the data model depend on the end user's preferences and/or some other criteria.&#x20;
+der a scenario where you cannot have a fixed template for collecting data. The columns in the data model depend on the end user's preferences and/or some other criteria.&#x20;
 
 For such cases, csvbox provides the flexibility to add unique **dynamic columns** for each import at run-time.
 
@@ -142,6 +142,7 @@ Here is an example illustrating more configuration options.
               "min_length": 2,
               "max_length": 50
             },
+          "default_value": "Masters",  
           "position": 2,
           "required": true
         },
@@ -193,6 +194,7 @@ Here is an example illustrating more configuration options.
             "min_length": 2,
             "max_length": 50
           },
+          "default_value": "Masters",
           "position": 2,
           "required": true
     },
@@ -244,6 +246,7 @@ dynamicColumns=[
        min_length: 2,
        max_length: 50
      },
+     default_value: "Masters",  
      position: 2,
      required: true
   },
@@ -295,6 +298,7 @@ dynamicColumns=[
      min_length: 2,
      max_length: 50
    },
+   default_value: "Masters",
    position: 2,
    required: true
 },
@@ -347,6 +351,7 @@ dynamicColumns=[
 | [matching\_keywords](../dashboard-settings/sheet-options.md#matching-keywords)                        | Comma-separated set of keywords as alternative matching options to help users match column names automatically.                                                                                                                                                                                                       |
 | [type](../dashboard-settings/sheet-options.md#column-type)                                            | It specifies the data type of the incoming data. Possible values are: **text**, **number**, **email**, **date**, **boolean**, **regex**, **ip**, **url**, **credit\_card**, **phone\_number, list, dependent\_list, dynamic\_list, dependent\_dynamic\_list, multiselect\_list,** and **multiselect\_dynamic\_list.** |
 | [validators](dynamic-columns.md#validator-options)                                                    | The validation rules for the data based on the column type. Validator options are mentioned below.                                                                                                                                                                                                                    |
+| [default\_value](../dashboard-settings/sheet-options.md#default-value)                                | A default filler value for the column in case the incoming data is blank.                                                                                                                                                                                                                                             |
 | [required](../dashboard-settings/sheet-options.md#required)                                           | It indicates whether a column is mandatory.                                                                                                                                                                                                                                                                           |
 | [position](dynamic-columns.md#column-position)                                                        | It defines the display index of the column. Starts from 1.                                                                                                                                                                                                                                                            |
 
