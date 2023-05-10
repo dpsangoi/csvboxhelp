@@ -4,7 +4,7 @@ description: Add new columns to the template at run-time.
 
 # Dynamic Columns
 
-der a scenario where you cannot have a fixed template for collecting data. The columns in the data model depend on the end user's preferences and/or some other criteria.&#x20;
+Consider a scenario where you cannot have a fixed template for collecting data. The columns in the data model depend on the end user's preferences and/or some other criteria.&#x20;
 
 For such cases, csvbox provides the flexibility to add unique **dynamic columns** for each import at run-time.
 
