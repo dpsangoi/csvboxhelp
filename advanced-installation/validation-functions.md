@@ -16,5 +16,7 @@ There are two types of Validation Functions: 1. Row Functions 2. Column Function
 
 **Column Functions** run validation on a set of selected columns when the user clicks the Submit button on the "validate" step. These are best used in cases where entire column data is required for validation. For example, say you want to find duplicate entries in a column. You could grab all the values in the column, find duplicate values, and display the message to the user.
 
+<figure><img src="../.gitbook/assets/Validation Functions.svg" alt=""><figcaption><p>Validation Functions</p></figcaption></figure>
+
 
 

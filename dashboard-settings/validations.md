@@ -208,7 +208,11 @@ Sometimes, you may want to use more than one list such that the items available 
 
 Let us call them dependent lists. Below is an example of a dependent list.
 
-![Conditional dependent list](<../.gitbook/assets/conditional list.png>)
+<div align="left">
+
+<img src="../.gitbook/assets/conditional list.png" alt="Conditional dependent list">
+
+</div>
 
 You can see that the options in the City column depend on the selection made in the Country column. If you select 'USA' in Drop Down 1, then you will cities from the USA, but if you select Canada in Drop Down 1, then you see the cities from Canada in Drop Down 2.
 

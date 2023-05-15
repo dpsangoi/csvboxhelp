@@ -20,7 +20,11 @@ Under the "**Destination**" section, for the "**Send Data To**" setting select t
 
 Click the "**Connect Webflow**" button.
 
-![Connect Webflow](../.gitbook/assets/connect\_webflow.jpg)
+<div align="left">
+
+<img src="../.gitbook/assets/connect_webflow.jpg" alt="Connect Webflow">
+
+</div>
 
 This will redirect you to the Webflow CSVbox Integration Authorization screen.&#x20;
 
@@ -32,7 +36,11 @@ Click '**Authorize Application**'.
 
 Go back to your Csvbox sheet and pick the Webflow site and the collection from the list.
 
-![Select site and collection](../.gitbook/assets/webflow\_site\_seelction.jpg)
+<div align="left">
+
+<img src="../.gitbook/assets/webflow_site_seelction.jpg" alt="Select site and collection">
+
+</div>
 
 Click the "**Map Columns**" button and map the sheet columns to the Webflow CMS collection fields.
 

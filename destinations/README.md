@@ -113,12 +113,20 @@ Import CSV files and Excel sheets directly into your MySQL tables. How it works:
 * Connect your MySQL database by providing the credentials.
 * Specify table name where you want the data to be pushed.
 
-![csv to mysql](../.gitbook/assets/mysql.jpg)
+<div align="left">
+
+<img src="../.gitbook/assets/mysql.jpg" alt="csv to mysql">
+
+</div>
 
 * Map sheet columns to the table column.
 * You can also map custom attributes to table columns.
 
-![map sheet to table columns](../.gitbook/assets/map-columns.jpg)
+<div align="left">
+
+<img src="../.gitbook/assets/map-columns.jpg" alt="map sheet to table columns">
+
+</div>
 
 The user CSV data will then be directly be appended to the MySQL table.
 
@@ -136,7 +144,11 @@ Import CSV files and Excel sheets directly into your SQL Server tables. How it w
   * **Insert** - The importer will always push the incoming CSV data as new records in the database.
   * **Upsert** - The importer will check if the record exists in the database. If the record exists, then it will be updated with the incoming data from the CSV. If the record does not exist, then a new record will be inserted. The record check will be done based on the index keys specified in the mapping modal.
 
-![Define Unique Key for Upsert Operation](../.gitbook/assets/unique.jpg)
+<div align="center">
+
+<img src="../.gitbook/assets/unique.jpg" alt="Define Unique Key for Upsert Operation">
+
+</div>
 
 {% hint style="warning" %}
 The **Upsert** operation will be significantly slower than the **Insert** operation. For the **Insert** operation, the records can be pushed in chunks. Whereas for the **Upsert** operation only one record can be processed at a time, and it requires multiple queries.
@@ -176,12 +188,20 @@ Import CSV files and Excel sheets directly into your PostgreSQL tables. How it w
 * Connect your PostgreSQL database by providing the credentials.
 * Specify the table name where you want the data to be pushed.
 
-![PostgreSQL Data Destination Settings](<../.gitbook/assets/PostgreSQL settings.jpg>)
+<div align="left">
+
+<img src="../.gitbook/assets/PostgreSQL settings.jpg" alt="PostgreSQL Data Destination Settings">
+
+</div>
 
 * Map sheet columns to the table column.
 * You can also map custom attributes to table columns.
 
-![map sheet to table columns](../.gitbook/assets/map-columns.jpg)
+<div align="left">
+
+<img src="../.gitbook/assets/map-columns.jpg" alt="map sheet to table columns">
+
+</div>
 
 The user CSV data will then be directly be appended to the PostgreSQL table.
 

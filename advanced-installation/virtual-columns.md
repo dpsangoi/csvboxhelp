@@ -77,7 +77,11 @@ catch(err)
 4. Attach **Dependent** libraries (optional).
 5. Click **Save**.
 
+<div align="left">
+
 <figure><img src="../.gitbook/assets/Add virtual column.jpg" alt=""><figcaption><p>Add Virtual Column</p></figcaption></figure>
+
+</div>
 
 ### Data Rows
 
@@ -167,7 +171,11 @@ In the API response JSON object, the dynamic data will be displayed inside the *
 {% tab title="MySQL, Bubble, Airtable etc " %}
 Virtual Columns will be available in the column mapping modal. You can push Virtual Columns to any receiving data field of your choice.
 
+<div align="left">
+
 <figure><img src="../.gitbook/assets/virtual_col_mapping.jpg" alt=""><figcaption><p>Mapping Virtual Columns</p></figcaption></figure>
+
+</div>
 {% endtab %}
 
 {% tab title="S3, FTP etc" %}
@@ -183,7 +191,11 @@ In the Javascript snippet, you can utilize an external library that is hosted vi
 
 For each import, the dependent scripts will be run only once. Whereas the main Javascript snippet will be executed once for each row.
 
+<div align="left">
+
 <figure><img src="../.gitbook/assets/VirtualColumnProcessing.jpeg" alt=""><figcaption><p>VIrtual Column Processing</p></figcaption></figure>
+
+</div>
 
 <details>
 

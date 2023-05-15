@@ -10,17 +10,29 @@ Log in to [csvbox.io](https://app.csvbox.io/login).
 
 Add a sheet.
 
-![Add a sheet](../.gitbook/assets/add-sheet.png)
+<div align="left">
+
+<img src="../.gitbook/assets/add-sheet.png" alt="Add a sheet">
+
+</div>
 
 Add columns to the sheet as per your requirement.
 
-![Add columns](../.gitbook/assets/add-columns.png)
+<div align="left">
+
+<img src="../.gitbook/assets/add-columns.png" alt="Add columns">
+
+</div>
 
 Under the "**Settings**" section, for the "**Send Data To**" setting select the "**Zapier**" option.
 
 Click "**Connect Zap**".
 
-![Connect Zap](<../.gitbook/assets/connect zap.jpg>)
+<div align="left">
+
+<img src="../.gitbook/assets/connect zap.jpg" alt="Connect Zap">
+
+</div>
 
 This will redirect you to Zapier.
 
@@ -30,7 +42,11 @@ Create a new Zap.
 
 Select **csvbox.io** as the Trigger.
 
-![csvbox.io trigger](<../.gitbook/assets/csvbox trigger.jpg>)
+<div align="left">
+
+<img src="../.gitbook/assets/csvbox trigger.jpg" alt="csvbox.io trigger">
+
+</div>
 
 &#x20;Select '**New Import Row**' as the Trigger Event.
 
