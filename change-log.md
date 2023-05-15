@@ -4,6 +4,14 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 15 May 2023
+
+* Added functionality to hide copy-paste data option.
+* Added option to skip confirmation message when accepting invalid data.
+* UI enhancements to improve the speed of the admin dashboard.
+* Enabled multiple importers on the same page for the Bubble plugin.
+* Performance improvements across all destinations.
+
 ## 12 April 2023
 
 * Few UI enhancements. Now the entire row gets highlighted when there is a validation issue in any one cell.
@@ -102,7 +110,11 @@ description: A record of all notable changes made to the application.
 
 * Added a Reset All Mappings button to make it easier for the users to reset and remap the columns. This button is optional and its visibility can be controlled via the Sheet settings page.
 
+<div align="left">
+
 <figure><img src=".gitbook/assets/reset mappings.jpg" alt=""><figcaption><p>Reset Mappings Button</p></figcaption></figure>
+
+</div>
 
 ## 14 Nov 2022
 
@@ -166,7 +178,11 @@ description: A record of all notable changes made to the application.
 
 * You now have the option to specify a default filler value for the column in case the incoming data is blank.&#x20;
 
-![Default Value](.gitbook/assets/defaultval.jpg)
+<div align="left">
+
+<img src=".gitbook/assets/defaultval.jpg" alt="Default Value">
+
+</div>
 
 ## 08 August 2022
 
@@ -208,7 +224,11 @@ description: A record of all notable changes made to the application.
 
 * Added Max Rows option to the importer dashboard. It limits the number of rows per import.
 
-![](.gitbook/assets/max\_rows.jpg)
+<div align="left">
+
+<img src=".gitbook/assets/max_rows.jpg" alt="">
+
+</div>
 
 ## 29 June 2022
 
@@ -265,7 +285,11 @@ These settings help to remove the non-essential options from the importer and ma
 
 * Added 'Multiple' option to Date Type columns. With this, you can provide multiple date formats that are allowed for the incoming data.
 
-![](<.gitbook/assets/multiple dates.jpg>)
+<div align="left">
+
+<img src=".gitbook/assets/multiple dates.jpg" alt="">
+
+</div>
 
 ## 11 May 2022
 
@@ -325,7 +349,11 @@ These settings help to remove the non-essential options from the importer and ma
 
 * Custom message for regex validation.
 
-![](.gitbook/assets/regex\_message.jpg)
+<div align="left">
+
+<img src=".gitbook/assets/regex_message.jpg" alt="">
+
+</div>
 
 ## 01 March 2022
 
@@ -392,7 +420,11 @@ These settings help to remove the non-essential options from the importer and ma
 
 * Included 'Custom' validation option for Date Type columns. Date formatting options available [here](https://help.csvbox.io/validations#date).
 
-![](<.gitbook/assets/date validation.jpg>)
+<div align="left">
+
+<img src=".gitbook/assets/date validation.jpg" alt="">
+
+</div>
 
 
 
