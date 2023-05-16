@@ -56,3 +56,40 @@ else
 {% endtab %}
 {% endtabs %}
 
+## Column Functions
+
+### Adding Column Functions
+
+* Go to the edit sheet page > **Columns** tab > Click **Add Functions** button.
+* Add **Function Name**.
+* Select **Column** under Function Type.
+* Add the Columns you need in the function.
+* Provide **Javascript** code.
+* Attach **Dependent** libraries (optional).
+* Click **Save**.
+
+<figure><img src="../.gitbook/assets/column function add.png" alt=""><figcaption><p>Adding Column Functions</p></figcaption></figure>
+
+### Example Column Functions
+
+{% tabs %}
+{% tab title="Finding Duplicates" %}
+Check if a column has duplicate entries
+
+```javascript
+var duplicates = [];
+
+csvbox.column["Email"].filter(function(yourArray, index) {
+ if(yourArray == 2){
+   duplicates.push({
+    "row_id": index,
+    "column": "Email",
+    "message": "Duplicate entry."
+  });
+ }
+});
+
+return duplicates;
+```
+{% endtab %}
+{% endtabs %}
