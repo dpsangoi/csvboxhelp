@@ -115,7 +115,7 @@ CSVbox will expect the Row Function to return an array of errors. Each error sho
 | column    | string | The [column name ](https://help.csvbox.io/dashboard-settings/sheet-options#column-name)of the error. It is case sensitive. |
 | message   | string | The message that is to be displayed to the user on the validation screen of the importer.                                  |
 
-#### JSON Response Example
+#### Example Row Function JSON Response
 
 ```json
 [
@@ -172,22 +172,26 @@ return duplicates;
 {% endtab %}
 {% endtabs %}
 
+### Dependencies
+
+In the Column Function Javascript snippet, you can utilize an external library that is hosted via a CDN. You can also call any external API endpoint to fetch real-time data. Simply add the library script tag and/or any custom scripts to the 'Dependencies' section and start using it in the main Javascript snippet.
+
 ### Variables in the Column Function
 
 You have access to data variables included in the **`csvbox`** object. The following data is available:
 
-#### `csvbox.row`
+#### `csvbox.column`
 
-It contains row data. Each cell in the row can be accessed by providing the column name. Examples:
+It contains the entire column data. Each cell in the column can be accessed by providing the column name and the row number. The row number starts with 1. Examples:
 
 ```javascript
-csvbox.row["first_name"]
-csvbox.row["order_id"]
-csvbox.row["price"]
+csvbox.column["first_name"][1]
+csvbox.column["order_id"][12]
+csvbox.column["price"][10001]
 ```
 
 {% hint style="warning" %}
-The column name must exist on the sheet or an error will be thrown.
+Only the selected columns will be available in the Column Function.
 {% endhint %}
 
 #### `csvbox.user`
@@ -222,30 +226,34 @@ With this statement, you can print all the available variables in the debugging 
 
 ### Error Response JSON Format for Column Functions
 
-CSVbox will expect the Row Function to return an array of errors. Each error should specify the `column` the error appeared in, and a `message` to be displayed in the UI.
+CSVbox will expect the Column Function to return an array of errors. Each error should specify the `row_id`, the `column` the error appeared in, and a `message` to be displayed in the UI.
 
-#### JSON Response Schema
+#### JSON Response Schema for Column Functions
 
-| Parameter | Type   | Description                                                                                                                |
-| --------- | ------ | -------------------------------------------------------------------------------------------------------------------------- |
-| column    | string | The [column name ](https://help.csvbox.io/dashboard-settings/sheet-options#column-name)of the error. It is case sensitive. |
-| message   | string | The message that is to be displayed to the user on the validation screen of the importer.                                  |
+| Parameter | Type    | Description                                                                                                                |
+| --------- | ------- | -------------------------------------------------------------------------------------------------------------------------- |
+| row\_id   | integer | The row number of the error. Starts with 1.                                                                                |
+| column    | string  | The [column name ](https://help.csvbox.io/dashboard-settings/sheet-options#column-name)of the error. It is case sensitive. |
+| message   | string  | The message to be displayed to the user on the validation screen of the importer.                                          |
 
 #### Example Column Function JSON Response
 
 ```json
 [
   {
+    "row_id": 1,
     "column": "employee_id",
     "message": "Invalid Emp ID"
   },
-  {   
+  {
+    "row_id": 2,
     "column": "dept",
     "message": "Department does not exist"
   },
-  {   
+  {
+    "row_id": 3,
     "column": "employee_name",
     "message": "Employee's name has changed"
   }
-]Column 
+]
 ```
