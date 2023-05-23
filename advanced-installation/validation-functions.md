@@ -8,7 +8,7 @@ description: Validate data with custom Javascript functions.
 coming soon
 {% endhint %}
 
-If the validations you require are not covered with the in-built [data type validations](../dashboard-settings/validations.md) in CSVbox then you can code your own custom validation functions.
+If the validations you require are not covered with the in-built [data type validations](../dashboard-settings/validations.md) in CSVbox then you can code your own custom validation functions in Javascript.
 
 There are two types of Validation Functions: 1. Row Functions 2. Column Functions.
 
@@ -56,6 +56,84 @@ else
 {% endtab %}
 {% endtabs %}
 
+### Variables in the Row Function
+
+You have access to data variables included in the **`csvbox`** object. The following data is available:
+
+#### `csvbox.row`
+
+It contains row data. Each cell in the row can be accessed by providing the column name. Examples:
+
+```javascript
+csvbox.row["first_name"]
+csvbox.row["order_id"]
+csvbox.row["price"]
+```
+
+{% hint style="warning" %}
+The column name must exist on the sheet or an error will be thrown.
+{% endhint %}
+
+#### `csvbox.user`
+
+It contains the [custom user attributes](../getting-started/2.-install-code.md#referencing-the-user) defined while initializing the importer. Examples:
+
+```javascript
+csvbox.user["user_id"]
+csvbox.user["team_id"]
+csvbox.user["isAuthenticated"]
+```
+
+#### `csvbox.import`
+
+This refers to the current import-specific data. The following data is available:
+
+```javascript
+csvbox.import["sheet_id"]
+csvbox.import["sheet_name"]
+csvbox.import["original_filename"]
+csvbox.import["import_start_time"]
+csvbox.import["destination_type"]
+csvbox.import["total_rows"]
+csvbox.import["row_number"] //current row number starting with 1
+```
+
+{% hint style="info" %}
+&#x20;_**console.log(csvbox);**_&#x20;
+
+With this statement, you can print all the available variables in the debugging console,
+{% endhint %}
+
+### Error Response JSON Format for Row Functions
+
+CSVbox will expect the Row Function to return an array of errors. Each error should specify the `column` the error appeared in, and a `message` to be displayed in the UI.
+
+#### JSON Response Schema
+
+| Parameter | Type   | Description                                                                                                                |
+| --------- | ------ | -------------------------------------------------------------------------------------------------------------------------- |
+| column    | string | The [column name ](https://help.csvbox.io/dashboard-settings/sheet-options#column-name)of the error. It is case sensitive. |
+| message   | string | The message that is to be displayed to the user on the validation screen of the importer.                                  |
+
+#### JSON Response Example
+
+```json
+[
+  {
+    "column": "employee_id",
+    "message": "Invalid Emp ID"
+  },
+  {   
+    "column": "dept",
+    "message": "Department does not exist"
+  },
+  {   
+    "column": "employee_name",
+    "message": "Employee's name has changed"
+  }
+]
+```
+
 ## Column Functions
 
 ### Adding Column Functions
@@ -74,7 +152,7 @@ else
 
 {% tabs %}
 {% tab title="Finding Duplicates" %}
-Check if a column has duplicate entries
+Check if a column has duplicate entries.
 
 ```javascript
 var duplicates = [];
@@ -93,3 +171,81 @@ return duplicates;
 ```
 {% endtab %}
 {% endtabs %}
+
+### Variables in the Column Function
+
+You have access to data variables included in the **`csvbox`** object. The following data is available:
+
+#### `csvbox.row`
+
+It contains row data. Each cell in the row can be accessed by providing the column name. Examples:
+
+```javascript
+csvbox.row["first_name"]
+csvbox.row["order_id"]
+csvbox.row["price"]
+```
+
+{% hint style="warning" %}
+The column name must exist on the sheet or an error will be thrown.
+{% endhint %}
+
+#### `csvbox.user`
+
+It contains the [custom user attributes](../getting-started/2.-install-code.md#referencing-the-user) defined while initializing the importer. Examples:
+
+```javascript
+csvbox.user["user_id"]
+csvbox.user["team_id"]
+csvbox.user["isAuthenticated"]
+```
+
+#### `csvbox.import`
+
+This refers to the current import-specific data. The following data is available:
+
+```javascript
+csvbox.import["sheet_id"]
+csvbox.import["sheet_name"]
+csvbox.import["original_filename"]
+csvbox.import["import_start_time"]
+csvbox.import["destination_type"]
+csvbox.import["total_rows"]
+csvbox.import["row_number"] //current row number starting with 1
+```
+
+{% hint style="info" %}
+&#x20;_**console.log(csvbox);**_&#x20;
+
+With this statement, you can print all the available variables in the debugging console.
+{% endhint %}
+
+### Error Response JSON Format for Column Functions
+
+CSVbox will expect the Row Function to return an array of errors. Each error should specify the `column` the error appeared in, and a `message` to be displayed in the UI.
+
+#### JSON Response Schema
+
+| Parameter | Type   | Description                                                                                                                |
+| --------- | ------ | -------------------------------------------------------------------------------------------------------------------------- |
+| column    | string | The [column name ](https://help.csvbox.io/dashboard-settings/sheet-options#column-name)of the error. It is case sensitive. |
+| message   | string | The message that is to be displayed to the user on the validation screen of the importer.                                  |
+
+#### Example Column Function JSON Response
+
+```json
+[
+  {
+    "column": "employee_id",
+    "message": "Invalid Emp ID"
+  },
+  {   
+    "column": "dept",
+    "message": "Department does not exist"
+  },
+  {   
+    "column": "employee_name",
+    "message": "Employee's name has changed"
+  }
+]Column 
+```
