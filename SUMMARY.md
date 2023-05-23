@@ -14,6 +14,7 @@
   * [Dynamic Columns](advanced-installation/dynamic-columns.md)
   * [Virtual Columns](advanced-installation/virtual-columns.md)
   * [Unmapped Columns](advanced-installation/unmapped-columns.md)
+  * [Ignored Columns](advanced-installation/ignored-columns.md)
   * [Import Links](advanced-installation/import-links.md)
   * [Validation Functions](advanced-installation/validation-functions.md)
   * [Server Side Validation](advanced-installation/server-side-validation.md)
