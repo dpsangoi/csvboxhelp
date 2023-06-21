@@ -4,6 +4,11 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 16 June 2023
+
+* Infrastructure changes
+* Bug fixes
+
 ## 15 May 2023
 
 * Added functionality to hide copy-paste data option.
