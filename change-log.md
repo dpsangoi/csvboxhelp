@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 27 June 2023
+
+* Added [Ignored columns](advanced-installation/ignored-columns.md) - allow users to skip columns for data submission.
+
 ## 16 June 2023
 
 * Infrastructure changes

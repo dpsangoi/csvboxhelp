@@ -4,10 +4,6 @@ description: Option for users to drop columns for the import process.
 
 # Ignored Columns
 
-{% hint style="info" %}
-Coming soon
-{% endhint %}
-
 There can be a situation where users want to skip a column during data submission. This is especially useful when using the importer to update existing data. To avoid overwriting existing columns, the users can mark those columns as **Ignored** and the importer will skip them.
 
 With CSVbox you can give the option to the users to mark certain columns as Ignored.&#x20;
