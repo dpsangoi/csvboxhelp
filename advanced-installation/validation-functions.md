@@ -110,10 +110,7 @@ CSVbox will expect the Row Function to return an array of errors. Each error sho
 
 #### JSON Response Schema
 
-| Parameter | Type   | Description                                                                                                                |
-| --------- | ------ | -------------------------------------------------------------------------------------------------------------------------- |
-| column    | string | The [column name ](https://help.csvbox.io/dashboard-settings/sheet-options#column-name)of the error. It is case sensitive. |
-| message   | string | The message that is to be displayed to the user on the validation screen of the importer.                                  |
+<table><thead><tr><th width="132.33333333333331">Parameter</th><th width="93">Type</th><th>Description</th></tr></thead><tbody><tr><td>column</td><td>string</td><td>The <a href="https://help.csvbox.io/dashboard-settings/sheet-options#column-name">column name </a>of the error. It is case sensitive.</td></tr><tr><td>message</td><td>string</td><td>The message that is to be displayed to the user on the validation screen of the importer.</td></tr></tbody></table>
 
 #### Example Row Function JSON Response
 
@@ -230,11 +227,7 @@ CSVbox will expect the Column Function to return an array of errors. Each error 
 
 #### JSON Response Schema for Column Functions
 
-| Parameter | Type    | Description                                                                                                                |
-| --------- | ------- | -------------------------------------------------------------------------------------------------------------------------- |
-| row\_id   | integer | The row number of the error. Starts with 1.                                                                                |
-| column    | string  | The [column name ](https://help.csvbox.io/dashboard-settings/sheet-options#column-name)of the error. It is case sensitive. |
-| message   | string  | The message to be displayed to the user on the validation screen of the importer.                                          |
+<table><thead><tr><th width="132.33333333333331">Parameter</th><th width="93">Type</th><th>Description</th></tr></thead><tbody><tr><td>row_id</td><td>integer</td><td>The row number of the error. Starts with 1.</td></tr><tr><td>column</td><td>string</td><td>The <a href="https://help.csvbox.io/dashboard-settings/sheet-options#column-name">column name </a>of the error. It is case sensitive.</td></tr><tr><td>message</td><td>string</td><td>The message to be displayed to the user on the validation screen of the importer.</td></tr></tbody></table>
 
 #### Example Column Function JSON Response
 

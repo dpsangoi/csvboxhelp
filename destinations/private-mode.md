@@ -8,10 +8,7 @@ description: >-
 
 CSVbox offers a variety of configurations for handling user data.
 
-|                     | Standard                                               | No Store                                               | Private                          |
-| ------------------- | ------------------------------------------------------ | ------------------------------------------------------ | -------------------------------- |
-| **Data Processing** | <ul><li>Client browser</li><li>CSVbox server</li></ul> | <ul><li>Client browser</li><li>CSVbox server</li></ul> | <ul><li>Client browser</li></ul> |
-| **Data Storage**    | <ul><li>CSVbox datastore</li></ul>                     | -                                                      | -                                |
+<table><thead><tr><th width="149"> </th><th width="202">Standard</th><th width="178">No Store</th><th>Private</th></tr></thead><tbody><tr><td><strong>Data Processing</strong></td><td><ul><li>Client browser</li><li>CSVbox server</li></ul></td><td><ul><li>Client browser</li><li>CSVbox server</li></ul></td><td><ul><li>Client browser</li></ul></td></tr><tr><td><strong>Data Storage</strong></td><td><ul><li>CSVbox datastore</li></ul></td><td>-</td><td>-</td></tr></tbody></table>
 
 ### Standard Mode
 
