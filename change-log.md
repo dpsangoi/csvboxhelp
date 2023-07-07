@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 07 July 2023
+
+* Added [sample\_template\_url ](getting-started/2.-install-code.md#sample\_template\_url)and [sample\_template\_button\_text ](getting-started/2.-install-code.md#sample\_template\_button\_text)configuration options. With these, you can now configure a dynamic sample template file for each user.
+
 ## 27 June 2023
 
 * Added [Ignored columns](advanced-installation/ignored-columns.md) - allow users to skip columns for data submission.
