@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 12 July 2023
+
+* Added  **raw\_columns** object to the Import [Complete Webhook](getting-started/3.-receive-data.md#import-complete-webhook) and the [Data at Client](getting-started/3.-receive-data.md#data-on-the-client-side). This object contains all the column headers found in the raw spreadsheet file uploaded by the user.
+
 ## 07 July 2023
 
 * Added [sample\_template\_url ](getting-started/2.-install-code.md#sample\_template\_url)and [sample\_template\_button\_text ](getting-started/2.-install-code.md#sample\_template\_button\_text)configuration options. With these, you can now configure a dynamic sample template file for each user.
