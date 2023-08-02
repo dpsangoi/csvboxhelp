@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 02 August 2023
+
+* Added [Currency ](dashboard-settings/validations.md#currency)Column Type validation.
+
 ## 12 July 2023
 
 * Added  **raw\_columns** object to the Import [Complete Webhook](getting-started/3.-receive-data.md#import-complete-webhook) and the [Data at Client](getting-started/3.-receive-data.md#data-on-the-client-side). This object contains all the column headers found in the raw spreadsheet file uploaded by the user.
