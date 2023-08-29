@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 29 August 2023
+
+* Added new options - **max\_rows\_allow\_submit** and **max\_rows\_custom\_message** for [**max\_rows** ](getting-started/2.-install-code.md#max\_rows)validation.
+
 ## 02 August 2023
 
 * Added [Currency ](dashboard-settings/validations.md#currency)Column Type validation.
