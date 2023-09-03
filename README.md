@@ -8,8 +8,8 @@ description: Welcome to csvbox.io documentation and help site
 [getting-started](getting-started/)
 {% endcontent-ref %}
 
-{% content-ref url="account.md" %}
-[account.md](account.md)
+{% content-ref url="account/" %}
+[account](account/)
 {% endcontent-ref %}
 
 {% content-ref url="broken-reference" %}

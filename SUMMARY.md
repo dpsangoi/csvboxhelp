@@ -25,7 +25,8 @@
   * [Notion](destinations/notion.md)
   * [Webflow](destinations/webflow.md)
   * [Private Mode](destinations/private-mode.md)
-* [Account](account.md)
+* [Account](account/README.md)
+  * [Teams](account/teams.md)
 * [Contact Us](https://share.hsforms.com/1ubpg6RBoQgKOISkRMEViwg5auur)
 
 ## App
