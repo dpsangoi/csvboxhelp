@@ -19,5 +19,6 @@ The roles and the dashboard areas they each have access (at a broad level) are a
 Each account has one super admin that cannot be changed.
 
 {% hint style="info" %}
-The maximum number of team members that you can add is based on your plan.
+The maximum number of team members that you can add is based on your [plan](https://csvbox.io/#pricing).
 {% endhint %}
+
