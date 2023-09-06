@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 06 September 2023
+
+* Deployed the functionality to add multiple [team members](account/teams.md) to the CSVbox account.
+
 ## 29 August 2023
 
 * Added new options - **max\_rows\_allow\_submit** and **max\_rows\_custom\_message** for [**max\_rows** ](getting-started/2.-install-code.md#max\_rows)validation.
