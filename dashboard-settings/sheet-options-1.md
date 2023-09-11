@@ -143,3 +143,20 @@ To change the size go to sheet settings > display > Importer Dialog Size
 Note: The dialog size configuration will be applicable for large (desktop) screens only. For smaller screens the dialog will always occupy the entire screen.
 
 </details>
+
+## Worksheet Selection
+
+<details>
+
+<summary>Allow users to select a worksheet for upload</summary>
+
+There can be a case where the uploaded Excel file contains multiple worksheets. You can allow the users to select a worksheet for upload.
+
+To activate worksheet selection go to sheet settings > display > File Upload > Select '**Yes**' for **Allow Worksheet Selection** option.
+
+<img src="../.gitbook/assets/multi selection.jpg" alt="" data-size="original">
+
+If the **Allow Worksheet Selection** option is set to '**No**' then the first worksheet will be picked up by default.
+
+</details>
+

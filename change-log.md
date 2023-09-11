@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 11 September 2023
+
+* Added support for [worksheet selection](dashboard-settings/sheet-options-1.md#worksheet-selection) in Excel files.
+
 ## 06 September 2023
 
 * Deployed the functionality to add multiple [team members](account/teams.md) to the CSVbox account.
