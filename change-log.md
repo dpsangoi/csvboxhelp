@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 12 September 2023
+
+* Added [Validation Functions](advanced-installation/validation-functions.md). Code your custom validation logic in Javascript.
+
 ## 11 September 2023
 
 * Added support for [worksheet selection](dashboard-settings/sheet-options-1.md#worksheet-selection) in Excel files.

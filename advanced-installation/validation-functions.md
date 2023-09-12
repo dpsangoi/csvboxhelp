@@ -4,8 +4,8 @@ description: Validate data with custom Javascript functions.
 
 # Validation Functions
 
-{% hint style="info" %}
-coming soon (12th September 2023)
+{% hint style="warning" %}
+Beta
 {% endhint %}
 
 If the validations you require are not covered with the in-built [data type validations](../dashboard-settings/validations.md) in CSVbox then you can code your own custom validation functions in Javascript.
@@ -34,23 +34,40 @@ There are two types of Validation Functions: 1. Row Functions 2. Column Function
 
 {% tabs %}
 {% tab title="Dependent Columns" %}
-Column 2 is mandatory only if column 1 is not null.
+Column 5 is mandatory only if the column 4 is not null.
 
 ```javascript
-//check if Contribution is not Null AND then Currency is Null
-if(csvbox.row["Contribution"] != null && csvbox.row["Currency"] == null)
-{
-  //error message
+//replace "col4" and "col5" with actual column names
+
+if(csvbox.row["col4"] != "" && csvbox.row["col5"] == "") {
   let err = [
   {   
-    "column": "Currency",
-    "message": "Please select a value."
+    "column": "col5",
+    "message": "Column 5 is mandatory if Column 4 is not empty"
   }];    
   return err;  
 }
-else
-{   
-  return  null;
+```
+{% endtab %}
+
+{% tab title="Mandatory Column Combination" %}
+Either col 2 or col 3 needs to have data.
+
+```javascript
+//replace "col2" and "col3" with actual column names
+
+if(csvbox.row["col2"] == "" && csvbox.row["col3"] == ""){
+  let err = [
+    {   
+      "column": "col2",
+      "message": "Columns 2 OR 3 needs to have data"
+    },
+    {
+      "column": "col3",
+      "message": "Columns 2 OR 3 needs to have data"
+    }
+  ];    
+  return err;
 }
 ```
 {% endtab %}
@@ -152,23 +169,49 @@ Validation Functions do not yet support [Dynamic Columns](dynamic-columns.md). T
 ### Example Column Functions
 
 {% tabs %}
-{% tab title="Finding Duplicates" %}
+{% tab title="Detect Duplicates" %}
 Check if a column has duplicate entries.
 
 ```javascript
-var duplicates = [];
+//replace "col4" with actual column name
 
-csvbox.column["Email"].filter(function(yourArray, index) {
- if(yourArray == 2){
-   duplicates.push({
-    "row_id": index,
-    "column": "Email",
+function findRepeatingIndices(arr) {
+  const repeatingIndices = {};
+  
+  for (let i = 0; i < arr.length; i++) {
+    const element = arr[i];
+    if (repeatingIndices[element] === undefined) {
+      repeatingIndices[element] = [i];
+    } else {
+      repeatingIndices[element].push(i);
+    }
+  }
+  
+  const result = [];
+  
+  for (const key in repeatingIndices) {
+    if (repeatingIndices[key].length > 1) {
+      result.push(...repeatingIndices[key]);
+    }
+  }
+  
+  return result;
+}
+
+const arr = csvbox.column["col4"];
+const repeatingIndices = findRepeatingIndices(arr);
+
+let errs = [];
+
+repeatingIndices.forEach(index => {
+  errs.push({
+    "row_id": (index + 1),
+    "column": "col4",
     "message": "Duplicate entry."
   });
- }
 });
 
-return duplicates;
+return errs;
 ```
 {% endtab %}
 {% endtabs %}
