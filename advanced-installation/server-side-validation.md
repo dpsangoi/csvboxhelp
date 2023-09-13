@@ -46,6 +46,12 @@ Case 2: Validation failed - one or more errors found. Your API returns **`211`**
 It is mandatory for your API to return **`211`** HTTP response status code to instruct the CSVbox importer that there are one or more server-side validation errors.
 {% endhint %}
 
+{% hint style="warning" %}
+To view the results screen be sure to configure the CSVbox Result Page Settings. Go to Sheet Settings > Display > Results Page > Set **Closing the import dialog box** to **Do not close on import complete**
+
+![](<../.gitbook/assets/do not close.jpg>)
+{% endhint %}
+
 #### 5. Validation Fail Screen is displayed to the user.
 
 If there are one or more server-side validation errors then the users will see the Fail Screen with a button to view the errors.
