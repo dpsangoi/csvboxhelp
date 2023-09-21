@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 20 September 2023
+
+* Added dynamic column support to Validation Functions.
+
 ## 12 September 2023
 
 * Added [Validation Functions](advanced-installation/validation-functions.md). Code your custom validation logic in Javascript.

@@ -163,7 +163,7 @@ CSVbox will expect the Row Function to return an array of errors. Each error sho
 <figure><img src="../.gitbook/assets/column function add.png" alt=""><figcaption><p>Adding Column Functions</p></figcaption></figure>
 
 {% hint style="info" %}
-Validation Functions do not yet support [Dynamic Columns](dynamic-columns.md). This will be added soon.
+You can also enter the [Dynamic Column](dynamic-columns.md) names to access them in the Validation Functions.
 {% endhint %}
 
 ### Example Column Functions
