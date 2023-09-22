@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 22 September 2023
+
+* Added [**target\_file\_name** ](getting-started/2.-install-code.md#target\_file\_name)option to control the name of the file that gets pushed to the end destination.
+
 ## 20 September 2023
 
 * Added dynamic column support to Validation Functions.
