@@ -4,6 +4,12 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 25 September 2023
+
+* Add an option 'No headers in the sheet' on the Header Row selection page.
+
+<figure><img src=".gitbook/assets/no header.jpg" alt=""><figcaption><p>No headers option</p></figcaption></figure>
+
 ## 22 September 2023
 
 * Added [**target\_file\_name** ](getting-started/2.-install-code.md#target\_file\_name)option to control the name of the file that gets pushed to the end destination.
