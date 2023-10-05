@@ -65,27 +65,15 @@ Sheet license key
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="import.user" type="Object" %}
-Object 
-
-[referencing the user](https://help.csvbox.io/getting-started#referencing-the-user)
-
-
+Object [referencing the user](https://help.csvbox.io/getting-started#referencing-the-user)
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="import.options" type="Object" %}
-Object 
-
-[referencing the import options](rest-file-api.md#additional-options)
-
-
+Object [referencing the import options](rest-file-api.md#additional-options)
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="import.dynamic_columns" type="Object" %}
-Object 
-
-[referencing dynamic columns](https://help.csvbox.io/getting-started/dynamic-columns)
-
-
+Object [referencing dynamic columns](https://help.csvbox.io/getting-started/dynamic-columns)
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="content-type" required="true" %}

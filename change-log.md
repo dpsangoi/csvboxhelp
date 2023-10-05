@@ -4,6 +4,12 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 05 October 2023
+
+* Added the 'Allow Commas' option to the 'Number' type column.
+
+<figure><img src=".gitbook/assets/commas.jpg" alt=""><figcaption><p>Allow Commas</p></figcaption></figure>
+
 ## 25 September 2023
 
 * Add an option 'No headers in the sheet' on the Header Row selection page.
