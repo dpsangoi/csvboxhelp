@@ -4,6 +4,12 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 13 October 2023
+
+{% hint style="success" %}
+It is official! CSVox is now SOC 2 Type 2 certified. [Read more](https://csvbox.io/soc-2-type-2).
+{% endhint %}
+
 ## 05 October 2023
 
 * Added the 'Allow Commas' option to the 'Number' type column.
