@@ -46,3 +46,4 @@
 * [User Data Policy](legal/data-policy.md)
 * [GDPR](legal/gdpr/README.md)
   * [Data Processing Addendum](legal/gdpr/data-processing-addendum.md)
+* [SOC 2 Type 2](legal/soc-2-type-2.md)
