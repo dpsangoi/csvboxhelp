@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 20 October 2023
+
+* Added option to skip pushing of header row to the FTP data destination.
+
 ## 13 October 2023
 
 {% hint style="success" %}
