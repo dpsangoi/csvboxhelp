@@ -11,7 +11,7 @@ description: A record of all notable changes made to the application.
 ## 13 October 2023
 
 {% hint style="success" %}
-It is official! CSVox is now SOC 2 Type 2 certified. [Read more](https://csvbox.io/soc-2-type-2).
+It is official! CSVbox is now SOC 2 Type 2 certified. [Read more](https://csvbox.io/soc-2-type-2).
 {% endhint %}
 
 ## 05 October 2023
