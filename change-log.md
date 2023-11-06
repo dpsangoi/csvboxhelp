@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 06 November 2023
+
+* Updated Teams feature to allow users to be part of multiple teams.
+
 ## 20 October 2023
 
 * Added option to skip pushing of header row to the FTP data destination.
