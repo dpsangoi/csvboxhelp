@@ -74,6 +74,16 @@ On re-submitting the data, the process will repeat. The importer will push the d
 Each re-submit will be treated as a fresh import having a new **`Import_Id`**.
 {% endhint %}
 
+To allow the users to re-submit all the rows again (instead of error rows only) select the 'All Rows' option as shown below:
+
+<div align="left">
+
+<figure><img src="../.gitbook/assets/ssv.png" alt="" width="326"><figcaption><p>Re-submit All Rows</p></figcaption></figure>
+
+</div>
+
+
+
 ### Validation Error Response JSON Format
 
 CSVbox will expect the API endpoint to return an array of errors. Each error should specify the `row_id`, the `column` the error appeared in, and a `message` to be displayed in the UI.

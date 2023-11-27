@@ -4,6 +4,16 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 27 November 2023
+
+* Improvements added to [Server Side Validation](advanced-installation/server-side-validation.md) functionality. To allow the users to re-submit all the rows again (instead of error rows only) we have added the 'All Rows' option as shown below:
+
+<div align="left">
+
+<figure><img src=".gitbook/assets/ssv.png" alt="" width="326"><figcaption></figcaption></figure>
+
+</div>
+
 ## 06 November 2023
 
 * Updated Teams feature to allow users to be part of multiple teams.
