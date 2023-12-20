@@ -4,6 +4,11 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 20 December 2023
+
+* Added optimizations to improve speed.
+* Fixed vulnerabilities as per the external pen testing report.
+
 ## 27 November 2023
 
 * Improvements added to [Server Side Validation](advanced-installation/server-side-validation.md) functionality. To allow the users to re-submit all the rows again (instead of error rows only) we have added the 'All Rows' option as shown below:
