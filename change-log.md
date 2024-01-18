@@ -4,6 +4,11 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 18 Jan 2024
+
+* Added a new page for API keys. Each team will have one common set of API and Secret key. Only the Super Admin can generate/regenerate the keys. Admin and Tech roles can view the keys.
+* Updated Airtable integration to move from the older API key based authentication to the newer Personal Access Token based authentication.
+
 ## 20 December 2023
 
 * Added optimizations to improve speed.
