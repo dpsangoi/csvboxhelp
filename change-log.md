@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 02 Feb 2023
+
+* The $9 Personal Plan has been discontinued. Existing subscribers to this plan will remain on their current subscription.
+
 ## 18 Jan 2024
 
 * Added a new page for API keys. Each team will have one common set of API and Secret key. Only the Super Admin can generate/regenerate the keys. Admin and Tech roles can view the keys.
