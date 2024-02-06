@@ -30,7 +30,7 @@ The columns that are marked as Ignored will not be visible on the Verify Data sc
 For columns that are marked as "Required", the Ignore Column option will not be available for selection.
 {% endhint %}
 
-### **Data from Unmapped Columns**
+### **Data from Ignored Columns**
 
 The Ignored Columns will not be pushed to any destination. Only the metadata (List of Ignored Columns) will be pushed to the following destinations:
 
