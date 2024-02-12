@@ -4,6 +4,16 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 12 Feb 2023
+
+* Added an option to skip the Data Validation screen if no errors are found.
+
+<div align="left">
+
+<figure><img src=".gitbook/assets/skip verify.png" alt="" width="375"><figcaption></figcaption></figure>
+
+</div>
+
 ## 02 Feb 2023
 
 * The $9 Personal Plan has been discontinued. Existing subscribers to this plan will remain on their current subscription.
