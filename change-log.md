@@ -4,7 +4,7 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
-## 12 Feb 2023
+## 12 Feb 2024
 
 * Added an option to skip the Data Validation screen if no errors are found.
 
@@ -14,7 +14,7 @@ description: A record of all notable changes made to the application.
 
 </div>
 
-## 02 Feb 2023
+## 02 Feb 2024
 
 * The $9 Personal Plan has been discontinued. Existing subscribers to this plan will remain on their current subscription.
 
