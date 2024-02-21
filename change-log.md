@@ -9,6 +9,12 @@ description: A record of all notable changes made to the application.
 * Added Google Sheets to the[ target\_file\_name](getting-started/2.-install-code.md#target\_file\_name) option. You can now provide custom file names for each new import in Google Sheets.
 * New option to append [custom user attributes](getting-started/2.-install-code.md#referencing-the-user) to [Dynamic List API](dashboard-settings/validations.md#dynamic-list). This helps to identify the user in your app and generate custom list options.
 
+<div align="left">
+
+<figure><img src=".gitbook/assets/custom.jpg" alt="" width="311"><figcaption><p>Custom User Attributes</p></figcaption></figure>
+
+</div>
+
 ## 12 Feb 2024
 
 * Added an option to skip the Data Validation screen if no errors are found.
