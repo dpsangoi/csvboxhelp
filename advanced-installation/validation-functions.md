@@ -4,10 +4,6 @@ description: Validate data with custom Javascript functions.
 
 # Validation Functions
 
-{% hint style="warning" %}
-Beta
-{% endhint %}
-
 If the validations you require are not covered with the in-built [data type validations](../dashboard-settings/validations.md) in CSVbox then you can code your own custom validation functions in Javascript.
 
 There are two types of Validation Functions: 1. Row Functions 2. Column Functions.
