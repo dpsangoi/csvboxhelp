@@ -1,5 +1,5 @@
 ---
-description: Option for users to drop columns for the import process.
+description: Option for users to drop columns from the import process.
 ---
 
 # Ignored Columns
