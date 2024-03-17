@@ -4,6 +4,16 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 13 March 2024
+
+* A new option was added to allow the default selection of columns as [Ignored Columns](advanced-installation/ignored-columns.md).
+
+<div align="left" data-full-width="false">
+
+<figure><img src=".gitbook/assets/Ignore Cols default selection.jpg" alt="" width="363"><figcaption></figcaption></figure>
+
+</div>
+
 ## 4 March 2024
 
 * Added Azure Blob Storage as data destination.
