@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 4 March 2024
+
+* Added Azure Blob Storage as data destination.
+
 ## 21 Feb 2024
 
 * Added Google Sheets to the[ target\_file\_name](getting-started/2.-install-code.md#target\_file\_name) option. You can now provide custom file names for each new import in Google Sheets.
