@@ -4,6 +4,22 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 19 March 2024
+
+* Added functionality to find and replace text in the uploaded data.
+
+<div align="left">
+
+<figure><img src=".gitbook/assets/button.jpg" alt="" width="375"><figcaption><p>Find and replace button</p></figcaption></figure>
+
+</div>
+
+<div align="left">
+
+<figure><img src=".gitbook/assets/Findandreplace.jpg" alt="" width="320"><figcaption><p>Find and Replace Popup</p></figcaption></figure>
+
+</div>
+
 ## 13 March 2024
 
 * A new option was added to allow the default selection of columns as [Ignored Columns](advanced-installation/ignored-columns.md).
