@@ -43,44 +43,30 @@ Include your API key as a `x-csvbox-api-key` header on all API queries.&#x20;
 
 ### Endpoint
 
-{% swagger method="post" path="/file" baseUrl="https://api.csvbox.io/1.1" summary="Submits a spreadsheet file" %}
-{% swagger-description %}
+## Submits a spreadsheet file
 
-{% endswagger-description %}
+<mark style="color:green;">`POST`</mark> `https://api.csvbox.io/1.1/file`
 
-{% swagger-parameter in="body" name="import" type="Object" required="true" %}
-Import file data
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="header" name="x-csvbox-api-key" required="true" %}
-API Key
-{% endswagger-parameter %}
+| Name                                               | Type   | Description      |
+| -------------------------------------------------- | ------ | ---------------- |
+| x-csvbox-api-key<mark style="color:red;">\*</mark> | String | API Key          |
+| content-type<mark style="color:red;">\*</mark>     | String | application/json |
 
-{% swagger-parameter in="body" name="import.public_file_url" required="true" type="String" %}
-The public URL of the spreadsheet that is to be submitted.
-{% endswagger-parameter %}
+#### Request Body
 
-{% swagger-parameter in="body" name="import.sheet_license_key" type="String" required="true" %}
-Sheet license key
-{% endswagger-parameter %}
+| Name                                                         | Type   | Description                                                                                  |
+| ------------------------------------------------------------ | ------ | -------------------------------------------------------------------------------------------- |
+| import.public\_file\_url<mark style="color:red;">\*</mark>   | String | The public URL of the spreadsheet that is to be submitted.                                   |
+| import.sheet\_license\_key<mark style="color:red;">\*</mark> | String | Sheet license key                                                                            |
+| import<mark style="color:red;">\*</mark>                     | Object | Import file data                                                                             |
+| import.user                                                  | Object | Object [referencing the user](https://help.csvbox.io/getting-started#referencing-the-user)   |
+| import.options                                               | Object | Object [referencing the import options](rest-file-api.md#additional-options)                 |
+| import.dynamic\_columns                                      | Object | Object [referencing dynamic columns](https://help.csvbox.io/getting-started/dynamic-columns) |
 
-{% swagger-parameter in="body" name="import.user" type="Object" %}
-Object [referencing the user](https://help.csvbox.io/getting-started#referencing-the-user)
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="import.options" type="Object" %}
-Object [referencing the import options](rest-file-api.md#additional-options)
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="import.dynamic_columns" type="Object" %}
-Object [referencing dynamic columns](https://help.csvbox.io/getting-started/dynamic-columns)
-{% endswagger-parameter %}
-
-{% swagger-parameter in="header" name="content-type" required="true" %}
-application/json
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="File submitted" %}
+{% tabs %}
+{% tab title="200: OK File submitted" %}
 ```javascript
 HTTP/1.1 200 OK
 {
@@ -127,8 +113,8 @@ HTTP/1.1 200 OK
   ]
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 #### Example Request
 

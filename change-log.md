@@ -4,6 +4,16 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 01 April 2024
+
+* Added search functionality to quickly find the text in the uploaded sheet. It can be turned off via the admin dashboard.
+
+<div align="left">
+
+<figure><img src=".gitbook/assets/Search data.jpg" alt="" width="375"><figcaption><p>Text Search</p></figcaption></figure>
+
+</div>
+
 ## 19 March 2024
 
 * Added functionality to find and replace text in the uploaded data.
