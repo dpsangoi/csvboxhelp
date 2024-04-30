@@ -105,7 +105,9 @@ The AWS credentials need the following 3 minimum policies for uploading files to
 2. _PutObject_ is required to add objects to S3.
 3. _PutObjectTagging_ is required to add the tags (metadata) to the uploaded objects.
 
+#### S3 Data Type
 
+You have the option to store the data in S3 in either CSV or JSON format.&#x20;
 
 ## MySQL
 

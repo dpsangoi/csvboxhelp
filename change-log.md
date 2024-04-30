@@ -4,6 +4,16 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 28 April 2024
+
+* You now have the capability to directly send JSON formatted files to S3, in addition to the CSV format files that were already sendable.
+
+<div align="left">
+
+<figure><img src=".gitbook/assets/json type.png" alt="" width="351"><figcaption></figcaption></figure>
+
+</div>
+
 ## 01 April 2024
 
 * Added search functionality to quickly find the text in the uploaded sheet. It can be turned off via the admin dashboard.
