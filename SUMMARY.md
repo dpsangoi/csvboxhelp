@@ -19,6 +19,7 @@
   * [Validation Functions](advanced-installation/validation-functions.md)
   * [Server Side Validation](advanced-installation/server-side-validation.md)
   * [REST File API](advanced-installation/rest-file-api.md)
+  * [Environment Variables](advanced-installation/environment-variables.md)
 * [Data Destinations](destinations/README.md)
   * [Bubble.io](destinations/bubble.io.md)
   * [Zapier](destinations/zapier.md)

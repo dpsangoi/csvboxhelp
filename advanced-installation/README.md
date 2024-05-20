@@ -12,3 +12,4 @@ description: Description of additional importer options and features.
 6. [Validation Functions](validation-functions.md) - Implement advance validations using Javascript functions.
 7. [Server Side Validation](server-side-validation.md) - Validate data at your server, report back errors for correction & re-upload.
 8. [REST File API](import-links.md) - Automate CSV submissions via API.
+9. [Environment Variables](environment-variables.md) - Variables to configure the importer environment
