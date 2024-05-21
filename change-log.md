@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 20 May 2024
+
+* You can now add[ **Environment Variables**](advanced-installation/environment-variables.md) to define different environments (such as 'production', 'staging', 'local') and pass dynamic values to the importer.
+
 ## 28 April 2024
 
 * You now have the capability to directly send JSON formatted files to S3, in addition to the CSV format files that were already sendable.
