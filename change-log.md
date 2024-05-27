@@ -4,6 +4,17 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 27 May 2024
+
+* Added [**min\_rows** ](getting-started/2.-install-code.md#min\_rows)config option to enforce a minimum number of rows uploaded in a single sheet.
+* Added option to configure a default delimiter for manual data entry.
+
+<div align="left">
+
+<figure><img src=".gitbook/assets/default delimiter.jpg" alt="" width="361"><figcaption><p>Default delimiter</p></figcaption></figure>
+
+</div>
+
 ## 20 May 2024
 
 * You can now add[ **Environment Variables**](advanced-installation/environment-variables.md) to define different environments (such as 'production', 'staging', 'local') and pass dynamic values to the importer.
