@@ -53,7 +53,7 @@ Pass the **environment** object to the **CSVBoxImporter** function as shown belo
 
 {% tab title="React" %}
 {% hint style="warning" %}
-Minimum version 1.1.0 of the @csvbox/react library is required to use this feature.
+Minimum version 1.1.11 of the @csvbox/react library is required to use this feature.
 {% endhint %}
 
 Pass environment variables as an object to the **`environment`**property of the **`CSVBoxButton`** component.
