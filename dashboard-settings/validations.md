@@ -156,6 +156,14 @@ With the **List** data type, you can specify a list of acceptable values. The im
 
 In this case, the acceptable data in the CSV column will be _Small_, _Medium_, and _Large_. Based on the actual data found in the user CSV, the values _s_, _m_ or _l_ will be pushed to your data destination. This allows you to accept readable values from your users while pushing data to your system that is in a format it understands.
 
+{% hint style="info" %}
+**Allow Other Values**
+
+<img src="../.gitbook/assets/list_allow all values.jpg" alt="" data-size="original">
+
+Selecting the 'Accept Other Values' option will allow the users to input values that are not found in the predefined list of acceptable values.
+{% endhint %}
+
 ### Dependent List
 
 Sometimes, you may want to use more than one list such that the items available in a second drop-down list dependent on the selection made in the first drop-down list.
@@ -261,6 +269,14 @@ The **Multi-select List** data type is similar to the [**List**](validations.md#
 <figure><img src="../.gitbook/assets/Multi-select List.png" alt=""><figcaption><p>Multi-Select List</p></figcaption></figure>
 
 The importer will compare the values in the incoming data with the list of acceptable values and throw a validation error if there is a mismatch.
+
+{% hint style="info" %}
+**Allow Other Values**
+
+<img src="../.gitbook/assets/other values multi select.jpg" alt="" data-size="original">
+
+Selecting the 'Accept Other Values' option will allow the users to input values that are not found in the predefined list of acceptable values.
+{% endhint %}
 
 ### Dynamic Multi-select List
 
