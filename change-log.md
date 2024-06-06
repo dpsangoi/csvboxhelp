@@ -4,6 +4,20 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 06 June 2024
+
+* Updated the List Type Column validation to include the 'Accept Other Values' option.
+
+<div align="left">
+
+<figure><img src=".gitbook/assets/image (15).png" alt="" width="302"><figcaption><p>List Column Validation</p></figcaption></figure>
+
+</div>
+
+Selecting the 'Accept Other Values' option will allow the users to input values that are not found in the predefined list of acceptable values.
+
+This option is also available for the Dynamic List, Multi-Select List and Dynamic Multi-Select List column types as well.
+
 ## 27 May 2024
 
 * Added [**min\_rows** ](getting-started/2.-install-code.md#min\_rows)config option to enforce a minimum number of rows uploaded in a single sheet.
