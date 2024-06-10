@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 10 June 2024
+
+* You can now encrypt environment variables using the [AES Everywhere library ](https://github.com/mervick/aes-everywhere)to protect sensitive data. More info [here](advanced-installation/environment-variables.md#encrypting-environment-variables).
+
 ## 06 June 2024
 
 * Updated the List Type Column validation to include the 'Accept Other Values' option.
