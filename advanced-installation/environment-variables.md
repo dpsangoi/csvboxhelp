@@ -233,10 +233,62 @@ Apart from defining the environment, these variables can be used to dynamically 
 
 </div>
 
+### Encrypting Environment Variables
 
+You can encrypt environment variables using the [AES Everywhere library ](https://github.com/mervick/aes-everywhere)to protect sensitive data.
 
+#### AES Everywhere Library
 
+The AES Everywhere library provides a simple and effective way to encrypt and decrypt data using the Advanced Encryption Standard (AES) algorithm. It supports various platforms and programming languages, making it a versatile choice for securing environment variables.
 
+#### Steps
 
+* Install the [AES Everywhere library ](https://github.com/mervick/aes-everywhere)in your app.
+* Generate a secure Encryption Key via your CSVbox dashboard. Go to your app admin dashboard > Account Menu > Security Credentials Page > Encryption Key section.
 
-&#x20;
+<div align="left">
+
+<figure><img src="../.gitbook/assets/Encryption Key (1).jpg" alt="" width="375"><figcaption><p>Generate Encryption Key</p></figcaption></figure>
+
+</div>
+
+* Use your Encryption Key and AES Everywhere library to encrypt the environment variables.
+
+{% hint style="info" %}
+Encrypt all the required environment variables in one single object.
+{% endhint %}
+
+Here is an example using JavaScript:
+
+```javascript
+const AES = require('aes-everywhere');
+const secretKey = 'your-encryption-key';
+
+const originalValue = 'base_url: "https://staging.mydomain.com",
+                       authorized_domain: "https://staging.myapp.com",
+                       user_id: "default123"';
+const encryptedValue = AES.encrypt(originalValue, secretKey);
+
+console.log(`Encrypted Value: ${encryptedValue}`);
+```
+
+* Add the encrypted value to the **environment** object. The encrypted value should be passed to the **env\_encrypted** key.
+
+{% tabs %}
+{% tab title="Javascript" %}
+```javascript
+ let importer = new CSVBoxImporter("YOUR_LICENSE_KEY_HERE", {}, callback, 
+    {
+	lazy: true,
+	environment: {
+           env_name: 'staging',
+           //encrypted values below
+           env_encrypted: U2FsdGVkX192dXI7yHGs/4Ed+xEC3ejXFINKO6Hufnc=,
+	   module_id: 234234	                                  
+        }
+    });
+```
+{% endtab %}
+{% endtabs %}
+
+* The CSVbox importer will decrypt the environment variables using the same AES Everywhere library.
