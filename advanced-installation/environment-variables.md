@@ -264,9 +264,11 @@ Here is an example using JavaScript:
 const AES = require('aes-everywhere');
 const secretKey = 'your-encryption-key';
 
-const originalValue = 'base_url: "https://staging.mydomain.com",
-                       authorized_domain: "https://staging.myapp.com",
-                       user_id: "default123"';
+const originalValue = {
+                    base_url: "https://staging.mydomain.com",
+                    authorized_domain: "https://staging.myapp.com",
+                    user_id: "default123"
+};
 
 const encryptedValue = AES.encrypt(JSON.stringify(originalValue), secretKey);
 
