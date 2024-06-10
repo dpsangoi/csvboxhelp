@@ -273,6 +273,8 @@ const originalValue = {
 const encryptedValue = AES.encrypt(JSON.stringify(originalValue), secretKey);
 
 console.log(`Encrypted Value: ${encryptedValue}`);
+//encrypted value: U2FsdGVkX192dXI7yHGs/4Ed+xEC3ejXFINKO6Hufnc=
+
 ```
 
 * Add the encrypted value to the **environment** object. The encrypted value should be passed to the **env\_encrypted** key.
@@ -286,7 +288,7 @@ console.log(`Encrypted Value: ${encryptedValue}`);
 	environment: {
            env_name: 'staging',
            //encrypted values below
-           env_encrypted: U2FsdGVkX192dXI7yHGs/4Ed+xEC3ejXFINKO6Hufnc=,
+           env_encrypted: "U2FsdGVkX192dXI7yHGs/4Ed+xEC3ejXFINKO6Hufnc=",
 	   module_id: 234234	                                  
         }
     });
