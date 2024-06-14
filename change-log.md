@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 14 June 2024
+
+* Added [**upload\_file\_url** ](getting-started/2.-install-code.md#upload\_file\_url)and [**upload\_file\_worksheet\_name** ](getting-started/2.-install-code.md#upload\_file\_worksheet\_name)options to pre-load the importer with data from a file.
+
 ## 10 June 2024
 
 * You can now encrypt environment variables using the [AES Everywhere library ](https://github.com/mervick/aes-everywhere)to protect sensitive data. More info [here](advanced-installation/environment-variables.md#encrypting-environment-variables).
