@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 18 June 2024
+
+* &#x20;Two-Factor Authentication (2FA) is now available for all CSVbox users. This new feature is a part of our ongoing efforts to enhance security when accessing our platform. To activate 2FA, login to your CSVbox account > go to Accounts page > Click on 'Enable 2-factor Authentication' button and follow the instructions.
+
 ## 14 June 2024
 
 * Added [**upload\_file\_url** ](getting-started/2.-install-code.md#upload\_file\_url)and [**upload\_file\_worksheet\_name** ](getting-started/2.-install-code.md#upload\_file\_worksheet\_name)options to pre-load the importer with data from a file.

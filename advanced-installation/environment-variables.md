@@ -244,11 +244,11 @@ The AES Everywhere library provides a simple and effective way to encrypt and de
 #### Steps
 
 * Install the [AES Everywhere library ](https://github.com/mervick/aes-everywhere)in your app.
-* Generate a secure Encryption Key via your CSVbox dashboard. Go to your app admin dashboard > Account Menu > Security Credentials Page > Encryption Key section.
+* Generate a secure Encryption Key via your CSVbox dashboard. Go to your app admin dashboard > Account Menu > API Keys Page > Encryption Key section.
 
 <div align="left">
 
-<figure><img src="../.gitbook/assets/Encryption Key (1).jpg" alt="" width="375"><figcaption><p>Generate Encryption Key</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/eny (1).jpg" alt="" width="375"><figcaption><p>Generate Encryption Key</p></figcaption></figure>
 
 </div>
 
