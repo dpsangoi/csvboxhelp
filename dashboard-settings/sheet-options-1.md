@@ -160,7 +160,7 @@ If the **Allow Worksheet Selection** option is set to '**No**' then the first wo
 
 </details>
 
-## Custom Redirect URL Post Import
+## Custom Redirect URL
 
 <details>
 
