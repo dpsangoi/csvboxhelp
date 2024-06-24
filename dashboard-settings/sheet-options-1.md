@@ -160,3 +160,17 @@ If the **Allow Worksheet Selection** option is set to '**No**' then the first wo
 
 </details>
 
+## Custom Redirect URL Post Import
+
+<details>
+
+<summary>Redirect end users to any page after successful import</summary>
+
+You have the ability to specify a custom URL for redirection upon successful import completion. This enhancement is designed to provide greater flexibility and streamline your workflow by directing users to a specific page immediately after the successful import.
+
+![](../.gitbook/assets/redirect\_url.jpg)
+
+
+
+</details>
+
