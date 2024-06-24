@@ -4,6 +4,16 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 24 June 2024
+
+* You can now provide a URL to redirect the page after the import is completed successfully.
+
+<div align="left">
+
+<figure><img src=".gitbook/assets/redirect_url.jpg" alt="" width="368"><figcaption><p>Redirect URL</p></figcaption></figure>
+
+</div>
+
 ## 18 June 2024
 
 * &#x20;Two-Factor Authentication (2FA) is now available for all CSVbox users. This new feature is a part of our ongoing efforts to enhance security when accessing our platform. To activate 2FA, login to your CSVbox account > go to Accounts page > Click on 'Enable 2-factor Authentication' button and follow the instructions.
