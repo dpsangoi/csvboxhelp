@@ -117,3 +117,8 @@ Check the following things:
 The maximum number of items that can be created in Bubble.io via a single bulk request is currently 1000.&#x20;
 {% endhint %}
 
+## Adding Configuration Options
+
+{% hint style="info" %}
+coming soon
+{% endhint %}
