@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 02 July 2024
+
+* **Importer Enhancement:** The importer now handles password-protected files more effectively. Users will receive a message indicating that password-protected files cannot be read.
+
 ## 24 June 2024
 
 * You can now provide a URL to redirect the page after the import is completed successfully.
