@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 26 July 2024
+
+* Added support for the Turkish language.
+
 ## 02 July 2024
 
 * **Importer Enhancement:** The importer now handles password-protected files more effectively. Users will receive a message indicating that password-protected files cannot be read.
