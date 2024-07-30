@@ -191,8 +191,8 @@ The description will be pushed along with the row data at the end destination. T
 ```
     "import_id": 79418895,
     "sheet_id": 575,
-    "sheet_name": "Products Import",
-    "import_description": "Employee data 2024", 
+    "sheet_name": "Products234248",
+    "import_description": "Product Catalogue Jan 2024", 
     "env_name": "default", 
     "destination_type": "webhook",
 ```
@@ -204,7 +204,7 @@ The following destinations are supported:
 3. [Data at Client](../getting-started/3.-receive-data.md#data-on-the-client-side)
 4. [Import Complete Webhook](../getting-started/3.-receive-data.md#import-complete-webhook)
 
-To enable description input box:
+To enable the description input box:
 
 Go to Sheet Settings > Display Tab > Select 'File Upload' Page > Go to 'Show import description' option > Select 'Yes'
 
