@@ -4,7 +4,7 @@ description: Description of select sheet configuration settings
 
 # Sheet Options
 
-## Show Error Text
+## how Error Text
 
 <details>
 
@@ -169,6 +169,50 @@ If the **Allow Worksheet Selection** option is set to '**No**' then the first wo
 You have the ability to specify a custom URL for redirection upon successful import completion. This enhancement is designed to provide greater flexibility and streamline your workflow by directing users to a specific page immediately after the successful import.
 
 ![](../.gitbook/assets/redirect\_url.jpg)
+
+
+
+</details>
+
+## Import Description
+
+<details>
+
+<summary>Allow users to provide a name/description of the file they are uploading</summary>
+
+Enable users to input a name or a description for their uploaded files. File names like "contacts.csv" or "Import 123.xlsx" lack context. More descriptive labels such as "Texas Customers" or "Parts from 2022 Catalog" enhance the clarity and utility of the import.
+
+The description input box will be visible if enabled after the user selects the file.\
+\
+&#x20;<img src="../.gitbook/assets/file_description (1).png" alt="" data-size="original">
+
+The description will be pushed along with the row data at the end destination. The data will be available in the **import\_description** property:
+
+```
+    "import_id": 79418895,
+    "sheet_id": 575,
+    "sheet_name": "Products Import",
+    "import_description": "Employee data 2024", 
+    "env_name": "default", 
+    "destination_type": "webhook",
+```
+
+The following destinations are supported:
+
+1. API/Webhook
+2. Zapier
+3. [Data at Client](../getting-started/3.-receive-data.md#data-on-the-client-side)
+4. [Import Complete Webhook](../getting-started/3.-receive-data.md#import-complete-webhook)
+
+To enable description input box:
+
+Go to Sheet Settings > Display Tab > Select 'File Upload' Page > Go to 'Show import description' option > Select 'Yes'
+
+![](../.gitbook/assets/import\_description\_option.jpg)
+
+By default his feature is turned OFF.
+
+A minimum of 3 characters and a maximum of 100 characters is required.&#x20;
 
 
 
