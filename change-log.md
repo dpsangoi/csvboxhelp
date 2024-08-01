@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 01 August 2024
+
+* Enable end users to input a file/import description before uploading the file. More info [here](dashboard-settings/sheet-options-1.md#import-description).
+
 ## 26 July 2024
 
 * Added support for the Turkish language.
