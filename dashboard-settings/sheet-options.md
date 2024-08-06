@@ -63,3 +63,9 @@ This option helps you specify the data type of the incoming data and configure r
 `optional`
 
 The Required checkbox indicates whether a column is mandatory. If the Required checkbox is ticked, then the importer will validate the column for missing/empty data. If any cell in the column is found to be empty then the user will be shown a relevant error message.
+
+## Read Only
+
+`optional`
+
+Enabling this option will make the column read-only. The column data will be visible yet the end users will not be able to edit it on the Verify Data step.

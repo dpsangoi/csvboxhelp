@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 06 August 2024
+
+* Added the functionality to make columns [**Read Only**](dashboard-settings/sheet-options.md#read-only).
+
 ## 01 August 2024
 
 * Enable end users to input a file/import description before uploading the file. More info [here](dashboard-settings/sheet-options-1.md#import-description).
