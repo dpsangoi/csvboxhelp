@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 19 August 2024
+
+* Added support for the Slovak language.
+
 ## 06 August 2024
 
 * Added the functionality to make columns [**Read Only**](dashboard-settings/sheet-options.md#read-only).
