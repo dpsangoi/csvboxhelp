@@ -44,6 +44,7 @@ The data will be pushed to a webhook endpoint as configured in the sheet setting
     "row_number": 1,
     "total_rows": 5,
     "env_name": "default", 
+    "original_filename": "products01_24.csv",
     "row_data": {
           "Name": "TP-Link TL-WN822N Wireless N300 High Gain USB Adapter",
           "SKU": "AS-100221",
@@ -63,6 +64,7 @@ The data will be pushed to a webhook endpoint as configured in the sheet setting
     "row_number": 2,
     "total_rows": 5,
     "env_name": "default", 
+    "original_filename": "products01_24.csv",
     "row_data":{
           "Name": "EPower Technology EP-600PM Power Supply 600W ATX12V 2.3 Single 120mm Cooling Fan Bare",
           "SKU": "AS-103824",
