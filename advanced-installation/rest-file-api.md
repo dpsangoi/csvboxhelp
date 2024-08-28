@@ -41,7 +41,7 @@ All REST File API queries require a valid API key. You can find the API key on t
 
 Include your API key as a `x-csvbox-api-key` header on all API queries.&#x20;
 
-### Endpo int
+### Endpoint
 
 ## Submits a spreadsheet file
 
