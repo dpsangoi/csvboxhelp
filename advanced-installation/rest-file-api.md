@@ -41,7 +41,7 @@ All REST File API queries require a valid API key. You can find the API key on t
 
 Include your API key as a `x-csvbox-api-key` header on all API queries.&#x20;
 
-### Endpoint
+### Endpo int
 
 ## Submits a spreadsheet file
 
@@ -59,6 +59,7 @@ Include your API key as a `x-csvbox-api-key` header on all API queries.&#x20;
 | Name                                                         | Type   | Description                                                                                  |
 | ------------------------------------------------------------ | ------ | -------------------------------------------------------------------------------------------- |
 | import.public\_file\_url<mark style="color:red;">\*</mark>   | String | The public URL of the spreadsheet that is to be submitted.                                   |
+| import.file\_sheet\_name                                     | String | Worksheet name in case of a file having multiple tabs.                                       |
 | import.sheet\_license\_key<mark style="color:red;">\*</mark> | String | Sheet license key                                                                            |
 | import<mark style="color:red;">\*</mark>                     | Object | Import file data                                                                             |
 | import.user                                                  | Object | Object [referencing the user](https://help.csvbox.io/getting-started#referencing-the-user)   |
@@ -278,6 +279,43 @@ axios(config)
   console.log(error);
 });
 
+```
+{% endtab %}
+{% endtabs %}
+
+### Direct File Upload
+
+As an alternative to providing the public file URL to the FILE API, you also have the option to upload the file contents directly. Instead of using the _import.public\_file\_url_ use the following body param:
+
+#### Request Body
+
+| Name                                          | Type   | Description                              |
+| --------------------------------------------- | ------ | ---------------------------------------- |
+| import.file<mark style="color:red;">\*</mark> | String | The contents of the file to be imported. |
+
+{% hint style="info" %}
+The file should be sent with the `multipart/form-data` content-type.
+{% endhint %}
+
+#### Example Request
+
+{% tabs %}
+{% tab title="cURL" %}
+```javascript
+curl --location --request POST 'https://api.csvbox.io/1.1/file' \
+--header 'x-csvbox-api-key: CSBxRLHgIZv3bqMlrJiVKXhKwtcHSv' \
+--header 'Content-Type: multipart/form-data' \
+-F 'import={
+        "sheet_license_key": "jhkjsahjkhkjhkjhkjasdasd",
+        "user": {
+            "user_id": "1a2b3c4d5e6f",           
+        },
+         "options": {           
+             "max_rows": 150,
+             "has_header": 1
+        }
+    }' \
+-F 'file=@/path/to/your/file.csv'
 ```
 {% endtab %}
 {% endtabs %}

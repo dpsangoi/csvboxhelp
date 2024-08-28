@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 28 August 2024
+
+* Updated the [REST File API](advanced-installation/rest-file-api.md) to enable direct uploading of file contents. Check [**import.file**](advanced-installation/rest-file-api.md#direct-file-upload-beta) body param.
+
 ## 19 August 2024
 
 * Added support for the Slovak language.
