@@ -32,6 +32,8 @@ With this option, you can enable/disable the **Export** button on the verify dat
 
 ![](../.gitbook/assets/Excel1.png)
 
+This feature uses the SheetJS Community Edition (XLSX.js), an open-source library for handling spreadsheet files. © 2012-present SheetJS LLC. It is licensed under the Apache License, Version 2.0.
+
 </details>
 
 ## Server & Data Location
