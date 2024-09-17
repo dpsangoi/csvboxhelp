@@ -28,6 +28,11 @@ Users will be able to match the headers of their file columns with the sheet col
 
 **Destination:** It is the end location where the csvbox.io importer will push the data uploaded by the user.
 
+{% hint style="info" %}
+1. This importer uses the PapaParse library to parse spreadsheet files. © 2014-present Matias Meno. Licensed under the MIT License.
+2. The project also uses the SheetJS Community Edition (XLSX.js), an open-source library for handling spreadsheet files. © 2012-present SheetJS LLC. Licensed under the Apache License, Version 2.0.
+{% endhint %}
+
 ## Quick Start
 
 The following are the basic steps to install the csvbox.io CSV importer widget into your app and start accepting data from your users.
