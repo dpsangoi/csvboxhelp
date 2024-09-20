@@ -4,6 +4,16 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 19 September 2024
+
+* Added the option to show [Unmapped Columns](advanced-installation/unmapped-columns.md) on the Validation Screen.
+
+<div align="left">
+
+<figure><img src=".gitbook/assets/show unmapped columns.png" alt="" width="373"><figcaption><p>Show Unmapped Columns</p></figcaption></figure>
+
+</div>
+
 ## 28 August 2024
 
 * Updated the [REST File API](advanced-installation/rest-file-api.md) to enable direct uploading of file contents. Check [**import.file**](advanced-installation/rest-file-api.md#direct-file-upload-beta) body param.
