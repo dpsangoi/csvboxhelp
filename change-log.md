@@ -4,6 +4,11 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 07 October 2024
+
+* Introduced several UI improvements to the importer, including a confirmation prompt when closing the import process.
+* Added toggle functionality to enable or disable Virtual Columns and Validation Functions.
+
 ## 19 September 2024
 
 * Added the option to show [Unmapped Columns](advanced-installation/unmapped-columns.md) on the Validation Screen.
