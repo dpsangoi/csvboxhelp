@@ -164,6 +164,26 @@ In this case, the acceptable data in the CSV column will be _Small_, _Medium_, a
 Selecting the 'Accept Other Values' option will allow the users to input values that are not found in the predefined list of acceptable values.
 {% endhint %}
 
+
+
+{% hint style="info" %}
+#### Display Label Conversions
+
+If you enable this option, the importer will auto-convert the List **Values** in the column to user-readable **Display Labels**.
+
+![](<../.gitbook/assets/display label conversions.png>)
+
+Consider the list of items as per the image above. If the column contains NY or LON then the importer will replace them with the display values **New York** and **London** respectively and show it to the users. Later the importer will push List **Values** to your app and not the **Display Labels**.
+{% endhint %}
+
+
+
+{% hint style="info" %}
+
+
+
+{% endhint %}
+
 ### Dependent List
 
 Sometimes, you may want to use more than one list such that the items available in a second drop-down list dependent on the selection made in the first drop-down list.
