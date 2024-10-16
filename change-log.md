@@ -7,7 +7,7 @@ description: A record of all notable changes made to the application.
 ## 16 October 2024
 
 * Added the option to hide File Upload Box for cases where only Copy-Paste data option is mandatory.
-* For List-type columns introduced the ability to accept **list values** interchangeably to **display labels**.
+* For List-type columns introduced the ability to accept **list values** interchangeably with **display labels**.
 
 ## 07 October 2024
 
