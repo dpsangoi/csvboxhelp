@@ -4,7 +4,7 @@ description: Description of select sheet configuration settings
 
 # Sheet Options
 
-## how Error Text
+## Show Error Text
 
 <details>
 
@@ -171,6 +171,18 @@ You have the ability to specify a custom URL for redirection upon successful imp
 ![](../.gitbook/assets/redirect\_url.jpg)
 
 
+
+</details>
+
+## Show File Upload Box
+
+<details>
+
+<summary>Enable / Disable the ability to upload spreadsheet files</summary>
+
+There can be a case where you need to disable user file uploads to allow only copy-pasting of the data in CSVbox. In such cases, you can hide the File Upload Box and only show the users the Copy-Paste data option.
+
+To hide the File Upload Box go to sheet settings > display > File Upload > Select '**No**' for '**Show File Upload Box?**' option.
 
 </details>
 
