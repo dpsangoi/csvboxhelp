@@ -167,21 +167,13 @@ Selecting the 'Accept Other Values' option will allow the users to input values 
 
 
 {% hint style="info" %}
-#### Display Label Conversions
+#### Accept List Values
 
-If you enable this option, the importer will auto-convert the List **Values** in the column to user-readable **Display Labels**.
+If you enable this option, the importer will accept List **Values** interchangeably with **Display Labels** as valid data for the column.
 
-![](<../.gitbook/assets/display label conversions.png>)
+![](<../.gitbook/assets/list values.png>)
 
-Consider the list of items as per the image above. If the column contains NY or LON then the importer will replace them with the display values **New York** and **London** respectively and show it to the users. Later the importer will push List **Values** to your app and not the **Display Labels**.
-{% endhint %}
-
-
-
-{% hint style="info" %}
-
-
-
+Refer to the list of items in the image above. If the column contains the value "NYC," the importer will fail validation since it only accepts the display label "New York City." To enable the importer to accept "NYC" as well, you need to activate the "Accept List Values" option.
 {% endhint %}
 
 ### Dependent List

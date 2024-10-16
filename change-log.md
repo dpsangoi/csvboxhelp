@@ -4,6 +4,11 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 16 October 2024
+
+* Added the option to hide File Upload Box for cases where only Copy-Paste data option is mandatory.
+* For List-type columns introduced the ability to accept **list values** interchangeably to **display labels**.
+
 ## 07 October 2024
 
 * Introduced several UI improvements to the importer, including a confirmation prompt when closing the import process.
