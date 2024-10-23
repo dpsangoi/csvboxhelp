@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 23 October 2024
+
+* Refined the CSVbox admin panel UI for a more intuitive and streamlined experience.
+
 ## 16 October 2024
 
 * Added the option to hide File Upload Box for cases where only Copy-Paste data option is mandatory.
