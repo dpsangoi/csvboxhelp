@@ -16,6 +16,7 @@
   * [Unmapped Columns](advanced-installation/unmapped-columns.md)
   * [Ignored Columns](advanced-installation/ignored-columns.md)
   * [Import Links](advanced-installation/import-links.md)
+  * [Data Transforms](advanced-installation/data-transforms.md)
   * [Validation Functions](advanced-installation/validation-functions.md)
   * [Server Side Validation](advanced-installation/server-side-validation.md)
   * [REST File API](advanced-installation/rest-file-api.md)
