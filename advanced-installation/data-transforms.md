@@ -14,9 +14,111 @@ The **Data Transforms** feature in CSVbox empowers you to modify and manipulate 
 
 ## How it works
 
-When a CSV file is uploaded, CSVbox parses the data and applies your transformation logic row-by-row or cell-by-cell. The JavaScript function you write defines how each row or field should be transformed. Once the transformation is complete, the modified data is passed to the next stage for validation.
+When a CSV file is uploaded, CSVbox parses the data and applies your transformation logic row-by-row or column cell-by-cell. The JavaScript function you write defines how each row or field should be transformed. Once the transformation is complete, the modified data is passed to the next stage for validation.\
+\
+There are two main types of Data Transforms available in CSVbox: **Row Transforms** and **Column Transforms**.
 
-### Adding Data Transforms <a href="#adding-virtual-columns" id="adding-virtual-columns"></a>
+* **Row Transforms** apply transformation logic row-by-row, processing each row individually from top to bottom. These are especially useful when the transformation of one cell depends on the values of other cells within the same row. For instance, if you need to combine data from multiple cells into a single cell, or if a calculation requires input from different columns within the same row, Row Transforms are ideal. This approach allows you to apply logic dynamically based on relationships within each row of data.
+* **Column Transforms** operate on a single column or a set of selected columns, applying transformations to all entries in the specified columns at once. These transforms are most effective when you need to analyze or modify data across the entire column rather than row-by-row. For example, if you're looking to identify duplicate entries in a column and replace each duplicate with a unique identifier, a Column Transform can help by analyzing all values in that column collectively before applying changes. This approach is efficient for transformations that rely on examining the column as a whole, such as sorting, aggregating, or deduplication tasks.
+
+Using these two transformation types, you can precisely target and manipulate your data based on your application's requirements, whether you need to perform intra-row calculations or make adjustments to column-wide data sets.
+
+{% hint style="warning" %}
+Selecting **Column Transforms** can impact importer performance, as the entire column dataset is loaded into memory for processing. This means that, especially with large datasets, using Column Transforms may slow down the import process. For optimal performance, consider using Row Transforms for operations that do not require analyzing the entire column, reserving Column Transforms for cases where column-wide data processing is essential, such as deduplication or aggregation tasks.
+{% endhint %}
+
+## Row Transforms <a href="#adding-virtual-columns" id="adding-virtual-columns"></a>
+
+### Adding Row Data Transforms <a href="#adding-virtual-columns" id="adding-virtual-columns"></a>
+
+1. Go to the edit sheet page > **Data Transforms** tab >  Click **Add Transforms** button.
+2. Add Transform **Name**.
+3. Select **Transform Type** as **Row**.
+4. Provide **Javascript** code.
+5. Attach **Dependent** Libraries (optional).
+6. Click **Save**.
+
+### Row Transform Examples
+
+{% tabs %}
+{% tab title="Example 1" %}
+Normalize date value into US format
+
+```javascript
+function normalizeToUSFormat(dateString) {
+  // Create a new Date object by parsing the input date string
+  const date = new Date(dateString);
+
+  // Check if the Date object is valid
+  if (isNaN(date.getTime())) {  
+    console.log("Invalid date format.");
+    return dateString;
+  }
+
+  // Get month, day, and year
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const day = String(date.getDate()).padStart(2, '0');
+  const year = date.getFullYear();
+
+  // Return the date in MM/DD/YYYY format
+  return `${month}/${day}/${year}`;
+}
+
+// Example usage
+  csvbox.row["date_of_birth"] = normalizeToUSFormat(csvbox.row["date_of_birth"]);
+ 
+  return csvbox;
+```
+{% endtab %}
+{% endtabs %}
+
+### Variables in the Row Transform
+
+You have access to data variables included in the **`csvbox`** object. The following data is available:
+
+#### `csvbox.row`
+
+IIt contains row data. Each cell in the row can be accessed by providing the column name. Examples:
+
+```javascript
+csvbox.row["first_name"]
+csvbox.row["order_id"]
+csvbox.row["price"]
+```
+
+#### `csvbox.user`
+
+It contains the [custom user attributes](../getting-started/2.-install-code.md#referencing-the-user) defined while initializing the importer. Examples:
+
+```javascript
+csvbox.user["user_id"]
+csvbox.user["team_id"]
+csvbox.user["isAuthenticated"]
+```
+
+#### `csvbox.import`
+
+This refers to the current import-specific data. The following data is available:
+
+```javascript
+csvbox.import["sheet_id"]
+csvbox.import["sheet_name"]
+csvbox.import["original_filename"]
+csvbox.import["import_start_time"]
+csvbox.import["destination_type"]
+csvbox.import["total_rows"]
+csvbox.import["row_number"] //current row number starting with 1
+```
+
+{% hint style="info" %}
+&#x20;_**console.log(csvbox);**_&#x20;
+
+With this statement, you can print all the available variables in the debugging console.
+{% endhint %}
+
+## Column Transforms <a href="#adding-virtual-columns" id="adding-virtual-columns"></a>
+
+### Adding Column Data Transforms <a href="#adding-virtual-columns" id="adding-virtual-columns"></a>
 
 1. Go to the edit sheet page > **Data Transforms** tab >  Click **Add Transforms** button.
 2. Add Transform **Name**.
@@ -25,7 +127,7 @@ When a CSV file is uploaded, CSVbox parses the data and applies your transformat
 5. Attach **Dependent** Libraries (optional).
 6. Click **Save**.
 
-### Examples
+### Column Transform Examples
 
 {% tabs %}
 {% tab title="Example 1" %}
@@ -36,17 +138,16 @@ Capitalizing Text Fields:
 
 for(let i=0; i < csvbox.column["first_name"].length; i++)
 {
-    csvbox.column["first_name"][i] = csvbox.column["first_name"].toUpperCase();
+    csvbox.column["first_name"][i] = csvbox.column["first_name"][i].toUpperCase();
 }
+
+// return the updated data set
+return csvbox;
 ```
 {% endtab %}
 {% endtabs %}
 
-### Dependencies
-
-In the Trasnforms Javascript snippet, you can utilize an external library that is hosted via a CDN. You can also call any external API endpoint to fetch real-time data. Simply add the library script tag and/or any custom scripts to the 'Dependencies' section and start using it in the main Javascript snippet.
-
-### Variables in the Transform
+### Variables in the Column Transform
 
 You have access to data variables included in the **`csvbox`** object. The following data is available:
 
@@ -93,6 +194,10 @@ csvbox.import["row_number"] //current row number starting with 1
 
 With this statement, you can print all the available variables in the debugging console.
 {% endhint %}
+
+### Dependencies
+
+In the Transforms Javascript snippet, you can utilize an external library hosted via a CDN. You can also call any external API endpoint to fetch real-time data. Add the library script tag and/or any custom scripts to the 'Dependencies' section and use it in the main Javascript snippet.
 
 ## Key Features
 
