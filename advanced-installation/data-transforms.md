@@ -42,8 +42,21 @@ Selecting **Column Transforms** can impact importer performance, as the entire c
 
 {% tabs %}
 {% tab title="Append text " %}
-Normalize date value into US format
+Append a constant to the cell value.
 
+{% code overflow="wrap" %}
+```javascript
+csvbox.row["serial_number"] = csvbox.row["serial_number"] + '_' + csvbox.user["user_id"];
+  
+  return csvbox;
+```
+{% endcode %}
+{% endtab %}
+
+{% tab title="Normalize dates" %}
+Normalize date value into US format.
+
+{% code overflow="wrap" %}
 ```javascript
 function normalizeToUSFormat(dateString) {
   // Create a new Date object by parsing the input date string
@@ -69,16 +82,7 @@ function normalizeToUSFormat(dateString) {
  
   return csvbox;
 ```
-{% endtab %}
-
-{% tab title="Normalize dates" %}
-Append a constant to the cell value
-
-```javascript
-  csvbox.row["serial_number"] = csvbox.row["serial_number"] + '_' + csvbox.user["user_id"];
-  
-  return csvbox;
-```
+{% endcode %}
 {% endtab %}
 {% endtabs %}
 
