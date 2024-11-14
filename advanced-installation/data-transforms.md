@@ -4,10 +4,6 @@ description: Bulk edit the dataset before pushing it to your system.
 
 # Data Transforms
 
-{% hint style="warning" %}
-Coming Soon
-{% endhint %}
-
 The **Data Transforms** feature in CSVbox empowers you to modify and manipulate the data before it is uploaded to your app. Using JavaScript, you can apply custom transformations to reshape, sanitize, or enhance your data in real-time. Whether you need to perform simple tasks like capitalizing text or formatting dates, or handle complex business logic, Data Transforms gives you full control to customize your dataset to meet your app's specific needs.
 
 <figure><img src="../.gitbook/assets/Data Transform.png" alt=""><figcaption><p>Data Trasforms</p></figcaption></figure>

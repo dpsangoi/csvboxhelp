@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 14 November 2024
+
+* Introduced Data Transforms, enabling a new method for bulk editing datasets before pushing them to your app. Learn more here: [Data Transforms Guide](https://help.csvbox.io/advanced-installation/data-transforms)
+
 ## 23 October 2024
 
 * Refined the CSVbox admin panel UI for a more intuitive and streamlined experience.
