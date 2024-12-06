@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 03 December 2024
+
+* Optimized the code to improve import performance 2x.
+
 ## 14 November 2024
 
 * Introduced Data Transforms, enabling a new method for bulk editing datasets before pushing them to your app. Learn more here: [Data Transforms Guide](https://help.csvbox.io/advanced-installation/data-transforms)
@@ -26,11 +30,7 @@ description: A record of all notable changes made to the application.
 
 * Added the option to show [Unmapped Columns](advanced-installation/unmapped-columns.md) on the Validation Screen.
 
-<div align="left">
-
-<figure><img src=".gitbook/assets/show unmapped columns.png" alt="" width="373"><figcaption><p>Show Unmapped Columns</p></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src=".gitbook/assets/show unmapped columns.png" alt="" width="373"><figcaption><p>Show Unmapped Columns</p></figcaption></figure></div>
 
 ## 28 August 2024
 
@@ -60,11 +60,7 @@ description: A record of all notable changes made to the application.
 
 * You can now provide a URL to redirect the page after the import is completed successfully.
 
-<div align="left">
-
-<figure><img src=".gitbook/assets/redirect_url.jpg" alt="" width="368"><figcaption><p>Redirect URL</p></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src=".gitbook/assets/redirect_url.jpg" alt="" width="368"><figcaption><p>Redirect URL</p></figcaption></figure></div>
 
 ## 18 June 2024
 
@@ -72,7 +68,7 @@ description: A record of all notable changes made to the application.
 
 ## 14 June 2024
 
-* Added [**upload\_file\_url** ](getting-started/2.-install-code.md#upload\_file\_url)and [**upload\_file\_worksheet\_name** ](getting-started/2.-install-code.md#upload\_file\_worksheet\_name)options to pre-load the importer with data from a file.
+* Added [**upload\_file\_url** ](getting-started/2.-install-code.md#upload_file_url)and [**upload\_file\_worksheet\_name** ](getting-started/2.-install-code.md#upload_file_worksheet_name)options to pre-load the importer with data from a file.
 
 ## 10 June 2024
 
@@ -82,11 +78,7 @@ description: A record of all notable changes made to the application.
 
 * Updated the List Type Column validation to include the 'Accept Other Values' option.
 
-<div align="left">
-
-<figure><img src=".gitbook/assets/image (15).png" alt="" width="302"><figcaption><p>List Column Validation</p></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src=".gitbook/assets/image (15).png" alt="" width="302"><figcaption><p>List Column Validation</p></figcaption></figure></div>
 
 Selecting the 'Accept Other Values' option will allow the users to input values that are not found in the predefined list of acceptable values.
 
@@ -94,14 +86,10 @@ This option is also available for the Dynamic List, Multi-Select List and Dynami
 
 ## 27 May 2024
 
-* Added [**min\_rows** ](getting-started/2.-install-code.md#min\_rows)config option to enforce a minimum number of rows uploaded in a single sheet.
+* Added [**min\_rows** ](getting-started/2.-install-code.md#min_rows)config option to enforce a minimum number of rows uploaded in a single sheet.
 * Added option to configure a default delimiter for manual data entry.
 
-<div align="left">
-
-<figure><img src=".gitbook/assets/default delimiter.jpg" alt="" width="361"><figcaption><p>Default delimiter</p></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src=".gitbook/assets/default delimiter.jpg" alt="" width="361"><figcaption><p>Default delimiter</p></figcaption></figure></div>
 
 ## 20 May 2024
 
@@ -111,47 +99,27 @@ This option is also available for the Dynamic List, Multi-Select List and Dynami
 
 * You now have the capability to directly send JSON formatted files to S3, in addition to the CSV format files that were already sendable.
 
-<div align="left">
-
-<figure><img src=".gitbook/assets/json type.png" alt="" width="351"><figcaption></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src=".gitbook/assets/json type.png" alt="" width="351"><figcaption></figcaption></figure></div>
 
 ## 01 April 2024
 
 * Added search functionality to quickly find the text in the uploaded sheet. It can be turned off via the admin dashboard.
 
-<div align="left">
-
-<figure><img src=".gitbook/assets/Search data.jpg" alt="" width="375"><figcaption><p>Text Search</p></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src=".gitbook/assets/Search data.jpg" alt="" width="375"><figcaption><p>Text Search</p></figcaption></figure></div>
 
 ## 19 March 2024
 
 * Added functionality to find and replace text in the uploaded data.
 
-<div align="left">
+<div align="left"><figure><img src=".gitbook/assets/button.jpg" alt="" width="375"><figcaption><p>Find and replace button</p></figcaption></figure></div>
 
-<figure><img src=".gitbook/assets/button.jpg" alt="" width="375"><figcaption><p>Find and replace button</p></figcaption></figure>
-
-</div>
-
-<div align="left">
-
-<figure><img src=".gitbook/assets/Findandreplace.jpg" alt="" width="320"><figcaption><p>Find and Replace Popup</p></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src=".gitbook/assets/Findandreplace.jpg" alt="" width="320"><figcaption><p>Find and Replace Popup</p></figcaption></figure></div>
 
 ## 13 March 2024
 
 * A new option was added to allow the default selection of columns as [Ignored Columns](advanced-installation/ignored-columns.md).
 
-<div align="left" data-full-width="false">
-
-<figure><img src=".gitbook/assets/Ignore Cols default selection.jpg" alt="" width="363"><figcaption></figcaption></figure>
-
-</div>
+<div align="left" data-full-width="false"><figure><img src=".gitbook/assets/Ignore Cols default selection.jpg" alt="" width="363"><figcaption></figcaption></figure></div>
 
 ## 4 March 2024
 
@@ -159,24 +127,16 @@ This option is also available for the Dynamic List, Multi-Select List and Dynami
 
 ## 21 Feb 2024
 
-* Added Google Sheets to the[ target\_file\_name](getting-started/2.-install-code.md#target\_file\_name) option. You can now provide custom file names for each new import in Google Sheets.
+* Added Google Sheets to the[ target\_file\_name](getting-started/2.-install-code.md#target_file_name) option. You can now provide custom file names for each new import in Google Sheets.
 * New option to append [custom user attributes](getting-started/2.-install-code.md#referencing-the-user) to [Dynamic List API](dashboard-settings/validations.md#dynamic-list). This helps to identify the user in your app and generate custom list options.
 
-<div align="left">
-
-<figure><img src=".gitbook/assets/custom.jpg" alt="" width="311"><figcaption><p>Custom User Attributes</p></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src=".gitbook/assets/custom.jpg" alt="" width="311"><figcaption><p>Custom User Attributes</p></figcaption></figure></div>
 
 ## 12 Feb 2024
 
 * Added an option to skip the Data Validation screen if no errors are found.
 
-<div align="left">
-
-<figure><img src=".gitbook/assets/skip verify.png" alt="" width="375"><figcaption></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src=".gitbook/assets/skip verify.png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 ## 02 Feb 2024
 
@@ -196,11 +156,7 @@ This option is also available for the Dynamic List, Multi-Select List and Dynami
 
 * Improvements added to [Server Side Validation](advanced-installation/server-side-validation.md) functionality. To allow the users to re-submit all the rows again (instead of error rows only) we have added the 'All Rows' option as shown below:
 
-<div align="left">
-
-<figure><img src=".gitbook/assets/ssv.png" alt="" width="326"><figcaption></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src=".gitbook/assets/ssv.png" alt="" width="326"><figcaption></figcaption></figure></div>
 
 ## 06 November 2023
 
@@ -230,7 +186,7 @@ It is official! CSVbox is now SOC 2 Type 2 certified. [Read more](https://csvbox
 
 ## 22 September 2023
 
-* Added [**target\_file\_name** ](getting-started/2.-install-code.md#target\_file\_name)option to control the name of the file that gets pushed to the end destination.
+* Added [**target\_file\_name** ](getting-started/2.-install-code.md#target_file_name)option to control the name of the file that gets pushed to the end destination.
 
 ## 20 September 2023
 
@@ -250,7 +206,7 @@ It is official! CSVbox is now SOC 2 Type 2 certified. [Read more](https://csvbox
 
 ## 29 August 2023
 
-* Added new options - **max\_rows\_allow\_submit** and **max\_rows\_custom\_message** for [**max\_rows** ](getting-started/2.-install-code.md#max\_rows)validation.
+* Added new options - **max\_rows\_allow\_submit** and **max\_rows\_custom\_message** for [**max\_rows** ](getting-started/2.-install-code.md#max_rows)validation.
 
 ## 02 August 2023
 
@@ -262,7 +218,7 @@ It is official! CSVbox is now SOC 2 Type 2 certified. [Read more](https://csvbox
 
 ## 07 July 2023
 
-* Added [sample\_template\_url ](getting-started/2.-install-code.md#sample\_template\_url)and [sample\_template\_button\_text ](getting-started/2.-install-code.md#sample\_template\_button\_text)configuration options. With these, you can now configure a dynamic sample template file for each user.
+* Added [sample\_template\_url ](getting-started/2.-install-code.md#sample_template_url)and [sample\_template\_button\_text ](getting-started/2.-install-code.md#sample_template_button_text)configuration options. With these, you can now configure a dynamic sample template file for each user.
 
 ## 27 June 2023
 
@@ -352,7 +308,7 @@ It is official! CSVbox is now SOC 2 Type 2 certified. [Read more](https://csvbox
 * Added Slovenian language.
 * Added the option to provide help text in multiple languages.
 
-![](.gitbook/assets/language\_options.jpg)
+![](.gitbook/assets/language_options.jpg)
 
 ## 05 Dec 2022
 
@@ -379,11 +335,7 @@ It is official! CSVbox is now SOC 2 Type 2 certified. [Read more](https://csvbox
 
 * Added a Reset All Mappings button to make it easier for the users to reset and remap the columns. This button is optional and its visibility can be controlled via the Sheet settings page.
 
-<div align="left">
-
-<figure><img src=".gitbook/assets/reset mappings.jpg" alt=""><figcaption><p>Reset Mappings Button</p></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src=".gitbook/assets/reset mappings.jpg" alt=""><figcaption><p>Reset Mappings Button</p></figcaption></figure></div>
 
 ## 14 Nov 2022
 
@@ -447,11 +399,7 @@ It is official! CSVbox is now SOC 2 Type 2 certified. [Read more](https://csvbox
 
 * You now have the option to specify a default filler value for the column in case the incoming data is blank.&#x20;
 
-<div align="left">
-
-<img src=".gitbook/assets/defaultval.jpg" alt="Default Value">
-
-</div>
+<div align="left"><img src=".gitbook/assets/defaultval.jpg" alt="Default Value"></div>
 
 ## 08 August 2022
 
@@ -493,11 +441,7 @@ It is official! CSVbox is now SOC 2 Type 2 certified. [Read more](https://csvbox
 
 * Added Max Rows option to the importer dashboard. It limits the number of rows per import.
 
-<div align="left">
-
-<img src=".gitbook/assets/max_rows.jpg" alt="">
-
-</div>
+<div align="left"><img src=".gitbook/assets/max_rows.jpg" alt=""></div>
 
 ## 29 June 2022
 
@@ -554,11 +498,7 @@ These settings help to remove the non-essential options from the importer and ma
 
 * Added 'Multiple' option to Date Type columns. With this, you can provide multiple date formats that are allowed for the incoming data.
 
-<div align="left">
-
-<img src=".gitbook/assets/multiple dates.jpg" alt="">
-
-</div>
+<div align="left"><img src=".gitbook/assets/multiple dates.jpg" alt=""></div>
 
 ## 11 May 2022
 
@@ -579,9 +519,9 @@ These settings help to remove the non-essential options from the importer and ma
 
 ### Added
 
-* [**allow\_invalid** option](https://help.csvbox.io/getting-started/2.-install-code#allow\_invalid)
+* [**allow\_invalid** option](https://help.csvbox.io/getting-started/2.-install-code#allow_invalid)
 
-![allow\_invalid option](.gitbook/assets/allow\_invalid.jpg)
+![allow\_invalid option](.gitbook/assets/allow_invalid.jpg)
 
 ## 22 April 2022
 
@@ -598,7 +538,7 @@ These settings help to remove the non-essential options from the importer and ma
 * Yearly pricing plans
 * [REST File API](advanced-installation/rest-file-api.md) beta
 * New [importer events](getting-started/2.-install-code.md#events) (onReady, onClose)
-* [request\_headers](getting-started/2.-install-code.md#request\_headers) option to send headers at run-time
+* [request\_headers](getting-started/2.-install-code.md#request_headers) option to send headers at run-time
 * PATCH request type
 * **total\_rows** parameter to the [API output](getting-started/3.-receive-data.md#sample-response).
 * **original\_filename** parameter to the [import complete webhook](getting-started/3.-receive-data.md#import-complete-webhook) and importer [callback function](getting-started/2.-install-code.md#callback-function).
@@ -618,11 +558,7 @@ These settings help to remove the non-essential options from the importer and ma
 
 * Custom message for regex validation.
 
-<div align="left">
-
-<img src=".gitbook/assets/regex_message.jpg" alt="">
-
-</div>
+<div align="left"><img src=".gitbook/assets/regex_message.jpg" alt=""></div>
 
 ## 01 March 2022
 
@@ -689,11 +625,7 @@ These settings help to remove the non-essential options from the importer and ma
 
 * Included 'Custom' validation option for Date Type columns. Date formatting options available [here](https://help.csvbox.io/validations#date).
 
-<div align="left">
-
-<img src=".gitbook/assets/date validation.jpg" alt="">
-
-</div>
+<div align="left"><img src=".gitbook/assets/date validation.jpg" alt=""></div>
 
 
 
