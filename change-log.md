@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 06 January 2024
+
+* Added [**auto\_map** ](advanced-installation/rest-file-api.md#request-body)attribute to the REST File API to activate automatic column mapping during file submission.
+
 ## 03 December 2024
 
 * Optimized the code to improve import performance 2x.

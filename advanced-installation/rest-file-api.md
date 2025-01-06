@@ -31,11 +31,7 @@ After the data is pushed to the destination, the [import complete webhook ](../g
 The spreadsheet data submitted via File API will not be [validated](https://help.csvbox.io/validations) based on the rules configured in the sheet settings. The importer will attempt to push the data directly to the destination in the raw form.
 {% endhint %}
 
-{% hint style="warning" %}
-The columns in the file should be arranged in the same order as configured in the sheet template.
-{% endhint %}
-
-### Authentication
+Authentication
 
 All REST File API queries require a valid API key. You can find the API key on the **Accounts** page in the Csvbox dashboard.
 
@@ -56,15 +52,20 @@ Include your API key as a `x-csvbox-api-key` header on all API queries.&#x20;
 
 #### Request Body
 
-| Name                                                         | Type   | Description                                                                                  |
-| ------------------------------------------------------------ | ------ | -------------------------------------------------------------------------------------------- |
-| import.public\_file\_url<mark style="color:red;">\*</mark>   | String | The public URL of the spreadsheet that is to be submitted.                                   |
-| import.file\_sheet\_name                                     | String | Worksheet name in case of a file having multiple tabs.                                       |
-| import.sheet\_license\_key<mark style="color:red;">\*</mark> | String | Sheet license key                                                                            |
-| import<mark style="color:red;">\*</mark>                     | Object | Import file data                                                                             |
-| import.user                                                  | Object | Object [referencing the user](https://help.csvbox.io/getting-started#referencing-the-user)   |
-| import.options                                               | Object | Object [referencing the import options](rest-file-api.md#additional-options)                 |
-| import.dynamic\_columns                                      | Object | Object [referencing dynamic columns](https://help.csvbox.io/getting-started/dynamic-columns) |
+| Name                                                         | Type    | Description                                                                                                        |
+| ------------------------------------------------------------ | ------- | ------------------------------------------------------------------------------------------------------------------ |
+| import.public\_file\_url<mark style="color:red;">\*</mark>   | String  | The public URL of the spreadsheet that is to be submitted.                                                         |
+| import.file\_sheet\_name                                     | String  | Worksheet name in case of a file having multiple tabs.                                                             |
+| import.sheet\_license\_key<mark style="color:red;">\*</mark> | String  | Sheet license key                                                                                                  |
+| import<mark style="color:red;">\*</mark>                     | Object  | Import file data                                                                                                   |
+| import.user                                                  | Object  | Object [referencing the user](https://help.csvbox.io/getting-started#referencing-the-user)                         |
+| import.options                                               | Object  | Object [referencing the import options](rest-file-api.md#additional-options)                                       |
+| import.dynamic\_columns                                      | Object  | Object [referencing dynamic columns](https://help.csvbox.io/getting-started/dynamic-columns)                       |
+| import.auto\_map                                             | Boolean | Enable automatic column mapping in cases where exact match is not found. **auto\_map** default value is **false**. |
+
+{% hint style="warning" %}
+The columns in the file should be arranged in the same order as configured in the sheet template and the column names should match exactly. If you want the importer to auto-map the columns, configure **auto\_map** to **true**.
+{% endhint %}
 
 {% tabs %}
 {% tab title="200: OK File submitted" %}
