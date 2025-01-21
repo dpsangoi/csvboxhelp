@@ -89,7 +89,7 @@ Save the **Sheet License Key** value from the sheet "**Code**" page (that we sav
 Enter the import button label under the '**button\_text**' property. Optionally you can add CSS classes in the "**button\_classes**" property to stylize the csvbox.io import button.
 
 {% hint style="info" %}
-You can add custom user attributes (such as user\_id, user name, company name, etc) as values to the custom\_attribute_XX_ properties of the CSVBox Button element. More information on custom attributes is available [here](https://help.csvbox.io/getting-started#referencing-the-user).
+You can add custom user attributes (such as user\_id, user name, company name, etc) as values to the custom\_attribut&#x65;_&#x58;X_ properties of the CSVBox Button element. More information on custom attributes is available [here](https://help.csvbox.io/getting-started#referencing-the-user).
 {% endhint %}
 
 The csvbox.io import button should be available on your app. Your users can click the button to upload CSV files. You will get data in your Bubble Database.

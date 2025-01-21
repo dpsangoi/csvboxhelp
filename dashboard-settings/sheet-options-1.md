@@ -88,6 +88,21 @@ If a domain fails validation then the user will see the error screen as below:![
 
 </details>
 
+## File Delete Policy
+
+<details>
+
+<summary><strong>Managing User Data Storage in CSVbox</strong></summary>
+
+You have the option to either enable or disable the storage of the user uploaded data in CSVbox. This decision can be made based on privacy preferences or specific sheet requirements.
+
+<img src="../.gitbook/assets/image (16).png" alt="" data-size="original">
+
+* **Do not store the file**: By enabling this option, the user-uploaded data will not be stored in the CSVbox datastore.
+* **Store data**: Data will be stored on CSVbox storage. It will be auto deleted after one month.
+
+</details>
+
 ## Import Complete Messages
 
 <details>
@@ -168,7 +183,7 @@ If the **Allow Worksheet Selection** option is set to '**No**' then the first wo
 
 You have the ability to specify a custom URL for redirection upon successful import completion. This enhancement is designed to provide greater flexibility and streamline your workflow by directing users to a specific page immediately after the successful import.
 
-![](../.gitbook/assets/redirect\_url.jpg)
+![](../.gitbook/assets/redirect_url.jpg)
 
 
 
@@ -220,7 +235,7 @@ To enable the description input box:
 
 Go to Sheet Settings > Display Tab > Select 'File Upload' Page > Go to 'Show import description' option > Select 'Yes'
 
-![](../.gitbook/assets/import\_description\_option.jpg)
+![](../.gitbook/assets/import_description_option.jpg)
 
 By default his feature is turned OFF.
 

@@ -16,7 +16,7 @@ Here's a basic configuration that adds 2 dynamic columns **qualification** and *
 
 {% tabs %}
 {% tab title="Javascript" %}
-Pass the dynamic columns that you want to add as an array input parameter to the**`setDynamicColumns()`**method while initializing the importer.
+Pass the dynamic columns that you want to add as an array input parameter to th&#x65;**`setDynamicColumns()`**&#x6D;ethod while initializing the importer.
 
 ```javascript
 importer.setDynamicColumns([
@@ -33,7 +33,7 @@ Basic installation steps are available [here](../getting-started/#2.-install-cod
 {% endtab %}
 
 {% tab title="React" %}
-Pass the dynamic columns as an object to the **`dynamicColumns`**property of the **`CSVBoxButton`** component.&#x20;
+Pass the dynamic columns as an object to the **`dynamicColumns`**&#x70;roperty of the **`CSVBoxButton`** component.&#x20;
 
 ```javascript
   dynamicColumns={[
@@ -67,7 +67,7 @@ Add `[dynamicColumns]="dynamicColumns"` to the existing template.&#x20;
 })
 ```
 
-Then pass the dynamic columns as an object to the**`dynamicColumns`**property of the AppComponent. Example:
+Then pass the dynamic columns as an object to th&#x65;**`dynamicColumns`**&#x70;roperty of the AppComponent. Example:
 
 ```javascript
   dynamicColumns=[
@@ -100,7 +100,7 @@ Add `:dynamicColumns="dynamicColumns"` to the existing template.&#x20;
 </template>
 ```
 
-Pass the dynamic columns as an object to the**`dynamicColumns`**property of the**`CSVBoxButton`** component. Example:
+Pass the dynamic columns as an object to th&#x65;**`dynamicColumns`**&#x70;roperty of th&#x65;**`CSVBoxButton`** component. Example:
 
 ```javascript
   dynamicColumns: [
@@ -123,7 +123,7 @@ Dynamic columns will be visible in the importer along with the other regular col
 
 ### **Advanced Configuration**
 
-Dynamic columns can be configured by passing additional**`<key>: <value>`**pairs to the array input parameter of the**`setDynamicColumns()`**method.
+Dynamic columns can be configured by passing additiona&#x6C;**`<key>: <value>`**&#x70;airs to the array input parameter of th&#x65;**`setDynamicColumns()`**&#x6D;ethod.
 
 Here is an example illustrating more configuration options.
 

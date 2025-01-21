@@ -100,7 +100,7 @@ If you want to jump in and get started, we recommend testing using [webhook.site
 The files uploaded by the users can be pushed to the AWS S3 Bucket of your choice. You simply need to select the destination type as 'Amazon S3' and provide the AWS credentials, bucket/folder name, and access policy for storing the files.
 
 {% hint style="info" %}
-The data will be stored as S3 objects with the name **\{{import\_id\}}\_\{{user\_id\}}.csv** where **user\_id** is the custom user attribute that you reference via the **`setUser`**method while installing the importer code. The other 4 custom user attributes will be saved as the [user-defined metadata](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingMetadata.html) of the S3 object.
+The data will be stored as S3 objects with the name **\{{import\_id\}}\_\{{user\_id\}}.csv** where **user\_id** is the custom user attribute that you reference via the **`setUser`**&#x6D;ethod while installing the importer code. The other 4 custom user attributes will be saved as the [user-defined metadata](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingMetadata.html) of the S3 object.
 {% endhint %}
 
 The AWS credentials need the following 3 minimum policies for uploading files to S3:
@@ -121,20 +121,12 @@ Import CSV files and Excel sheets directly into your MySQL tables. How it works:
 * Connect your MySQL database by providing the credentials.
 * Specify table name where you want the data to be pushed.
 
-<div align="left">
-
-<img src="../.gitbook/assets/mysql.jpg" alt="csv to mysql">
-
-</div>
+<div align="left"><img src="../.gitbook/assets/mysql.jpg" alt="csv to mysql"></div>
 
 * Map sheet columns to the table column.
 * You can also map custom attributes to table columns.
 
-<div align="left">
-
-<img src="../.gitbook/assets/map-columns.jpg" alt="map sheet to table columns">
-
-</div>
+<div align="left"><img src="../.gitbook/assets/map-columns.jpg" alt="map sheet to table columns"></div>
 
 The user CSV data will then be directly be appended to the MySQL table.
 
@@ -152,11 +144,7 @@ Import CSV files and Excel sheets directly into your SQL Server tables. How it w
   * **Insert** - The importer will always push the incoming CSV data as new records in the database.
   * **Upsert** - The importer will check if the record exists in the database. If the record exists, then it will be updated with the incoming data from the CSV. If the record does not exist, then a new record will be inserted. The record check will be done based on the index keys specified in the mapping modal.
 
-<div align="center">
-
-<img src="../.gitbook/assets/unique.jpg" alt="Define Unique Key for Upsert Operation">
-
-</div>
+<div align="center"><img src="../.gitbook/assets/unique.jpg" alt="Define Unique Key for Upsert Operation"></div>
 
 {% hint style="warning" %}
 The **Upsert** operation will be significantly slower than the **Insert** operation. For the **Insert** operation, the records can be pushed in chunks. Whereas for the **Upsert** operation only one record can be processed at a time, and it requires multiple queries.
@@ -196,20 +184,12 @@ Import CSV files and Excel sheets directly into your PostgreSQL tables. How it w
 * Connect your PostgreSQL database by providing the credentials.
 * Specify the table name where you want the data to be pushed.
 
-<div align="left">
-
-<img src="../.gitbook/assets/PostgreSQL settings.jpg" alt="PostgreSQL Data Destination Settings">
-
-</div>
+<div align="left"><img src="../.gitbook/assets/PostgreSQL settings.jpg" alt="PostgreSQL Data Destination Settings"></div>
 
 * Map sheet columns to the table column.
 * You can also map custom attributes to table columns.
 
-<div align="left">
-
-<img src="../.gitbook/assets/map-columns.jpg" alt="map sheet to table columns">
-
-</div>
+<div align="left"><img src="../.gitbook/assets/map-columns.jpg" alt="map sheet to table columns"></div>
 
 The user CSV data will then be directly be appended to the PostgreSQL table.
 
@@ -248,7 +228,7 @@ Update an existing row if a specified value already exists in a table, and inser
 
 The column to check for uniqueness needs to be selected in the Column Mapping popup.
 
-![](../.gitbook/assets/upset\_airtable.jpg)
+![](../.gitbook/assets/upset_airtable.jpg)
 
 * If zero matches are found, a new row will be created.
 * If one match is found, that row will be updated.
@@ -267,5 +247,5 @@ Import user CSV files and Excel sheets to Webflow. More information [here](zapie
 The files uploaded by the users can be pushed to your FTP Server. You simply need to select the destination type as 'FTP' and provide the conenction details and the folder name for storing the files.
 
 {% hint style="info" %}
-The data will be stored as CSV files with the name **\{{import\_id\}}\_\{{user\_id\}}.csv** where **user\_id** is the custom user attribute that you reference via the **`setUser`**method while installing the importer code.
+The data will be stored as CSV files with the name **\{{import\_id\}}\_\{{user\_id\}}.csv** where **user\_id** is the custom user attribute that you reference via the **`setUser`**&#x6D;ethod while installing the importer code.
 {% endhint %}

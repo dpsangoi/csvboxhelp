@@ -56,7 +56,7 @@ Pass the **environment** object to the **CSVBoxImporter** function as shown belo
 Minimum version 1.1.11 of the @csvbox/react library is required to use this feature.
 {% endhint %}
 
-Pass environment variables as an object to the **`environment`**property of the **`CSVBoxButton`** component.
+Pass environment variables as an object to the **`environment`**&#x70;roperty of the **`CSVBoxButton`** component.
 
 ```jsx
 <CSVBoxButton
@@ -95,7 +95,7 @@ Pass environment variables as an object to the **`environment`**property of the 
 Minimum version 1.1.12 of the @csvbox/angular library is required to use this feature.
 {% endhint %}
 
-Pass environment variables as an object to the **`environment`**property of the AppComponent.&#x20;
+Pass environment variables as an object to the **`environment`**&#x70;roperty of the AppComponent.&#x20;
 
 ```javascript
 @Component({
@@ -142,7 +142,7 @@ Minimum version 1.1.8 of the @csvbox/vuejs library is required to use this featu
 Minimum version 1.1.5 of the @csvbox/vuejs3 library is required to use this feature.
 {% endhint %}
 
-Pass environment variables as an object to the **`environment`**property of the **`CSVBoxButton`** component.&#x20;
+Pass environment variables as an object to the **`environment`**&#x70;roperty of the **`CSVBoxButton`** component.&#x20;
 
 ```javascript
 <template>
@@ -201,11 +201,7 @@ Environment variable names should not contain spaces and other special character
 
 The **env\_name** variable name is a CSVbox reserved keyword that tags the environment. The import will be categorized in environment based on its value. You can pass values such as 'production', 'staging', 'local' to categorize the import. If no value is passed then the **env\_name** variable will default to 'default' value. The individual imports can be filtered using the **env\_name** inside CSVbox admin dashboard.
 
-<div align="left">
-
-<figure><img src="../.gitbook/assets/env.jpg" alt=""><figcaption><p>Filter via Environment on the Import page</p></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../.gitbook/assets/env.jpg" alt=""><figcaption><p>Filter via Environment on the Import page</p></figcaption></figure></div>
 
 #### Accessing the Variables
 
@@ -219,19 +215,11 @@ For instance, to reference an environment variable named "base\_url," use the fo
 
 Using environment variables in the webhook URL allows you to dynamically adjust the webhook route based on the specific environment.
 
-<div align="left">
-
-<figure><img src="../.gitbook/assets/env_placeholder.jpg" alt="" width="563"><figcaption><p>Defining Environment Placeholder</p></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../.gitbook/assets/env_placeholder.jpg" alt="" width="563"><figcaption><p>Defining Environment Placeholder</p></figcaption></figure></div>
 
 Apart from defining the environment, these variables can be used to dynamically configure the importer based on end users or any other system parameters. For example, you can define an environment variable **user\_id** and pass it to the webhook URL to dynamically configure the URL based on the end user.
 
-<div align="left">
-
-<figure><img src="../.gitbook/assets/user_id.jpg" alt="" width="360"><figcaption><p>user_id env variable</p></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../.gitbook/assets/user_id.jpg" alt="" width="360"><figcaption><p>user_id env variable</p></figcaption></figure></div>
 
 ### Encrypting Environment Variables
 
@@ -246,11 +234,7 @@ The AES Everywhere library provides a simple and effective way to encrypt and de
 * Install the [AES Everywhere library ](https://github.com/mervick/aes-everywhere)in your app.
 * Generate a secure Encryption Key via your CSVbox dashboard. Go to your app admin dashboard > Account Menu > API Keys Page > Encryption Key section.
 
-<div align="left">
-
-<figure><img src="../.gitbook/assets/eny (1).jpg" alt="" width="375"><figcaption><p>Generate Encryption Key</p></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../.gitbook/assets/eny (1).jpg" alt="" width="375"><figcaption><p>Generate Encryption Key</p></figcaption></figure></div>
 
 * Use your Encryption Key and AES Everywhere library to encrypt the environment variables.
 

@@ -47,7 +47,7 @@ To activate Private Mode:
 ![](<../.gitbook/assets/do not store.jpg>)
 
 2. Go to Sheet **Settings** > **Destination** Tab > Select **--** for the **Send Data To** option.
-3. Select **Yes** for the **Send a copy of data to client?** option**.**
+3. Select **Yes** for the **Send a copy of data to client?** optio&#x6E;**.**
 
 ![](../.gitbook/assets/sheetsettings.jpg)
 
