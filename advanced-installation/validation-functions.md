@@ -111,6 +111,21 @@ csvbox.import["total_rows"]
 csvbox.import["row_number"] //current row number starting with 1
 ```
 
+#### `csvbox.columns`
+
+This object contains the column metadata (name, type).
+
+```javascript
+//Example usage
+let column = csvbox.columns['birthdate'];
+
+if(column.type == 'date') {
+
+   // code  
+   
+}
+```
+
 {% hint style="info" %}
 &#x20;_**console.log(csvbox);**_&#x20;
 

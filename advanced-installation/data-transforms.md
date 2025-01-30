@@ -88,7 +88,7 @@ You have access to data variables included in the **`csvbox`** object. The follo
 
 #### `csvbox.row`
 
-IIt contains row data. Each cell in the row can be accessed by providing the column name. Examples:
+It contains row data. Each cell in the row can be accessed by providing the column name. Examples:
 
 ```javascript
 csvbox.row["first_name"]
@@ -118,6 +118,22 @@ csvbox.import["import_start_time"]
 csvbox.import["destination_type"]
 csvbox.import["total_rows"]
 csvbox.import["row_number"] //current row number starting with 1
+```
+
+#### `csvbox.columns`
+
+This object contains the column metadata (name, type).
+
+```javascript
+//Example usage
+let column = csvbox.columns['birthdate'];
+
+if(column.type == 'date') {
+
+   // code  
+   
+}
+
 ```
 
 {% hint style="info" %}

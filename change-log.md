@@ -4,6 +4,14 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 24 January 2025
+
+Relocated the[ File Delete Policy](dashboard-settings/sheet-options-1.md#file-delete-policy) from account-level settings to sheet-level settings.
+
+## 14 January 2025
+
+* Introduced the [`csvbox.columns`](advanced-installation/data-transforms.md#csvbox.columns) object for use in Data Transforms and Validation Functions.
+
 ## 06 January 2025
 
 * Added [**auto\_map** ](advanced-installation/rest-file-api.md#request-body)attribute to the REST File API to activate automatic column mapping during file submission.

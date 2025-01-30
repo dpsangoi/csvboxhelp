@@ -26,7 +26,7 @@ In this mode, the user data does not get stored in the CSVbox database. It is di
 Metadata that describes the import gets stored in CSVbox. This includes data such as Import ID, Import Start Time, End Time, Sheet ID, etc.
 {% endhint %}
 
-To activate this mode go to your CSVbox dashboard > Account **Settings** > For **File Delete Policy** select **Do not store the file** option.
+To activate this mode go to your CSVbox dashboard > Edit Sheet > **Security** tab > For **File Delete Policy** select **Do not store the file** option.
 
 ![](<../.gitbook/assets/do not store.jpg>)
 
@@ -42,7 +42,7 @@ Metadata that describes the import gets stored in CSVbox. This includes data suc
 
 To activate Private Mode:
 
-1. Go to your CSVbox dashboard > Account **Settings** > For **File Delete Policy** select **Do not store the file** option.
+1. Go to your CSVbox dashboard > Edit Sheet > **Security** tab > For **File Delete Policy** select **Do not store the file** option.
 
 ![](<../.gitbook/assets/do not store.jpg>)
 
