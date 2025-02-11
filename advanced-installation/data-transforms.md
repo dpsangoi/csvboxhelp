@@ -136,6 +136,19 @@ if(column.type == 'date') {
 
 ```
 
+#### `csvbox.environment`
+
+It contains the [environment variables](environment-variables.md) that are passed during importer initialization.
+
+```javascript
+// Example Usage
+if(csvbox.environment["user_id"] && csvbox.environment["user_id"] == "abc123") {
+ 
+ // code
+ 
+}
+```
+
 {% hint style="info" %}
 &#x20;_**console.log(csvbox);**_&#x20;
 
@@ -212,6 +225,19 @@ csvbox.import["original_filename"]
 csvbox.import["import_start_time"]
 csvbox.import["destination_type"]
 csvbox.import["total_rows"]
+```
+
+#### `csvbox.environment`
+
+It contains the [environment variables](environment-variables.md) that are passed during importer initialization.
+
+```javascript
+// Example Usage
+if(csvbox.environment["user_id"] && csvbox.environment["user_id"] == "abc123") {
+ 
+ // code
+ 
+}
 ```
 
 {% hint style="info" %}

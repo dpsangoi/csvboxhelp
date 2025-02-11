@@ -4,9 +4,13 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 11 February 2025
+
+* Support for [Environment Variables](advanced-installation/environment-variables.md) is now available in [Validation Functions](advanced-installation/validation-functions.md#csvbox.environment), [Data Transforms](advanced-installation/data-transforms.md#csvbox.environment), and [Virtual Columns](advanced-installation/virtual-columns.md#csvbox.environment).
+
 ## 24 January 2025
 
-Relocated the[ File Delete Policy](dashboard-settings/sheet-options-1.md#file-delete-policy) from account-level settings to sheet-level settings.
+* Relocated the[ File Delete Policy](dashboard-settings/sheet-options-1.md#file-delete-policy) from account-level settings to sheet-level settings.
 
 ## 14 January 2025
 

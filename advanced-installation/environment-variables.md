@@ -221,6 +221,17 @@ Apart from defining the environment, these variables can be used to dynamically 
 
 <div align="left"><figure><img src="../.gitbook/assets/user_id.jpg" alt="" width="360"><figcaption><p>user_id env variable</p></figcaption></figure></div>
 
+Environment variables can also be accessed in [Validation Functions](validation-functions.md), [Virtual Columns](virtual-columns.md) and [Data Transforms](data-transforms.md) Javascript code.
+
+```javascript
+// Usage
+if(csvbox.environment["user_id"] && csvbox.environment["user_id"] == "abc123") {
+ 
+ // code
+ 
+}
+```
+
 ### Encrypting Environment Variables
 
 You can encrypt environment variables using the [AES Everywhere library ](https://github.com/mervick/aes-everywhere)to protect sensitive data.
