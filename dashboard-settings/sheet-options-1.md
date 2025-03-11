@@ -245,3 +245,36 @@ A minimum of 3 characters and a maximum of 100 characters is required.&#x20;
 
 </details>
 
+## Mapping Choice
+
+<details>
+
+<summary>[Coming Soon] Option for customers to map file columns to template fields or template fields to file columns.</summary>
+
+**Mapping Choice** feature gives users greater flexibility in mapping file columns to template fields—or vice versa.
+
+#### How It Works:
+
+By default, on the column mapping screen:
+
+* **Template Fields** are static and displayed on the left.
+* **Uploaded File Columns** appear on the right in a dropdown, allowing users to map them to the corresponding template fields.
+
+![](<../.gitbook/assets/image (17).png>)
+
+With the **Mapping Choice** option, users can **reverse this mapping direction**:
+
+* Selecting **"Template Fields"** as the Mapping Choice flips the layout.
+
+![](<../.gitbook/assets/image (19).png>)
+
+* **File Columns** become static on the left, while **Template Fields** appear in the dropdown on the right, allowing users to match them accordingly.
+
+![](<../.gitbook/assets/image (18).png>)
+
+This added flexibility helps accommodate different file structures and user preferences, making the mapping process more intuitive.
+
+</details>
+
+
+
