@@ -274,6 +274,10 @@ With the **Mapping Choice** option, users can **reverse this mapping direction**
 
 This added flexibility helps accommodate different file structures and user preferences, making the mapping process more intuitive.
 
+{% hint style="info" %}
+The **"Template Fields"** Mapping Choice is **not compatible** with the[ **Ignore Columns**](../advanced-installation/ignored-columns.md) functionality.
+{% endhint %}
+
 </details>
 
 
