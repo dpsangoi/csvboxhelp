@@ -1,5 +1,5 @@
 ---
-description: Personalize the importer with customize colors, fonts & logo
+description: Personalize the importer with custom colors, fonts & logo
 ---
 
 # Styling
