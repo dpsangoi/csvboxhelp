@@ -16,7 +16,7 @@ The **Custom Theme** option, allows you to personalize the appearance of the imp
 #### **Branding Enhancements**
 
 * **Upload Your Logo** – Add your company logo to the importer for a fully branded experience.
-* **Advanced Customization** – If you require additional design tweaks beyond the provided options, [contact us](../getting-started/1.-add-template.md)—we’re happy to assist with custom styling.
+* **Advanced Customization** – If you require additional design tweaks beyond the provided options, [contact us](https://share.hsforms.com/1ubpg6RBoQgKOISkRMEViwg5auur)—we’re happy to assist with custom styling.
 
 {% hint style="info" %}
 Custom Theme styling options are **only available for** [**Pro plan**](https://csvbox.io/#pricing) **and above.**

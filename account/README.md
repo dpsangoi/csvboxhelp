@@ -35,5 +35,12 @@ Your subscription can be canceled for one of the following reasons:
 
 We will send you an email notification when your monthly usage hits 80% and 100%, so you have enough time to react and adapt your plan.
 
+## Converting yearly subscription into a monthly subscription
+
+You cannot convert your yearly subscription to monthly by yourself. Please [contact us](https://share.hsforms.com/1ubpg6RBoQgKOISkRMEViwg5auur) for the same.
+
+\
+
+
 
 

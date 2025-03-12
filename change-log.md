@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 12 March 2025
+
+* Added [Mapping Choices](dashboard-settings/sheet-options-1.md#mapping-choice) - option for customers to map file columns to template fields or template fields to file columns.
+
 ## 11 February 2025
 
 * Support for [Environment Variables](advanced-installation/environment-variables.md) is now available in [Validation Functions](advanced-installation/validation-functions.md#csvbox.environment), [Data Transforms](advanced-installation/data-transforms.md#csvbox.environment), and [Virtual Columns](advanced-installation/virtual-columns.md#csvbox.environment).
