@@ -39,7 +39,7 @@
 * [Website](https://csvbox.io)
 * [Login](https://app.csvbox.io/login)
 * [Change Log](change-log.md)
-* [Suggestions](https://csvbox.kampsite.co/)
+* [Suggestions](https://csvbox.canny.io/)
 
 ## Legal
 
