@@ -13,6 +13,8 @@ The **Custom Theme** option, allows you to personalize the appearance of the imp
 3. **Live Preview** – Click the **Preview** button to instantly see how your changes affect the importer’s appearance.
 4. **Save & Apply** – Once satisfied with the customization, click **Save** to apply the theme.
 
+<figure><img src="../.gitbook/assets/styling.png" alt=""><figcaption><p>Styling options</p></figcaption></figure>
+
 #### **Branding Enhancements**
 
 * **Upload Your Logo** – Add your company logo to the importer for a fully branded experience.

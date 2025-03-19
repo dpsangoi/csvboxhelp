@@ -4,6 +4,12 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 17 March 2025
+
+* Expanded styling options with customizable colors, fonts, and layout sizes, allowing for a more consistent and professional appearance.
+
+<figure><img src=".gitbook/assets/styling.png" alt=""><figcaption></figcaption></figure>
+
 ## 12 March 2025
 
 * Added [Mapping Choices](dashboard-settings/sheet-options-1.md#mapping-choice) - option for customers to map file columns to template fields or template fields to file columns.
