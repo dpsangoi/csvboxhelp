@@ -278,5 +278,30 @@ The **"Template Fields"** Mapping Choice is **not compatible** with the[ **Ignor
 
 </details>
 
+## Zero Template Columns
 
+<details>
+
+<summary>Accept file submissions <strong>without requiring any predefined template columns</strong></summary>
+
+This is useful in scenarios where you want to allow users to upload files with their own structure, without enforcing a strict column format.
+
+#### **How It Works**
+
+* By default, CSVBox requires at least one template column for mapping.
+* Configuring **"Allow Zero Template Columns"** to "Yes" lets users submit files **without any predefined template columns**, providing complete flexibility.
+* This setting can be combined with the [**Unmapped Columns**](../advanced-installation/unmapped-columns.md) feature, allowing users to upload files with **any set of columns**, without the need for a predefined template structure.
+
+![](../.gitbook/assets/sleekshot.png)
+
+#### **When to Use This Feature**
+
+* When you want to **fully accommodate user-defined file formats**.
+* When you prefer **not to enforce a rigid template**, giving users the freedom to submit files as they are.
+
+
+
+</details>
+
+## M
 
