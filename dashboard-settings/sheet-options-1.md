@@ -299,9 +299,8 @@ This is useful in scenarios where you want to allow users to upload files with t
 * When you want to **fully accommodate user-defined file formats**.
 * When you prefer **not to enforce a rigid template**, giving users the freedom to submit files as they are.
 
-
+{% hint style="info" %}
+For this feature to work effectively, ensure that **Allow Unmapped Columns** is set to **"Yes"** along with "**Show Unmapped Columns on Validation Screen" selection.** This ensures that users can review and verify file columns before submission.
+{% endhint %}
 
 </details>
-
-## M
-
