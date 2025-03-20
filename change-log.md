@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 20 March 2025
+
+* Added support for file submissions without requiring predefined template columns. Check out [Zero Template Column](dashboard-settings/sheet-options-1.md#zero-template-columns) functionality
+
 ## 17 March 2025
 
 * Expanded styling options with customizable colors, fonts, and layout sizes, allowing for a more consistent and professional appearance.
