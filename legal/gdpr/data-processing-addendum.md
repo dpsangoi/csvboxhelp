@@ -7,6 +7,10 @@ description: 'Last Modified: November 21, 2022'
 {% hint style="info" %}
 Summary of main changes
 
+Mar 21, 2024
+
+* Added OpenAI as Sub Processor.
+
 Nov 21, 2022
 
 * Removed ArvanCloud as Sub Processor.
@@ -92,6 +96,7 @@ Additionally, here is the list of Sub-Processors:
 6. Hubspot: Customer Service
 7. Sender.net: Emails
 8. Hotjar: Behavior Analytics
+9. OpenAI: AI Services
 
 ### Governing Law and Jurisdiction
 
