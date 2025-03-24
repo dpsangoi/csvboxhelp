@@ -8,7 +8,7 @@ description: A record of all notable changes made to the application.
 
 * Added OpenAI to the list of [Sub Processors](legal/gdpr/data-processing-addendum.md#sub-processors) in the [DPA](legal/gdpr/data-processing-addendum.md).&#x20;
 * Why is OpenAI added as a subprocessor?\
-  CSVbox leverages OpenAI’s industry-leading AI capabilities to enhance functionality within the importer app. As we build new AI-powered features, OpenAI has been included as a subprocessor. No end-user data will be shared with OpenAI.
+  CSVbox leverages OpenAI’s industry-leading AI capabilities to enhance functionality within the importer app. As we build new AI-powered features, OpenAI has been included as a subprocessor.&#x20;
 
 ## 20 March 2025
 
