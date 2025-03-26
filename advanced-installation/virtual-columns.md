@@ -310,6 +310,28 @@ if(csvbox.environment["user_id"] && csvbox.environment["user_id"] == "abc123") {
 }
 ```
 
+#### `csvbox.columns`
+
+This object contains the column metadata (name, type).
+
+```javascript
+//Example usage
+let column = csvbox.columns['birthdate'];
+
+if(column.type == 'date') {
+
+   // code  
+   
+}
+
+if(column.isDynamic) {
+   
+   // this is a dynamic column
+   // code  
+   
+}
+```
+
 {% hint style="warning" %}
 Data from only the virtual columns that are defined before the current virtual column are available for use.
 {% endhint %}

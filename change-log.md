@@ -4,6 +4,13 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 26 March 2025
+
+* **Introduced the `column.isDynamic` property** in the [`csvbox.columns`](advanced-installation/data-transforms.md#csvbox.columns) object to identify Dynamic Columns. This is now available in Data Transforms, Validation Functions, and Virtual Columns.
+* Introduced a new configuration option to restrict adding new rows on the Verify Data screen.
+
+<div align="left"><figure><img src=".gitbook/assets/sleekshot.png" alt="" width="375"><figcaption><p>Adding rows option</p></figcaption></figure></div>
+
 ## 21 March 2025
 
 * Added OpenAI to the list of [Sub Processors](legal/gdpr/data-processing-addendum.md#sub-processors) in the [DPA](legal/gdpr/data-processing-addendum.md).&#x20;

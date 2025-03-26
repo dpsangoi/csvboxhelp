@@ -292,7 +292,7 @@ This is useful in scenarios where you want to allow users to upload files with t
 * Configuring **"Allow Zero Template Columns"** to "Yes" lets users submit files **without any predefined template columns**, providing complete flexibility.
 * This setting can be combined with the [**Unmapped Columns**](../advanced-installation/unmapped-columns.md) feature, allowing users to upload files with **any set of columns**, without the need for a predefined template structure.
 
-![](../.gitbook/assets/sleekshot.png)
+![](<../.gitbook/assets/sleekshot (1).png>)
 
 #### **When to Use This Feature**
 

@@ -134,6 +134,13 @@ if(column.type == 'date') {
    
 }
 
+if(column.isDynamic) {
+   
+   // this is a dynamic column
+   // code  
+   
+}
+
 ```
 
 #### `csvbox.environment`
@@ -240,9 +247,31 @@ if(csvbox.environment["user_id"] && csvbox.environment["user_id"] == "abc123") {
 }
 ```
 
-{% hint style="info" %}
-&#x20;_**console.log(csvbox);**_&#x20;
+#### `csvbox.columns`
 
+This object contains the column metadata (name, type).
+
+```javascript
+//Example usage
+let column = csvbox.columns['birthdate'];
+
+if(column.type == 'date') {
+
+   // code  
+   
+}
+
+if(column.isDynamic) {
+   
+   // this is a dynamic column
+   // code  
+   
+}
+```
+
+#### _**console.log(csvbox);**_&#x20;
+
+{% hint style="info" %}
 With this statement, you can print all the available variables in the debugging console.
 {% endhint %}
 
