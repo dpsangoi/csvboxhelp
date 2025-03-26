@@ -6,7 +6,7 @@ description: A record of all notable changes made to the application.
 
 ## 26 March 2025
 
-* **Introduced the `column.isDynamic` property** in the [`csvbox.columns`](advanced-installation/data-transforms.md#csvbox.columns) object to identify Dynamic Columns. This is now available in Data Transforms, Validation Functions, and Virtual Columns.
+* **Introduced the `column.isDynamic` property** in the [`csvbox.columns`](advanced-installation/data-transforms.md#csvbox.columns) object to identify Dynamic Columns. This is now available in Data Transforms and Validation Functions.
 * Introduced a new configuration option to restrict adding new rows on the Verify Data screen.
 
 <div align="left"><figure><img src=".gitbook/assets/sleekshot.png" alt="" width="375"><figcaption><p>Adding rows option</p></figcaption></figure></div>
