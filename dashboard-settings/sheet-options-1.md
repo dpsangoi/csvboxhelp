@@ -304,3 +304,18 @@ For this feature to work effectively, ensure that **Allow Unmapped Columns** is 
 {% endhint %}
 
 </details>
+
+## Date Formatting for Excel
+
+<details>
+
+<summary>Option to specify the default date format for Excel files</summary>
+
+{% hint style="info" %}
+coming soon
+{% endhint %}
+
+</details>
+
+
+
