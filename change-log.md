@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 07 April 2025
+
+* Added support for bulk adding columns using a sample CSV file. More info [here](dashboard-settings/add-columns-via-csv.md).
+
 ## 26 March 2025
 
 * **Introduced the `column.isDynamic` property** in the [`csvbox.columns`](advanced-installation/data-transforms.md#csvbox.columns) object to identify Dynamic Columns. This is now available in Data Transforms and Validation Functions.

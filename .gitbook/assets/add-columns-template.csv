@@ -1,0 +1,6 @@
+﻿Column Name,Display Label,Info Hint,Column Type,Is Required,Mapping Keywords
+Name,Name,Employee full name,Text,1,
+Age,Age,Employee age,Number,0,
+Email,Email ID,Employee official email ID,Email,0,EmailID
+DOB,Date of Birth,Employee Date of Birth,Text,0,Birthdate
+Dept,Department,Current work department,Text,0,"Department, division, unit, branch"

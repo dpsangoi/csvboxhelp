@@ -7,7 +7,7 @@
   * [3. Receive Data](getting-started/3.-receive-data.md)
 * [Dashboard Settings](dashboard-settings/README.md)
   * [Column Options](dashboard-settings/sheet-options.md)
-  * [Add Columns via CSV](dashboard-settings/add-columns-via-csv.md)
+  * [Bulk Add Columns](dashboard-settings/add-columns-via-csv.md)
   * [Validations](dashboard-settings/validations.md)
   * [Sheet Options](dashboard-settings/sheet-options-1.md)
   * [Styling](dashboard-settings/styling.md)
