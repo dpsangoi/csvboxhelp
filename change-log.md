@@ -4,6 +4,11 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 14 April 2025
+
+* **Introduced the `column.isUnmapped` property** in the [`csvbox.columns`](advanced-installation/data-transforms.md#csvbox.columns) object to identify Unmapped Columns. This is now available in Data Transforms and Validation Functions.
+* Added support for Unmapped Columns in Server Side Validation, allowing validation errors to be shown for Unmapped Columns.
+
 ## 07 April 2025
 
 * Added support for bulk adding columns using a sample CSV file. More info [here](dashboard-settings/add-columns-via-csv.md).

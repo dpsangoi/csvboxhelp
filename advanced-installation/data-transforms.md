@@ -141,6 +141,13 @@ if(column.isDynamic) {
    
 }
 
+if(column.isUnmapped) {
+   
+   // this is a unmapped column
+   // code  
+   
+}
+
 ```
 
 #### `csvbox.environment`
@@ -264,6 +271,13 @@ if(column.type == 'date') {
 if(column.isDynamic) {
    
    // this is a dynamic column
+   // code  
+   
+}
+
+if(column.isUnmapped) {
+   
+   // this is a unmapped column
    // code  
    
 }
