@@ -10,7 +10,7 @@ Log in to [csvbox.io](https://app.csvbox.io/login).
 
 Add a sheet.
 
-<img src="../.gitbook/assets/image (3).png" alt="" data-size="original">
+<img src="../.gitbook/assets/image (3) (1).png" alt="" data-size="original">
 
 Add columns to the sheet as per your requirement.
 
@@ -50,7 +50,7 @@ Go back to your Csvbox sheet and pick the Notion database from the list.
 
 Click the "**Map Columns**" button and map the sheet columns to the Notion database columns.
 
-![](<../.gitbook/assets/image (5).png>)
+![](<../.gitbook/assets/image (5) (1).png>)
 
 Click the "**Save**" button.
 

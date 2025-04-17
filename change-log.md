@@ -4,6 +4,20 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 17 April 2025
+
+* Introduced a setting to choose the default table view on the Verify Data screen — users can now select between "Show all rows" and "Show invalid rows only."
+
+<div align="left"><figure><img src=".gitbook/assets/sleekshot.png" alt="" width="375"><figcaption></figcaption></figure></div>
+
+<div align="left"><figure><img src=".gitbook/assets/image (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
+
+* Added a configuration option to set the default number of rows displayed on the Verify Data screen.
+
+<div align="left"><figure><img src=".gitbook/assets/image (2).png" alt="" width="375"><figcaption></figcaption></figure></div>
+
+<div align="left"><figure><img src=".gitbook/assets/image (3).png" alt="" width="375"><figcaption></figcaption></figure></div>
+
 ## 14 April 2025
 
 * **Introduced the `column.isUnmapped` property** in the [`csvbox.columns`](advanced-installation/data-transforms.md#csvbox.columns) object to identify Unmapped Columns. This is now available in Data Transforms and Validation Functions.
@@ -18,7 +32,7 @@ description: A record of all notable changes made to the application.
 * **Introduced the `column.isDynamic` property** in the [`csvbox.columns`](advanced-installation/data-transforms.md#csvbox.columns) object to identify Dynamic Columns. This is now available in Data Transforms and Validation Functions.
 * Introduced a new configuration option to restrict adding new rows on the Verify Data screen.
 
-<div align="left"><figure><img src=".gitbook/assets/sleekshot.png" alt="" width="375"><figcaption><p>Adding rows option</p></figcaption></figure></div>
+<div align="left"><figure><img src=".gitbook/assets/sleekshot (1).png" alt="" width="375"><figcaption><p>Adding rows option</p></figcaption></figure></div>
 
 ## 21 March 2025
 
@@ -371,7 +385,7 @@ It is official! CSVbox is now SOC 2 Type 2 certified. [Read more](https://csvbox
 
 * Added [1-click Resubmit button](dashboard-settings/sheet-options-1.md#1-click-to-resubmit-the-same-csv-file-again) to trigger a new import on the recently submitted file.
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption><p>Resubmit</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (2).png" alt=""><figcaption><p>Resubmit</p></figcaption></figure>
 
 ## 25 Nov 2022
 
