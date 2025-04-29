@@ -11,6 +11,7 @@
   * [Validations](dashboard-settings/validations.md)
   * [Sheet Options](dashboard-settings/sheet-options-1.md)
   * [Styling](dashboard-settings/styling.md)
+  * [AI Bulk Transforms](dashboard-settings/ai-bulk-transforms.md)
 * [Advanced Installation](advanced-installation/README.md)
   * [Dynamic Columns](advanced-installation/dynamic-columns.md)
   * [Virtual Columns](advanced-installation/virtual-columns.md)
