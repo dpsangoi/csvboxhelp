@@ -22,9 +22,9 @@ To enable this feature for a sheet:
 
 Once enabled, a new **"Bulk Transform"** option will appear in the Verify step of the import flow for each column.
 
-<figure><img src="../.gitbook/assets/sleekshot (4).png" alt=""><figcaption><p>Bulk Transfor Button</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/sleekshot (4).png" alt=""><figcaption><p>Bulk Transform Button</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/sleekshot (5).png" alt=""><figcaption><p>AI Bulk Transform Screen</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/sleekshot.png" alt=""><figcaption><p>AI Bulk Transform Screen</p></figcaption></figure>
 
 ### What Can It Do?
 

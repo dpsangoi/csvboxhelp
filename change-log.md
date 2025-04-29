@@ -4,11 +4,15 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 29 April 2025
+
+* Introduced **AI Bulk Transformations**, allowing users to apply AI-driven changes to uploaded data using natural language prompts — all directly in the importer. Supports multi-language input, column-level modifications, and ensures complete privacy with no external data sharing. More information [here](dashboard-settings/ai-bulk-transforms.md).
+
 ## 17 April 2025
 
 * Introduced a setting to choose the default table view on the Verify Data screen — users can now select between "Show all rows" and "Show invalid rows only."
 
-<div align="left"><figure><img src=".gitbook/assets/sleekshot.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src=".gitbook/assets/sleekshot (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 <div align="left"><figure><img src=".gitbook/assets/image (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
@@ -32,7 +36,7 @@ description: A record of all notable changes made to the application.
 * **Introduced the `column.isDynamic` property** in the [`csvbox.columns`](advanced-installation/data-transforms.md#csvbox.columns) object to identify Dynamic Columns. This is now available in Data Transforms and Validation Functions.
 * Introduced a new configuration option to restrict adding new rows on the Verify Data screen.
 
-<div align="left"><figure><img src=".gitbook/assets/sleekshot (1).png" alt="" width="375"><figcaption><p>Adding rows option</p></figcaption></figure></div>
+<div align="left"><figure><img src=".gitbook/assets/sleekshot (1) (1).png" alt="" width="375"><figcaption><p>Adding rows option</p></figcaption></figure></div>
 
 ## 21 March 2025
 
