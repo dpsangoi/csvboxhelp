@@ -305,11 +305,11 @@ For this feature to work effectively, ensure that **Allow Unmapped Columns** is 
 
 </details>
 
-## Date Formatting for Excel
+## Formatting in Excel Files
 
 <details>
 
-<summary>Option to specify the default date format for Excel files</summary>
+<summary>Option to specify the default formatting for Excel files</summary>
 
 {% hint style="info" %}
 coming soon
