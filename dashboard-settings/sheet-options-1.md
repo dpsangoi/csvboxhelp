@@ -309,11 +309,120 @@ For this feature to work effectively, ensure that **Allow Unmapped Columns** is 
 
 <details>
 
-<summary>Option to specify the default formatting for Excel files</summary>
+<summary>Handling Excel File Formatting: Dates, Times &#x26; Numbers</summary>
+
+When importing data from Excel files, you may encounter unexpected issues due to the way Excel internally stores and formats different types of values—especially **Dates**, **Times**, and **Numbers**. Unlike CSV files, Excel files can retain formatting, formulas, and cell types, which can lead to inconsistencies or misinterpretation during import.
+
+To help you gain better control over how your data is interpreted, csvbox now provides customizable options to configure the way Excel data is processed.
+
+### Date Formatting Issues in Excel
+
+Excel stores dates in one of two ways:
+
+1. **As formatted text**: e.g., `"03/04/2024"`
+2. **As numeric serial values**: e.g., `45025`, which represents the number of days since January 1, 1900.
+
+This dual nature can lead to problems during import, especially when dealing with international date formats. For example:
+
+* `"03/04/2024"` might be **March 4** in the U.S. (MM/DD/YYYY)
+* ...or **April 3** in Europe (DD/MM/YYYY)
+
+If Excel stores the date as a number (`45025`) and the importer misinterprets the format, the final result could be completely off.
+
+To address this, csvbox lets you explicitly define how Excel date values should be interpreted:
+
+#### **Date Handling Options**
+
+* **Default**\
+  Uses Excel’s built-in logic to interpret the cell as a date. Best for files with consistent formatting and locale.
+* **MM/DD/YYYY**\
+  Forces interpretation using the **Month-Day-Year** format. Example:\
+  `"03/04/2024"` → March 4, 2024
+* **DD/MM/YYYY**\
+  Forces interpretation using the **Day-Month-Year** format. Example:\
+  `"03/04/2024"` → April 3, 2024
+* **Custom**\
+  You can define a custom format like `YYYY-MM-DD`, `DD-MMM-YYYY`, or any other pattern based on how your Excel file stores the date.\
+  Example:\
+  `"12-Mar-2024"` → Use custom format `DD-MMM-YYYY`
 
 {% hint style="info" %}
-coming soon
+If your dates are inconsistently formatted or include a mix of text and numeric formats, consider cleaning them in Excel first, or use the **Custom** option for better accuracy.
 {% endhint %}
+
+***
+
+### Time Formatting Issues in Excel
+
+Excel also allows time values to be stored either as:
+
+* **Numeric fractions** of a day (e.g., `0.5` represents 12:00 PM)
+* **Formatted time strings** (e.g., `"14:30"`, `"2:30 PM"`, `"14:30:00"`)
+
+This can create parsing issues, especially if some cells are stored as numbers and others as formatted text. For example:
+
+* `0.75` → might mean `6:00 PM` (75% of a day)
+* `"06:00"` → clearly indicates 6 AM, but may be read as a string
+
+To avoid misinterpretation, csvbox provides options for:
+
+#### **Time Handling Options**
+
+* **Default**\
+  Uses Excel’s formatting as-is. Suitable for simple, clean files.
+* **HH:MM:SS**\
+  Example: `"14:30:00"` → 2:30 PM
+* **HH:MM AM/PM**\
+  Example: `"2:30 PM"` → 14:30
+* **Custom**\
+  Define your own time pattern like `HH:mm`, `h:mm a`, etc., based on your file’s content.
+
+***
+
+### Number Formatting Issues in Excel
+
+Excel often applies formatting to numeric values that changes how they appear:
+
+* A raw value of `0.15` could be displayed as `15%`
+* A value of `1200` might appear as `$1,200.00`
+* A long number like `1234567890123` may be auto-converted to scientific notation (`1.23E+12`)
+
+These formatted displays can mislead the importer if you're expecting clean numbers.
+
+#### **Number Interpretation Options**
+
+* **Formatted Values**\
+  Imports numbers exactly as shown in Excel. Examples:
+  * `$1,200.00` stays `$1,200.00`
+  * `15%` stays `15%`
+  * `1.23E+12` stays in scientific notation
+* **Original RAW Values**\
+  Strips all formatting and imports the core numeric value. Examples:
+  * `$1,200.00` → `1200`
+  * `15%` → `0.15`
+  * `1.23E+12` → `1230000000000`
+
+{% hint style="info" %}
+Use RAW if you’re planning to run calculations or validations on numeric fields post-import.
+{% endhint %}
+
+***
+
+### How to Use These Settings
+
+When setting up your Excel-based import:
+
+1. Navigate to the **Sheet Settings > Options** panel in your CSVbox dashboard.
+2. Scroll to the **Formatting in Excel** section.
+3. Choose your preferred options for:
+   * **Date Format**
+   * **Time Format**
+   * **Number Interpretation**
+4. Save the configuration.
+
+***
+
+These new controls ensure your data is interpreted as intended—minimizing errors and reducing the need for pre-processing in Excel before importing.
 
 </details>
 
