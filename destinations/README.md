@@ -20,6 +20,7 @@ description: >-
 11. [Zapier](./#zapier)
 12. [Notion](./#notion)
 13. [Webflow](./#webflow)
+14. [MongoDB](./#mongodb)
 
 {% hint style="info" %}
 At a time only one destination can be selected per sheet.
@@ -249,3 +250,24 @@ The files uploaded by the users can be pushed to your FTP Server. You simply nee
 {% hint style="info" %}
 The data will be stored as CSV files with the name **\{{import\_id\}}\_\{{user\_id\}}.csv** where **user\_id** is the custom user attribute that you reference via the **`setUser`**&#x6D;ethod while installing the importer code.
 {% endhint %}
+
+## MongoDB
+
+coming soon
+
+Easily import CSV files or Excel sheets into your MongoDB collections. Here's how:
+
+1. **Choose MongoDB as the destination**\
+   Start by selecting 'MongoDB' as your destination type.
+2. **Connect your database**\
+   Enter your MongoDB credentials to establish a secure connection.
+3. **Set the target collection**\
+   Specify the name of the collection where the data should be inserted.
+4. **Map columns to fields**\
+   Match the columns in your sheet to the corresponding fields in your MongoDB collection.
+5. **Define field data types**\
+   Assign appropriate data types to each field to ensure accurate data import.
+6. **Use custom attribute mapping (optional)**\
+   You can also map custom attributes from the CSV to specific fields in your collection.
+
+Once set up, all submitted CSV data will be automatically inserted into your MongoDB collection.
