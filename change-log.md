@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 20 May 2025
+
+* Added MongoDB as data destination.
+
 ## 29 April 2025
 
 * Introduced **AI Bulk Transformations**, allowing users to apply AI-driven changes to uploaded data using natural language prompts — all directly in the importer. Supports multi-language input, column-level modifications, and ensures complete privacy with no external data sharing. More information [here](dashboard-settings/ai-bulk-transforms.md).
