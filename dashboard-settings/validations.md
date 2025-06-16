@@ -18,6 +18,33 @@ This is the default column data type. It accepts any alphanumeric string. You ca
 
 This **Number** column data type accepts integer and float strings only. Additionally, you can provide the `Min Value` and `Max Value` parameters to specify the acceptable range of numbers.
 
+<details>
+
+<summary>Values for Excel Setting</summary>
+
+When importing data from Excel files, you may encounter unexpected issues due to the way Excel internally stores and formats different types of values—especially **Numbers**. Excel often applies formatting to numeric values that changes how they appear:
+
+* A raw value of `0.15` could be displayed as `15%`
+* A value of `1200` might appear as `$1,200.00`
+* A long number like `1234567890123` may be auto-converted to scientific notation (`1.23E+12`)
+
+These formatted displays can mislead the importer if you're expecting clean numbers. With CSVbox you have the following options to select the way the values are interpretated for numeric columns.
+
+1. **Formatted Values** Imports numbers exactly as shown in Excel. Examples:
+   * `$1,200.00` stays `$1,200.00`
+   * `15%` stays `15%`
+   * `1.23E+12` stays in scientific notation
+2. **Original RAW Values** Strips all formatting and imports the core numeric value. Examples:
+   * `$1,200.00` → `1200`
+   * `15%` → `0.15`
+   * `1.23E+12` → `1230000000000`
+
+{% hint style="info" %}
+Use RAW if you’re planning to run calculations or validations on numeric fields post-import.
+{% endhint %}
+
+</details>
+
 ### Email
 
 The column under validation must be formatted as an email address.
@@ -224,7 +251,7 @@ For each list item, the `value` field is mandatory while `display_label` is opti
 You have the option to attach the [custom user attributes](../getting-started/2.-install-code.md#referencing-the-user) as query parameters to the Dynamic List API request. **csvbox\_** prefix will be added to the custom user attribute query parameters. This will help you identify the users/environment and return back a relevant list of values.
 {% endhint %}
 
-For authenticating the requests you can pass the authorization headers via the [**dynamic\_list\_request\_headers** ](../getting-started/2.-install-code.md#dynamic\_list\_request\_headers)initialization option.
+For authenticating the requests you can pass the authorization headers via the [**dynamic\_list\_request\_headers** ](../getting-started/2.-install-code.md#dynamic_list_request_headers)initialization option.
 
 ### Dependent Dynamic List
 
@@ -232,11 +259,7 @@ Sometimes, you may want to use more than one list such that the items available 
 
 Let us call them dependent lists. Below is an example of a dependent list.
 
-<div align="left">
-
-<img src="../.gitbook/assets/conditional list.png" alt="Conditional dependent list">
-
-</div>
+<div align="left"><img src="../.gitbook/assets/conditional list.png" alt="Conditional dependent list"></div>
 
 You can see that the options in the City column depend on the selection made in the Country column. If you select 'USA' in Drop Down 1, then you will cities from the USA, but if you select Canada in Drop Down 1, then you see the cities from Canada in Drop Down 2.
 
@@ -308,7 +331,7 @@ The API should return the list of values in the JSON format as shown below.&#x20
 The importer will attach the [custom user attributes](../getting-started/2.-install-code.md#referencing-the-user) as query parameters to the Dynamic List API request. **csvbox\_** prefix will be added to the custom user attribute query parameters. This will help you identify the users/environment and return back a relevant list of values.
 {% endhint %}
 
-For authenticating the requests you can pass the authorization headers via the [**dynamic\_list\_request\_headers** ](../getting-started/2.-install-code.md#dynamic\_list\_request\_headers)initialization option.
+For authenticating the requests you can pass the authorization headers via the [**dynamic\_list\_request\_headers** ](../getting-started/2.-install-code.md#dynamic_list_request_headers)initialization option.
 
 ## Other Validation Options
 
