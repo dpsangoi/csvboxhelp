@@ -4,6 +4,16 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 12 June 2026
+
+*   Added **Excel Value Formatting Options** – Choose how numeric values are imported:
+
+    * **Formatted**: As shown in Excel (e.g., "$1,200.00", "15%").
+    * **RAW**: Strips formatting for clean numbers (e.g., 1200, 0.15).
+
+    Ideal for better control in calculations and validations. More info [here](https://help.csvbox.io/dashboard-settings/validations#values-for-excel-setting).\
+
+
 ## 20 May 2025
 
 * Added MongoDB as data destination.
