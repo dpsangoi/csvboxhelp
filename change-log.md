@@ -4,7 +4,7 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
-## 12 June 2026
+## 12 June 2025
 
 *   Added **Excel Value Formatting Options** – Choose how numeric values are imported:
 
