@@ -4,6 +4,11 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 08 July 2025
+
+* The importer now supports **dark** and **custom dark** themes for a better user experience.
+* Added a [`theme`](https://help.csvbox.io/getting-started/2.-install-code#theme) selection option in the installation code for applying the theme at runtime.
+
 ## 12 June 2025
 
 *   Added **Excel Value Formatting Options** – Choose how numeric values are imported:
@@ -11,8 +16,7 @@ description: A record of all notable changes made to the application.
     * **Formatted**: As shown in Excel (e.g., "$1,200.00", "15%").
     * **RAW**: Strips formatting for clean numbers (e.g., 1200, 0.15).
 
-    Ideal for better control in calculations and validations. More info [here](https://help.csvbox.io/dashboard-settings/validations#values-for-excel-setting).\
-
+    Ideal for better control in calculations and validations. More info [here](https://help.csvbox.io/dashboard-settings/validations#values-for-excel-setting).
 
 ## 20 May 2025
 
