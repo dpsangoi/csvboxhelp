@@ -4,6 +4,20 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 16 July 2025
+
+*   **Environment Variable Support for APIs** – You can now use environment variables in:
+
+    1. Dynamic List API
+    2. Multi-select Dynamic List API
+    3. Success Message API
+    4. Failed Message API
+    5. Custom headers for all the above
+
+    This makes it easier to manage configuration across environments.\
+    \
+    ![](.gitbook/assets/sleekshot.png)
+
 ## 08 July 2025
 
 * The importer now supports **dark** and **custom dark** themes for a better user experience.
@@ -30,7 +44,7 @@ description: A record of all notable changes made to the application.
 
 * Introduced a setting to choose the default table view on the Verify Data screen — users can now select between "Show all rows" and "Show invalid rows only."
 
-<div align="left"><figure><img src=".gitbook/assets/sleekshot (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src=".gitbook/assets/sleekshot (1) (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 <div align="left"><figure><img src=".gitbook/assets/image (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
@@ -54,7 +68,7 @@ description: A record of all notable changes made to the application.
 * **Introduced the `column.isDynamic` property** in the [`csvbox.columns`](advanced-installation/data-transforms.md#csvbox.columns) object to identify Dynamic Columns. This is now available in Data Transforms and Validation Functions.
 * Introduced a new configuration option to restrict adding new rows on the Verify Data screen.
 
-<div align="left"><figure><img src=".gitbook/assets/sleekshot (1) (1).png" alt="" width="375"><figcaption><p>Adding rows option</p></figcaption></figure></div>
+<div align="left"><figure><img src=".gitbook/assets/sleekshot (1) (1) (1).png" alt="" width="375"><figcaption><p>Adding rows option</p></figcaption></figure></div>
 
 ## 21 March 2025
 
