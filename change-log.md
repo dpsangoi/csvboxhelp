@@ -7,6 +7,7 @@ description: A record of all notable changes made to the application.
 ## 17 July 2025
 
 * Added support for custom error messages (via `error_message` validator) for [regex type dynamic columns](https://help.csvbox.io/advanced-installation/dynamic-columns#validator-options).
+* You can now use the `excel_value` validator with number-type dynamic columns to control whether to import **raw** or **formatted** values from Excel.
 
 ## 16 July 2025
 
