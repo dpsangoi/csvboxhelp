@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 17 July 2025
+
+* Added support for custom error messages (via `error_message` validator) for [regex type dynamic columns](https://help.csvbox.io/advanced-installation/dynamic-columns#validator-options).
+
 ## 16 July 2025
 
 *   **Environment Variable Support for APIs** – You can now use environment variables in:
