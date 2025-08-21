@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 14 August 2025
+
+* Added [**Test API**](destinations/#test-api) destination **—** sends spreadsheet data to a unique [`webhooks.csvbox.io`](https://webhooks.csvbox.io/) URL (testing-only).
+
 ## 17 July 2025
 
 * Added support for custom error messages (via `error_message` validator) for [regex type dynamic columns](https://help.csvbox.io/advanced-installation/dynamic-columns#validator-options).

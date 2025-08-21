@@ -8,19 +8,20 @@ description: >-
 # Data Destinations
 
 1. [None](./#none)
-2. [API](./#api-webhook)
-3. [Amazon S3](./#amazon-s3)
-4. [MySQL](./#mysql-database)
-5. [PostgreSQL](./#postgresql)
-6. [SQL Server ](./#sql-server)
-7. [Google Sheet](./#google-sheets)
-8. [FTP Server](./#ftp-server)
-9. [Bubble.io](./#bubble)
-10. [Airtable](./#airtable)
-11. [Zapier](./#zapier)
-12. [Notion](./#notion)
-13. [Webflow](./#webflow)
-14. [MongoDB](./#mongodb)
+2. [Test API](./#test-api)
+3. [API](./#api-webhook)
+4. [Amazon S3](./#amazon-s3)
+5. [MySQL](./#mysql-database)
+6. [PostgreSQL](./#postgresql)
+7. [SQL Server ](./#sql-server)
+8. [Google Sheet](./#google-sheets)
+9. [FTP Server](./#ftp-server)
+10. [Bubble.io](./#bubble)
+11. [Airtable](./#airtable)
+12. [Zapier](./#zapier)
+13. [Notion](./#notion)
+14. [Webflow](./#webflow)
+15. [MongoDB](./#mongodb)
 
 {% hint style="info" %}
 At a time only one destination can be selected per sheet.
@@ -29,6 +30,28 @@ At a time only one destination can be selected per sheet.
 ## None
 
 The user-uploaded data will not be pushed anywhere. The files will be, however, available for download via the csvbox.io admin.
+
+## Test API
+
+A lightweight destination to help you validate your CSVBox setup quickly—before wiring your own backend.
+
+When selected, every successful import posts the parsed spreadsheet data to a **unique HTTPS URL** hosted at [https://webhooks.csvbox.io/](https://webhooks.csvbox.io/). Example:
+
+```html
+https://webhooks.csvbox.io/b/5f3b0901-1c32-4d83-9fdd-a454e56e1938
+```
+
+Use it to confirm payload shape, headers, and delivery behavior during initial integration.
+
+{% hint style="info" %}
+**Important:** The Test API is designed **for initial testing only**. Do not use it for production data flows.
+{% endhint %}
+
+### When to use it
+
+* You’re integrating CSVBox for the first time and want to **see the JSON** CSVBox will send.
+* You need to **confirm columns, data types, and null handling** after mapper/validators run.
+* You want a **no-setup** endpoint to verify end-to-end delivery before connecting your real destination.
 
 ## API / Webhook
 
