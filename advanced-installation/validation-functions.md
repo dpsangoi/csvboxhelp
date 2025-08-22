@@ -252,6 +252,45 @@ repeatingIndices.forEach(index => {
 return errs;
 ```
 {% endtab %}
+
+{% tab title="Multi Column Duplicates" %}
+<pre class="language-javascript"><code class="lang-javascript">//Find duplicate entries in multiple columns.
+
+<strong>function findDuplicateIndices(arr1, arr2) {
+</strong>  const seen = new Map();
+  const duplicates = [];
+  arr1.forEach((value1, index) => {
+    const value2 = arr2[index];
+    const pair = `${value1},${value2}`;
+    if (seen.has(pair)) {
+      duplicates.push(seen.get(pair), index);
+    } else {
+      seen.set(pair, index);
+    }
+  });
+  return [...new Set(duplicates)];
+}
+
+const duplicates = findDuplicateIndices(csvbox.column.col1, csvbox.column.col2);
+
+let errs = [];
+
+duplicates.forEach(index => {
+  errs.push({
+    "row_id": (index + 1),
+    "column": "col1",
+    "message": "Duplicate entry."
+  });
+  errs.push({
+    "row_id": (index + 1),
+    "column": "col2",
+    "message": "Duplicate entry."
+  });
+});
+
+return errs;
+</code></pre>
+{% endtab %}
 {% endtabs %}
 
 ### Dependencies
