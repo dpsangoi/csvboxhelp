@@ -24,7 +24,7 @@ Once enabled, a new **"Bulk Transform"** option will appear in the Verify step o
 
 <figure><img src="../.gitbook/assets/sleekshot (4).png" alt=""><figcaption><p>Bulk Transform Button</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/sleekshot (1).png" alt=""><figcaption><p>AI Bulk Transform Screen</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/sleekshot (1) (1).png" alt=""><figcaption><p>AI Bulk Transform Screen</p></figcaption></figure>
 
 ### What Can It Do?
 

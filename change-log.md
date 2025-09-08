@@ -4,6 +4,15 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 08 September 2025
+
+* **New:** [Server-Side Validation](advanced-installation/server-side-validation.md) supports **table** and **row** error types.
+* **UX:** Table errors render in an alert banner above the grid; row errors appear as a badge on the row number with a pop-over on click.
+
+<figure><img src=".gitbook/assets/sse errors (1).png" alt=""><figcaption></figcaption></figure>
+
+* **API:** You can mix `table`, `row`, and `cell` errors in one response. `type` is optional and defaults to `cell`. **No breaking changes.**
+
 ## 28 August 2025
 
 * Added option to set the default row on the header selection screen. You can now choose which row is pre-selected on the Header Selection step.&#x20;
@@ -32,7 +41,7 @@ description: A record of all notable changes made to the application.
 
     This makes it easier to manage configuration across environments.\
     \
-    ![](.gitbook/assets/sleekshot.png)
+    ![](<.gitbook/assets/sleekshot (1).png>)
 
 ## 08 July 2025
 
@@ -60,7 +69,7 @@ description: A record of all notable changes made to the application.
 
 * Introduced a setting to choose the default table view on the Verify Data screen — users can now select between "Show all rows" and "Show invalid rows only."
 
-<div align="left"><figure><img src=".gitbook/assets/sleekshot (1) (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src=".gitbook/assets/sleekshot (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 <div align="left"><figure><img src=".gitbook/assets/image (1) (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
@@ -84,7 +93,7 @@ description: A record of all notable changes made to the application.
 * **Introduced the `column.isDynamic` property** in the [`csvbox.columns`](advanced-installation/data-transforms.md#csvbox.columns) object to identify Dynamic Columns. This is now available in Data Transforms and Validation Functions.
 * Introduced a new configuration option to restrict adding new rows on the Verify Data screen.
 
-<div align="left"><figure><img src=".gitbook/assets/sleekshot (1) (1) (1).png" alt="" width="375"><figcaption><p>Adding rows option</p></figcaption></figure></div>
+<div align="left"><figure><img src=".gitbook/assets/sleekshot (1) (1) (1) (1).png" alt="" width="375"><figcaption><p>Adding rows option</p></figcaption></figure></div>
 
 ## 21 March 2025
 
