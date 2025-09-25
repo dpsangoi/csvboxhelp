@@ -4,6 +4,19 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 25 September 2025
+
+* **Added – Language Support**\
+  We’ve expanded CSVBox’s multilingual capabilities! Newly supported languages include:
+  * Hindi (`hi`)
+  * Bahasa Malaysia (Malay) (`ms`)
+  * Russian (`ru`)
+  * Vietnamese (`vi`)
+  * Korean (`ko`)
+  * Bahasa Indonesia (`id`)
+  * Egyptian Arabic (`ar-EG`)
+  * Urdu (`ur`)
+
 ## 08 September 2025
 
 * **New:** [Server-Side Validation](advanced-installation/server-side-validation.md) supports **table** and **row** error types.
