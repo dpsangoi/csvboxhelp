@@ -28,6 +28,7 @@
   * [Zapier](destinations/zapier.md)
   * [Notion](destinations/notion.md)
   * [Webflow](destinations/webflow.md)
+  * [n8n](destinations/n8n.md)
   * [Private Mode](destinations/private-mode.md)
 * [Account](account/README.md)
   * [Teams](account/teams.md)
