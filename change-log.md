@@ -4,6 +4,13 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## 09 October 2025
+
+*   Added a new feature allowing users to select accepted file types for uploads — choose between **CSV**, **XLS**, and **XLSX** formats in your sheet settings.\
+
+
+    <figure><img src=".gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+
 ## 25 September 2025
 
 * **Added – Language Support**\
