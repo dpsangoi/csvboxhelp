@@ -209,7 +209,7 @@ If authentication fails:
 1. Verify exact header names (`x-csvbox-api-key`, `x-csvbox-secret-api-key`).
 2. Ensure your account and keys are active.
 3. Confirm you’re using **HTTPS**.
-4. If still failing, contact support@csvbox.io with your request ID or timestamp.
+4. If still failing, contact [support ](https://share.hsforms.com/1ubpg6RBoQgKOISkRMEViwg5auur)with your request ID or timestamp.
 
 ***
 
