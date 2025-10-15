@@ -4,7 +4,7 @@ description: >-
   validates both your API Key and Secret API Key.
 ---
 
-# API Key Auth
+# Auth API
 
 ### Overview
 
@@ -26,10 +26,6 @@ WARNING
 2. Click your profile name → **Profile → API Keys** tab.
 3. Copy your API and Secret keys.
 4. If keys are missing or compromised, click **Regenerate Key**.
-
-{% hint style="info" %}
-Secret keys are shown **only once** when generated. Store them safely in environment variables or a secrets manager.
-{% endhint %}
 
 ***
 
@@ -73,7 +69,12 @@ You can verify your credentials using this endpoint.
 {% tab title="200 OK" %}
 ```json
 {
-  "message": "successfully authenticated"
+  "message": "successfully authenticated",
+  "data": {
+    "name": "John Doe",
+    "email": "abc@xyz.com",
+    "profile_photo_url": "<url_string>"
+  }
 }
 ```
 {% endtab %}
