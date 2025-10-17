@@ -1,11 +1,19 @@
 ---
-description: 'Last Modified: November 21, 2022'
+description: 'Last Modified: October 17, 2025'
 ---
 
 # Data Processing Addendum
 
 {% hint style="info" %}
 Summary of main changes
+
+October 17, 2025
+
+* Added Sengrid as Sub Processor.
+* Added Brevo as Sub Processor.
+* Added PostHog as Sub Processor.
+* Removed Sender.net as Sub Processor.
+* Removed Hotjar as Sub Processor.
 
 Mar 21, 2024
 
@@ -93,10 +101,11 @@ Additionally, here is the list of Sub-Processors:
 3. Google Workspace: Business Apps & Collaboration Tools
 4. Paddle: Payments
 5. Rollbar: Error Logging
-6. Hubspot: Customer Service
-7. Sender.net: Emails
-8. Hotjar: Behavior Analytics
-9. OpenAI: AI Services
+6. Hubspot: CRM
+7. OpenAI: AI Services
+8. Sendgrid: Emails
+9. Brevo: Emails
+10. Posthog: Analytics
 
 ### Governing Law and Jurisdiction
 
