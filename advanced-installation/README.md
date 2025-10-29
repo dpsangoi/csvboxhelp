@@ -13,4 +13,5 @@ description: Description of additional importer options and features.
 7. [Server Side Validation](server-side-validation.md) - Validate data at your server, report back errors for correction & re-upload.
 8. [Data Transforms](data-transforms.md) - Bulk edit the dataset before pushing it to your system.
 9. [REST File API](import-links.md) - Automate CSV submissions via API.
-10. [Environment Variables](environment-variables.md) - Variables to configure the importer environment
+10. [Environment Variables](environment-variables.md) - Variables to configure the importer environment.
+11. [Auth API](auth-api.md) - Authenticate API requests to CSVBox using a secure header-based scheme.
