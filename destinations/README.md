@@ -23,8 +23,9 @@ description: >-
 14. [Webflow](./#webflow)
 15. [MongoDB](./#mongodb)
 16. [n8n](n8n.md)
-17. [Automation Platforms](automation-platforms.md)
-18. [Private Mode](private-mode.md)
+17. [Pipedream](pipedream.md)
+18. [Automation Platforms](automation-platforms.md)
+19. [Private Mode](private-mode.md)
 
 {% hint style="info" %}
 At a time only one destination can be selected per sheet.
