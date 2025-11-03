@@ -30,6 +30,7 @@
   * [Notion](destinations/notion.md)
   * [Webflow](destinations/webflow.md)
   * [n8n](destinations/n8n.md)
+  * [Pipedream](destinations/pipedream.md)
   * [Automation Platforms](destinations/automation-platforms.md)
   * [Private Mode](destinations/private-mode.md)
 * [Account](account/README.md)
