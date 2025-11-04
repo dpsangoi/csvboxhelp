@@ -7,6 +7,9 @@ description: A record of all notable changes made to the application.
 ## November 2025
 
 * Added [Supabase ](destinations/supabase.md)as data destination.
+* Newly supported languages include:
+  * Chinese (Simplified) - zh-CN
+  * Chinese (Traditional) - zh-TW
 
 ## 09 October 2025
 
