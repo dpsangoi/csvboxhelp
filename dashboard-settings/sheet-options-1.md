@@ -426,31 +426,3 @@ These new controls ensure your data is interpreted as intended—minimizing erro
 
 </details>
 
-## Hide Unmapped Columns
-
-<details>
-
-<summary>H<strong>ide unmapped columns by default on the Verify Data Screen</strong></summary>
-
-You can choose to **hide unmapped columns by default** on the **Verify Data** screen of the importer. This helps keep the interface clean and focused, showing only the important fields to the user.
-
-**How it works**
-
-* When enabled, columns in the uploaded CSV that are **not mapped** will be **hidden** on the Verify Data screen.
-* Columns marked as **Required** will always remain visible.
-* Even though these unmapped columns are hidden from view, their data will still be **pushed to the destination** exactly as before.
-* This makes it easier for users to review and verify only the relevant columns before submission.
-
-**Settings**
-
-* **Option name:** Hide columns that are not mapped
-* **Default value:** No
-* **Available values:** Yes / No
-* Set it to **Yes** to hide unmapped columns.
-
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
-
-</details>
-
-
-
