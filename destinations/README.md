@@ -22,10 +22,11 @@ description: >-
 13. [Notion](./#notion)
 14. [Webflow](./#webflow)
 15. [MongoDB](./#mongodb)
-16. [n8n](n8n.md)
-17. [Pipedream](pipedream.md)
-18. [Automation Platforms](automation-platforms.md)
-19. [Private Mode](private-mode.md)
+16. [Supabase](supabase.md)
+17. [n8n](n8n.md)
+18. [Pipedream](pipedream.md)
+19. [Automation Platforms](automation-platforms.md)
+20. [Private Mode](private-mode.md)
 
 {% hint style="info" %}
 At a time only one destination can be selected per sheet.
@@ -280,8 +281,6 @@ The data will be stored as CSV files with the name **\{{import\_id\}}\_\{{user\_
 
 ## MongoDB
 
-coming soon
-
 Easily import CSV files or Excel sheets into your MongoDB collections. Here's how:
 
 1. **Choose MongoDB as the destination**\
@@ -298,3 +297,6 @@ Easily import CSV files or Excel sheets into your MongoDB collections. Here's ho
    You can also map custom attributes from the CSV to specific fields in your collection.
 
 Once set up, all submitted CSV data will be automatically inserted into your MongoDB collection.
+
+
+

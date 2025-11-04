@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## November 2025
+
+* Added [Supabase ](destinations/supabase.md)as data destination.
+
 ## 09 October 2025
 
 *   Added a new feature allowing users to select accepted file types for uploads — choose between **CSV**, **XLS**, and **XLSX** formats in your sheet settings.\
