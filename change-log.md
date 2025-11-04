@@ -10,7 +10,6 @@ description: A record of all notable changes made to the application.
 * Newly supported languages include:
   * Chinese (Simplified) - zh-CN
   * Chinese (Traditional) - zh-TW
-* Added option to hide unmapped columns from the Verify Data screen. More information [here](dashboard-settings/sheet-options-1.md#hide-unmapped-columns).
 
 ## 09 October 2025
 
