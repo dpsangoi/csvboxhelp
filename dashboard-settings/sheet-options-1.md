@@ -432,7 +432,20 @@ These new controls ensure your data is interpreted as intended—minimizing erro
 
 <summary>Hide Cancel Button</summary>
 
-Coming soon
+This option allows you to **hide the Cancel button** located at the bottom-right corner of the importer.
+
+The **X (close)** button at the top-right corner of the importer remains unaffected.
+
+Enabling this feature helps prevent users from accidentally cancelling the import process and keeps their attention focused on completing the import using the **Submit** button.
+
+**Use case:**\
+Ideal for workflows where you want to guide users toward submission without distractions or potential interruptions.
+
+**Default value:** `No`
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 

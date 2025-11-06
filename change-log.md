@@ -10,6 +10,7 @@ description: A record of all notable changes made to the application.
 * Newly supported languages include:
   * Chinese (Simplified) - zh-CN
   * Chinese (Traditional) - zh-TW
+* Added the **Hide Cancel Button** option to hide the Cancel button located at the bottom-right corner of the importer. More information [here](dashboard-settings/sheet-options-1.md#hide-cancel-button).
 
 ## 09 October 2025
 
@@ -45,7 +46,7 @@ description: A record of all notable changes made to the application.
 * Added option to set the default row on the header selection screen. You can now choose which row is pre-selected on the Header Selection step.&#x20;
 * Also available as an installation parameter - [**`default_header_row`**](getting-started/2.-install-code.md#default_header_row).\
   \
-  ![](<.gitbook/assets/image (1).png>)
+  ![](<.gitbook/assets/image (1) (1).png>)
 
 ## 14 August 2025
 
@@ -98,11 +99,11 @@ description: A record of all notable changes made to the application.
 
 <div align="left"><figure><img src=".gitbook/assets/sleekshot (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
-<div align="left"><figure><img src=".gitbook/assets/image (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src=".gitbook/assets/image (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 * Added a configuration option to set the default number of rows displayed on the Verify Data screen.
 
-<div align="left"><figure><img src=".gitbook/assets/image (2).png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src=".gitbook/assets/image (2) (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 <div align="left"><figure><img src=".gitbook/assets/image (3).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
