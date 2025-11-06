@@ -426,3 +426,13 @@ These new controls ensure your data is interpreted as intended—minimizing erro
 
 </details>
 
+## Hide Cancel Button
+
+<details>
+
+<summary>Hide Cancel Button</summary>
+
+Coming soon
+
+</details>
+
