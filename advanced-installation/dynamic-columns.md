@@ -363,7 +363,8 @@ The data from the dynamic columns is available in the data destinations along wi
 
 1. [None](../destinations/#none)
 2. [API/Webhook](../destinations/#webhook)
-3. [Amazon S3](../destinations/#amazon-s3)
+3. [Test API](../destinations/#test-api)
+4. [Amazon S3](../destinations/#amazon-s3)
 
 #### API/Webhook Data Destination
 
