@@ -137,3 +137,44 @@ CSVbox will expect the validation endpoint to return an array of error objects.
 
 You can mix **table**, **row**, and **cell** errors in the same response.
 
+### Additional Attributes in the Client Data Object
+
+When **Server-Side Validation (SSV)** is enabled, the data object received at the client (after submission) includes additional attributes to help you handle validation states programmatically.
+
+<table><thead><tr><th width="197.20001220703125">Attribute</th><th>Description</th></tr></thead><tbody><tr><td><strong>ssv_enabled</strong></td><td>Indicates whether Server-Side Validation is active for the current sheet.</td></tr><tr><td><strong>ssv_fail</strong></td><td>Set to <strong>true</strong> only when the server returns a <strong>211 response code</strong>, meaning the import failed due to SSV errors.</td></tr><tr><td><strong>ssv_row_fail</strong></td><td>Number of rows that failed during server-side validation.</td></tr><tr><td><strong>ssv_table_error</strong></td><td>True if a table-level validation error was returned by the server.</td></tr></tbody></table>
+
+These attributes allow you to detect and respond to validation outcomes—such as displaying custom messages, logging failed rows, or triggering retry logic—directly from your client application.
+
+**Example Response Object**
+
+```json
+{
+  destination_type: "apiwebhook",
+  env_name: "default", 
+  import_description: "",
+  import_endtime: 1762774689,
+  import_id: 12859532,
+  import_starttime: 1762774686,
+  import_status: "success",
+  original_filename: "emp.csv",
+  raw_file: "https://app.csvbox.io/download-rawfile/1-FIIeyMflK9OvAX1EMjncCTlMasuG5Vil35LQNHAQ",
+  row_count: 5,
+  row_fail: 0,
+  row_success: 5,
+  sheet_id: 1058,
+  sheet_name: "Customer onboarding",
+  ssv_enabled: 1,
+  ssv_fail: 1,
+  ssv_row_fail: 3,
+  ssv_table_error: 1
+}
+
+```
+
+In this example:
+
+* **ssv\_enabled** confirms that SSV is active.
+* **ssv\_fail** is `true` because the server responded with a **211** code.
+* **ssv\_row\_fail** specifies the number of failed rows.
+* **ssv\_table\_error** is `false`, meaning the issue was at the row level rather than a table-level error.
+

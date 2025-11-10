@@ -10,7 +10,8 @@ description: A record of all notable changes made to the application.
 * Newly supported languages include:
   * Chinese (Simplified) - zh-CN
   * Chinese (Traditional) - zh-TW
-* Added the **Hide Cancel Button** option to hide the Cancel button located at the bottom-right corner of the importer. More information [here](dashboard-settings/sheet-options-1.md#hide-cancel-button).
+* **Added: Hide Cancel Button** option to hide the Cancel button located at the bottom-right corner of the importer. More information [here](dashboard-settings/sheet-options-1.md#hide-cancel-button).
+* **Added:** New client-side attributes (`ssv_enabled`, `ssv_fail`, `ssv_row_fail`, `ssv_table_error`) are now included in the response object when Server-Side Validation is enabled. More information [here](advanced-installation/server-side-validation.md#additional-attributes-in-the-client-data-object).
 
 ## 09 October 2025
 
