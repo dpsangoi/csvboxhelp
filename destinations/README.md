@@ -22,11 +22,12 @@ description: >-
 13. [Notion](./#notion)
 14. [Webflow](./#webflow)
 15. [MongoDB](./#mongodb)
-16. [Supabase](supabase.md)
-17. [n8n](n8n.md)
-18. [Pipedream](pipedream.md)
-19. [Automation Platforms](automation-platforms.md)
-20. [Private Mode](private-mode.md)
+16. [Google BigQuery](google-bigquery.md)
+17. [Supabase](supabase.md)
+18. [n8n](n8n.md)
+19. [Pipedream](pipedream.md)
+20. [Automation Platforms](automation-platforms.md)
+21. [Private Mode](private-mode.md)
 
 {% hint style="info" %}
 At a time only one destination can be selected per sheet.

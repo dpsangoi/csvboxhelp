@@ -29,6 +29,7 @@
   * [Zapier](destinations/zapier.md)
   * [Notion](destinations/notion.md)
   * [Webflow](destinations/webflow.md)
+  * [Google BigQuery](destinations/google-bigquery.md)
   * [Supabase](destinations/supabase.md)
   * [n8n](destinations/n8n.md)
   * [Pipedream](destinations/pipedream.md)
