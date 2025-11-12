@@ -11,7 +11,7 @@ description: >-
 2. [Test API](./#test-api)
 3. [API](./#api-webhook)
 4. [Amazon S3](./#amazon-s3)
-5. [MySQL](./#mysql-database)
+5. [MySQL](./#mysql)
 6. [PostgreSQL](./#postgresql)
 7. [SQL Server ](./#sql-server)
 8. [Google Sheet](./#google-sheets)
