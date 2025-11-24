@@ -21,13 +21,14 @@ description: >-
 12. [Zapier](./#zapier)
 13. [Notion](./#notion)
 14. [Webflow](./#webflow)
-15. [MongoDB](./#mongodb)
-16. [Google BigQuery](google-bigquery.md)
-17. [Supabase](supabase.md)
-18. [n8n](n8n.md)
-19. [Pipedream](pipedream.md)
-20. [Automation Platforms](automation-platforms.md)
-21. [Private Mode](private-mode.md)
+15. [Softr](softr.md)
+16. [MongoDB](./#mongodb)
+17. [Google BigQuery](google-bigquery.md)
+18. [Supabase](supabase.md)
+19. [n8n](n8n.md)
+20. [Pipedream](pipedream.md)
+21. [Automation Platforms](automation-platforms.md)
+22. [Private Mode](private-mode.md)
 
 {% hint style="info" %}
 At a time only one destination can be selected per sheet.
