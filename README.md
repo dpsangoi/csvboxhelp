@@ -12,7 +12,6 @@ description: Welcome to CSVbox documentation and help site!
 [account](account/)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="/broken/pages/-MOWJnVTWdE9JyQdSTtH" %}
+[Broken link](/broken/pages/-MOWJnVTWdE9JyQdSTtH)
 {% endcontent-ref %}
-

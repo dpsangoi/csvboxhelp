@@ -39,8 +39,7 @@ We will send you an email notification when your monthly usage hits 80% and 100%
 
 You cannot convert your yearly subscription to monthly by yourself. Please [contact us](https://share.hsforms.com/1ubpg6RBoQgKOISkRMEViwg5auur) for the same.
 
-\
-
+<br>
 
 
 

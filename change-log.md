@@ -13,11 +13,13 @@ description: A record of all notable changes made to the application.
 * **Added: Hide Cancel Button** option to hide the Cancel button located at the bottom-right corner of the importer. More information [here](dashboard-settings/sheet-options-1.md#hide-cancel-button).
 * **Added:** New client-side attributes (`ssv_enabled`, `ssv_fail`, `ssv_row_fail`, `ssv_table_error`) are now included in the response object when Server-Side Validation is enabled. More information [here](advanced-installation/server-side-validation.md#additional-attributes-in-the-client-data-object).
 * **Added** [Google BigQuery](destinations/google-bigquery.md) as data destination.
+*   **Added** [Execution Time](advanced-installation/data-transforms.md#execution-time) option to Data Transforms. You can now choose to run each transform **before** or **after** the Data Validation stage.
+
+    <figure><img src=".gitbook/assets/Data Transforms (1).png" alt=""><figcaption></figcaption></figure>
 
 ## 09 October 2025
 
-*   Added a new feature allowing users to select accepted file types for uploads — choose between **CSV**, **XLS**, and **XLSX** formats in your sheet settings.\
-
+*   Added a new feature allowing users to select accepted file types for uploads — choose between **CSV**, **XLS**, and **XLSX** formats in your sheet settings.<br>
 
     <figure><img src=".gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 

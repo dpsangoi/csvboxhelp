@@ -47,16 +47,14 @@ In the trigger setup screen, paste your **CSVBox API Key** and **API Secret Key*
 **Step 4: Select your Sheet**
 
 In the **Trigger Settings** window in Pipedream, choose the **Sheet Name** you want to connect from the dropdown.\
-Click **Save and contine** to confirm.\
-
+Click **Save and contine** to confirm.<br>
 
 <figure><img src="../.gitbook/assets/slect sheet.png" alt=""><figcaption></figcaption></figure>
 
 **Step 5: Verify the connection**
 
 Return to **CSVBox → Sheet Settings → Destination**.\
-The **Pipedream Connection** should now show as **successful**.\
-
+The **Pipedream Connection** should now show as **successful**.<br>
 
 <figure><img src="../.gitbook/assets/connection successful.png" alt=""><figcaption></figcaption></figure>
 

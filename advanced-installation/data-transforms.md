@@ -6,7 +6,7 @@ description: Bulk edit the dataset before pushing it to your system.
 
 The **Data Transforms** feature in CSVbox empowers you to modify and manipulate the data before it is uploaded to your app. Using JavaScript, you can apply custom transformations to reshape, sanitize, or enhance your data in real-time. Whether you need to perform simple tasks like capitalizing text or formatting dates, or handle complex business logic, Data Transforms gives you full control to customize your dataset to meet your app's specific needs.
 
-<figure><img src="../.gitbook/assets/Data Transform.png" alt=""><figcaption><p>Data Trasforms</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Data Transforms.png" alt=""><figcaption><p>Data Trasforms</p></figcaption></figure>
 
 ## How it works
 
@@ -293,6 +293,55 @@ With this statement, you can print all the available variables in the debugging 
 
 In the Transforms Javascript snippet, you can utilize an external library hosted via a CDN. You can also call any external API endpoint to fetch real-time data. Add the library script tag and/or any custom scripts to the 'Dependencies' section and use it in the main Javascript snippet.
 
+## **Execution Time**
+
+Every Data Transform can now run at **one of two stages** in the import pipeline:
+
+* **Pre Data Validation** (default)
+* **Post Data Validation**
+
+This gives you full control over _when_ your transform runs during the import workflow.
+
+#### **1. Pre-Validation Data Transform**
+
+Runs **immediately after column mapping** and **before Data Validation**.
+
+Use this for:
+
+* Cleaning or normalizing user input
+* Converting formats (dates, numbers, booleans)
+* Combining or splitting fields
+* Setting defaults
+* Preparing data that validators depend on
+
+Example:\
+Convert a string such as `" 23.4500 "` into a clean numeric value before your validation rules run.
+
+#### **2. Post-Validation Data Transform**
+
+Runs **only if there are no validation errors**, and just before pushing data to the final destination.
+
+Use this for:
+
+* Final formatting
+* Destination-specific transformations
+* Generating or enriching fields **only when the row is already valid**
+* Preparing computed values needed only for storage
+
+Example:\
+If you need to generate a `slug`, `UUID`, or apply pricing markup _after_ all validations pass.
+
+#### **Where to Configure Execution Time**
+
+When creating or editing a Data Transform:
+
+1. Open **Sheet Settings → Data Transforms**.
+2. Select your existing transform or create a new one.
+3. Choose the desired **Execution Time**:
+   * **Pre Data Validation**
+   * **Post Data Validation**
+4. Save your changes.
+
 ## Key Features
 
 * **JavaScript-Powered**: Write custom JavaScript code to perform operations on your data. With access to native JavaScript methods, you can implement transformations ranging from basic modifications to complex logic.
@@ -307,7 +356,6 @@ In the Transforms Javascript snippet, you can utilize an external library hosted
 
 ## Best Practices
 
-* **Data Validation**: Use Data Transforms to validate incoming data and correct common issues, like missing or incorrectly formatted fields.
 * **Error Handling**: Incorporate error-handling logic into your JavaScript code to avoid disruptions in the upload process due to malformed data.
 * **Optimize Performance**: Keep your transformation code efficient, especially when working with large datasets, to ensure smooth uploads.
 

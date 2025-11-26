@@ -6,8 +6,7 @@ description: >-
 
 # Automation Platforms
 
-CSVbox makes it easy to connect your spreadsheet imports with any automation platform.\
-
+CSVbox makes it easy to connect your spreadsheet imports with any automation platform.<br>
 
 Using the **`New Row Import`** trigger, you can send every imported row into your workflows — whether that means adding a contact to Salesforce, storing data in Postgres, or sending a Slack notification.
 

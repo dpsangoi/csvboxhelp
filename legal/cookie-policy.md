@@ -16,8 +16,7 @@ Cookies set by the website owner (in this case, Thalia Technologies Private Limi
 **Why do we use cookies?**
 --------------------------
 
-We use first and third party cookies for several reasons. Some cookies are required for technical reasons in order for our Websites to operate, and we refer to these as "essential" or "strictly necessary" cookies. Other cookies also enable us to track and target the interests of our users to enhance the experience on our Online Properties. Third parties serve cookies through our Websites for advertising, analytics and other purposes. \
-
+We use first and third party cookies for several reasons. Some cookies are required for technical reasons in order for our Websites to operate, and we refer to these as "essential" or "strictly necessary" cookies. Other cookies also enable us to track and target the interests of our users to enhance the experience on our Online Properties. Third parties serve cookies through our Websites for advertising, analytics and other purposes. <br>
 
 ## **How can I control cookies?**
 
@@ -25,8 +24,7 @@ You have the right to decide whether to accept or reject cookies. You can exerci
 
 The Cookie Consent Banner can be found on our website. If you choose to reject cookies, you may still use our website though your access to some functionality and areas of our website may be restricted. You may also set or amend your web browser controls to accept or refuse cookies. As the means by which you can refuse cookies through your web browser controls vary from browser-to-browser, you should visit your browser's help menu for more information.
 
-In addition, most advertising networks offer you a way to opt-out of targeted advertising. If you would like to find out more information, please visit [http://www.aboutads.info/choices/](http://www.aboutads.info/choices/) or [http://www.youronlinechoices.com](http://www.youronlinechoices.com).\
-
+In addition, most advertising networks offer you a way to opt-out of targeted advertising. If you would like to find out more information, please visit [http://www.aboutads.info/choices/](http://www.aboutads.info/choices/) or [http://www.youronlinechoices.com](http://www.youronlinechoices.com).<br>
 
 ## **What about other tracking technologies, like web beacons?**
 
@@ -35,7 +33,7 @@ Cookies are not the only way to recognize or track visitors to a website. We may
 ## **Do you use Flash cookies or Local Shared Objects**
 
 Websites may also use so-called "Flash Cookies" (also known as Local Shared Objects or "LSOs") to, among other things, collect and store information about your use of our services, fraud prevention and for other site operations.\
-If you do not want Flash Cookies stored on your computer, you can adjust the settings of your Flash player to block Flash Cookies storage using the tools contained in the [Website Storage Settings Panel](http://www.macromedia.com/support/documentation/en/flashplayer/help/settings\_manager07.html). You can also control Flash Cookies by going to the [Global Storage Settings Panel](http://www.macromedia.com/support/documentation/en/flashplayer/help/settings\_manager03.html) and following the instructions (which may include instructions that explain, for example, how to delete existing Flash Cookies (referred to "information" on the Macromedia site), how to prevent Flash LSOs from being placed on your computer without your being asked, and (for Flash Player 8 and later) how to block Flash Cookies that are not being delivered by the operator of the page you are on at the time).\
+If you do not want Flash Cookies stored on your computer, you can adjust the settings of your Flash player to block Flash Cookies storage using the tools contained in the [Website Storage Settings Panel](http://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager07.html). You can also control Flash Cookies by going to the [Global Storage Settings Panel](http://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager03.html) and following the instructions (which may include instructions that explain, for example, how to delete existing Flash Cookies (referred to "information" on the Macromedia site), how to prevent Flash LSOs from being placed on your computer without your being asked, and (for Flash Player 8 and later) how to block Flash Cookies that are not being delivered by the operator of the page you are on at the time).\
 Please note that setting the Flash Player to restrict or limit acceptance of Flash Cookies may reduce or impede the functionality of some Flash applications, including, potentially, Flash applications used in connection with our services or online content.
 
 ## **Do you serve targeted advertising?**
