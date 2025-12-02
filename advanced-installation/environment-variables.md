@@ -8,7 +8,7 @@ Environment variables are dynamic values defined during importer initialization 
 
 The variable values passed during importer initialization will replace the placeholders referenced in the sheet settings using double curly braces.
 
-#### Defining Environment Variables
+### Defining Environment Variables
 
 1. Create an object **environment**.
 2. Add the variables to this object in the \<key>: \<value> format.
@@ -203,7 +203,7 @@ The **env\_name** variable name is a CSVbox reserved keyword that tags the envir
 
 <div align="left"><figure><img src="../.gitbook/assets/env.jpg" alt=""><figcaption><p>Filter via Environment on the Import page</p></figcaption></figure></div>
 
-#### Accessing the Variables
+### Accessing the Variables
 
 Environment variable values will replace all the environment placeholders mentioned in the sheet settings. The placeholders are defined using double curly brackets:
 
@@ -238,15 +238,25 @@ You can encrypt environment variables using the [AES Everywhere library ](https:
 
 #### AES Everywhere Library
 
-The AES Everywhere library provides a simple and effective way to encrypt and decrypt data using the Advanced Encryption Standard (AES) algorithm. It supports various platforms and programming languages, making it a versatile choice for securing environment variables.
+The AES Everywhere library provides a simple and effective way to encrypt and decrypt data using the Advanced Encryption Standard (AES) algorithm. It supports various platforms and programming languages, making it a versatile choice for securing environment variables.\
+\
+CSVbox supports **multiple encryption schemes** for securing sensitive importer data at rest.\
+You can choose the mode that best fits your security or compliance requirements.
+
+#### **Supported Encryption Types**
+
+| Encryption Mode      | Notes                                                                                              |
+| -------------------- | -------------------------------------------------------------------------------------------------- |
+| AES-256-CBC (legacy) | Still supported, but recommended to move to newer CBC/GCM variants.                                |
+| Updated AES-256-CBC  | Improved IV handling and hardened padding logic. Recommended if you prefer CBC mode.               |
+| AES-256-GCM          | **Most secure**. Provides authenticity + integrity via GCM tags. Recommended for all new installs. |
 
 #### Steps
 
 * Install the [AES Everywhere library ](https://github.com/mervick/aes-everywhere)in your app.
-* Generate a secure Encryption Key via your CSVbox dashboard. Go to your app admin dashboard > Account Menu > API Keys Page > Encryption Key section.
-
-<div align="left"><figure><img src="../.gitbook/assets/eny (1).jpg" alt="" width="375"><figcaption><p>Generate Encryption Key</p></figcaption></figure></div>
-
+* Go to your app admin dashboard > Account Menu > API Keys Page > Encryption Key section.
+* Select the Encryption Type and Encryption Mode.
+* Generate a secure Encryption Key&#x20;
 * Use your Encryption Key and AES Everywhere library to encrypt the environment variables.
 
 {% hint style="info" %}
