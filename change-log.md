@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## December 2025
+
+**Added:** Support for AES-256-GCM and improved AES-CBC (V2) encryption options in Environment Variables for enhanced data security. More information [here](advanced-installation/environment-variables.md#encrypting-environment-variables).
+
 ## November 2025
 
 * **Added** [Supabase ](destinations/supabase.md)as data destination.
