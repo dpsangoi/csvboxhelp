@@ -1,5 +1,5 @@
 ---
-description: 'Last updated: 27 January 2023'
+description: 'Last updated: 02 December 2025'
 ---
 
 # Terms of Use
@@ -46,7 +46,15 @@ Your continued use of Service after the Subscription fee change comes into effec
 
 ## Refunds
 
-Paid Subscription fees are non-refundable.
+Our company uses Paddle as our Merchant of Record for all payments. All transactions are processed securely through Paddle in accordance with their Buyer Protection policies.
+
+We offer refunds in line with Paddle’s refund guidelines. If you believe a charge was made in error, or if you are unsatisfied with your purchase, you may request a refund within the applicable time window set by Paddle. Refund eligibility may vary depending on the specific product, subscription term, and usage conditions.
+
+Please note:
+
+* Refunds are not guaranteed in all cases.
+* Paddle may assess eligibility based on factors such as usage, time since purchase, or potential misuse.
+* Approved refunds will be issued by Paddle to the original payment method.
 
 ## Content
 
@@ -177,6 +185,10 @@ Please send your feedback, comments, requests for technical support [here](https
 
 {% hint style="info" %}
 ## Changelog
+
+#### 02 Dec 2025
+
+* Refund policy updated.
 
 #### 27 Jan 2023
 
