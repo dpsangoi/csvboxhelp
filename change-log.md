@@ -6,7 +6,10 @@ description: A record of all notable changes made to the application.
 
 ## December 2025
 
-**Added:** Support for AES-256-GCM and improved AES-CBC (V2) encryption options in Environment Variables for enhanced data security. More information [here](advanced-installation/environment-variables.md#encrypting-environment-variables).
+* **Added:** Support for AES-256-GCM and improved AES-CBC (V2) encryption options in Environment Variables for enhanced data security. More information [here](advanced-installation/environment-variables.md#encrypting-environment-variables).
+* **UI Enhancements:** Made several small UI tweaks to make the importer sleeker and more user-friendly. For example, the row filter dropdown (All / Error rows) is now a modern toggle switch, and the search box has been condensed into a search icon that expands on click.
+
+<div><figure><img src=".gitbook/assets/row filter.png" alt=""><figcaption><p>Row Filter</p></figcaption></figure> <figure><img src=".gitbook/assets/search_v2.png" alt=""><figcaption><p>Search Icon</p></figcaption></figure></div>
 
 ## November 2025
 
