@@ -4,11 +4,6 @@ description: Push user spreadsheet data to n8n.
 
 # n8n
 
-{% hint style="info" %}
-coming soon
-{% endhint %}
-
-\
 This allows you to directly connect your CSVbox imports to any of the apps supported by n8n without needing a webhook setup. With this integration, you can build workflows like:
 
 * Save imported rows into a database (MySQL, Postgres, MongoDB, etc.)

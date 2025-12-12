@@ -11,6 +11,7 @@ description: A record of all notable changes made to the application.
 
     <div><figure><img src=".gitbook/assets/row filter.png" alt=""><figcaption><p>Row Filter</p></figcaption></figure> <figure><img src=".gitbook/assets/search_v2.png" alt=""><figcaption><p>Search Icon</p></figcaption></figure></div>
 * **Added** [Pipedream ](destinations/pipedream.md)as data destination
+* **Added** [n8n](destinations/n8n.md) as data destination
 
 ## November 2025
 
