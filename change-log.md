@@ -13,6 +13,11 @@ description: A record of all notable changes made to the application.
 * **Added** [Pipedream ](destinations/pipedream.md)as data destination.
 * **Added** [n8n](destinations/n8n.md) as data destination.
 * Added [Sofr ](destinations/softr.md)as data destination.
+* **Improved** List Selection: We’ve added a new **“Replace all similar cells”** button for **List-type columns**. This allows you to replace **all cells with the same value as the currently selected cell** in one click. Perfect for quickly fixing repeated invalid values and speeding up data verification.
+
+<div align="left"><figure><img src=".gitbook/assets/improved list selection.png" alt="" width="563"><figcaption></figcaption></figure></div>
+
+*
 
 ## November 2025
 
