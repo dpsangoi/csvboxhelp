@@ -17,7 +17,9 @@ description: A record of all notable changes made to the application.
 
 <div align="left"><figure><img src=".gitbook/assets/improved list selection.png" alt="" width="563"><figcaption></figcaption></figure></div>
 
-*
+* **Added** Quick Actions for Validation Errors: You can now take faster action on validation errors using the new **Quick Actions** button in the message bar. This provides one-click options to delete all invalid values, replace empty cells, or find and replace values—making it quicker to fix errors without navigating through individual cells.
+
+<div align="left"><figure><img src=".gitbook/assets/Quick Action button.png" alt="" width="563"><figcaption></figcaption></figure></div>
 
 ## November 2025
 
