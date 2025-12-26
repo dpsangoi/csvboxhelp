@@ -21,6 +21,12 @@ description: A record of all notable changes made to the application.
 
 <div align="left"><figure><img src=".gitbook/assets/Quick Action button.png" alt="" width="563"><figcaption></figcaption></figure></div>
 
+* **Added –** Newly supported languages include:
+  * Bulgarian(`bg`)
+  * Czech (`cs`)
+  * Hungarian (`hu`)
+  * Ukrainian(`uk`)
+
 ## November 2025
 
 * **Added** [Supabase ](destinations/supabase.md)as data destination.
