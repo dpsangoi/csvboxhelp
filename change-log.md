@@ -4,6 +4,11 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## January 2026
+
+* **Added** custom styling Download and Upload functionality. You can now download your customized importer styling as a CSS file and upload it to another importer to instantly apply the same design. Perfect for maintaining consistent branding across multiple sheets—no re-styling required. More info [here](dashboard-settings/styling.md#download-and-reuse-importer-styling-css).
+* **Updated** the Import screen in the admin dashboard to display additional metadata for individual imports.
+
 ## December 2025
 
 * **Added:** Support for AES-256-GCM and improved AES-CBC (V2) encryption options in Environment Variables for enhanced data security. More information [here](advanced-installation/environment-variables.md#encrypting-environment-variables).
