@@ -10,7 +10,7 @@ Log in to [csvbox.io](https://app.csvbox.io/login).
 
 Add a sheet.
 
-<img src="../.gitbook/assets/image (3) (1).png" alt="" data-size="original">
+<img src="../.gitbook/assets/image (3) (1) (1).png" alt="" data-size="original">
 
 Add columns to the sheet as per your requirement.
 

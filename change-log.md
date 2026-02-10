@@ -4,6 +4,22 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## February 2026
+
+* Added **Bulk Actions** to the Column Mapping screen, allowing users to reset all mappings or mark all columns as ignored in a single action.
+
+{% columns %}
+{% column %}
+<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+{% endcolumn %}
+
+{% column %}
+<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+{% endcolumn %}
+{% endcolumns %}
+
+* Introduced **AI-powered auto column mapping** within Bulk Actions to automatically map file columns to template fields.
+
 ## January 2026
 
 * **Added** custom styling Download and Upload functionality. You can now download your customized importer styling as a CSS file and upload it to another importer to instantly apply the same design. Perfect for maintaining consistent branding across multiple sheets—no re-styling required. More info [here](dashboard-settings/styling.md#download-and-reuse-importer-styling-css).
@@ -78,7 +94,7 @@ description: A record of all notable changes made to the application.
 * Added option to set the default row on the header selection screen. You can now choose which row is pre-selected on the Header Selection step.&#x20;
 * Also available as an installation parameter - [**`default_header_row`**](getting-started/2.-install-code.md#default_header_row).\
   \
-  ![](<.gitbook/assets/image (1) (1).png>)
+  ![](<.gitbook/assets/image (1) (1) (1).png>)
 
 ## 14 August 2025
 
@@ -131,13 +147,13 @@ description: A record of all notable changes made to the application.
 
 <div align="left"><figure><img src=".gitbook/assets/sleekshot (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
-<div align="left"><figure><img src=".gitbook/assets/image (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 * Added a configuration option to set the default number of rows displayed on the Verify Data screen.
 
-<div align="left"><figure><img src=".gitbook/assets/image (2) (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src=".gitbook/assets/image (2) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
-<div align="left"><figure><img src=".gitbook/assets/image (3).png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src=".gitbook/assets/image (3) (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 ## 14 April 2025
 

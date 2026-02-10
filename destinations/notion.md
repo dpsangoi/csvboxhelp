@@ -10,7 +10,7 @@ Log in to [csvbox.io](https://app.csvbox.io/login).
 
 Add a sheet.
 
-<img src="../.gitbook/assets/image (3) (1).png" alt="" data-size="original">
+<img src="../.gitbook/assets/image (3) (1) (1).png" alt="" data-size="original">
 
 Add columns to the sheet as per your requirement.
 
@@ -24,11 +24,11 @@ Click the "**Connect Notion**" button.
 
 This will redirect you to the Notion Integration Authorization screen.&#x20;
 
-![](<../.gitbook/assets/image (2) (1) (1).png>)
+![](<../.gitbook/assets/image (2) (1) (1) (1).png>)
 
 You will have to select the page and the relevant workspace where you want the CSV data to be pushed.
 
-![](<../.gitbook/assets/image (4).png>)
+![](<../.gitbook/assets/image (4) (1).png>)
 
 Click '**Allow access**'.
 
