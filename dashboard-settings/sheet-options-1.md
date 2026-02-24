@@ -449,13 +449,56 @@ Ideal for workflows where you want to guide users toward submission without dist
 
 </details>
 
-## Export Sheet
+## Sheet Import & Export
 
 <details>
 
-<summary>Import and Export sheets</summary>
+<summary>Export a sheet from one CSVbox account and import it into another account — or duplicate it within the same account — in just a few clicks.</summary>
 
-Coming soon
+This is perfect for:
+
+* Moving sheets between staging and production accounts
+* Sharing templates across teams
+* Backing up sheet configurations
+* Reusing validated sheet structures
+
+***
+
+#### Export a Sheet
+
+1. Go to **Sheets** in your dashboard.
+2. Locate the sheet you want to export.
+3. Click the **Export** button in the Actions column.
+
+A dialog will open showing:
+
+* **Sheet License Key**
+* **Export Key**
+* Options to **Copy**, **Show**, or **Regenerate** the export key.
+
+Copy both the **Sheet License Key** and the **Export Key**.
+
+***
+
+#### Import a Sheet
+
+1. Log in to the account where you want to import the sheet.
+2. Click **Add Sheet**.
+3. Select **Import Sheet**.
+4. Paste:
+   * The **Sheet License Key**
+   * The **Export Key**
+5. Click **Import**.
+
+That’s it ✅
+
+The entire sheet — including columns, validations, configuration, and settings — will be copied into the new account.
+
+#### Important
+
+* The newly imported sheet will have a **new License Key**.
+* The original sheet remains unchanged.
+* Importing does **not** affect existing imports or data in the original sheet.
 
 </details>
 

@@ -6,6 +6,12 @@ description: A record of all notable changes made to the application.
 
 ## February 2026
 
+* Added **sheet import & export** functionality. You can now export sheets from one CSVbox account and import them into another (or duplicate within the same account).
+  * Securely copy sheets using a Sheet License Key and Export Key
+  * Entire sheet configuration is duplicated automatically
+  * Imported sheets receive a new unique license key
+  * Perfect for staging → production workflows and template reuse
+  * More information [here](dashboard-settings/sheet-options-1.md#sheet-import-and-export)
 * Added **Bulk Actions** to the Column Mapping screen, allowing users to reset all mappings or mark all columns as ignored in a single action.
 
 {% columns %}
