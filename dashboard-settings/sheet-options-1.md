@@ -410,15 +410,34 @@ Use RAW if you’re planning to run calculations or validations on numeric field
 
 ### How to Use These Settings
 
+#### Configure Date Formatting
+
 When setting up your Excel-based import:
 
-1. Navigate to the **Sheet Settings > Options** panel in your CSVbox dashboard.
-2. Scroll to the **Formatting in Excel** section.
-3. Choose your preferred options for:
+1. Navigate to **Sheet Settings > Import Steps > File Upload Tab** in your CSVbox dashboard
+2. Scroll to the **Formatting in Excel** section
+3. Choose your preferred option for:
    * **Date Format**
-   * **Time Format**
-   * **Number Interpretation**
-4. Save the configuration.
+4. Save the configuration
+
+***
+
+#### Configure Number Formatting
+
+To control how numbers are interpreted from Excel files:
+
+1. Navigate to **Sheet Settings > Columns**
+2. Click **Edit** on a column with type **Number**
+3. Locate the **Values for Excel** option
+4. Select your preferred interpretation setting
+5. Save the configuration
+
+***
+
+#### Notes
+
+* Date formatting is now configured at the **sheet level during file upload setup**
+* Number formatting is controlled at the **individual column level**, allowing more granular control per field
 
 ***
 
