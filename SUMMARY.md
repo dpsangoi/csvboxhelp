@@ -24,6 +24,7 @@
   * [REST File API](advanced-installation/rest-file-api.md)
   * [Environment Variables](advanced-installation/environment-variables.md)
   * [Auth API](advanced-installation/auth-api.md)
+  * [Multipart Uploads](advanced-installation/multipart-uploads.md)
 * [Data Destinations](destinations/README.md)
   * [Bubble.io](destinations/bubble.io.md)
   * [Zapier](destinations/zapier.md)
