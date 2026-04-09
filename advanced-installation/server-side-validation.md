@@ -52,7 +52,7 @@ To view the results screen be sure to configure the CSVbox Result Page Settings.
 
 If there are one or more server-side validation errors then the users will see the Fail Screen with a button to view the errors.
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption><p>Fail Screen with View Errors Button</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/table.png" alt=""><figcaption></figcaption></figure>
 
 #### 6. Users can view the validation errors.
 
@@ -76,23 +76,25 @@ To allow the users to re-submit all the rows again (instead of error rows only) 
 
 CSVBox server-side validation now supports three error types:
 
-* **table** (new): Show high-level/common errors that apply to the entire upload. Renders as a dismissible alert above the grid.
-* **row** (new): Show errors that apply to a whole row, not a specific cell. Renders as a red badge on the row number; clicking it opens a pop-up with the message.
-* **cell** (existing): The previous behavior; highlights an individual cell with an inline message. In this documentation we now refer to these as “cell errors.”
+* **table**: Show high-level/common errors that apply to the entire upload. Renders as a dismissible alert above the grid.
+* **row**: Show errors that apply to a whole row, not a specific cell. Renders as a red badge on the row number; clicking it opens a pop-up with the message.
+* **column**: Show validation errors that apply to an entire column. These are useful when the issue is with the column itself rather than with any individual row or cell.
+* **cell**: The previous behavior; highlights an individual cell with an inline message. In this documentation we now refer to these as “cell errors.”
 
 **UI behavior**
 
 * **Table errors** appear in a prominent alert banner above the grid until dismissed or replaced by a subsequent validation run.
-* **Row errors** highlight the row index with a red badge. Clicking the badge opens a pop-over containing your `message` and a Close button.
+* **Row errors** highlight the row index with a red badge. Clicking the badge opens a pop-over containing your `message`.
+* **Column errors** highlight the column name with a red badge. Clicking the badge opens a pop-over containing your `message`.
 * **Cell errors** continue to highlight individual cells with inline messages as before.
 
-<figure><img src="../.gitbook/assets/sse errors.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/error type examples.png" alt=""><figcaption></figcaption></figure>
 
-\
 **When to use each type**
 
 * **table**: Missing required columns, inconsistent file format, duplicate file, or any condition that makes the whole dataset invalid.
 * **row**: Cross-field checks within the same row (e.g., “End Date must be after Start Date”), referential issues that aren’t tied to a single column, or row-level business rules.
+* **column**: Use column errors when the issue applies to a full column rather than to one cell or row (e.g. Invalid column name, a required column has an incorrect format or configuration).&#x20;
 * **cell**: Format/length/pattern errors, disallowed values, or any validation that is clearly attributable to one column.
 
 ### Response Format JSON
@@ -101,7 +103,7 @@ CSVbox will expect the validation endpoint to return an array of error objects.
 
 **Fields**
 
-<table><thead><tr><th width="132.33333333333331">Parameter</th><th width="93">Type</th><th>Description</th></tr></thead><tbody><tr><td>type</td><td>string</td><td><code>"table" | "row" | "cell"</code>. Defaults to <code>"cell"</code>. (Optional)</td></tr><tr><td>row_id</td><td>integer</td><td>The row number of the error. Starts with 1. (required for <code>row</code> and <code>cell</code>)</td></tr><tr><td>column</td><td>string</td><td>The CSVbox <a href="https://help.csvbox.io/dashboard-settings/sheet-options#column-name">column name </a> (i.e., the field you mapped), not the user’s original header.. It is case sensitive. (required for <code>cell</code>)</td></tr><tr><td>message</td><td>string</td><td>String to display to the user. Basic HTML line breaks like <code>&#x3C;br></code> are supported.</td></tr></tbody></table>
+<table><thead><tr><th width="132.33333333333331">Parameter</th><th width="93">Type</th><th>Description</th></tr></thead><tbody><tr><td>type</td><td>string</td><td><code>"table" | "row" | "column" | "cell"</code>. Defaults to <code>"cell"</code>. (Optional)</td></tr><tr><td>row_id</td><td>integer</td><td>The row number of the error. Starts with 1. (required for <code>row</code> and <code>cell</code>)</td></tr><tr><td>column</td><td>string</td><td>The CSVbox <a href="https://help.csvbox.io/dashboard-settings/sheet-options#column-name">column name </a> (i.e., the field you mapped), not the user’s original header.. It is case sensitive. (required for <code>column</code> and <code>cell</code>)</td></tr><tr><td>message</td><td>string</td><td>String to display to the user. Basic HTML line breaks like <code>&#x3C;br></code> are supported.</td></tr></tbody></table>
 
 #### Example payload
 
@@ -131,11 +133,16 @@ CSVbox will expect the validation endpoint to return an array of error objects.
     "type": "row",
     "row_id": 3,
     "message": "Cannot add this row"
+  },
+  {
+     "type": "column",
+     "column": "employee_id",
+     "message": "Invalid column name"
   }
 ]
 ```
 
-You can mix **table**, **row**, and **cell** errors in the same response.
+You can mix **table**, **row**, **column** and **cell** errors in the same response.
 
 ### Additional Attributes in the Client Data Object
 

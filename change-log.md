@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## April 2026
+
+* **New:** [Server-Side Validation](advanced-installation/server-side-validation.md) supports **column** error type.
+
 ## February 2026
 
 * Added **sheet import & export** functionality. You can now export sheets from one CSVbox account and import them into another (or duplicate within the same account).
