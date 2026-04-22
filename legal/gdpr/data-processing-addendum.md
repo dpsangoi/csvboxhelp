@@ -1,11 +1,15 @@
 ---
-description: 'Last Modified: October 17, 2025'
+description: 'Last Modified: April 22, 2026'
 ---
 
 # Data Processing Addendum
 
 {% hint style="info" %}
 Summary of main changes
+
+April 22, 2026
+
+* Added Azure as Sub Processor.
 
 October 17, 2025
 
@@ -106,6 +110,7 @@ Additionally, here is the list of Sub-Processors:
 8. Sendgrid: Emails
 9. Brevo: Emails
 10. Posthog: Analytics
+11. Azure: Document Intelligence
 
 ### Governing Law and Jurisdiction
 
