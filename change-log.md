@@ -6,6 +6,7 @@ description: A record of all notable changes made to the application.
 
 ## April 2026
 
+* Added [Import Analytics](dashboard-settings/import-analytics.md) **-** Get visibility into your import flow with built-in analytics. Track each step—from file upload and header selection to mapping, validation, and final submission. Identify drop-offs, measure completion rates, and uncover top errors so you can improve onboarding and reduce failed imports. Available for Pro plans and higher.
 * **New:** [Server-Side Validation](advanced-installation/server-side-validation.md) supports **column** error type.
 
 ## February 2026
