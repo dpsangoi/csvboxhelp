@@ -13,6 +13,7 @@
   * [Styling](dashboard-settings/styling.md)
   * [AI Bulk Transforms](dashboard-settings/ai-bulk-transforms.md)
   * [Import Analytics](dashboard-settings/import-analytics.md)
+  * [AI Document Import](dashboard-settings/ai-document-import.md)
 * [Advanced Installation](advanced-installation/README.md)
   * [Dynamic Columns](advanced-installation/dynamic-columns.md)
   * [Virtual Columns](advanced-installation/virtual-columns.md)
