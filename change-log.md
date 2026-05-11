@@ -4,6 +4,10 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## May 2026
+
+* **New:** [Split Large CSV File Imports](dashboard-settings/split-large-csv.md) - CSVBox can now automatically split large CSV files into smaller parts during import for improved reliability and browser performance. Multipart uploads reuse the same column mappings across all parts and are grouped together in the Imports dashboard for easier tracking.
+
 ## April 2026
 
 * Added [Import Analytics](dashboard-settings/import-analytics.md) **-** Get visibility into your import flow with built-in analytics. Track each step—from file upload and header selection to mapping, validation, and final submission. Identify drop-offs, measure completion rates, and uncover top errors so you can improve onboarding and reduce failed imports. Available for Pro plans and higher.
