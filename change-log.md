@@ -7,16 +7,16 @@ description: A record of all notable changes made to the application.
 ## May 2026
 
 * **New:** [Split Large CSV File Imports](dashboard-settings/split-large-csv.md) - CSVBox can now automatically split large CSV files into smaller parts during import for improved reliability and browser performance. Multipart uploads reuse the same column mappings across all parts and are grouped together in the Imports dashboard for easier tracking.
-* Added [AI Document Import](dashboard-settings/ai-document-import.md) (PDFs, Images & DOCX) - You can now import data from PDFs, images, and documents using AI-powered table extraction.
+* **Added** [AI Document Import](dashboard-settings/ai-document-import.md) (PDFs, Images & DOCX) - You can now import data from PDFs, images, and documents using AI-powered table extraction.
 
 ## April 2026
 
-* Added [Import Analytics](dashboard-settings/import-analytics.md) **-** Get visibility into your import flow with built-in analytics. Track each step—from file upload and header selection to mapping, validation, and final submission. Identify drop-offs, measure completion rates, and uncover top errors so you can improve onboarding and reduce failed imports. Available for Pro plans and higher.
+* **Added** [Import Analytics](dashboard-settings/import-analytics.md) **-** Get visibility into your import flow with built-in analytics. Track each step—from file upload and header selection to mapping, validation, and final submission. Identify drop-offs, measure completion rates, and uncover top errors so you can improve onboarding and reduce failed imports. Available for Pro plans and higher.
 * **New:** [Server-Side Validation](advanced-installation/server-side-validation.md) supports **column** error type.
 
 ## February 2026
 
-* Added **sheet import & export** functionality. You can now export sheets from one CSVbox account and import them into another (or duplicate within the same account).
+* **Added sheet import & export** functionality. You can now export sheets from one CSVbox account and import them into another (or duplicate within the same account).
   * Securely copy sheets using a Sheet License Key and Export Key
   * Entire sheet configuration is duplicated automatically
   * Imported sheets receive a new unique license key
