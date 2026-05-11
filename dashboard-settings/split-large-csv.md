@@ -119,7 +119,7 @@ If the file exceeds the configured row limit, CSVBox automatically prepares the 
 Before processing begins, the user sees a notification such as:
 
 > Large file detected\
-> We’ll split this file into smaller parts for smoother processing. Each part will be uploaded automatically, and your column mappings will be reused.
+> We'll split this file into smaller parts (X rows each) for smoother processing. Each part will be uploaded automatically, and your column mappings will be reused.
 
 The user can then:
 

@@ -7,6 +7,7 @@ description: A record of all notable changes made to the application.
 ## May 2026
 
 * **New:** [Split Large CSV File Imports](dashboard-settings/split-large-csv.md) - CSVBox can now automatically split large CSV files into smaller parts during import for improved reliability and browser performance. Multipart uploads reuse the same column mappings across all parts and are grouped together in the Imports dashboard for easier tracking.
+* Added [AI Document Import](dashboard-settings/ai-document-import.md) (PDFs, Images & DOCX) - You can now import data from PDFs, images, and documents using AI-powered table extraction.
 
 ## April 2026
 
