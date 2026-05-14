@@ -15,6 +15,7 @@
   * [Import Analytics](dashboard-settings/import-analytics.md)
   * [AI Document Import](dashboard-settings/ai-document-import.md)
   * [Split Large CSV](dashboard-settings/split-large-csv.md)
+  * [AI Function Generator](dashboard-settings/ai-function-generator.md)
 * [Advanced Installation](advanced-installation/README.md)
   * [Dynamic Columns](advanced-installation/dynamic-columns.md)
   * [Virtual Columns](advanced-installation/virtual-columns.md)
