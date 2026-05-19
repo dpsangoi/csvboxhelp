@@ -22,7 +22,7 @@ Display Labels will be shown in the header row that the user will see while doin
 
 Info Hints are help tooltips that will get displayed when the users hover the mouse over the Column Name (or click it) in the importer. They are useful to convey additional information about the Column.
 
-![Info Hint](../.gitbook/assets/infohints.png)
+![Info Hint](../.gitbook/assets/InfoHints.png)
 
 ## Matching Keywords
 
@@ -43,7 +43,7 @@ You have the option to view and delete the User Keywords via Column Settings.
 
 You also have the option to disable the user keywords-based column mapping completely. Go to the **Sheets** page > **Options** tab > Select Enable or Disable **User Keywords for Column Mapping**.&#x20;
 
-![](../.gitbook/assets/user\_keywords.jpg)
+![](../.gitbook/assets/user_keywords.jpg)
 {% endhint %}
 
 ## Default Value

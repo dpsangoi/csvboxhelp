@@ -10,25 +10,25 @@ Log in to [csvbox.io](https://app.csvbox.io/login).
 
 Add a sheet.
 
-<img src="../.gitbook/assets/image (3) (1) (1).png" alt="" data-size="original">
+<img src="../.gitbook/assets/image (25).png" alt="" data-size="original">
 
 Add columns to the sheet as per your requirement.
 
-![](<../.gitbook/assets/image (6).png>)
+![](<../.gitbook/assets/image (17).png>)
 
 Under the "**Destination**" section, for the "**Send Data To**" setting select the "**Notion**" option.
 
 Click the "**Connect Notion**" button.
 
-![](<../.gitbook/assets/image (8).png>)
+![](<../.gitbook/assets/image (20).png>)
 
 This will redirect you to the Notion Integration Authorization screen.&#x20;
 
-![](<../.gitbook/assets/image (2) (1) (1) (1).png>)
+![](<../.gitbook/assets/image (13).png>)
 
 You will have to select the page and the relevant workspace where you want the CSV data to be pushed.
 
-![](<../.gitbook/assets/image (4) (1).png>)
+![](<../.gitbook/assets/image (15).png>)
 
 Click '**Allow access**'.
 
@@ -46,11 +46,11 @@ Only after sharing the workspace with the CSV to Notion integration, the Notion 
 
 Go back to your Csvbox sheet and pick the Notion database from the list.
 
-![](<../.gitbook/assets/image (10).png>)
+![](<../.gitbook/assets/image (27).png>)
 
 Click the "**Map Columns**" button and map the sheet columns to the Notion database columns.
 
-![](<../.gitbook/assets/image (5) (1).png>)
+![](<../.gitbook/assets/image (21).png>)
 
 Click the "**Save**" button.
 

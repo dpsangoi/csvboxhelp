@@ -157,7 +157,7 @@ Import CSV files and Excel sheets directly into your MySQL tables. How it works:
 * Map sheet columns to the table column.
 * You can also map custom attributes to table columns.
 
-<div align="left"><img src="../.gitbook/assets/map-columns.jpg" alt="map sheet to table columns"></div>
+<div align="left"><img src="../.gitbook/assets/map columns.jpg" alt="map sheet to table columns"></div>
 
 The user CSV data will then be directly be appended to the MySQL table.
 
@@ -175,7 +175,7 @@ Import CSV files and Excel sheets directly into your SQL Server tables. How it w
   * **Insert** - The importer will always push the incoming CSV data as new records in the database.
   * **Upsert** - The importer will check if the record exists in the database. If the record exists, then it will be updated with the incoming data from the CSV. If the record does not exist, then a new record will be inserted. The record check will be done based on the index keys specified in the mapping modal.
 
-<div align="center"><img src="../.gitbook/assets/unique.jpg" alt="Define Unique Key for Upsert Operation"></div>
+<div align="center"><img src="../.gitbook/assets/unique (1).jpg" alt="Define Unique Key for Upsert Operation"></div>
 
 {% hint style="warning" %}
 The **Upsert** operation will be significantly slower than the **Insert** operation. For the **Insert** operation, the records can be pushed in chunks. Whereas for the **Upsert** operation only one record can be processed at a time, and it requires multiple queries.
@@ -220,7 +220,7 @@ Import CSV files and Excel sheets directly into your PostgreSQL tables. How it w
 * Map sheet columns to the table column.
 * You can also map custom attributes to table columns.
 
-<div align="left"><img src="../.gitbook/assets/map-columns.jpg" alt="map sheet to table columns"></div>
+<div align="left"><img src="../.gitbook/assets/map columns.jpg" alt="map sheet to table columns"></div>
 
 The user CSV data will then be directly be appended to the PostgreSQL table.
 

@@ -30,7 +30,7 @@ With this option, you can enable/disable the **Export** button on the verify dat
 
 <img src="../.gitbook/assets/Export button.jpg" alt="" data-size="original">
 
-![](../.gitbook/assets/Excel1.png)
+![](<../.gitbook/assets/Excel1 (2).png>)
 
 </details>
 
@@ -96,7 +96,7 @@ If a domain fails validation then the user will see the error screen as below:![
 
 You have the option to either enable or disable the storage of the user uploaded data in CSVbox. This decision can be made based on privacy preferences or specific sheet requirements.
 
-<img src="../.gitbook/assets/image (16).png" alt="" data-size="original">
+<img src="../.gitbook/assets/image (33).png" alt="" data-size="original">
 
 * **Do not store the file**: By enabling this option, the user-uploaded data will not be stored in the CSVbox datastore.
 * **Store data**: Data will be stored on CSVbox storage. It will be auto deleted after one month.
@@ -258,17 +258,17 @@ By default, on the column mapping screen:
 * **Template Fields** are static and displayed on the left.
 * **Uploaded File Columns** appear on the right in a dropdown, allowing users to map them to the corresponding template fields.
 
-![](<../.gitbook/assets/image (17).png>)
+![](<../.gitbook/assets/image (34).png>)
 
 With the **Mapping Choice** option, users can **reverse this mapping direction**:
 
 * Selecting **"Template Fields"** as the Mapping Choice flips the layout.
 
-![](<../.gitbook/assets/image (19).png>)
+![](<../.gitbook/assets/image (36).png>)
 
 * **File Columns** become static on the left, while **Template Fields** appear in the dropdown on the right, allowing users to match them accordingly.
 
-![](<../.gitbook/assets/image (18).png>)
+![](<../.gitbook/assets/image (35).png>)
 
 This added flexibility helps accommodate different file structures and user preferences, making the mapping process more intuitive.
 
@@ -292,7 +292,7 @@ This is useful in scenarios where you want to allow users to upload files with t
 * Configuring **"Allow Zero Template Columns"** to "Yes" lets users submit files **without any predefined template columns**, providing complete flexibility.
 * This setting can be combined with the [**Unmapped Columns**](../advanced-installation/unmapped-columns.md) feature, allowing users to upload files with **any set of columns**, without the need for a predefined template structure.
 
-![](<../.gitbook/assets/sleekshot (1) (1) (1) (1) (1).png>)
+![](<../.gitbook/assets/sleekshot (5).png>)
 
 #### **When to Use This Feature**
 
@@ -464,7 +464,7 @@ Ideal for workflows where you want to guide users toward submission without dist
 
 <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 

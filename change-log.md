@@ -82,7 +82,7 @@ description: A record of all notable changes made to the application.
 
 *   Added a new feature allowing users to select accepted file types for uploads — choose between **CSV**, **XLS**, and **XLSX** formats in your sheet settings.<br>
 
-    <figure><img src=".gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
 
 ## 25 September 2025
 
@@ -111,7 +111,7 @@ description: A record of all notable changes made to the application.
 * Added option to set the default row on the header selection screen. You can now choose which row is pre-selected on the Header Selection step.&#x20;
 * Also available as an installation parameter - [**`default_header_row`**](getting-started/2.-install-code.md#default_header_row).\
   \
-  ![](<.gitbook/assets/image (1) (1) (1).png>)
+  ![](<.gitbook/assets/image (7).png>)
 
 ## 14 August 2025
 
@@ -162,15 +162,15 @@ description: A record of all notable changes made to the application.
 
 * Introduced a setting to choose the default table view on the Verify Data screen — users can now select between "Show all rows" and "Show invalid rows only."
 
-<div align="left"><figure><img src=".gitbook/assets/sleekshot (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src=".gitbook/assets/sleekshot (3).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
-<div align="left"><figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src=".gitbook/assets/image (9).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 * Added a configuration option to set the default number of rows displayed on the Verify Data screen.
 
-<div align="left"><figure><img src=".gitbook/assets/image (2) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src=".gitbook/assets/image (10).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
-<div align="left"><figure><img src=".gitbook/assets/image (3) (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src=".gitbook/assets/image (11).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 ## 14 April 2025
 
@@ -186,7 +186,7 @@ description: A record of all notable changes made to the application.
 * **Introduced the `column.isDynamic` property** in the [`csvbox.columns`](advanced-installation/data-transforms.md#csvbox.columns) object to identify Dynamic Columns. This is now available in Data Transforms and Validation Functions.
 * Introduced a new configuration option to restrict adding new rows on the Verify Data screen.
 
-<div align="left"><figure><img src=".gitbook/assets/sleekshot (1) (1) (1) (1).png" alt="" width="375"><figcaption><p>Adding rows option</p></figcaption></figure></div>
+<div align="left"><figure><img src=".gitbook/assets/sleekshot (4).png" alt="" width="375"><figcaption><p>Adding rows option</p></figcaption></figure></div>
 
 ## 21 March 2025
 
@@ -298,7 +298,7 @@ description: A record of all notable changes made to the application.
 
 * Updated the List Type Column validation to include the 'Accept Other Values' option.
 
-<div align="left"><figure><img src=".gitbook/assets/image (15).png" alt="" width="302"><figcaption><p>List Column Validation</p></figcaption></figure></div>
+<div align="left"><figure><img src=".gitbook/assets/image (32).png" alt="" width="302"><figcaption><p>List Column Validation</p></figcaption></figure></div>
 
 Selecting the 'Accept Other Values' option will allow the users to input values that are not found in the predefined list of acceptable values.
 
@@ -539,7 +539,7 @@ It is official! CSVbox is now SOC 2 Type 2 certified. [Read more](https://csvbox
 
 * Added [1-click Resubmit button](dashboard-settings/sheet-options-1.md#1-click-to-resubmit-the-same-csv-file-again) to trigger a new import on the recently submitted file.
 
-<figure><img src=".gitbook/assets/image (1) (2).png" alt=""><figcaption><p>Resubmit</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (18).png" alt=""><figcaption><p>Resubmit</p></figcaption></figure>
 
 ## 25 Nov 2022
 

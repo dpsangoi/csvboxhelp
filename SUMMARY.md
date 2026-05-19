@@ -46,7 +46,7 @@
 
 ## App
 
-* [Git check](app/git-check.md)
+* [Git check2](app/git-check2.md)
 
 ***
 

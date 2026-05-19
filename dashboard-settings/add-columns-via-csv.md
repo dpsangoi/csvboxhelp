@@ -6,7 +6,7 @@ description: Bulk add columns to a new sheet by providing the column info in a C
 
 CSVbox offers two methods to do this:
 
-<figure><img src="../.gitbook/assets/sleekshot (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/sleekshot (6).png" alt=""><figcaption></figcaption></figure>
 
 ### 1. Using Sample CSV File
 
