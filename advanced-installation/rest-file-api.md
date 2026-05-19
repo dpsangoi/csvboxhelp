@@ -160,7 +160,8 @@ curl --location --request POST 'https://api.csvbox.io/1.1/file' \
                 "type": "number",
                 "validators": {
                     "min_value": 0,
-                    "max_value": 100
+                    "max_value": 100,
+                    "auto_map": true
                 },
                 "required": false
             }
