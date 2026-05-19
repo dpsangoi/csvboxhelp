@@ -52,19 +52,18 @@ Include your API key as a `x-csvbox-api-key` header on all API queries.&#x20;
 
 #### Request Body
 
-| Name                                                         | Type    | Description                                                                                                        |
-| ------------------------------------------------------------ | ------- | ------------------------------------------------------------------------------------------------------------------ |
-| import.public\_file\_url<mark style="color:red;">\*</mark>   | String  | The public URL of the spreadsheet that is to be submitted.                                                         |
-| import.file\_sheet\_name                                     | String  | Worksheet name in case of a file having multiple tabs.                                                             |
-| import.sheet\_license\_key<mark style="color:red;">\*</mark> | String  | Sheet license key                                                                                                  |
-| import<mark style="color:red;">\*</mark>                     | Object  | Import file data                                                                                                   |
-| import.user                                                  | Object  | Object [referencing the user](https://help.csvbox.io/getting-started#referencing-the-user)                         |
-| import.options                                               | Object  | Object [referencing the import options](rest-file-api.md#additional-options)                                       |
-| import.dynamic\_columns                                      | Object  | Object [referencing dynamic columns](https://help.csvbox.io/getting-started/dynamic-columns)                       |
-| import.auto\_map                                             | Boolean | Enable automatic column mapping in cases where exact match is not found. **auto\_map** default value is **false**. |
+| Name                                                         | Type   | Description                                                                                  |
+| ------------------------------------------------------------ | ------ | -------------------------------------------------------------------------------------------- |
+| import.public\_file\_url<mark style="color:red;">\*</mark>   | String | The public URL of the spreadsheet that is to be submitted.                                   |
+| import.file\_sheet\_name                                     | String | Worksheet name in case of a file having multiple tabs.                                       |
+| import.sheet\_license\_key<mark style="color:red;">\*</mark> | String | Sheet license key                                                                            |
+| import<mark style="color:red;">\*</mark>                     | Object | Import file data                                                                             |
+| import.user                                                  | Object | Object [referencing the user](https://help.csvbox.io/getting-started#referencing-the-user)   |
+| import.options                                               | Object | Object [referencing the import options](rest-file-api.md#additional-options)                 |
+| import.dynamic\_columns                                      | Object | Object [referencing dynamic columns](https://help.csvbox.io/getting-started/dynamic-columns) |
 
 {% hint style="warning" %}
-The columns in the file should be arranged in the same order as configured in the sheet template and the column names should match exactly. If you want the importer to auto-map the columns, configure **auto\_map** to **true**.
+The columns in the file should be arranged in the same order as configured in the sheet template and the column names should match exactly. If you want the importer to auto-map the columns, configure options.**auto\_map** to **true**.
 {% endhint %}
 
 {% tabs %}
@@ -85,7 +84,8 @@ HTTP/1.1 200 OK
   },
   "options": {
     "max_rows": 150,
-    "has_header": 1
+    "has_header": 1,
+    "auto_map": true
   },
   "dynamic_olumns": [
      {
@@ -424,3 +424,6 @@ Here is the list of additional configuration options available with the File API
 
 <table><thead><tr><th width="150"></th><th></th><th data-hidden></th></tr></thead><tbody><tr><td>Type</td><td>Boolean</td><td></td></tr><tr><td>Default</td><td>0</td><td></td></tr><tr><td>Description</td><td><p>Specify whether the file contains a header row.<br><br>Acceptable values are:</p><p><strong>0</strong> (no header)</p><p><strong>1</strong> (has a header row)</p></td><td></td></tr></tbody></table>
 
+#### auto\_map
+
+<table><thead><tr><th width="150"></th><th></th><th data-hidden></th></tr></thead><tbody><tr><td>Type</td><td>Boolean</td><td></td></tr><tr><td>Default</td><td>Null</td><td></td></tr><tr><td>Description</td><td>Enable automatic column mapping in cases where exact match is not found. <strong>auto_map</strong> default value is <strong>false</strong>.</td><td></td></tr></tbody></table>
