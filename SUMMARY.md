@@ -46,6 +46,8 @@
 
 ## App
 
+* [Git check](app/git-check.md)
+
 ***
 
 * [Website](https://csvbox.io)
