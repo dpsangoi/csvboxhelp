@@ -46,14 +46,13 @@
 
 ## App
 
-* [Git check2](app/git-check2.md)
+* [Website](https://csvbox.io)
+* [Login](https://app.csvbox.io/login)
+* [Suggestions](https://csvbox.canny.io/feature-requests)
 
 ***
 
-* [Website](https://csvbox.io)
-* [Login](https://app.csvbox.io/login)
 * [Change Log](change-log.md)
-* [Suggestions](https://csvbox.canny.io/feature-requests)
 
 ## Legal
 
