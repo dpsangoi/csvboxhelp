@@ -63,7 +63,7 @@ Include your API key as a `x-csvbox-api-key` header on all API queries.&#x20;
 | import.dynamic\_columns                                      | Object | Object [referencing dynamic columns](https://help.csvbox.io/getting-started/dynamic-columns) |
 
 {% hint style="warning" %}
-The columns in the file should be arranged in the same order as configured in the sheet template and the column names should match exactly. If you want the importer to auto-map the columns, configure options.**auto\_map** to **true**.
+The columns in the file should be arranged in the same order as configured in the sheet template and the column names should match exactly. If you want the importer to auto-map the columns, configure **options**.**auto\_map** to **true**.
 {% endhint %}
 
 {% tabs %}
