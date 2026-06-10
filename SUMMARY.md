@@ -30,6 +30,7 @@
   * [Auth API](advanced-installation/auth-api.md)
 * [Data Destinations](destinations/README.md)
   * [Bubble.io](destinations/bubble.io.md)
+  * [Connect Neon as a Destination](destinations/connect-neon-as-a-destination.md)
   * [Zapier](destinations/zapier.md)
   * [Notion](destinations/notion.md)
   * [Webflow](destinations/webflow.md)

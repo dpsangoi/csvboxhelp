@@ -29,6 +29,8 @@ description: >-
 20. [Pipedream](pipedream.md)
 21. [Automation Platforms](automation-platforms.md)
 22. [Private Mode](private-mode.md)
+23. Open API
+24. Neon
 
 {% hint style="info" %}
 At a time only one destination can be selected per sheet.
