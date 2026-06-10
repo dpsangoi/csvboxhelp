@@ -30,6 +30,7 @@
   * [Auth API](advanced-installation/auth-api.md)
 * [Data Destinations](destinations/README.md)
   * [Bubble.io](destinations/bubble.io.md)
+  * [OpenAPI](destinations/openapi.md)
   * [Neon](destinations/neon.md)
   * [Zapier](destinations/zapier.md)
   * [Notion](destinations/notion.md)
