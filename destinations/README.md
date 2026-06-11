@@ -29,7 +29,7 @@ description: >-
 20. [Pipedream](pipedream.md)
 21. [Automation Platforms](automation-platforms.md)
 22. [Private Mode](private-mode.md)
-23. Open API
+23. [Open API](openapi.md)
 24. [Neon](neon.md)
 
 {% hint style="info" %}
