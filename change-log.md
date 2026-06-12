@@ -4,6 +4,18 @@ description: A record of all notable changes made to the application.
 
 # Change Log
 
+## June 2026
+
+* **New:** [Neon](https://neon.tech) added as a data destination. Push imported data directly to Neon serverless Postgres databases, with built-in credentials management and connection handling.
+* **Added:** OpenAPI specification support as an upload destination type. Point CSVBox to an OpenAPI/Swagger spec URL and it will automatically route import data to your API endpoints.
+* **Added:** Secret key + API key combination for Sheet API authorization, adding an extra layer of security for embedding and API access.
+* **Improved:** REST API `auto_map` now matches columns using the same priority order as the frontend importer — display\_label first, then column\_name, then matching keywords.
+* **Added:** CSVBox as an in-app integration in [Make](https://make.com).
+* **Added:** CSVBox as an app in [Pabbly](https://www.pabbly.com).
+*   **Added:** CSVBox as an app in [IFTTT](https://ifttt.com).
+
+
+
 ## May 2026
 
 * **New:** [AI Function Generator](dashboard-settings/ai-function-generator.md) - Generate validation functions, virtual columns, data transforms, and regex patterns using plain-language prompts. Simply describe what you want, and CSVBox will generate compatible JavaScript or regex logic automatically.
