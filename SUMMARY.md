@@ -28,6 +28,7 @@
   * [REST File API](advanced-installation/rest-file-api.md)
   * [Environment Variables](advanced-installation/environment-variables.md)
   * [Auth API](advanced-installation/auth-api.md)
+  * [Sheet API](advanced-installation/sheet-api.md)
 * [Data Destinations](destinations/README.md)
   * [Bubble.io](destinations/bubble.io.md)
   * [OpenAPI](destinations/openapi.md)
