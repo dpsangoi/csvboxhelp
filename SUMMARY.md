@@ -6,6 +6,7 @@
   * [2. Install Code](getting-started/2.-install-code.md)
   * [3. Receive Data](getting-started/3.-receive-data.md)
 * [Dashboard Settings](dashboard-settings/README.md)
+  * [Document Metadata Fields](dashboard-settings/document-metadata-fields.md)
   * [Column Options](dashboard-settings/sheet-options.md)
   * [Bulk Add Columns](dashboard-settings/add-columns-via-csv.md)
   * [Validations](dashboard-settings/validations.md)
